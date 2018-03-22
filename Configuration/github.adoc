@@ -1,0 +1,52 @@
+==== Willy Git setup 
+Commandos gebruikt om de git repos in willy op te zetten
+Startpunt: /home/willy/
+
+[source,text]
+----
+cd Documents
+git clone https://github.com/ArtOfRobotics/WWEB
+cd WWEB
+git checkout -b test
+git push -u origin test
+-	Username: willythegarbagedisposal@gmail.com
+-	Password: 
+cd ..
+git clone https://github.com/ArtOfRobotics/WTGD 
+cd WTGD
+git checkout -b test
+git push -u origin test
+-	Username: willythegarbagedisposal@gmail.com
+-	Password: 
+----
+
+==== Github sychronisatie 
+Vervolgens is er een crontab aangemaakt die ervoor zorgt dat Willy up to date blijft met Github. Omdat Willy geen vast ip of domein heeft gekoppeld kan helaas geen gebruik gemaakt worden van Github webhooks. Daarom is een Crontab Job ingesteld, welke als volgt geconfigureerd is: 
+
+[source,text]
+----
+sudo crontab -e
+
+*/1 * * * * su -s /bin/sh -c '/home/willy/Documents/WTGD/bin/gitsync.sh ' >> /home/willy/Documents/logs/git.log 2>&1
+----
+
+Let op: momenteel zorgt deze regel voor een pull van de test branch, later is gewenst dit te veranderen naar de master branch voor productiecode.
+Logs
+Te vinden in:
+/home/willy/Documents/logs/
+Bijvoorbeeld:
+
+image::images\image1.png[]
+Om live te volgen wat de status is van git sync. 
+
+==== Github Repo Willy 
+Te vinden in /home/willy/Documents/WTGD 
+
+==== Github Repo Web platform 
+Te vinden in /home/willy/Documents/WWEB 
+
+==== build
+
+==== Travis CI
+
+==== Accounts

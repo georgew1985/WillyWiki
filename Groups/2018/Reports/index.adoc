@@ -1,0 +1,12 @@
+===== Weekrapportage week 2
+to include
+//include::Weekrapportage-week-2.adoc[]
+===== Weekrapportage week 3
+to include
+//include::Weekrapportage-week-3.adoc[]
+===== Weekrapportage Sprint 2
+to include
+//include::Weekrapportage-sprint-2.adoc[]
+===== Weekrapportage Sprint 3
+to include
+//include::Weekrapportage-sprint-3.adoc[]

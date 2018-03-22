@@ -1,0 +1,230 @@
+image:media/image1.jpeg[image,width=791,height=435]
+
+Version history
+---------------
+
+[cols=",,,",options="header",]
+|==================================================================
+|Version |Date |Person |Note
+|V1.0 |07-03-18 |Jonathan ten Hove |Initial document
+|V1.1 |07-03-18 |Jesse Bouwman |Translating and reorganizing
+|V1.2 |14-03-18 |Jonathan ten Hove |Checked and further translation
+|==================================================================
+
+Index
+-----
+
+link:#version-history[Version history 1]
+
+link:#preface[1. Preface 3]
+
+link:#chapter[1.1. Chapter 3]
+
+link:#definition-list[1.2. Definition List 3]
+
+link:#definition-of-done[2. Definition of Done 4]
+
+link:#main[2.1. Main 4]
+
+link:#_Toc508789228[2.2. Specifics 4]
+
+link:#specifics[2.2.1. Software 4]
+
+link:#hardware[2.2.2. Hardware 4]
+
+link:#design[2.2.3. Design 4]
+
+link:#research[2.2.4. Research 4]
+
+link:#requirements[3. Requirements 5]
+
+link:#documentation[3.1. Documentation 5]
+
+link:#sources[3.2. Sources 5]
+
+link:#design-1[3.3. Design 5]
+
+link:#d-parts[3.3.1. 3D-parts 5]
+
+link:#d-drawings[3.3.2. 2D-drawings 5]
+
+link:#safety[3.4. Safety 5]
+
+link:#_Toc508789240[Bibliografie 7]
+
+1.   +
+Preface
+-------
+1.  Chapter
+~~~~~~~
+
+This document is about the Definition of Done. It describes when an item
+in the backlog is finished and what is necessary for finishing it. For
+each type of item there are several specific rules and tasks.
+
+The rules and tasks support handling this project with a high quality
+standard. It helps making Willy safe to use and well documented.
+
+Definition List
+~~~~~~~~~~~~~~~
+
+APA = Style of source management +
+SAD = Software Architecture Document +
+HAD = Hardware Architecture Document +
+TDD = Technical Design Document
+
+Definition of Done
+------------------
+
+2.1. Main
+~~~~~~~~~
+
+* Result complies to *acceptance criteria*
+* Result complies to the defined *safety* requirements
+* Result is *documented* in the SAD, HAD or TDD
+* Choices are substantiated and, if necessary, *documented* in the SAD,
+HAD or TDD
+* The SAD, HAD or TDD complies to the set *document requirements*
+* The SAD, HAD or TDD is being made according to the *template*
+* The SAD, HAD or TDD is *checked* on grammar
+* The SAD, HAD or TDD is *checked* by a colleague
+* Sources are added using the *APA* method
+* Sources comply to the defined **source requirements**[[_Toc508789228]]
+
+2.2. Specifics
+~~~~~~~~~~~~~~
+
+The definition of done continues for each specific element of Willy.
+
+2.2.1. Software
+^^^^^^^^^^^^^^^
+
+* Code is provided with *comments* for further explanation
+* Code has to be *tested* according to a test plan
+* Code has to catch and deal with *errors *
+* Code has to comply to the defined *code conventions*
+* There must be *UNIT tests* if necessary
+* *UML diagrams* need to be designed if needed
+* *Screen designs* need to be made if necessary
+* A *test plan* has to be made
+* A test plan has to be *executed*
+* There has to be an executed test plan with *positive result*
+
+2.2.2. Hardware
+^^^^^^^^^^^^^^^
+
+* A *test plan* has to be made
+* A test plan has to be *executed*
+* There has to be an executed test plan with *positive result*
+
+2.2.3. Design
+^^^^^^^^^^^^^
+
+* Result has to comply to the defined *design requirements*
+* Every *3D drawing* has to be supported by *2D drawings*
+
+2.2.4. Research
+^^^^^^^^^^^^^^^
+
+* Documentation is checked on *grammar*
+* Documentation is *checked* by a colleague
+* The research is *included* in one of the *main documents* (SAD, HAD or
+TDD)
+
+1.  Requirements
+------------
+1.  Documentation
+~~~~~~~~~~~~~
+
+For all documentation the following requirements are defined:
+
+* The documentation is written in *English.*
+* The documentation is *readable* and *clear*.
+* The text does not make *assumptions* without *sources*
+* The list of *sources* is *up to date*
+* A *glossary* is added when necessary
+1.   Sources
+~~~~~~~~
+
+For all of the sources used in documentation the following requirements
+are defined:
+
+* The source has an *author*
+* The source has a (when necessary recent) *publication date*
+* The source is *trustworthy*
+* The source is *no blog*
+* The source is *not Wikipedia*
+1.  Design
+~~~~~~
+
+For the design the following requirements are defined:
+
+3D-parts
+^^^^^^^^
+
+* Each part is made *independently*
+* Each part has all *dimensions fixed*
+* Every assembly contains the necessary *mates fixed*
+* Every assembly is created in a *folder* which contains every part
+which used in the assembly
+* Every part is *documented* in the Technical Design Document
+1.  2D-drawings
+^^^^^^^^^^^
+* Every drawing contains all necessary *dimensions*
+* Every drawing contains an *information box* at the bottom right corner
+with project name, designer, scale, date and drawing number
+1.  Safety
+~~~~~~
+
+For the safety of Willy and its surroundings the following requirements
+are defined and categorised in a series of rules:
+
+*Willy should not hurt people while driving*
+
+* Willy needs to drive and turn smoothly
+* Willy should not be able to injure people
+* Willy should not have any blind spots
+* Willy should not have any sharp edges
+
+*Willy should not be able to insult people by talking*
+
+* Willy should not be able to learn from harmful talking.
+* Willy should not be able to talk to people directly
+* Willy should not be able to discriminate people
+* Willy may not talk about harmful topics.
+
+*Willy should not be able to enter a restricted zone*
+
+* Willy must be able to recognize a restricted zone
+* Willy must be able to know his boundaries
+* Willy must have good navigation hardware
+
+*Willy should have electrical integrity *
+
+* Good isolated wiring
+* Good cable connections and connectors
+* Good cable management
+
+*Willy should not be able to catch fire*
+
+* Wires with high amperages should be connected using a fuse
+* Flammable materials should be avoided
+* Batteries should comply to European legislation
+* Willy should not be able to overheat
+
+*Willy should stop when an unknown situation occurs*
+
+* Willy should be able to recognize a lot of situations
+* Willy should be able to stop by using an emergency stop button
+* Willy should be able to stop by using an internal software switch
+
+*Willy should not be able to suck things that will demolish the internal
+machinations*
+
+* Willy should be able to recognize the type of waste
+* Willy should be able to recognize the state of the object
+
+Bibliografie
+------------
+
+*Het huidige document heeft geen bronnen.*

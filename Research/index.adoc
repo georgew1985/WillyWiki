@@ -1,0 +1,24 @@
+== Research
+
+=== Batteries
+include::batteries.adoc[]
+
+=== Indoor Navigation
+to include
+//include::Indoor-navigation.adoc[]
+
+=== Back-up
+to include
+//include::Back-up.adoc[]
+
+=== Screen
+to include
+//include::Screen.adoc[]
+
+=== Invertorisment Current Status
+to include
+//include::Current-status.adoc[]
+
+=== Alternative Interaction
+to include
+//include::Alternative-interaction.adoc[]

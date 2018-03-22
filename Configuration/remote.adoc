@@ -1,0 +1,57 @@
+===== Remote access
+The following config is used to deploy RDP fluxionality by using XRDP and XFCE4 
+
+[source,text]
+----
+sudo apt-get install xrdp
+sudo apt-get install xfce4
+----
+
+Edit .Xsesion file in home directory 
+
+[source,text]
+----
+echo xfce4-session >~/.xsession 
+----
+
+Edit XRDP configfile: “/etc/xrdp/starwm.sh” for using XFCE4 
+
+[source,bash]
+----
+#!/bin/sh
+if [ -r /etc/default/locale ]; then
+  . /etc/default/locale
+export LANG LANGUAGE
+fi
+startxfce4 
+----
+
+Fix the Tab button by editing: 
+
+[source,text]
+----
+~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml 
+----
+Replacing 
+[source,text]
+----
+<property name="&lt;Super&gt;Tab" type="string" value="switch_window_key"/> 
+----
+By
+[source,text]
+----
+<property name="&lt;Super&gt;Tab" type="string" value="empty"/> 
+----
+
+=== Openssh server
+Install open-ssh
+
+[source,]
+----
+sudo apt-get install openssh-server 
+----
+Enable ssh on boot
+[source,]
+----
+sudo systemctl enable ssh
+----

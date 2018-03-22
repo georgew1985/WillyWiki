@@ -1,0 +1,100 @@
+==== Version history
+
+[cols=",,,",options="header",]
+|===============================
+|Version |Date |Person |Note
+|V0.1 |04-02-18 |Jesse Bouwman |
+|===============================
+
+==== Preface
+This document is used to determine which batteries we need to have for
+Willy. It contains the calculations of the maximum energy consumption of
+Willy the garbage robot and the needed battery capacity. The dimensions
+in which the batteries should fit are also mentioned in chapter three.
+The final chapter is our advice to Art of Robotics for which batteries
+we should get for Willy.
+
+==== Capacity
+This chapter is about the energy use of Willy the garbage robot. To know
+how much capacity the batteries need it is needed to know which parts
+use energy and how much they use.
+
+===== Energy consumption
+
+There are several parts in Willy which use power to function. In the
+table below are the parts and their maximum energy consumption as well
+as the calculations to determine the maximum used power in total.
+
+[cols=",,,,,",options="header",]
+|=======================================================================
+|Part |Number of parts |Voltage(v) |Amperage(A) |Wattage(watt) |Total
+wattage(watt)
+|Motors |2 |24 |20 |480 |960
+
+|Computer |1 |19 |3.3 |62.7 |62.7
+
+|Arduinos |5 |5 |0.046 |0.23 |1.15
+
+|Duster |1 |12 |25 |300 |300
+
+|Stepper motors |2 |12 |1.7 |20.4 |40.8
+
+|Screen |1 |19.5 |3 |60 |60
+
+| | | | | |
+
+|Total: | | | | |1424.65
+|=======================================================================
+
+===== Battery capacity
+
+The capacity of the batteries for the robot is depending on the time
+that Willy should drive. We estimated that it would be nice that Willy
+could drive for 6 hours before it needs to charge.
+
+If the power consumption of the robot is 1424.65 Watt, it is 1424.65
+Watt/24V = 59.36 Ah. The current batteries are 60Ah each. This means
+that if we want to use Willy for at least 6 hours, we need 6 batteries
+of 60Ah with a total of 360Ah.
+
+==== Dimensions
+
+There are several options for fitting the needed capacity in Willy. One
+of them is six batteries of 60Ah of which we could fit four in the
+rear-part of the frame and two in the box which is used for the current
+batteries. The battery bracket is 418*180mm. Most of the batteries for
+sale are at least 230*170mm so the only way two batteries will fit in
+one tray is to turn them 90 degrees. Even then the bracket of the frame
+must move about 50 millimetres to the front of the robot. The problem
+with this solution is that there will be no room for another set of two
+batteries unless we remove the current battery case. With that in mind
+the drawing underneath is made. The bracket is deleted and the current
+battery case has been removed. This way the six batteries of 60Ah each
+could fit inside the frame.
+
+image:media/batteries_1.jpg[image,width=604,height=339]
+
+Another option is to use 180Ah batteries which are larger but only two
+batteries are needed. The bracket in the frame must be (re)moved because
+of the 180Ah batteries being at least 500mm in length. When laying these
+down there is room for two batteries next to each other.
+
+image:media/batteries_2.jpg[image,width=604,height=339]
+
+==== Advice
+
+Both options are possible for Willy. Our preferred option is to go with
+six 60Ah batteries, because with six smaller batteries the layout of the
+design is more flexible. There is a possibility that the design changes
+and for that flexibility is important. Another reason to use the six
+batteries is that these could be placed lower under the frame. Our
+advice is to keep the batteries as low as possible in the frame because
+the centre of gravity is lower which increases stability during driving.
+
+==== Sources
+
+kiwi-electronics. (n.d.). _components and parts_. Retrieved from kiwi-electronics:
+https://www.kiwi-electronics.nl/42byg-stappenmotor-12v
+
+Sony. (n.d.). _Energy efficiency chart._ Retrieved from esupport.sony.com:
+https://docs.sony.com/release//Flyer_KDL32W700B-40W600B-42W800-48W600B-50W800B-55W800B-60W600B-60W850B-70W850B-KLV32R422B-40R472B-KD-55X8500B-65X8500B-65X9000B-79X9000B.pdf

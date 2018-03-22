@@ -1,0 +1,23 @@
+==== Notes
+to include
+//include::Notes/index.adoc[]
+
+==== Reports
+to include
+//include::Reports/index.adoc[]
+
+==== Reports
+to include
+//include::Retrospective/index.adoc[]
+
+==== Plan of Approach
+to include
+//include::Plan-of-Approach.adoc[]
+
+==== Definition of Done
+to include
+//include::Definition-of-Done.adoc[]
+
+==== Codeconventies
+to include
+//include::Codeconventies.adoc[]

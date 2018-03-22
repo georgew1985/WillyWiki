@@ -1,0 +1,7 @@
+== Configuration
+
+=== Remote
+include::remote.adoc[]
+
+=== Github 
+include::github.adoc[]

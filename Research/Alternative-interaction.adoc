@@ -1,0 +1,134 @@
+Version history
+---------------
+
+[cols=",,,",options="header",]
+|===============================
+|Version |Date |Person |Note
+|V0.1 |15-03-18 |Jesse Bouwman |
+|===============================
+
+Preface
+-------
+
+The primary interaction method to communicate with ‘Willy’ will be by
+voice recognition. When voice recognition is not available an second
+communication method is required. Voice recognition may not work well in
+a noisy environment. With a second communication method, ‘Willy’ is also
+able to communicate to people with speech or hearing problems. In this
+document, possible solutions will be researched.
+
+Leap motion sensor
+~~~~~~~~~~~~~~~~~~
+
+The leap motion sensor is a 3D motion and gesture controller. The device
+contains three infrared LEDs and two infrared cameras. The cameras catch
+the reflection of the infrared LEDs at a rate of 200 frames per second.
+(Leap Motion, sd) The Leap Motion sensor has an accuracy of 0.7mm.
+(Frank Weichert, 2013)
+
+image:media/image2.png[Afbeeldingsresultaat voor leap motion
+sensor,width=604,height=250]
+
+Figure 1: Leap Motion Controller
+
+The Leap Motion could be useful as an alternative for the touchscreen.
+Gestures and motion can be detected and with this Willy can be
+controlled. The Leap motion is usable without installation.
+
+Kinect Sensor
+~~~~~~~~~~~~~
+
+The Kinect V1 is a device which contains an infrared emitter, an
+infrared Depth sensor, a color sensor, four microphones and a 3-Axis
+accelerometer. (Microsoft, sd) Infrared is used to measure distances to
+objects. In combination with the color sensor it creates a RGB image
+with depth.
+
+image:media/image3.jpeg[Afbeeldingsresultaat voor kinect
+v1,width=600,height=300]
+
+Figure 2: Kinect v1 Sensor
+
+The four microphones can detect sound and even the location of the sound
+source and its direction. The 3-Axis accelerometer is used to determine
+the orientation of the Kinect sensor.
+
+For interaction Willy could use a Kinect to look for gestures for
+controlling Willy.
+
+The benefit of using a Kinect V1 is that it is widely used with other
+robots. Because of this Willy could use the Kinect for mapping and
+localization as well as secondary interaction with the screen. The
+mapping while driving and the interaction when Willy is stationary.
+
+Touch screen
+~~~~~~~~~~~~
+
+A touch screen can be used for controlling Willy. The current screen
+Willy uses is a touchscreen but uses way too much power. There are
+options which have touch included and use les power, but these are
+expensive.
+
+Another option is a bracket which can be applied to a non-touchscreen to
+make it touch-sensitive. With this option Willy could use every display
+that is on the market with only the added bracket for touch.
+
+image:media/image4.jpeg[Afbeeldingsresultaat voor infrared touch
+frame,width=302,height=251]
+
+Figure 3: Infrared Touch Frame
+
+These touch frames work with infrared to measure the distance to for
+example a finger and uses this for its touch input. The touch frame is
+connected using USB and works plug and play with only the need of
+calibration.
+
+Touch pad
+~~~~~~~~~
+
+A touchpad like a laptops touchpad is the easiest and cheapest way to
+communicate with Willy. There are versions with a keyboard and mouse in
+it. These versions can do everything what an ordinary mouse and keyboard
+could do.
+
+image:media/image5.jpeg[Afbeeldingsresultaat voor h18
+touchpad,width=458,height=458]
+
+Figure 4: Example of a touchpad
+
+Conclusion
+----------
+
+The Leap motion is a medium prized alternative for interaction with
+Willy. It is easy to understand and can be used without practice.
+Because of its fast measurements the Leap is reliable to use as a second
+interaction method.
+
+The Kinect V1 is cheap to buy and is already used in other robots for
+gesture recognition. A disadvantage of the Kinect is that it requires a
+lot of performance from the mini-pc.
+
+The touchscreen or touchscreen infrared frame is an option for precise
+tracking of multiple fingers. They are however more expensive than the
+other options.
+
+The touchpad is the easiest and most affordable option of them all.
+Everyone knows how to use it and it is reliable. It works without
+installation when plugged in the USB-port of the mini-pc. Another
+benefit is that the touchpad uses the least power of all other options.
+
+The advise is to use a touchpad at this state of the project. Because
+this project is all about prototyping, a cheap and reliable alternative
+might be the best idea.
+
+Bibliography
+------------
+
+Frank Weichert, D. B. (2013, May 14). _Sensors_. Retrieved from National
+Centre for Biotechnology Information:
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3690061/Leap Motion.
+(n.d.). _Documentation_. Retrieved from developer.leapmotion.com:
+https://developer.leapmotion.com/documentation/javascript/api/Leap.Controller.htmlMicrosoft.
+(n.d.). _Documentation - Sensor components and Specs_. Retrieved from
+Microsoft Development Network:
+https://msdn.microsoft.com/en-us/library/jj131033.aspx
