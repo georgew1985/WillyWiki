@@ -20,16 +20,9 @@ after_failure:
   - docker logs asciidoc-to-pdf
 
 after_success:
-  - cp -R media media ; 
-  - cd Research/ ; cp -R media ../media ; cd .. ;
-  - cd Software/ ; cp -R media ../media ; cd .. ;
-  - cd Hardware/ ; cp -R media ../media ; cd .. ;
-  - cd General/ ; cp -R media ../media ; cd .. ;
-  - cd Configuration/ ; cp -R media ../media ; cd .. ;
-  - cd Design/ ; cp -R media ../media ; cd .. ;
-  - cd Startup/ ; cp -R media ../media ; cd .. ;
-  - cd Groups/ ; cp -R media ../media ; cd .. ;
+  - cp -R Research/media Software/media Hardware/media General/media Configuration/media Design/media Startup/media Groups/media media ; 
   - cd output ;
+  - cp -R ../media media;
   - git init
   - git config user.name "${GH_USER_NAME}"
   - git config user.email "{GH_USER_EMAIL}"
