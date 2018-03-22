@@ -3,8 +3,6 @@
 
 image:https://travis-ci.org/ArtOfRobotics/WillyWiki.svg?branch=master["Build Status", link="https://travis-ci.org/ArtOfRobotics/WillyWiki"]
 
-
-== test
 // Startup
 include::Startup/index.adoc[]
 
