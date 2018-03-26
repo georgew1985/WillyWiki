@@ -1,4 +1,4 @@
-:toc:
+:toc: auto
 :toc-placement: macro
 :toclevel: 5
 :numbered: 
