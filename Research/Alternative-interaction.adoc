@@ -1,9 +1,12 @@
 :toc:
+:toc-placement: macro
 :toclevel: 5
 :numbered: 
 
-Alternative interaction
-=======================
+[discrete]
+== Alternative interaction
+
+toc::[]
 
 [discrete]
 === Version history

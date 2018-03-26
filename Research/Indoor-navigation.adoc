@@ -1,5 +1,16 @@
-Version history
----------------
+:toc:
+:toc-placement: macro
+:toclevel: 5
+:numbered: 
+
+[discrete]
+== Alternative interaction
+
+toc::[]
+
+[discrete]
+== Version history
+
 
 [cols=",,,",options="header",]
 |============================================
@@ -9,8 +20,8 @@ Version history
 |V0.3 |15-03-18 |Jesse Bouwman |Minor changes
 |============================================
 
-Preface
--------
+== Preface
+
 
 Before Willy can drive autonomic inside, Willy must be aware of his
 environment. Because GPS is not available indoors, another solution must
@@ -18,10 +29,7 @@ be available. Autonomic driving will be supported by the current sensors
 on Willy such as the ultrasonic sensors and this research focusses on a
 separate technology that makes Willy more aware of his position.
 
-1.  Goal and requirements of indoor navigation
-------------------------------------------
-1.  Goal of indoor navigation
-~~~~~~~~~~~~~~~~~~~~~~~~~
+== Goal of indoor navigation
 
 The goal of indoor navigation is that Willy can drive autonomously
 within a building where GPS is not available and be more aware of its
@@ -30,8 +38,7 @@ located indoors. With this system Willy can drive indoors, follow a
 route or drive in a way that the coverage of the area is as high as
 possible for a detailed map and cleaning.
 
- Compatibility requirements
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== Compatibility requirements
 
 The indoor navigation system needs to work with the other systems. Willy
 uses ultrasonic sensors to avoid obstacles. The ultrasonic sensors need
@@ -44,7 +51,6 @@ function of positioning. However the systems that work inside could help
 the ultrasonic sensors with avoiding obstacles.
 
 Challenge of implementing indoor navigation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 There are some challenges with implementing indoor navigation. In the
 first place we need the sensors. At the time of writing Willy has a
@@ -58,12 +64,11 @@ communication goes via ROS where other modules are connected. However
 there is no way at this moment to connect new modules hardware-based.
 There are no open connections left for additional hardware.
 
-1.  Research
---------
-1.   Different solutions
-~~~~~~~~~~~~~~~~~~~~
-1.  Kinect
-^^^^^^
+== Research
+
+=== Different solutions
+
+==== Kinect
 
 A Kinect version 1 sensor has previously been used on Willy. It was used
 to recognize objects and people. Unfortunately the sensor is currently
@@ -102,8 +107,8 @@ image:media/indoornavigation2.jpeg[image,width=434,height=244]
 
 Figure 1: SLAM with Kinect v1
 
-LiDAR
-^^^^^
+==== LiDAR
+
 
 The LiDAR is a Light Detecting And Ranging sensor. It uses a laser to
 scan the environment. The one which is available for Willy is a SICK-TIM
@@ -130,8 +135,8 @@ rviz,width=555,height=314]
 
 Figure 3: Plotting with RViz
 
-Beacons
-^^^^^^^
+==== Beacons
+
 
 Beacons are small devices who emits signals. These signals can be
 detected by the robot to know where it is located based on signal
@@ -144,8 +149,8 @@ image:media/indoornavigation5.png[image,width=516,height=321]
 
 Figure 4: Triangulation for location measuring
 
-Ultrasonic Sensors
-^^^^^^^^^^^^^^^^^^
+==== Ultrasonic Sensors
+
 
 Ultrasonic sensors are sensors that send and receive sound waves to
 measure the distance to an object. It calculates the time between
@@ -170,10 +175,10 @@ the area. However for measuring distance and localization they cannot be
 used. But more effective for obstacle avoidance and preventing
 collisions.
 
-Advantages by each solution
+=== Advantages by each solution
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* Kinect
+==== Kinect
 
 * 3D point cloud
 * High-resolution
@@ -181,14 +186,14 @@ Advantages by each solution
 * ROS integrated and widely documented
 * Integrated camera
 
-* LiDAR
+====  LiDAR
 
 * 2D point cloud
 * Fast (15Hz scanning frequency)
 * 270 degrees Field of View
 * Range (0.05-10m)
 
-* Beacons
+==== Beacons
 
 * Cheap (around €30 for three modules)
 * Reliable navigation
@@ -198,10 +203,10 @@ Advantages by each solution
 
 * Cheap (< €5 per sensor)
 * Easy to set up
-1.  Disadvantages by each solution
+=== Disadvantages by each solution
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* Kinect
+==== Kinect
 
 * Difficult to set up
 * Needs further research for implementation
