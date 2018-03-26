@@ -5,4 +5,8 @@
 :toc-title: Index
 :toclevels: 2
 
+// Welcome
+include::Welcome/index.adoc[]
+
+// Include all documents
 include::main.adoc[]

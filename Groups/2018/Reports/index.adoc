@@ -1,12 +1,13 @@
-===== Weekrapportage week 2
-to include
-//include::Weekrapportage-week-2.adoc[]
-===== Weekrapportage week 3
-to include
-//include::Weekrapportage-week-3.adoc[]
-===== Weekrapportage Sprint 2
-to include
-//include::Weekrapportage-sprint-2.adoc[]
-===== Weekrapportage Sprint 3
-to include
-//include::Weekrapportage-sprint-3.adoc[]
+Omdat dit volgens een word template moet, worden bestanden hieronder gelinkt
+
+Weekrapportage week 2
+//Weekrapportage-week-2.
+
+Weekrapportage week 3
+//Weekrapportage-week-3.
+
+Weekrapportage Sprint 2
+//Weekrapportage-sprint-2.
+
+Weekrapportage Sprint 3
+//Weekrapportage-sprint-3.

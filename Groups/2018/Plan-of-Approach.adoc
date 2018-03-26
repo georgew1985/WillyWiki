@@ -1,4 +1,4 @@
-image:media/image1.jpeg[image,width=791,height=435]
+== Plan of Approach
 
 Version history
 ---------------
@@ -16,59 +16,6 @@ Version history
 finalization
 |=======================================================================
 
-Index
------
-
-link:#version-history[Version history 1]
-
-link:#preface[1. Preface 3]
-
-link:#background[Background 3]
-
-link:#disclaimer[Disclaimer 3]
-
-link:#goal[Goal 3]
-
-link:#current-status[Current status 3]
-
-link:#the-proposal-of-the-client[2. The proposal of the client 5]
-
-link:#meetings[Meetings 5]
-
-link:#plan-of-action[3. Plan of action 6]
-
-link:#scope[3.1. Scope 6]
-
-link:#agreements[3.2. Agreements 7]
-
-link:#methods[3.3. Methods 8]
-
-link:#definition-of-done[Definition of Done 8]
-
-link:#risk-analyses[3.4. Risk analyses 9]
-
-link:#quality-management[3.5. Quality management 10]
-
-link:#business-case[4. Business case 12]
-
-link:#financial-resources[4.1. Financial Resources 12]
-
-link:#benefits[4.2. Benefits 12]
-
-link:#potential-interested-stakeholders[4.3. Potential interested
-stakeholders 13]
-
-link:#conclusion[4.4. Conclusion 14]
-
-link:#planning[5. Planning 15]
-
-link:#global-planning[5.2. Global planning 15]
-
-link:#milestones[5.3 Milestones 0]
-
-link:#_Toc507154204[Bibliography 0]
-
- +
 Preface
 -------
 
