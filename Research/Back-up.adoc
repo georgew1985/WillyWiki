@@ -111,7 +111,6 @@ during creation of the backup this method is less fault Torrance.
 
 (remastersys, sd)
 
- +
 Imaging using clonezilla
 ------------------------
 
