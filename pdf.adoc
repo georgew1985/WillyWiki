@@ -1,0 +1,8 @@
+= Willy Wiki
+
+:toc: left
+:numbered:
+:toc-title: Index
+:toclevels: 2
+
+include::main.adoc[]

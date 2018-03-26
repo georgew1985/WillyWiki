@@ -1,7 +1,5 @@
-= Willy Wiki
-:toc: left
-
-image:https://travis-ci.org/ArtOfRobotics/WillyWiki.svg?branch=master["Build Status", link="https://travis-ci.org/ArtOfRobotics/WillyWiki"]
+// Welcome
+include::Welcome/index.adoc[]
 
 // Startup
 include::Startup/index.adoc[]

@@ -1,1 +1,11 @@
+= Willy Wiki
+
+image:https://travis-ci.org/ArtOfRobotics/WillyWiki.svg?branch=master["Build Status", link="https://travis-ci.org/ArtOfRobotics/WillyWiki"]
+
+
+:toc: left
+:numbered:
+:toc-title: Index
+:toclevels: 2
+
 include::main.adoc[]

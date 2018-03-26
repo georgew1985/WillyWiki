@@ -1,0 +1,65 @@
+== Startup Guide
+
+:toc:
+:toclevels: 5
+
+Welcome to the Willy Startup Guide!
+To start Willy The Garbage Disposal Robot, a few steps are required.
+Each step is explained in the subchapters.
+
+=== Steps
+1. **Deploy the brakes**
+To start Willy, the brakes need to be deployed. Otherwise Willy will not be able to drive. 
+To deploy the brakes you have to use the levers on the front of the engines. 
+You can check if the brakes are deployed by trying to push Willy. 
+The brakes are appled when the wheels can't rotate anymore.
+
+2. **Turn the power on**
+Willy needs power to be able to operate. 
+Make sure the power levers on the side of Willy are both turned on (under the voltage display).
+
+3. **Turn the motor controller off**
+Willy cannot start when the engines are turned on. 
+To turn the motor controller off, use the switch on the bottom of the pc case. (or the emergency button for convenience)
+
+4. **Start Willy by running the startup command**
+Willy is now able to start. You can easily start willy by running our startup script. This script is located in the following folder:
+`/home/willy/Documents/WTGD/bin/startup.sh`
+This startup script can be runned using the following commands:
+`cd /home/willy/Documents/WTGD/bin`
+`./startup.sh`
+Willy will now start the arduino's.
+
+==== WillyController
+
+These steps are optional. Only execute the following steps if you want to drive Willy manually.
+
+1. **Build the project**
+For building the project you first have to go to the correct directory by doing:
+`cd /home/willy/Documents/WTGD/willy`
+The project can then be built with the command:
+`catkin_make`
+
+2. **Setting the source for ROS**
+To setup the workspace for ROS, run the following command:
+`source devel/setup.bash`
+
+3. **Start the WillyController**
+To make Willy drive, the code has to run with the following command:
+`rosrun driving_willy main`
+
+==== Web Interface
+
+1. **Start the Willy Web**
+To control Willy in a graphical interface, you need to start the web interface. To do so, run the following command:
+`cd /home/willy/Documents/willyweb`
+`sudo dotnet Willy.Web.dll`
+The web interface will now start.
+
+2. **Open the WillyWeb**
+To open the web interface, navigate in a browser (Chrome or Firefox) to 192.168.0.100. Login using the credenticals from the data page.
+
+3. **Go to remote control and control Willy**
+Navigate in the Willy Web to `Remote Control` and control Willy by using the joystick
+
+IMPORTANT: Do not close the terminals. Otherwise the web interface will be terminated!
