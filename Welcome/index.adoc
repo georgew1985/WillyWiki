@@ -1,0 +1,6 @@
+= Welcome
+// Welcome
+include::welcome.adoc[]
+
+// About
+include::about.adoc[]
