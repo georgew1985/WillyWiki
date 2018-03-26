@@ -1,4 +1,5 @@
-== Welcome 
-=== to this awesome wiki of Willy the Garbage Disposal Robot!
+== Landingspage
+ 
+=== Welcome to this awesome wiki of Willy the Garbage Disposal Robot!
 
 Hey my image:https://travis-ci.org/ArtOfRobotics/WillyWiki.svg?branch=master["Build Status", link="https://travis-ci.org/ArtOfRobotics/WillyWiki"]

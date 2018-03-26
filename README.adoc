@@ -5,15 +5,15 @@ image:https://travis-ci.org/ArtOfRobotics/WillyWiki.svg?branch=master["Build Sta
 :link-demo-pdf: {link-github-project-ghpages}/demo.pdf
 :link-demo-adoc: https://raw.githubusercontent.com/ArtOfRobotics/WillyWiki/master/demo.adoc
 :link-html: {link-github-project-ghpages}
-:link-pdf: {link-github-project-ghpages}/index.pdf
+:link-pdf: {link-github-project-ghpages}/pdf.pdf
 
-= Willy Wiki
+=== Willy Wiki
 
 * Output of Willy Wiki:
 ** {link-html}[HTML Pages]
 ** {link-pdf}[PDF Document]
 
-== How the Wiki is setup using AsciiDoc with TravisCI and Github Pages
+==== How the Wiki is setup using AsciiDoc with TravisCI and Github Pages
 
 All *AsciiDoc* documents are exported to both *HTML & PDF*, this output is then published to the *gh-pages* branch by *Travis CI* which uses Asciidoctor and Docker for converting.
 
