@@ -1,3 +1,9 @@
+Alternative interaction
+======================
+:toc:
+:toclevel: 5
+:numbered:
+
 Version history
 ---------------
 
