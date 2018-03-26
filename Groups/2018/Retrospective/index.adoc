@@ -1,6 +1,6 @@
-===== Retrospective 1
-to include
-//include::Retrospective-1.adoc[]
-===== Retrospective 2
-to include
-//include::Retrospective-1.adoc[]
+:toc:
+
+// Retrospective 1
+include::Retrospective-1.adoc[]
+// Retrospective 2
+include::Retrospective-1.adoc[]

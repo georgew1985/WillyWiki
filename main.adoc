@@ -1,6 +1,3 @@
-// Welcome
-include::Welcome/index.adoc[]
-
 // Startup
 include::Startup/index.adoc[]
 

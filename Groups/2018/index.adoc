@@ -1,23 +1,17 @@
-==== Notes
-to include
-//include::Notes/index.adoc[]
+// Notes
+include::Notes/index.adoc[]
 
-==== Reports
-to include
-//include::Reports/index.adoc[]
+// Reports
+include::Reports/index.adoc[]
 
-==== Reports
-to include
-//include::Retrospective/index.adoc[]
+// Retrospective
+include::Retrospective/index.adoc[]
 
-==== Plan of Approach
-to include
-//include::Plan-of-Approach.adoc[]
+// Plan of Approach
+include::Plan-of-Approach.adoc[]
 
-==== Definition of Done
-to include
-//include::Definition-of-Done.adoc[]
+// Defintion of Done
+include::Definition-of-Done.adoc[]
 
-==== Codeconventies
-to include
-//include::Codeconventies.adoc[]
+// CodeConventies
+include::Codeconventies.adoc[]
