@@ -1,7 +1,15 @@
-image:media/back-up/image1.jpeg[image,width=791,height=435]
+:toc:
+:toc-placement: macro
+:toclevel: 5
+:numbered: 
 
-Version history
----------------
+[discrete]
+== Alternative interaction
+
+toc::[]
+
+[discrete]
+=== Version history
 
 [cols=",,,",options="header",]
 |===================================================================

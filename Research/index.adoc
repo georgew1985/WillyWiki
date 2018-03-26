@@ -7,10 +7,9 @@ to include
 // Indoor Navigation
 //include::Indoor-navigation.adoc[]
 
-== Back-up
-to include
+
 // Back-up
-//include::Back-up.adoc[]
+include::Back-up.adoc[]
 
 // Screen
 include::Screen.adoc[]
