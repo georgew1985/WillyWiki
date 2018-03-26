@@ -1,3 +1,8 @@
+== Batteries
+
+:toc:
+:toclevels: 5
+
 ==== Version history
 
 [cols=",,,",options="header",]

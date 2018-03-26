@@ -1,24 +1,24 @@
-== Research
-
-=== Batteries
+= Research
+// Batteries
 include::batteries.adoc[]
 
-=== Indoor Navigation
+== Indoor Navigation
 to include
+// Indoor Navigation
 //include::Indoor-navigation.adoc[]
 
-=== Back-up
+== Back-up
 to include
+// Back-up
 //include::Back-up.adoc[]
 
-=== Screen
-to include
-//include::Screen.adoc[]
+// Screen
+include::Screen.adoc[]
 
-=== Invertorisment Current Status
+== Invertorisment Current Status
 to include
+// Inventorisement Current status
 //include::Current-status.adoc[]
 
-=== Alternative Interaction
-to include
-//include::Alternative-interaction.adoc[]
+// Alternative Interaction
+include::Alternative-interaction.adoc[]

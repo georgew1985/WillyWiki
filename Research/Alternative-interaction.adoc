@@ -26,7 +26,7 @@ the reflection of the infrared LEDs at a rate of 200 frames per second.
 (Leap Motion, sd) The Leap Motion sensor has an accuracy of 0.7mm.
 (Frank Weichert, 2013)
 
-image:media/image2.png[Afbeeldingsresultaat voor leap motion
+image:media/AlternativeInteraction2.png[Afbeeldingsresultaat voor leap motion
 sensor,width=604,height=250]
 
 Figure 1: Leap Motion Controller
@@ -44,7 +44,7 @@ accelerometer. (Microsoft, sd) Infrared is used to measure distances to
 objects. In combination with the color sensor it creates a RGB image
 with depth.
 
-image:media/image3.jpeg[Afbeeldingsresultaat voor kinect
+image:media/AlternativeInteraction3.jpeg[Afbeeldingsresultaat voor kinect
 v1,width=600,height=300]
 
 Figure 2: Kinect v1 Sensor
@@ -73,7 +73,7 @@ Another option is a bracket which can be applied to a non-touchscreen to
 make it touch-sensitive. With this option Willy could use every display
 that is on the market with only the added bracket for touch.
 
-image:media/image4.jpeg[Afbeeldingsresultaat voor infrared touch
+image:media/AlternativeInteraction4.jpeg[Afbeeldingsresultaat voor infrared touch
 frame,width=302,height=251]
 
 Figure 3: Infrared Touch Frame
@@ -91,7 +91,7 @@ communicate with Willy. There are versions with a keyboard and mouse in
 it. These versions can do everything what an ordinary mouse and keyboard
 could do.
 
-image:media/image5.jpeg[Afbeeldingsresultaat voor h18
+image:media/AlternativeInteraction5.jpeg[Afbeeldingsresultaat voor h18
 touchpad,width=458,height=458]
 
 Figure 4: Example of a touchpad

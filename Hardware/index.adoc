@@ -1,3 +1,3 @@
-== Hardware
+= Hardware
 
 === No items yet
