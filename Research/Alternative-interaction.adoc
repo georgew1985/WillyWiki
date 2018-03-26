@@ -1,5 +1,5 @@
 :toc:
-:toc-placement: macro
+:toc-placement!:
 :toclevel: 5
 :numbered: 
 
