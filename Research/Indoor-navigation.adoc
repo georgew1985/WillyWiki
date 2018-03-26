@@ -4,7 +4,7 @@
 :numbered: 
 
 [discrete]
-== Alternative interaction
+== Indoor-navigation
 
 toc::[]
 

@@ -1,7 +1,15 @@
-image:media/current-status/image1.jpeg[image,width=791,height=435]
+:toc:
+:toc-placement: macro
+:toclevel: 5
+:numbered: 
 
-Version history
----------------
+[discrete]
+== Inventorisement Current status
+
+toc::[]
+
+[discrete]
+== Version history
 
 [cols=",,,",options="header",]
 |=======================================================================
@@ -28,8 +36,8 @@ checked
 |V1.0 |15-03-18 |Jonathan ten Hove |Added Web Platform
 |=======================================================================
 
-Preface
--------
+== Preface
+
 
 _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 This document contains a description of the current state of Willy, when
@@ -39,12 +47,12 @@ list of recommendations from our side concerning alternative
 adjustments. Hardware schematics are found in the appendixes.
 _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-Inventories Willy
------------------
+== Inventories Willy
+
 
 We made a summary of findings and summary
 
-Findings
+=== Findings
 
 1.  Cables are not reliable
 2.  Brake function of engines unknown
@@ -65,7 +73,7 @@ Findings
 17. Autonomous driving not working
 18. Steering is too sensitive
 
-To Do
+=== To Do
 
 1.  Renew cables and manage cables
 2.  Research operation of brakes
@@ -86,10 +94,10 @@ To Do
 17. Research autonomous driving
 18. Reduce sensitivity of steering
 
-Inventories of sensors
-----------------------
+=== Inventories of sensors
 
-Findings
+
+==== Findings
 
 1.  Documentation not fully completed
 2.  Sensitive to malfunction
@@ -99,7 +107,7 @@ Findings
 6.  Wheel encoders aren’t working
 7.  Microphone not present
 
-To Do
+==== To Do
 
 1.  Create schematics of hardware layout
 2.  Replace cables
@@ -109,8 +117,8 @@ To Do
 6.  Remount wheel encoders or research alternatives
 7.  Buy microphone
 
-Motor encoder
--------------
+=== Motor encoder
+
 
 Willy is driven with 2 scooter motors. The turning of the wheels are
 measured with wheel encoders. These encoders measure the number of steps
@@ -166,7 +174,6 @@ requirements
 |=======================================================================
 
 image:media/current-status/image3.jpeg[image,width=155,height=116]Motor controller
--------------------------------------------------------------------
 
 Willy contains 2 motors from a second-hand scooter. A previous project
 group has chosen this option as documented in the ‘Ontwerp verslag’.
@@ -193,8 +200,8 @@ image:media/current-status/image5.jpg[image,width=604,height=427]
 
 [[_Toc508714671]]
 
-Motor brake functionality
--------------------------
+==== Motor brake functionality
+
 
 The two engines of willy contain both a brake. This brake is controlled
 by the engine itself. When the active signal to the motors is lost, the
@@ -207,8 +214,7 @@ Make sure to deploy the brakes. Otherwise Willy won’t work!! There is
 only one way to detect if the brakes are deployed. It’s by simply
 testing if the wheel can turn (Or a very little bit) anymore.
 
-Ultrasonic sensors
-------------------
+==== Ultrasonic sensors
 
 To prevent collisions, ultrasonic sensors are used. These sensors
 measure distance by using sound. This is made possible by sending out
@@ -286,8 +292,8 @@ its precursor. (Kinect 1 vs 2 specifications: , sd) (Kinect 1
 specifications, sd) (Main factors/features of most industrial computer
 vision hardware., sd)
 
-GPS & Compass sensor
---------------------
+==== GPS & Compass sensor
+
 
 To allow Willy to drive outdoor by using a precomputed route, a GPS
 sensor and a compass are required. The GPS sensor is linked to the
@@ -307,8 +313,7 @@ The second Arduino with the GPS sensor is powered with the 5V pin from
 the first Arduino. At the moment of writing this has not been fixed and
 reduced to one Arduino.
 
-LIDAR sensor
-------------
+==== LIDAR sensor
 
 The previous group has also done research on a Lidar sensor.
 Unfortunately the previous documentation stated that it was not possible
@@ -328,8 +333,7 @@ decided to not implement the LIDAR sensor.
 After doing some research we found that it is possible and supported to
 link ROS to a LIDAR sensor.
 
-Avantages & Disadvantages
--------------------------
+=== Avantages & Disadvantages
 
 [cols=",,",options="header",]
 |====================================================================
@@ -389,8 +393,7 @@ Avantages & Disadvantages
 
 |====================================================================
 
-Operation system of Willy
--------------------------
+=== Operation system of Willy
 
 Currently, Willy is operating using ‘Linux Ubuntu 14.04’ as operation
 system. The ROS-framework is used for centralized communication between
@@ -403,8 +406,7 @@ the newest version is ‘ROS-Lunar’. Both ROS, ROS-dependencies and Ubuntu
 must be updated. Afterwards the code can be tested and compiled in the
 new environment.
 
-11.1 Current installed packages
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==== Current installed packages
 
 The first step in updating the OS is to determine which packages and
 dependencies are installed. Because previous teams have made a lot of
@@ -417,53 +419,33 @@ _comm -23 <(apt-mark showmanual | sort -u) <(gzip -dc
 
 The following packages where manually installed;
 
+[source,text]
+----
 brightness-controller
-
 dhcpcd5
-
 dotnet-sdk-2.0.0
-
 git
-
 google-chrome-stable
-
 htop
-
 nmap
-
 openssh-server
-
 pgadmin3
-
 postgresql
-
 python-pip
-
 *ros-kinetic-desktop-full*
-
 *ros-kinetic-joystick-drivers*
-
 *ros-kinetic-rosbridge-server*
-
 *ros-kinetic-rosserial-python*
-
 *ros-kinetic-rosserial-server*
-
 *ros-kinetic-teleop-twist-joy*
-
 *ros-kinetic-teleop-twist-keyboard*
-
 *ros-lunar-catkin*
-
 *screen*
-
 vsftpd
-
 x11vnc
-
 xfce4
-
 xrdp
+----
 
 Some of the above packages are required to compile and execute the
 ‘WTGD’ code that is available from GIT, these packages are bold listed.
@@ -474,8 +456,7 @@ changed, dependencies will be determined during the development of the
 code. Other packages are explained in documentation that will be
 available with the final delivery.
 
- Determined packages for Ubuntu 16.04 and ROS-Lunar
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==== Determined packages for Ubuntu 16.04 and ROS-Lunar
 
 To create a clear view about the current ‘WTGD’ code that ‘Willy’
 contains, and how this works on Ubuntu 16.04 with ROS-Lunar, a test
@@ -487,68 +468,97 @@ determined. Every time a decency was missing, the error massage was
 inspected. We concluded that the following packages are required to
 execute the ‘WTGD’ code on Willy.
 
-ROS-lunar-desktop-full +
-Screen +
-ROS-lunar-rosserial +
-ROS-lunar-rosserial-arduino +
-ROS-lunar-rosapi +
+[source,text]
+----
+ROS-lunar-desktop-full
+Screen
+ROS-lunar-rosserial
+ROS-lunar-rosserial-arduino
+ROS-lunar-rosapi
 ROS-lunar-rosbridge-server
+----
 
-11.3 Install dependencies
-~~~~~~~~~~~~~~~~~~~~~~~~~
+==== Install dependencies
+
 
 To install above dependencies, the following commands are required.
 
-Install Ross +
-_sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release
--sc) main" > /etc/apt/sources.list.d/ros-latest.list'_
+Install Ross
 
-_sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80
---recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116_
+[source,shell]
+----
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release
+-sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+----
 
-_sudo apt-get update +
-sudo apt-get install -y ros-lunar-desktop-full +
-sudo rosdep init +
-rosdep update_
+[source,shell]
+----
+sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80
+--recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
+----
 
-Link the ros framework to the ubuntu bash +
-_echo "source /opt/ros/lunar/setup.bash" >> ~/.bashrc +
-source ~/.bashrc_
+[source,shell]
+----
+sudo apt-get update
+sudo apt-get install -y ros-lunar-desktop-full
+sudo rosdep init
+rosdep update
+----
 
-Start a new bash prompt and run (test) +
-_roscore_
+Link the ros framework to the ubuntu bash 
 
-Install ROS-dependencies +
-_sudo apt-get install Screen_ +
-_sudo apt-get install ros-kinetic-rosserial +
-sudo apt-get install ros-kinetic -rosserial-arduino +
-sudo apt-get install ros-kinetic -rosapi +
-sudo apt-get install ros-kinetic -rosbridge-server_
+[source,shell]
+----
+echo "source /opt/ros/lunar/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+----
+
+Start a new bash prompt and run (test)
+
+[source,shell]
+----
+roscore
+----
+
+Install ROS-dependencies
+
+[source, shell]
+----
+sudo apt-get install Screen
+sudo apt-get install ros-kinetic-rosserial
+sudo apt-get install ros-kinetic-rosserial-arduino
+sudo apt-get install ros-kinetic-rosapi
+sudo apt-get install ros-kinetic-rosbridge-server
+----
+
 
 Give user permission to access USB ports
 
-_sudo usermod -a -G dialout willy_
+[source,shell]
+----
+sudo usermod -a -G dialout willy
+----
+
 
 With the above installation changes made to Ubuntu, the current ‘WTGD’
 code was able to run. Packages listed in the 11.1. can be used as
 reference material.
 
-Web Platform
-------------
+=== Web Platform
+
 
 The current status of the web platform uses various components to
 achieve a platform on which you can remotely control Willy and retrieve
 its status.
 
 Current configuration
-~~~~~~~~~~~~~~~~~~~~~
+
 
 A global overview of how the platform is configured is as following:
 
 image:media/current-status/image14.png[image]
 
-Ros Bridge
-^^^^^^^^^^
+==== Ros Bridge
 
 Ros bridge is a platform between ROS and another application such as a
 web interface. The bridge is written in Python and translates serial
@@ -556,8 +566,7 @@ packages to json for more universal use in external applications such as
 the web platform. The deserialization of ros messages does take some
 time to process. (ROS rosbrigde, 2017)
 
-Backend
-^^^^^^^
+==== Backend
 
 The backend of the current web platform is written in C# and uses
 ASP.NET as a framework and SignalR as API. It is unclear why there has
@@ -582,8 +591,7 @@ to JSON conversion it would only be C# objects, but in the current
 situation this is again translated back to JSON because the front-end is
 written in NodeJS (JavaScript)
 
-Chatterbot
-^^^^^^^^^^
+==== Chatterbot
 
 Chatterbot is currently used as a tool for social interaction but is
 limited in its abilities. We found that this choice was only based on
@@ -593,8 +601,8 @@ of the other components. As a side note, integrating a complete social
 interaction was not the goal of the previous groups and thus need
 further research.
 
-Database
-^^^^^^^^
+==== Database
+
 
 The database used is PostgreSQL, while this is a reliable and mature
 database system and targeted on it is quite heavy to run and the main
@@ -602,30 +610,26 @@ target audience are corporate businesses. So for the Willy project it is
 quite overdone to have such a system running especially when the only
 things saved are some commands and a few login credentials.
 
-Interface
-^^^^^^^^^
+==== Interface
 
 Willy’s visible part of the web platform is written in NodeJs and uses
 various bower and gulp components and as a framework AngularJs. This is
 an easy to setup configuration and gives developers the ease of fast web
 development.
 
-Advantages/Disadvantages
-^^^^^^^^^^^^^^^^^^^^^^^^
+==== Advantages/Disadvantages
 
-Advised configuration
-~~~~~~~~~~~~~~~~~~~~~
+
+==== Advised configuration
 
 image:media/current-status/image15.png[Web platform,width=521,height=232]
 
-Backend
-^^^^^^^
+==== Backend
 
-Interface
-^^^^^^^^^
+==== Interface
 
-Bibliography
-------------
+
+==== Bibliography
 
 _Kinect 1 specifications_. (sd). Opgehaald van
 https://msdn.microsoft.com/en-us/library/jj131033.aspx__Kinect 1 vs 2

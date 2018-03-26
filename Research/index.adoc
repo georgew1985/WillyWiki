@@ -1,8 +1,6 @@
-= Batteries
 // Batteries
 include::batteries.adoc[]
 
-== Indoor Navigation
 // Indoor Navigation
 //include::Indoor-navigation.adoc[]
 
@@ -13,10 +11,8 @@ include::Back-up.adoc[]
 // Screen
 include::Screen.adoc[]
 
-== Invertorisment Current Status
-to include
 // Inventorisement Current status
-//include::Current-status.adoc[]
+include::Current-status.adoc[]
 
 // Alternative Interaction
 include::Alternative-interaction.adoc[]

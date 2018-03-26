@@ -1,8 +1,14 @@
+:toc:
+:toc-placement: macro
+:toclevel: 5
+:numbered: 
+
+[discrete]
 == Batteries
 
-:toc:
-:toclevels: 5
+toc::[]
 
+[discrete]
 ==== Version history
 
 [cols=",,,",options="header",]
