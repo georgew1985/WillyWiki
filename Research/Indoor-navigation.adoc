@@ -98,7 +98,7 @@ Furthermore the first version of the Kinect is widely used with the ROS
 platform. Together with SLAM(Simultaneous Localization And Mapping) it
 can be used to make a 3D map of the environment.
 
-image:media/image2.jpeg[image,width=434,height=244]
+image:media/indoornavigation2.jpeg[image,width=434,height=244]
 
 Figure 1: SLAM with Kinect v1
 
@@ -112,7 +112,7 @@ scan the environment. The one which is available for Willy is a SICK-TIM
 This specific LiDAR has a field of view of 270 degrees and scans at a
 rate of 15Hz. The operation range is between 0.05m up to 10m.
 
-image:media/image3.png[image,width=266,height=247]
+image:media/indoornavigation3.png[image,width=266,height=247]
 
 Figure 2: How a LiDAR works
 
@@ -125,7 +125,7 @@ Another task for the LiDAR could be for safety. Because of the LiDAR
 being very fast at a 15Hz scanning rate, the SICK TIM-551 can be used
 for recognition of possible dangerous obstacles.
 
-image:media/image4.jpeg[Afbeeldingsresultaat voor lidar map
+image:media/indoornavigation4.jpeg[Afbeeldingsresultaat voor lidar map
 rviz,width=555,height=314]
 
 Figure 3: Plotting with RViz
@@ -140,7 +140,7 @@ there even is a version which is using only light. With triangulation
 the distance to the beacons can be measured and the location will be
 determined.
 
-image:media/image5.png[image,width=516,height=321]
+image:media/indoornavigation5.png[image,width=516,height=321]
 
 Figure 4: Triangulation for location measuring
 
@@ -151,7 +151,7 @@ Ultrasonic sensors are sensors that send and receive sound waves to
 measure the distance to an object. It calculates the time between
 sending and receiving a wave.
 
-image:media/image6.png[image,width=537,height=302]
+image:media/indoornavigation6.png[image,width=537,height=302]
 
 Figure 5: Working of ultrasonic sensors
 
@@ -159,7 +159,7 @@ There is however a problem when using ultrasonic sensors for mapping the
 area. Because the waves of sound are almost randomly cone shaped, the
 robot can’t calculate distances as precise as for example LiDAR.
 
-image:media/image7.gif[Afbeeldingsresultaat voor ultrasonic sensor
+image:media/indoornavigation7.gif[Afbeeldingsresultaat voor ultrasonic sensor
 mapping,width=271,height=217]
 
 Figure 6: Cone shaped sensor wave

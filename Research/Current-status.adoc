@@ -1,4 +1,4 @@
-image:media/image1.jpeg[image,width=791,height=435]
+image:media/current-status/image1.jpeg[image,width=791,height=435]
 
 Version history
 ---------------
@@ -117,7 +117,7 @@ measured with wheel encoders. These encoders measure the number of steps
 the motors have turned and send this data to the motor controller, which
 processes this data.
 
-image:media/image2.jpeg[image,width=163,height=96]
+image:media/current-status/image2.jpeg[image,width=163,height=96]
 
 The need of the current motor encoders is optional. At the moment of
 writing, the motor encoders aren’t working at all. The reason why these
@@ -165,7 +165,7 @@ requirements
 |Supply Current |30 mA
 |=======================================================================
 
-image:media/image3.jpeg[image,width=155,height=116]Motor controller
+image:media/current-status/image3.jpeg[image,width=155,height=116]Motor controller
 -------------------------------------------------------------------
 
 Willy contains 2 motors from a second-hand scooter. A previous project
@@ -176,7 +176,7 @@ These motors need 24 volts and use 20 amps. One of the previous project
 groups created the motor controller to control the motors. This is
 documented in the ‘Systeem dossier’ from a previous project group.
 (Systeem Dossier,
-2016)image:media/image4.jpeg[image,width=112,height=149]
+2016)image:media/current-status/image4.jpeg[image,width=112,height=149]
 
 This motor controller is made by using an Arduino Mega and a custom
 shield with additional custom hardware. This hardware makes sure the
@@ -189,7 +189,7 @@ The current to the motors is also controlled by this Arduino.
 
 The motor controller is built as shown below:
 
-image:media/image5.jpg[image,width=604,height=427]
+image:media/current-status/image5.jpg[image,width=604,height=427]
 
 [[_Toc508714671]]
 
@@ -201,7 +201,7 @@ by the engine itself. When the active signal to the motors is lost, the
 motor will automatically activate the brake. To start the driving_willy
 project, you NEED to deploy the brakes. Otherwise Willy will not drive!
 
-image:media/image6.jpeg[image,width=268,height=358]image:media/image7.png[image,width=269,height=359]
+image:media/current-status/image6.jpeg[image,width=268,height=358]image:media/current-status/image7.png[image,width=269,height=359]
 
 Make sure to deploy the brakes. Otherwise Willy won’t work!! There is
 only one way to detect if the brakes are deployed. It’s by simply
@@ -213,7 +213,7 @@ Ultrasonic sensors
 To prevent collisions, ultrasonic sensors are used. These sensors
 measure distance by using sound. This is made possible by sending out
 bursts of high frequency noise, and then waiting for a reflection of
-that sound.image:media/image8.jpeg[image,width=208,height=117]
+that sound.image:media/current-status/image8.jpeg[image,width=208,height=117]
 
 By using this data Willy is be able to decide if he is able to drive any
 further in a certain direction. In the event of Willy being not able to
@@ -225,7 +225,7 @@ navigation is researched by a previous group. (Navigation design v0.1,
 
 The sensors all use 5V as can be seen in the schematic:
 
-image:media/image9.jpg[image,width=604,height=427]
+image:media/current-status/image9.jpg[image,width=604,height=427]
 
 As shown in the schematic above, all the 10 sensors are connected to the
 Arduino.
@@ -249,9 +249,9 @@ The sensors are connected in the following order:
 
 The sensors are placed as follows:
 
-image:media/image10.jpg[image,width=339,height=476]
+image:media/current-status/image10.jpg[image,width=339,height=476]
 
-1.  image:media/image11.png[image,width=266,height=92]Kinect sensor
+1.  image:media/current-status/image11.png[image,width=266,height=92]Kinect sensor
 
 As a method to navigate inside, the Kinect was chosen. A Kinect can
 create a framework of a person and see all movements of that person. By
@@ -299,7 +299,7 @@ needed for navigation when willy is going to drive precomputed routes.
 
 The sensors are connected according to the following scheme:
 
-image:media/image12.jpg[image,width=604,height=427]
+image:media/current-status/image12.jpg[image,width=604,height=427]
 
 As can be seen in the scheme, there are two Arduino’s used to measure
 sensor data. Both Arduino’s are connected with I2C (see pins A4 and A5).
@@ -319,7 +319,7 @@ system v1.1, 2017)
 A LIDAR sensor uses a laser to measure distance. With these measurements
 the sensor makes a map of all the objects in the environment.
 
-image:media/image13.jpeg[image,width=130,height=174]The current state of
+image:media/current-status/image13.jpeg[image,width=130,height=174]The current state of
 Willy has no LIDAR installed. The previous group has done some research
 concerning LIDAR and the link to ROS. But came to the conclusion that it
 is not possible to create a link between LIDAR and ROS. Therefore they
@@ -545,7 +545,7 @@ Current configuration
 
 A global overview of how the platform is configured is as following:
 
-image:media/image14.png[image]
+image:media/current-status/image14.png[image]
 
 Ros Bridge
 ^^^^^^^^^^
@@ -616,7 +616,7 @@ Advantages/Disadvantages
 Advised configuration
 ~~~~~~~~~~~~~~~~~~~~~
 
-image:media/image15.png[Web platform,width=521,height=232]
+image:media/current-status/image15.png[Web platform,width=521,height=232]
 
 Backend
 ^^^^^^^
