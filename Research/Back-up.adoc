@@ -1,4 +1,4 @@
-image:media/image1.jpeg[image,width=791,height=435]
+image:media/back-up/image1.jpeg[image,width=791,height=435]
 
 Version history
 ---------------
@@ -123,7 +123,7 @@ The use of Rufus automates this process. See https://rufus.akeo.ie/ for
 more details. Download Rufus from; +
 https://rufus.akeo.ie/
 
-image:media/image2.png[image,width=173,height=233]
+image:media/back-up/image2.png[image,width=173,height=233]
 
 1.  Choose the correct Device from the ‘Aparaat’ list.
 2.  Give the USB a new volume label
@@ -135,131 +135,131 @@ Step 2; Creating Image
 
 Select the USB as first boot device in the BIOS.
 
-image:media/image3.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-01-bootmenu.png,width=467,height=350]
+image:media/back-up/image3.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-01-bootmenu.png,width=467,height=350]
 
-image:media/image4.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-01-b-sub-boot-menu.png,width=568,height=426]
+image:media/back-up/image4.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-01-b-sub-boot-menu.png,width=568,height=426]
 
-image:media/image5.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-03-lang.png,width=566,height=424] +
-image:media/image6.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-04-keymap.png,width=567,height=425]
+image:media/back-up/image5.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-03-lang.png,width=566,height=424] +
+image:media/back-up/image6.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-04-keymap.png,width=567,height=425]
 
-image:media/image7.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-05-start-clonezilla.png,width=568,height=426]
+image:media/back-up/image7.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-05-start-clonezilla.png,width=568,height=426]
 
-image:media/image8.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-06-dev-img.png,width=564,height=423]
+image:media/back-up/image8.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-06-dev-img.png,width=564,height=423]
 
-image:media/image9.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-07-img-repo.png,width=562,height=421]
+image:media/back-up/image9.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-07-img-repo.png,width=562,height=421]
 
-image:media/image10.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-07-plug-and-play-dev-prompt.png,width=566,height=424]
+image:media/back-up/image10.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-07-plug-and-play-dev-prompt.png,width=566,height=424]
 
-image:media/image11.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-07-dev-scan.png,width=567,height=425]
+image:media/back-up/image11.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-07-dev-scan.png,width=567,height=425]
 
 *Press Ctrl-C when the USB stick is in the list*
 
-image:media/image12.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-08-sdb1-as-img-repo.png,width=561,height=420]
+image:media/back-up/image12.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-08-sdb1-as-img-repo.png,width=561,height=420]
 
 *Select the USB where you want the image to be stored*
 
-image:media/image13.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-08-sdb1-dir-list.png,width=563,height=422]
+image:media/back-up/image13.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-08-sdb1-dir-list.png,width=563,height=422]
 
 *Select the directory where the image will be stored, if this must be
 the roost of the USB. Done can directly be selected by using the TAB
 key. +
 *
 
-image:media/image14.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-08-img-repo-df.png,width=559,height=420]
+image:media/back-up/image14.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-08-img-repo-df.png,width=559,height=420]
 
-image:media/image15.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-08-beginner-expert-mode.png,width=559,height=419]
+image:media/back-up/image15.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-08-beginner-expert-mode.png,width=559,height=419]
 
-image:media/image16.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-08-save-img.png,width=564,height=423]
+image:media/back-up/image16.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-08-save-img.png,width=564,height=423]
 
-image:media/image17.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-10-img-name.png,width=562,height=421]
+image:media/back-up/image17.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-10-img-name.png,width=562,height=421]
 
-image:media/image18.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-10-disk-selection.png,width=566,height=424]
+image:media/back-up/image18.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-10-disk-selection.png,width=566,height=424]
 
-image:media/image19.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-10-check-source-fs.png,width=566,height=424]
+image:media/back-up/image19.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-10-check-source-fs.png,width=566,height=424]
 
-image:media/image20.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-10-check-if-image-restorable.png,width=568,height=425]
+image:media/back-up/image20.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-10-check-if-image-restorable.png,width=568,height=425]
 
-image:media/image21.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-10-encrypt-image.png,width=569,height=426]
+image:media/back-up/image21.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-10-encrypt-image.png,width=569,height=426]
 
-image:media/image22.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-10-reboot-poweroff.png,width=604,height=452]
+image:media/back-up/image22.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-10-reboot-poweroff.png,width=604,height=452]
 
-image:media/image23.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-10-img-save-command-prompt.png,width=604,height=452]
+image:media/back-up/image23.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-10-img-save-command-prompt.png,width=604,height=452]
 
-image:media/image24.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-10-img-save-confirm.png,width=604,height=452]
+image:media/back-up/image24.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-10-img-save-confirm.png,width=604,height=452]
 
-image:media/image25.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-11-save-progress.png,width=604,height=452]
+image:media/back-up/image25.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-11-save-progress.png,width=604,height=452]
 
-image:media/image26.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-11-save-progress-2.png,width=604,height=452]
+image:media/back-up/image26.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-11-save-progress-2.png,width=604,height=452]
 
-image:media/image27.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-11-img-save-done.png,width=604,height=452]
+image:media/back-up/image27.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-11-img-save-done.png,width=604,height=452]
 
-image:media/image28.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-11-img-save-done-choose-poweroff.png,width=604,height=452]
+image:media/back-up/image28.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-11-img-save-done-choose-poweroff.png,width=604,height=452]
 
 Step 3; Restoring Image
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 Select the USB as first boot device in the BIOS.
 
-image:media/image3.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-01-bootmenu.png,width=531,height=398]
+image:media/back-up/image3.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-01-bootmenu.png,width=531,height=398]
 
-image:media/image4.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-01-b-sub-boot-menu.png,width=533,height=400]
+image:media/back-up/image4.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-01-b-sub-boot-menu.png,width=533,height=400]
 
-image:media/image5.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-03-lang.png,width=566,height=424]
+image:media/back-up/image5.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-03-lang.png,width=566,height=424]
 
-image:media/image6.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-04-keymap.png,width=567,height=425]
+image:media/back-up/image6.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-04-keymap.png,width=567,height=425]
 
-image:media/image7.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-05-start-clonezilla.png,width=568,height=426]
+image:media/back-up/image7.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-05-start-clonezilla.png,width=568,height=426]
 
-image:media/image8.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-06-dev-img.png,width=564,height=423]
+image:media/back-up/image8.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-06-dev-img.png,width=564,height=423]
 
-image:media/image9.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-07-img-repo.png,width=562,height=421]
+image:media/back-up/image9.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-07-img-repo.png,width=562,height=421]
 
-image:media/image10.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-07-plug-and-play-dev-prompt.png,width=566,height=424]
+image:media/back-up/image10.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-07-plug-and-play-dev-prompt.png,width=566,height=424]
 
-image:media/image11.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-07-dev-scan.png,width=567,height=425]
+image:media/back-up/image11.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-07-dev-scan.png,width=567,height=425]
 
 *Press Ctrl-C when the USB stick is in the list*
 
-image:media/image12.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-08-sdb1-as-img-repo.png,width=561,height=420]
+image:media/back-up/image12.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-08-sdb1-as-img-repo.png,width=561,height=420]
 
 *Select the USB where the image is located*
 
-image:media/image13.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-08-sdb1-dir-list.png,width=563,height=422]
+image:media/back-up/image13.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-08-sdb1-dir-list.png,width=563,height=422]
 
 *Select the directory where the image is stored*
 
-image:media/image14.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-08-img-repo-df.png,width=559,height=420]
+image:media/back-up/image14.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-08-img-repo-df.png,width=559,height=420]
 
-image:media/image15.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-08-beginner-expert-mode.png,width=559,height=419]
+image:media/back-up/image15.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-08-beginner-expert-mode.png,width=559,height=419]
 
-image:media/image29.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-08-restoredisk.png,width=558,height=418]
+image:media/back-up/image29.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-08-restoredisk.png,width=558,height=418]
 
-image:media/image30.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-10-img-name.png,width=559,height=418]
+image:media/back-up/image30.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-10-img-name.png,width=559,height=418]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-image:media/image30.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-10-img-name.png,width=560,height=419]
+image:media/back-up/image30.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-10-img-name.png,width=560,height=419]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-image:media/image31.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-10-disk-selection.png,width=560,height=419]
+image:media/back-up/image31.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-10-disk-selection.png,width=560,height=419]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-image:media/image32.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-10-img-check-prompt-brefore-restoring.png,width=564,height=423]
+image:media/back-up/image32.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-10-img-check-prompt-brefore-restoring.png,width=564,height=423]
 
-image:media/image22.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-10-reboot-poweroff.png,width=567,height=424]
+image:media/back-up/image22.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-10-reboot-poweroff.png,width=567,height=424]
 
-image:media/image33.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-10-img-restore-command-prompt.png,width=572,height=428]
+image:media/back-up/image33.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-10-img-restore-command-prompt.png,width=572,height=428]
 
-image:media/image34.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-10-img-restore-confirm-1.png,width=574,height=430]
+image:media/back-up/image34.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-10-img-restore-confirm-1.png,width=574,height=430]
 
-image:media/image35.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-10-img-restore-confirm-2.png,width=577,height=432]
+image:media/back-up/image35.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-10-img-restore-confirm-2.png,width=577,height=432]
 
-image:media/image36.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-11-restore-progress-2.png,width=580,height=434]
+image:media/back-up/image36.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-11-restore-progress-2.png,width=580,height=434]
 
-image:media/image37.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-11-restore-progress-3.png,width=574,height=430]
+image:media/back-up/image37.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-11-restore-progress-3.png,width=574,height=430]
 
-image:media/image38.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-11-img-restore-done.png,width=577,height=432]
+image:media/back-up/image38.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-11-img-restore-done.png,width=577,height=432]
 
-image:media/image39.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-11-img-restore-done-choose-poweroff.png,width=587,height=439]
+image:media/back-up/image39.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-11-img-restore-done-choose-poweroff.png,width=587,height=439]
 
 Sources
 -------
