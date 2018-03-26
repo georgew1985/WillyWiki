@@ -1,9 +1,8 @@
-= Research
+= Batteries
 // Batteries
 include::batteries.adoc[]
 
 == Indoor Navigation
-to include
 // Indoor Navigation
 //include::Indoor-navigation.adoc[]
 
