@@ -1,10 +1,8 @@
 
-== Inventorisement Current status
-
-toc::[]
+=== Inventorisement Current status
 
 [discrete]
-== Version history
+==== Version history
 
 [cols=",,,",options="header",]
 |=======================================================================
@@ -31,7 +29,7 @@ checked
 |V1.0 |15-03-18 |Jonathan ten Hove |Added Web Platform
 |=======================================================================
 
-== Preface
+==== Preface
 
 
 _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
@@ -42,12 +40,12 @@ list of recommendations from our side concerning alternative
 adjustments. Hardware schematics are found in the appendixes.
 _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-== Inventories Willy
+==== Inventories Willy
 
 
 We made a summary of findings and summary
 
-=== Findings
+==== Findings
 
 1.  Cables are not reliable
 2.  Brake function of engines unknown
@@ -68,7 +66,7 @@ We made a summary of findings and summary
 17. Autonomous driving not working
 18. Steering is too sensitive
 
-=== To Do
+==== To Do
 
 1.  Renew cables and manage cables
 2.  Research operation of brakes
@@ -89,7 +87,7 @@ We made a summary of findings and summary
 17. Research autonomous driving
 18. Reduce sensitivity of steering
 
-=== Inventories of sensors
+==== Inventories of sensors
 
 
 ==== Findings
@@ -112,7 +110,7 @@ We made a summary of findings and summary
 6.  Remount wheel encoders or research alternatives
 7.  Buy microphone
 
-=== Motor encoder
+==== Motor encoder
 
 
 Willy is driven with 2 scooter motors. The turning of the wheels are
@@ -328,7 +326,7 @@ decided to not implement the LIDAR sensor.
 After doing some research we found that it is possible and supported to
 link ROS to a LIDAR sensor.
 
-=== Avantages & Disadvantages
+==== Avantages & Disadvantages
 
 [cols=",,",options="header",]
 |====================================================================
@@ -388,7 +386,7 @@ link ROS to a LIDAR sensor.
 
 |====================================================================
 
-=== Operation system of Willy
+==== Operation system of Willy
 
 Currently, Willy is operating using ‘Linux Ubuntu 14.04’ as operation
 system. The ROS-framework is used for centralized communication between
@@ -539,7 +537,7 @@ With the above installation changes made to Ubuntu, the current ‘WTGD’
 code was able to run. Packages listed in the 11.1. can be used as
 reference material.
 
-=== Web Platform
+==== Web Platform
 
 
 The current status of the web platform uses various components to

@@ -1,10 +1,8 @@
 
-== Alternative interaction
-
-toc::[]
+=== Alternative interaction
 
 [discrete]
-=== Version history
+==== Version history
 
 [cols=",,,",options="header",]
 |===================================================================

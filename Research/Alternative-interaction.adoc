@@ -1,10 +1,10 @@
 
-== Alternative interaction
+=== Alternative interaction
 
 toc::[]
 
 [discrete]
-=== Version history
+==== Version history
 
 [cols=",,,",options="header",]
 |===============================
@@ -12,7 +12,7 @@ toc::[]
 |V0.1 |15-03-18 |Jesse Bouwman |
 |===============================
 
-=== Preface
+==== Preface
 
 The primary interaction method to communicate with ‘Willy’ will be by
 voice recognition. When voice recognition is not available an second

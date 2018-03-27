@@ -1,10 +1,10 @@
-== Startup Guide
+=== Startup Guide
 
 Welcome to the Willy Startup Guide!
 To start Willy The Garbage Disposal Robot, a few steps are required.
 Each step is explained in the subchapters.
 
-=== Steps
+==== Steps
 1. **Deploy the brakes**
 To start Willy, the brakes need to be deployed. Otherwise Willy will not be able to drive. 
 To deploy the brakes you have to use the levers on the front of the engines. 
@@ -27,7 +27,7 @@ This startup script can be runned using the following commands:
 `./startup.sh`
 Willy will now start the arduino's.
 
-==== WillyController
+===== WillyController
 
 These steps are optional. Only execute the following steps if you want to drive Willy manually.
 
@@ -45,7 +45,7 @@ To setup the workspace for ROS, run the following command:
 To make Willy drive, the code has to run with the following command:
 `rosrun driving_willy main`
 
-==== Web Interface
+===== Web Interface
 
 1. **Start the Willy Web**
 To control Willy in a graphical interface, you need to start the web interface. To do so, run the following command:
