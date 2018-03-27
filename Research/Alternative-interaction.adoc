@@ -1,7 +1,9 @@
 :toc:
-:toc-placement!:
+:toc-placement: macro
 :toclevel: 5
 :numbered: 
+
+
 
 [discrete]
 == Alternative interaction
