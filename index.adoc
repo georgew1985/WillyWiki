@@ -1,7 +1,8 @@
 :toc: left
-:numbered:
-:toc-title: Willy Wiki
-:toclevels: 1
+:toclevels: 2
+:sectanchors:
+:sectlinks:
+:sectnums:
 
 [discrete]
 = Willy Wiki

@@ -1,3 +1,3 @@
-= ---- SOFTWARE ----
+= Software
 
 include::Arduino.adoc[]
