@@ -12,8 +12,7 @@
 |===================================================================
 
 
-Preface
--------
+==== Preface
 
 ‘Willy’ contains a host operation system. The operation system can be
 backed up in different ways, with each a different purpose.
@@ -43,8 +42,7 @@ will be installed by following the install guide. An install guide can
 also be useful to create a better understanding of the software
 components ‘Willy’ contains.
 
-Different backup methods
-------------------------
+==== Different backup methods
 
 There are three different approaches to create a full system backup.
 Firstly, different virtualizations manufactures, have different tools
@@ -54,8 +52,7 @@ Secondly, a full system backup can be created by cloning a HDD on low
 bit level into an image. An image is a compressed version a HDD that can
 be restored using imaging software.
 
-VMware converter
-~~~~~~~~~~~~~~~~
+==== VMware converter
 
 VMware has certain tools available to manage, create and modify virtual
 machines. The advantage of using such software (tools) is that the
@@ -69,8 +66,7 @@ VMware converter is not used to backup ‘Willy’.
 (how-to-convert-a-remote-physical-linux-server-to-a-virtual-machine-vmware-virtualbox-instructions,
 2017)
 
-Imaging
-~~~~~~~
+==== Imaging
 
 The second option is to boot from an external installation medium and
 use another external storage device as image-repository to read/write
@@ -88,8 +84,7 @@ mediums.
 
 (Using-disk-imaging-software-in-data-backup-and-recovery, sd)
 
-Backup using the operation system
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==== Backup using the operation system
 
 The operation system can also be used to make a full system backup.
 Certain tools are available to fulfil this task. Remastersys is a free
@@ -104,14 +99,12 @@ during creation of the backup this method is less fault Torrance.
 
 (remastersys, sd)
 
-Imaging using clonezilla
-------------------------
+==== Imaging using clonezilla
 
 Clonezilla is free, opensource and lightweight imaging software. Other
 variants can be used in almost the same way.
 
-Step 1; Create a bootable Clonezilla-USB. +
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+==== Step 1; Create a bootable Clonezilla-USB. +
 
 Fist download an recent version of Clonezilla from, +
 http://www.clonezilla.org/downloads/download.php?branch=stable +
@@ -130,8 +123,7 @@ image:media/back-up/image2.png[image,width=173,height=233]
 3.  Select the Clonezill ISO
 4.  Start
 
-Step 2; Creating Image
-~~~~~~~~~~~~~~~~~~~~~~
+==== Step 2; Creating Image
 
 Select the USB as first boot device in the BIOS.
 
@@ -195,8 +187,7 @@ image:media/back-up/image27.png[http://clonezilla.org/clonezilla-live/doc/01_Sav
 
 image:media/back-up/image28.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-11-img-save-done-choose-poweroff.png,width=604,height=452]
 
-Step 3; Restoring Image
-~~~~~~~~~~~~~~~~~~~~~~~
+==== Step 3; Restoring Image
 
 Select the USB as first boot device in the BIOS.
 
@@ -235,13 +226,10 @@ image:media/back-up/image15.png[http://clonezilla.org/clonezilla-live/doc/01_Sav
 image:media/back-up/image29.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-08-restoredisk.png,width=558,height=418]
 
 image:media/back-up/image30.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-10-img-name.png,width=559,height=418]
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 image:media/back-up/image30.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-10-img-name.png,width=560,height=419]
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 image:media/back-up/image31.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-10-disk-selection.png,width=560,height=419]
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 image:media/back-up/image32.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-10-img-check-prompt-brefore-restoring.png,width=564,height=423]
 
@@ -261,8 +249,7 @@ image:media/back-up/image38.png[http://clonezilla.org/clonezilla-live/doc/02_Res
 
 image:media/back-up/image39.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-11-img-restore-done-choose-poweroff.png,width=587,height=439]
 
-Sources
--------
+==== Sources
 
 _how-to-convert-a-remote-physical-linux-server-to-a-virtual-machine-vmware-virtualbox-instructions_.
 (2017, Januari 12). Retrieved from joe0.com:

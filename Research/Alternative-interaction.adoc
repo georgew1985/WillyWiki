@@ -21,8 +21,8 @@ a noisy environment. With a second communication method, ‘Willy’ is also
 able to communicate to people with speech or hearing problems. In this
 document, possible solutions will be researched.
 
-Leap motion sensor
-~~~~~~~~~~~~~~~~~~
+==== Leap motion sensor
+
 
 The leap motion sensor is a 3D motion and gesture controller. The device
 contains three infrared LEDs and two infrared cameras. The cameras catch
@@ -39,8 +39,8 @@ The Leap Motion could be useful as an alternative for the touchscreen.
 Gestures and motion can be detected and with this Willy can be
 controlled. The Leap motion is usable without installation.
 
-Kinect Sensor
-~~~~~~~~~~~~~
+==== Kinect Sensor
+
 
 The Kinect V1 is a device which contains an infrared emitter, an
 infrared Depth sensor, a color sensor, four microphones and a 3-Axis
@@ -65,8 +65,7 @@ robots. Because of this Willy could use the Kinect for mapping and
 localization as well as secondary interaction with the screen. The
 mapping while driving and the interaction when Willy is stationary.
 
-Touch screen
-~~~~~~~~~~~~
+==== Touch screen
 
 A touch screen can be used for controlling Willy. The current screen
 Willy uses is a touchscreen but uses way too much power. There are
@@ -87,8 +86,7 @@ example a finger and uses this for its touch input. The touch frame is
 connected using USB and works plug and play with only the need of
 calibration.
 
-Touch pad
-~~~~~~~~~
+==== Touch pad
 
 A touchpad like a laptops touchpad is the easiest and cheapest way to
 communicate with Willy. There are versions with a keyboard and mouse in
@@ -100,8 +98,7 @@ touchpad,width=458,height=458]
 
 Figure 4: Example of a touchpad
 
-Conclusion
-----------
+==== Conclusion
 
 The Leap motion is a medium prized alternative for interaction with
 Willy. It is easy to understand and can be used without practice.
@@ -125,8 +122,7 @@ The advise is to use a touchpad at this state of the project. Because
 this project is all about prototyping, a cheap and reliable alternative
 might be the best idea.
 
-Bibliography
-------------
+==== Bibliography
 
 Frank Weichert, D. B. (2013, May 14). _Sensors_. Retrieved from National
 Centre for Biotechnology Information:

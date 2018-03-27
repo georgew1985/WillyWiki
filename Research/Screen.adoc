@@ -1,7 +1,7 @@
-== Screen
+=== Screen
 
 [discrete]
-=== Version history
+===- Version history
 
 [cols=",,,",options="header",]
 |===========================
@@ -9,14 +9,14 @@
 |V0.1 |04-02-18 | |
 |===========================
 
-=== Preface
+==== Preface
 
 This document is about the research of the possibility to get a new
 screen on Willy. The reason for a new screen is that the current screen
 is a screen that uses 130 Watt. The last project group noticed that the
 batterie level drained fast when using the screen.
 
-=== Current screen
+==== Current screen
 
 The current screen is a Smit Visual Touch LCD panel with the following
 specifications:
@@ -40,7 +40,7 @@ to supply the necessary voltage. The converter has an efficiency of
 roughly 60%. The actual power which is used to use the screen is 130W *
 1.4 = 182W.
 
-=== New screen
+==== New screen
 
 A new screen has to be more efficient than the current screen. Because
 of that it’s wise to look at a LED screen which uses an adapter. With
@@ -73,7 +73,7 @@ with the following specifications:
 This tv needs the converter. The total power consumption will be 42W*1.4
 =58,8W.
 
-=== Advice
+==== Advice
 
 The advice is to look for a second hand 42 inch tv screen without touch.
 These are affordable and use a lot less energy than the current screen.
@@ -82,7 +82,7 @@ has to use the external converter. Even if there is a new screen, like
 the one stated in chapter three, the power consumption decreases by more
 than 60%.
 
-=== Bibliography
+==== Bibliography
 
 LG. (n.d.). _Televisies_. Retrieved from lg.com:
 http://www.lg.com/nl/televisies/lg-43LJ5150salland.eu. (n.d.).
