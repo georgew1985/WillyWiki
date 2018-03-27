@@ -1,4 +1,4 @@
-= -- RESEARCH
+= ---- RESEARCH ---- 
 // Batteries
 include::batteries.adoc[]
 
