@@ -1,4 +1,4 @@
-== Remote access
+=== Remote access
 The following config is used to deploy RDP fluxionality by using XRDP and XFCE4 
 
 [source,text]
@@ -43,7 +43,7 @@ By
 <property name="&lt;Super&gt;Tab" type="string" value="empty"/> 
 ----
 
-===== Openssh server
+==== Openssh server
 Install open-ssh
 
 [source,]

@@ -1,10 +1,10 @@
 
-== Indoor-navigation
+=== Indoor-navigation
 
 toc::[]
 
 [discrete]
-== Version history
+==== Version history
 
 
 [cols=",,,",options="header",]
@@ -15,7 +15,7 @@ toc::[]
 |V0.3 |15-03-18 |Jesse Bouwman |Minor changes
 |============================================
 
-== Preface
+==== Preface
 
 
 Before Willy can drive autonomic inside, Willy must be aware of his
@@ -24,7 +24,7 @@ be available. Autonomic driving will be supported by the current sensors
 on Willy such as the ultrasonic sensors and this research focusses on a
 separate technology that makes Willy more aware of his position.
 
-== Goal of indoor navigation
+==== Goal of indoor navigation
 
 The goal of indoor navigation is that Willy can drive autonomously
 within a building where GPS is not available and be more aware of its
@@ -33,7 +33,7 @@ located indoors. With this system Willy can drive indoors, follow a
 route or drive in a way that the coverage of the area is as high as
 possible for a detailed map and cleaning.
 
-=== Compatibility requirements
+==== Compatibility requirements
 
 The indoor navigation system needs to work with the other systems. Willy
 uses ultrasonic sensors to avoid obstacles. The ultrasonic sensors need
@@ -59,7 +59,7 @@ communication goes via ROS where other modules are connected. However
 there is no way at this moment to connect new modules hardware-based.
 There are no open connections left for additional hardware.
 
-== Research
+=== Research
 
 === Different solutions
 
@@ -171,7 +171,6 @@ used. But more effective for obstacle avoidance and preventing
 collisions.
 
 === Advantages by each solution
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ==== Kinect
 
@@ -199,7 +198,6 @@ collisions.
 * Cheap (< €5 per sensor)
 * Easy to set up
 === Disadvantages by each solution
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ==== Kinect
 
@@ -246,8 +244,7 @@ The last suggestion for navigation, the ultrasonic sensors, will not be
 used for navigation. The sensors are betters used for obstacle detection
 and as a last safety measure for the robot.
 
-Bibliography
-------------
+=== Bibliography
 
 _Configuration Robot Localization_. (n.d.). Retrieved from
 http://docs.ros.org/indigo/api/robot_localization/html/configuring_robot_localization.html
