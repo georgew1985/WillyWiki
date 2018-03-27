@@ -1,8 +1,5 @@
 == Screen
 
-:toc:
-:toclevels: 5
-
 Version history
 ---------------
 
