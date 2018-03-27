@@ -1,4 +1,4 @@
-==== Willy Git setup 
+== Willy Git setup 
 Commandos gebruikt om de git repos in willy op te zetten
 Startpunt: /home/willy/
 
