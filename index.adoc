@@ -1,8 +1,8 @@
+:table-caption!:
+:numbered:
+:page-layout!:
 :toc: left
 :toclevels: 2
-:sectanchors:
-:sectlinks:
-:sectnums:
 
 [discrete]
 = Willy Wiki
@@ -12,3 +12,4 @@ include::Welcome/index.adoc[]
 
 // Include all documents
 include::main.adoc[]
+http://url[text]
