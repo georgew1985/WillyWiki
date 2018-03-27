@@ -1,12 +1,7 @@
 == Arduino
 
-:toc:
-:toclevels: 5
-
-image:media/Arduino1.jpeg[image,width=791,height=435]
-
-Version history
----------------
+[discrete]
+=== Version history
 
 [cols=",,,",options="header",]
 |===============================================
@@ -15,8 +10,7 @@ Version history
 |V1.0 |09-03-18 |Gerard Zeeman |Finished SAD
 |===============================================
 
-Preface
--------
+=== Preface
 
 The following definition list is to clear up confusion about certain
 terms used in this document.
@@ -39,15 +33,13 @@ wheels with special sensors.
 |ROS |Robot Operating System, the framework Willy has been built on.
 |=======================================================================
 
-System Overview
----------------
+=== System Overview
 
 image:media/Arduino2.jpg[image,width=604,height=238]
 
 ros_gps gps sonar odometry
 
-Code Overview
--------------
+==== Code Overview
 
 image:media/Arduino3.jpg[image,width=264,height=847]
 
@@ -59,8 +51,7 @@ image:media/Arduino6.jpg[image,width=401,height=298]
 
 image:media/Arduino7.jpg[image,width=291,height=332]
 
-Design Decisions
-----------------
+=== Design Decisions
 
 In the past the decision has been made to make the hardware modular.
 Unfortunately the reason behind this decision is not documented.
@@ -83,7 +74,6 @@ from the GPS is both being published to two separate ROS topics. The
 topic with compass data is “compass” and the topic with GPS data is
 “gps”. This setup has not been fixed yet.
 
-Bibliography
-------------
+=== Bibliography
 
 *The current document contains no sources.*
