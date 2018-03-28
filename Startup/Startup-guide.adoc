@@ -48,7 +48,7 @@ To make Willy drive, the code has to run with the following command:
 4. **(Optional) Listing topics**
 To list the current running topics, run the command:
 `rostopic list`
-The following topics should be running:
+The following topics (among others) should be running:
 - command_vel
 - sonar
 - compass
