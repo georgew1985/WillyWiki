@@ -45,6 +45,15 @@ To setup the workspace for ROS, run the following command:
 To make Willy drive, the code has to run with the following command:
 `rosrun driving_willy main`
 
+4. **(Optional) Listing topics**
+To list the current running topics, run the command:
+`rostopic list`
+The following topics should be running:
+- command_vel
+- sonar
+- compass
+- gps
+
 ===== Web Interface
 
 1. **Start the Willy Web**
