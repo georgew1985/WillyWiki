@@ -1,8 +1,7 @@
 === Notulen 9-2
 Tweede gesprek met Ruud
 
-Projectdoel
------------
+==== Projectdoel
 
 * Willy heeft een stabiele basis en configuratie
 * Willy rijdt autonoom rond binnenshuis
@@ -11,16 +10,13 @@ Projectdoel
 andere groepen mee verder kunnen gaan
 * Willy met een wauwfactor kunnen presenteren op Winnovation
 
-Sprintdoel
-----------
+==== Sprintdoel
 
 * Stabiele configuratie van Willy
 
-Backlog
--------
+==== Backlog
 
-Frame
-~~~~~
+==== Frame
 
 * Inventarisatie wat er nu is
 * Ontwerp
@@ -28,8 +24,7 @@ Frame
 * Kap ter bescherming
 * Onderzoek/Plan voor werktuigbouwkunde wat er gedaan kan worden
 
-Hardware
-~~~~~~~~
+==== Hardware
 
 * Inventarisatie onderdelen
 * Inventarisatie Code
@@ -37,8 +32,7 @@ Hardware
 * Onderzoek backup interactie (touchscreen)
 * Onderzoek vervanging scherm
 
-Software
-~~~~~~~~
+==== Software
 
 * Update ROS framework
 * Update Linux platform
@@ -46,7 +40,6 @@ Software
 * Onderzoek algoritmes autonoom rijden
 
 Ruud
-~~~~
 
 * Contact met Sick
 * Contact met Deltion
@@ -54,8 +47,7 @@ Ruud
 * Lidar ophalen
 * Vervolggesprek 22 februari
 
-Notities
---------
+==== Notities
 
 Adres Ruud: Maatgravenweg 4, Zwolle
 

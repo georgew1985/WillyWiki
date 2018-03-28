@@ -1,8 +1,7 @@
 === Notulen 1-2
 Eerste gesprek met Ruud
 
-Introduction
-------------
+==== Introduction
 
 Willy de afvalrobot is begonnen als een gewonnen idee voor de Waste
 Battle in Zwolle. Willy is bedacht door leerlingen van een basisschool
@@ -19,36 +18,30 @@ Willy heeft software wat gebaseerd is op het ROS (Robot Operating
 System) platform. Dit is een soort ruggenwervel in de robot waar diverse
 modules mee kunnen communiceren.
 
-Current Status (Target (Stakeholders)
--------------------------------------
+==== Current Status (Target (Stakeholders)
 
-2.1 Hoe ver is het project.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===== Hoe ver is het project.
 
 Op dit moment zijn er een aantal modules gerealiseerd: rijdende basis,
 gps-module, web-interface, ROS, ultrasoon-sensoren, touch-screen met
 spraak.
 
-2.2 Waar zijn vorige projecten vastgelopen
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===== Waar zijn vorige projecten vastgelopen
 
 Volgens Ruud zijn eerdere projecten niet vastgelopen. Wel zijn er andere
 oplossingen bedacht voor problemen die gevonden waren. In dit geval is
 het dus eerder om de problemen heen werken dan de problemen zelf
 oplossen.
 
-2.3 Welke mensen zijn er bij dit project nog meer betrokken
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===== Welke mensen zijn er bij dit project nog meer betrokken
 
 Er zijn tijdens het gesprek met Ruud van der Burg een aantal
 stakeholders aan bod gekomen: Art of Robotics, Windesheim Hogeschool,
 Gemeente Zwolle, ondernemers aan de melkmarkt en specifiek McDonalds.
 
-Expectations
-------------
+==== Expectations
 
-3.1 Wat verwacht je van ons.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===== Wat verwacht je van ons.
 
 Het is belangrijk om het project als geheel te optimaliseren en niet
 elke module los te perfectioneren. De samenwerking tussen alle modules
@@ -72,65 +65,54 @@ Mogelijkheden om aan te werken zijn:
 * (werktuigbouwkundig) Opslagruimte afval en sensoren voor afvaldetectie
 en een stofzuiger.
 
-Costs & Materials
------------------
+==== Costs & Materials
 
-4.1 Welke middelen zijn beschikbaar voor ons
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===== Welke middelen zijn beschikbaar voor
 
 Uit het gesprek is duidelijk geworden dat er geen budget aanwezig is
 voor de robot. Toch is er wel het een en ander mogelijk mits de noodzaak
 daarvoor goed te onderbouwen is.
 
-4.2 Is er een lokaal beschikbaar voor dit project
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===== Is er een lokaal beschikbaar voor dit project
 
 Op dit moment is er een lokaal beschikbaar. T5.66 het Innovation Lab.
 
-4.3 Wat voor documentatie is er al beschikbaar
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===== Wat voor documentatie is er al beschikbaar
 
 Alle documentatie van voorgaande groepen is beschikbaar.
 
-4.4 Wat zijn de mogelijkheden om producten te bestellen
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===== Wat zijn de mogelijkheden om producten te bestellen
 
 Aangezien het budget er eigenlijk niet is moet alles in overleg met Ruud
 van der Burg en dient elke aanvraag een goede onderbouwing te hebben
 waarom dit noodzakelijk is.
 
-Agreements
-----------
+==== Agreements
 
-5.1 Hoe wilt u op de hoogte worden gehouden
+===== Hoe wilt u op de hoogte worden gehouden
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Ruud wil graag elke week een voortgangsrapport van ons. Ook wil hij
 zoveel mogelijk aanwezig zijn bij de sprint-reviews.
 
-5.2 Hoe wilt u communiceren.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===== Hoe wilt u communiceren.
 
 Communiceren kan via de e-mail en telefonisch.
 
-5.3 Wanneer kunt u aanwezig zijn voor de sprintreviews
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===== Wanneer kunt u aanwezig zijn voor de sprintreviews
 
-Behandelt in 5.1. Zoveel mogelijk bij elke sprintreview maar wegens
+Zoveel mogelijk bij elke sprintreview maar wegens
 drukte zal Ruud soms afwezig zijn.
 
-5.4 Welke afspraken zou u met ons willen maken
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===== Welke afspraken zou u met ons willen maken
 
 Afspraken met ons hebben betrekking op in vertrouwen onze uren maken en
 volledig inzetten voor het verder helpen van Willy. Een andere afspraak
 is de wekelijkse rapportage.
 
-Taken
------
+==== Taken
 
-6.1 Voorbereiding
-~~~~~~~~~~~~~~~~~
+==== Voorbereiding
 
 - Inlezen documentatie vorige groepen.
 
@@ -143,13 +125,12 @@ Taken
 - Onderzoek naar de ontwikkelingen in ROS-modules om te zoeken naar
 mogelijke veroudering.
 
-6.2 Assistentie
-~~~~~~~~~~~~~~~
+==== Assistentie
 
 - Voor assistentie en vragen kunnen we contact opnemen met de vorige
 groep.
 
-6.3 Algemene zaken
+==== Algemene zaken
 ~~~~~~~~~~~~~~~~~~
 
 - Opdrachtbeschrijving moet doorgestuurd worden naar Ruud van der Burg.
