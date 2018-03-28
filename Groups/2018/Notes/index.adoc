@@ -1,7 +1,6 @@
-:toc:
 
 // Notulen 1-2
-include::notulen-1-2.adoc[]
+include::Notulen-1-2.adoc[]
 
 // Notulen 9-2
-include::notulen-9-2.adoc[]
+include::Notulen-9-2.adoc[]
