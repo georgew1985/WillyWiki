@@ -1,7 +1,6 @@
 === Retrospective 2
 
-Tips
-~~~~
+==== Tips
 
 1.  Wel volgens planning maar werkbaar
 2.  Niet te strak plannen
@@ -17,8 +16,7 @@ Tips
 12. Checklist in trello, zodat duidelijk voortgang
 13. Situatie afgelopen vrijdag voorkomen
 
-Tops
-~~~~
+==== Tops
 
 1.  Presentatie (Knowlegde lecture)
 2.  Project Willy
@@ -39,8 +37,7 @@ a.  Dingen zoals een wiki oppakken
 a.  Werkwijze en hoe we eraan werken
 14. Duidelijke concrete communicatie
 
-Improvements
-~~~~~~~~~~~~
+==== Improvements
 
 1.  Wel planning, maar wel behoudbaar, werkbaar en realistisch (I1, I2,
 i9, I12, O12, O11
