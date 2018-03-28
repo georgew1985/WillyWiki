@@ -1,7 +1,7 @@
 === Screen
 
 [discrete]
-===- Version history
+==== Version history
 
 [cols=",,,",options="header",]
 |===========================
