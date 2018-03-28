@@ -54,6 +54,22 @@ The following topics (among others) should be running:
 - compass
 - gps
 
+===== LiDAR
+
+These steps are required when the LiDAR is used. Execute the following commands to run the LiDAR software:
+
+1. **Start sick_tim** 
+by running the following commands:
+`roslaunch sick_tim`
+and
+`sick_tim551_2050001.launch`
+
+2. **Run Rviz** by executing the command:
+`rosrun rviz rviz`
+
+3. **Opening Rviz**
+Subscribe in the interface to the topic of the LiDAR
+
 ===== Web Interface
 
 1. **Start the Willy Web**
