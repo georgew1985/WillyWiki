@@ -1,7 +1,6 @@
-== Definition of Done
+=== Definition of Done
 
-Version history
----------------
+==== Version history
 
 [cols=",,,",options="header",]
 |==================================================================
@@ -12,10 +11,9 @@ Version history
 |==================================================================
 
 
-Preface
--------
+==== Preface
+
 1.  Chapter
-~~~~~~~
 
 This document is about the Definition of Done. It describes when an item
 in the backlog is finished and what is necessary for finishing it. For
@@ -24,19 +22,16 @@ each type of item there are several specific rules and tasks.
 The rules and tasks support handling this project with a high quality
 standard. It helps making Willy safe to use and well documented.
 
-Definition List
-~~~~~~~~~~~~~~~
+==== Definition List
 
 APA = Style of source management +
 SAD = Software Architecture Document +
 HAD = Hardware Architecture Document +
 TDD = Technical Design Document
 
-Definition of Done
-------------------
+==== Definition of Done
 
-2.1. Main
-~~~~~~~~~
+===== Main
 
 * Result complies to *acceptance criteria*
 * Result complies to the defined *safety* requirements
@@ -50,13 +45,11 @@ HAD or TDD
 * Sources are added using the *APA* method
 * Sources comply to the defined **source requirements**[[_Toc508789228]]
 
-2.2. Specifics
-~~~~~~~~~~~~~~
+===== Specifics
 
 The definition of done continues for each specific element of Willy.
 
-2.2.1. Software
-^^^^^^^^^^^^^^^
+===== Software
 
 * Code is provided with *comments* for further explanation
 * Code has to be *tested* according to a test plan
@@ -69,21 +62,18 @@ The definition of done continues for each specific element of Willy.
 * A test plan has to be *executed*
 * There has to be an executed test plan with *positive result*
 
-2.2.2. Hardware
-^^^^^^^^^^^^^^^
+===== Hardware
 
 * A *test plan* has to be made
 * A test plan has to be *executed*
 * There has to be an executed test plan with *positive result*
 
-2.2.3. Design
-^^^^^^^^^^^^^
+===== Design
 
 * Result has to comply to the defined *design requirements*
 * Every *3D drawing* has to be supported by *2D drawings*
 
-2.2.4. Research
-^^^^^^^^^^^^^^^
+===== Research
 
 * Documentation is checked on *grammar*
 * Documentation is *checked* by a colleague
@@ -91,9 +81,8 @@ The definition of done continues for each specific element of Willy.
 TDD)
 
 1.  Requirements
-------------
+
 1.  Documentation
-~~~~~~~~~~~~~
 
 For all documentation the following requirements are defined:
 
@@ -103,7 +92,6 @@ For all documentation the following requirements are defined:
 * The list of *sources* is *up to date*
 * A *glossary* is added when necessary
 1.   Sources
-~~~~~~~~
 
 For all of the sources used in documentation the following requirements
 are defined:
@@ -114,12 +102,10 @@ are defined:
 * The source is *no blog*
 * The source is *not Wikipedia*
 1.  Design
-~~~~~~
 
 For the design the following requirements are defined:
 
 3D-parts
-^^^^^^^^
 
 * Each part is made *independently*
 * Each part has all *dimensions fixed*
@@ -128,12 +114,11 @@ For the design the following requirements are defined:
 which used in the assembly
 * Every part is *documented* in the Technical Design Document
 1.  2D-drawings
-^^^^^^^^^^^
+
 * Every drawing contains all necessary *dimensions*
 * Every drawing contains an *information box* at the bottom right corner
 with project name, designer, scale, date and drawing number
 1.  Safety
-~~~~~~
 
 For the safety of Willy and its surroundings the following requirements
 are defined and categorised in a series of rules:
@@ -183,7 +168,6 @@ machinations*
 * Willy should be able to recognize the type of waste
 * Willy should be able to recognize the state of the object
 
-Bibliografie
-------------
+===== Bibliografie
 
 *Het huidige document heeft geen bronnen.*
