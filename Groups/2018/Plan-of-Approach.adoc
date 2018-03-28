@@ -1,7 +1,6 @@
 === Plan of Approach
 
-Version history
----------------
+==== Version history
 
 [cols=",,,",options="header",]
 |=======================================================================
