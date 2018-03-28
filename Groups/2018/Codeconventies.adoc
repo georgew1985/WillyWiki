@@ -1,7 +1,6 @@
-== CodeConventies
+=== CodeConventies
 
-Version history
----------------
+==== Version history
 
 [cols=",,,",options="header",]
 |=======================================================================
@@ -11,19 +10,19 @@ Hardware Code
 |=======================================================================
 
 
-Preface
--------
+==== Preface
+
 1.  Chapter
-~~~~~~~
+
 2.  Subchapter
-~~~~~~~~~~
+
 3.  Subchapter
-~~~~~~~~~~
+
 2.  Hardware
 Codefootnote:[https://www.arduino.cc/en/Reference/StyleGuide]
-----------------------------------------------------------------------
+
 1.  Coding Style
-~~~~~~~~~~~~
+
 
 Write in the C programming language.
 
@@ -53,8 +52,7 @@ readable and easier to change. For example:
 
 This should not be used: This should be used:
 
-Comments
-~~~~~~~~
+==== Comments
 
 Comment every variable or constant declaration with a description of
 what the variable does.
@@ -84,8 +82,7 @@ An example of a correct in-line comment is as follows:
 The in-line comment should start one space after the // and should start
 with a capital letter.
 
-Variables and Functions
-~~~~~~~~~~~~~~~~~~~~~~~
+==== Variables and Functions
 
 Variable names should be descriptive. Avoid single letter variable
 names.
@@ -98,9 +95,8 @@ parts of the name should have a capital letter e.g. buttonState.
 
 1.  Software
 Codefootnote:[https://google.github.io/styleguide/cppguide.html]
--------------------------------------------------------------------------
+
 1.  Coding Style
-~~~~~~~~~~~~
 
 * Every .cc file should have an associated .h file.
 * Header files should be self-contained (compile on their own) and end
@@ -111,7 +107,6 @@ inclusion. The format of the symbol name should be
 <PROJECT>_<PATH>_<FILE>_H_.
 * Functions should be declared.
 1.  Comments
-~~~~~~~~
 
 Comment every variable or constant declaration with a description of
 what the variable does.
@@ -124,8 +119,7 @@ Comment every for loop.
 Every file should start with a command block containing a description of
 what the code does.
 
-Variables and Functions
-~~~~~~~~~~~~~~~~~~~~~~~
+==== Variables and Functions
 
 Variable names should be descriptive. Avoid single letter variable
 names.
@@ -136,16 +130,8 @@ buttonState or switchPin.
 Variable names should start with an uncapitalized letter and secondary
 parts of the name should have a capital letter e.g. buttonState.
 
- +
-~~
-
 Web Interface
--------------
 
- +
---
-
-Bibliography
-------------
+==== Bibliography
 
 *The current document contains no sources.*
