@@ -626,8 +626,7 @@ Figure 3: planning data
 
 Figure 4: Planning
 
-5.3 Milestones
-~~~~~~~~~~~~~~
+====  Milestones
 
 Because the projects main goal is to make Willy reliable and stable, new
 features that will be added are not specified yet. That leaves us with
