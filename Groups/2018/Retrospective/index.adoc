@@ -1,5 +1,3 @@
-:toc:
-
 // Retrospective 1
 include::Retrospective-1.adoc[]
 // Retrospective 2

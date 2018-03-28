@@ -1,7 +1,6 @@
 === Retrospective 1
 
-Keep (K)
-~~~~~~~~
+==== Keep (K)
 
 1.  Vrijheid tot soms vrijdag werken
 2.  Motivatie
@@ -13,8 +12,7 @@ Keep (K)
 8.  Overleg en discussies
 9.  Scrum
 
-More (M)
-~~~~~~~~
+==== More (M)
 
 1.  Agenda bijhouden
 2.  Mogelijkheden in Ontwikkeling
@@ -37,8 +35,7 @@ More (M)
 19. Fun & Rust in de pauze
 20. Teambuilding
 
-Less (L)
-~~~~~~~~
+==== Less (L)
 
 1.  Prince2
 a.  Geen methodes overnemen van school omdat we deze zouden moeten
@@ -52,8 +49,7 @@ moet komen
 a.  In sommige omstandigheden goed voor creativiteit maar kan ook voor
 zorgen dat je taak niet afkan. Waken op de taken!
 
-Stop
-~~~~~
+==== Stop
 
 1.  Direct zijn
 a.  Soms wat onhandig maar ook weer goed
@@ -67,8 +63,7 @@ a.  Dit woord wordt te vaak gebruikt
 5.  Baas
 a.  Er is geen projectleider, we zijn allemaal verantwoordelijk
 
-Start (S)
-~~~~~~~~~
+==== Start (S)
 
 1.  Daily stand-up
 2.  Team-building
@@ -78,8 +73,7 @@ Start (S)
 6.  Duidelijk over voortgang status
 7.  Wat willen wij doen/Planning
 
-Improvements
-~~~~~~~~~~~~
+==== Improvements
 
 1.  Agenda bijhouden en sprint planning (M1, M14)
 2.  Ruud meer motiveren, ook om sponsoren te zoeken (M3, M2, M8, M12,
@@ -100,8 +94,7 @@ sprints kan verspreiden (M13)
 14. Versiebeheer bijwerken na review (S5)
 15. Globale planning maken van producten (S7)
 
-Afspraken
-~~~~~~~~~
+==== Afspraken
 
 * Jesse beheert Trello (uren)
 * Martijn organiseert teambuilding #1 en betaald
