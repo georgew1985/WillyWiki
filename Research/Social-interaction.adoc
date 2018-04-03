@@ -18,10 +18,13 @@ One of Willy's goals is to make people aware of the problems and harmfulness tha
 This chapter contains possibilities for Willy to communicate to persons around him.
 
 ===== Initiation of communication
-Before Willy is able to communicate with humans. Willy is required to recognize humans. This can be achieved  with different techniques. 
+Before Willy is able to communicate with humans. Willy is required to recognize humans. This can be achieved with different techniques. 
 
 ====== Object recognition
-====== Face recognition
+object recognition will be recognize objects
+
+====== cob_people_detection
+ROS contains several packages for detecting and identifying faces, and detecting and tracking humans with RGB-D sensors or laser scanners. Detects persons through head and face detection and identifies the detected faces. The results are tracked over time to increase confidence. The system is optimized to be used with a Microsoft Kinect or Asus Xtion Pro Live sensor but could also handle different sensors as long as depth and color images are provided.
 
 ===== Means of communication
 
