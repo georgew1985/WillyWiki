@@ -40,13 +40,26 @@ This chapter contains possibilities for a person to communicate to Willy.
 ===== Means of communication
 
 ====== Object detection
+If a person starts to communicate with Willy, Willy should be able to detect there
+is a person in front of the robot. One of the possibilities is Willy using its sonar 
+sensors to detect a person.
+
+image:media/social-interaction/image2.jpg[image,width=604,height=427]
+
+Better is using the Kinect to detect a person. By using the Kinect it is
+possible to determine wether the object in front of Willy is a person or an other object.
+
 image:media/social-interaction/image1.jpg[image,width=604,height=427]
 
 ====== Voice recognition
+To make a person be able to communicate with Willy, the robot should be able to listen to
+the person by recognizing his or her speech. A good microphone is neccesary for listening to 
+sounds and filtering out background noise. An API can be used to convert speech to text.
+
 ====== Touchscreen
 ====== Gesture recognition
 
-===== Content of communication
+==== Speech Bot
 (empty)
 
 ==== Recommendations
