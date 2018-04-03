@@ -11,6 +11,7 @@
 |===================================================================
 
 ==== Preface
+An ul
 
 ==== Willy to Person
 This chapter contains possibilities for Willy to communicate to persons around him.
@@ -43,3 +44,13 @@ This chapter contains possibilities for a person to communicate to Willy.
 This chapter contains recommendations for the best appliances in communication.
 
 ==== Sources
+
+[bibliography]
+==== Bibliography
+
+[bibliography]
+.Websites
+- [[[Author]]] Naam website. 'Naam artikel'. URL.
+- [[[Author]]] Naam website. 'Naam artikel'. URL.
+
+
