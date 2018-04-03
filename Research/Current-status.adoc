@@ -630,15 +630,17 @@ development.
 
 ==== Advised configuration
 
-Therefore is the advised configuration to use
+During research we found that a platform for ROS exist using NodeJS, using this it is possible to directly communicate with ROS and at the same time host a web platform using the same code. An overview of this would look like the following visualisation.
 
 image:media/current-status/image15.png[Web platform,width=521,height=232]
 
 ==== Backend
+The backend can then use NodeJS and socket.IO for api calls. 
+
 image:media/current-status/image17.png[image]
 
 ==== Interface
-
+The interface can be reused because it is also written in NodeJS
 
 ==== Bibliography
 
