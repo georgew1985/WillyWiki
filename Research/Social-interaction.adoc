@@ -12,7 +12,7 @@
 |===================================================================
 
 ==== Preface
-An ul
+One of the goals of Willy contains is making people aware of 
 
 ==== Willy to Person
 This chapter contains possibilities for Willy to communicate to persons around him.

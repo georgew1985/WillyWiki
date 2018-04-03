@@ -19,4 +19,4 @@ include::Current-status.adoc[]
 include::Alternative-interaction.adoc[]
 
 // Social Interaction
-include::Social-Interaction.adoc[]
+include::Social-interaction.adoc[]
