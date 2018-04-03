@@ -1,1 +1,24 @@
 
+=== Social Interaction
+
+[discrete]
+==== Version history
+
+[cols=",,,",options="header",]
+|===================================================================
+|Version |Date |Person |Note
+|V0.1 |03-04-18 |Gerard Zeeman |Created document
+|===================================================================
+
+==== Preface
+
+==== Willy to Person
+This chapter contains possibilities for Willy to communicate to persons around him.
+
+==== Person to Willy
+This chapter contains possibilities for a person to communicate to Willy.
+
+==== Recommendations
+This chapter contains recommendations for the best appliances in communication.
+
+==== Sources
