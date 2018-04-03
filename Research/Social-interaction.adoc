@@ -56,15 +56,26 @@ image:media/social-interaction/image2.jpg[image,width=604,height=427]
 Better is using the Kinect to detect a person. By using the Kinect it is
 possible to determine wether the object in front of Willy is a person or an other object.
 
-image:media/social-interaction/image1.jpg[image,width=604,height=427]
+image:media/social-interaction/image1.png[image,width=604,height=427]
 
 ====== Voice recognition
 To make a person be able to communicate with Willy, the robot should be able to listen to
 the person by recognizing his or her speech. A good microphone is neccesary for listening to 
 sounds and filtering out background noise. An API can be used to convert speech to text.
+Voice recognition is a great way to create user interaction, but can be risky if there is
+a lot of background noise.
 
 ====== Touchscreen
+Another way to get user input is a touchscreen. This makes it possible to have buttons and
+clickable areas. A touchscreen is a good way to create clear user interaction. A touchscreen is
+however heavy and expensive. Another difficulty is the fact that it is hard to make a touchscreen
+waterproof and have good responsiveness at the same time. An alternative for a trouchscreen
+is a normal screen with al LEAP-sensor in front of it. This is cheaper, lighter and gives more
+possibilities.
+
 ====== Gesture recognition
+By using a LEAP-sensor (see previous paragraph) it is also possible to recognize gestures.
+The different gestures can be showed or explained on the touchscreen. 
 
 ==== Speech Bot
 (empty)
