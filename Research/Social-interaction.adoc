@@ -18,13 +18,14 @@ One of Willy's goals is to make people aware of the problems and harmfulness tha
 This chapter contains possibilities for Willy to communicate to persons around him.
 
 ===== Initiation of communication
+Before Willy is able to communicate with humans. Willy is required to recognize humans. This can be achieved  with different techniques. 
 
 ====== Object recognition
 ====== Face recognition
 
 ===== Means of communication
 
-====== Speach
+====== Speech
 ====== Text
 ====== Visuals
 
