@@ -64,9 +64,15 @@ a lot of background noise.
 
 ====== Touchscreen
 Another way to get user input is a touchscreen. This makes it possible to have buttons and
-clickable areas. A touchscreen is a good way to create clear user interaction.
+clickable areas. A touchscreen is a good way to create clear user interaction. A touchscreen is
+however heavy and expensive. Another difficulty is the fact that it is hard to make a touchscreen
+waterproof and have good responsiveness at the same time. An alternative for a trouchscreen
+is a normal screen with al LEAP-sensor in front of it. This is cheaper, lighter and gives more
+possibilities.
 
 ====== Gesture recognition
+By using a LEAP-sensor (see previous paragraph) it is also possible to recognize gestures.
+The different gestures can be showed or explained on the touchscreen. 
 
 ==== Speech Bot
 (empty)
