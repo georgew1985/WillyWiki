@@ -12,7 +12,7 @@
 |===================================================================
 
 ==== Preface
-One of the goals of Willy contains is making people aware of 
+One of Willy's goals is to make people aware of the problems and harmfulness that waste entails. Interaction will be the primary method to fulfill this goal. Interaction between humans and robots can be realized with different technologies and with different strategies.  
 
 ==== Willy to Person
 This chapter contains possibilities for Willy to communicate to persons around him.
