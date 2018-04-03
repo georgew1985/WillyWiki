@@ -577,6 +577,8 @@ classes in the application and then translated back to JSON for API
 usage. This is another extra step that adds to latency between Willy and
 the web platform. Below shows a visual of all the conversions done.
 
+image:media/current-status/image16.png[image]
+
 Here you can clearly see the different conversions done to ROS messages,
 this is further explained in advised configuration. For example if
 ASP.NET was also used in the inferface (front-end) then past the serial
@@ -612,12 +614,28 @@ development.
 
 ==== Advantages/Disadvantages
 
+===== Advantages
+* Seperate modules
+* Learning multiple languages and techniques
+* Based on official ROS Bridge
+* C# is a language which is used across Windesheim
+* Scaleable database
+
+===== Disadvantages
+* Complex
+* Custom hooks to tangle it all together
+* Serialising and Deserialising takes a lot of time
+* Slow due to translation in different object orientated languages 
+* No reusage of classes/objects
 
 ==== Advised configuration
+
+Therefore is the advised configuration to use
 
 image:media/current-status/image15.png[Web platform,width=521,height=232]
 
 ==== Backend
+image:media/current-status/image17.png[image]
 
 ==== Interface
 
