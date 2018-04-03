@@ -15,8 +15,29 @@
 ==== Willy to Person
 This chapter contains possibilities for Willy to communicate to persons around him.
 
+===== Initiation of communication
+
+====== Object recognition
+====== Face recognition
+
+===== Means of communication
+
+====== Speach
+====== Text
+====== Visuals
+
+===== Content of communication
+
+====== Questioning
+====== Informing
+
+
 ==== Person to Willy
 This chapter contains possibilities for a person to communicate to Willy.
+
+===== Means of communication
+
+===== Content of communication
 
 ==== Recommendations
 This chapter contains recommendations for the best appliances in communication.
