@@ -8,6 +8,7 @@
 |===================================================================
 |Version |Date |Person |Note
 |V0.1 |03-04-18 |Gerard Zeeman |Created document
+|V0.2 |03-04-18 |Gerard Zeeman |Added chapters
 |===================================================================
 
 ==== Preface
@@ -37,9 +38,15 @@ This chapter contains possibilities for a person to communicate to Willy.
 
 ===== Means of communication
 
+====== Object detection
+====== Voice recognition
+====== Touchscreen
+====== Gesture recognition
+
 ===== Content of communication
+(empty)
 
 ==== Recommendations
-This chapter contains recommendations for the best appliances in communication.
+This chapter contains recommendations for the best appliances in communication with Willy.
 
 ==== Sources
