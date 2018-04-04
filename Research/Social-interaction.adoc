@@ -133,6 +133,7 @@ have is support for the Dutch language. Here follows a list of options with Dutc
 |*Microsoft Bot Framework* |.NET and Node.js SDK |Open source |A lot (including Dutch) |https://docs.botframework.com/en-us/
 |*Chatfuel* |JSON API, RSS, Subscribe plugin, Digest, IFTTT, Zapier, User input, Live Chat |Free |A lot (including Dutch) |https://chatfuel.com/
 |*Chatterbot* |Python, Django |Open source BSD-3 |Langue independent |http://chatterbot.readthedocs.io/en/stable/
+|*MyCroft* |Linux, Android |Open source |Dutch not standard implemented but possible to create |https://mycroft.ai/
 |=================================================
 
 From these solutions, the free ones should be prioritized. An other important necessity is 
