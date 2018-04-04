@@ -114,6 +114,8 @@ The challenge with a speech bot is creating relevant answers to user input.
 A problem of many existing speech bots is that these bots have an hard time to prevent giving
 rude answers. Especially bots created by existing user input reflect this human input.
 
+===== Existing solutions
+
 There are many different existing solutions for speech bots. An import feature these bots must 
 have is support for the Dutch language. Here follows a list of options with Dutch support:
 
@@ -132,6 +134,11 @@ have is support for the Dutch language. Here follows a list of options with Dutc
 From these solutions, the free ones should be prioritized. An other important necessity is 
 the support of a platform already used in the project. All solutions except Live Agent and 
 Semantic Machines are free to use.
+
+===== Self created solutions
+Another option is the creation of a custom self built system. The advantage of this is the fact
+that it can be runned offline. A disadvantage is that it is hard to creative and might not give
+the feeling of responsiveness given by existing solutions.
 
 ==== Recommendations
 This chapter contains recommendations for the best appliances in communication with Willy.
