@@ -147,6 +147,9 @@ the feeling of responsiveness given by existing solutions.
 ==== Recommendations
 This chapter contains recommendations for the best appliances in communication with Willy.
 
+===== Willy to Person
+===== Person to Willy
+
 
 [bibliography]
 ==== Bibliography
