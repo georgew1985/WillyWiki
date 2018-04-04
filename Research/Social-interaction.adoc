@@ -26,14 +26,16 @@ Before Willy is able to communicate with humans. Willy is required to recognize 
 ====== cob_people_detection
 ROS contains several packages for detecting and identifying faces, and detecting and tracking humans with RGB-D sensors or laser scanners. Detects persons through head and face detection and identifies the detected faces. The results are tracked over time to increase confidence. The system is optimized to be used with a Microsoft Kinect or Asus Xtion Pro Live sensor but could also handle different sensors as long as depth and color images are provided.
 
-* Advantage: Cob_people_detection can detect and identifying faces. To start a conversation, Willy can for example require to detect a face for a minimum amount of time
+* Advantage: Cob_people_detection can detect and identifying faces. To start a conversation, Willy can for example require to detect a face for a minimum amount of time. No user input is required.
 
 * Disadvantage: The use of this method requires an extra kinect, because the current kinect will be used for navigation and will be located incorrect for people detection. 
 
 ====== Waiting for physical input
 Willy can draw attention by using his screen. Before he starting a conversation, Willy waits for physical user input from an end user. User input can be a accomplished by using the Lead motion or one of the alternative interaction methods. 
 
-* 
+* Advantage: Don't require any extra hardware. There is no extra algorithm required that defines when the attention of a passerby is drawn or not.Last but not least, this method is less error prone
+
+* Disadvantage: This method required the user to (physical) interact with Willy before an conversation is started. 
 
 ===== Means of communication
 
