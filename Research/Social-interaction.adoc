@@ -120,7 +120,7 @@ This chapter contains recommendations for the best appliances in communication w
 
 [bibliography]
 .Websites
-- [[[Author]]] Naam website. 'Naam artikel'. URL.
+- [[[Author]]] Chatbotsjournal.com. '25 Chatbot Platforms, A Comparative Table'. https://chatbotsjournal.com/25-chatbot-platforms-a-comparative-table-aeefc932eaff.
 - [[[Author]]] Naam website. 'Naam artikel'. URL.
 
 
