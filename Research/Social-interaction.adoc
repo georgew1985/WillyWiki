@@ -75,10 +75,12 @@ possibilities.
 
 ====== Gesture recognition
 By using a LEAP-sensor (see previous paragraph) it is also possible to recognize gestures.
-The different gestures can be showed or explained on the touchscreen. 
+The different gestures can be showed or explained on the touchscreen. This is also possible
+with the Kinect, but with somewhat less possibilities.
 
 ==== Speech Bot
-(empty)
+To process the incoming speech and create answers for that, Willy should have a speech bot.
+(Not done yet)
 
 ==== Recommendations
 This chapter contains recommendations for the best appliances in communication with Willy.
