@@ -36,7 +36,7 @@ ROS contains several packages for detecting and identifying faces, and detecting
 Starting a conversation can be done by using different communication-techniques. 
 
 ====== Questioning
-Willy can ask questions to start a conversation. When Willy react on the answer 
+Willy can ask questions to start a conversation. If the question is answered, Willy can react based on an algorithm. Because the answer depends on the reaction, this method is harder to achieve. However the attention of the person will be drawn more quickly because of the subject of the answer based on the input. 
 
 ====== Informing
 
