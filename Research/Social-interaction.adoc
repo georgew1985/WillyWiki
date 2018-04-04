@@ -64,10 +64,27 @@ sensors to detect a person.
 
 image:media/social-interaction/image2.jpg[image,width=604,height=427]
 
-Better is using the Kinect to detect a person. By using the Kinect it is
+Unfortunately the use of sonar sensors gives a lot of blind spots. Another option is using 
+the LIDAR for object recognition. This option gives way more resolution and accuracy. The 
+placement of the LIDAR sensor is very important for the efficiency. Boththe sonars and the 
+Kinect are not able to detect if the object is actually a person.
+
+Another option is using the Kinect to detect a person. By using the Kinect it is
 possible to determine wether the object in front of Willy is a person or an other object.
+A disadvantage is the enormous amount of data that has to be processed. The positioning of the 
+Kinect is also important.
 
 image:media/social-interaction/image1.png[image,width=604,height=427]
+
+This can be summarized in the following table:
+
+[cols=",,",options="header",]
+|=================================================
+|Method |Advantages |Disadvantages
+|*Sonar* |Already implemented |Dead spots, slow, no person detection
+|*LIDAR* |Fast, high resolution |Position dependent, no person detection 
+|*Kinect* |Fast, high resolution, person detection |A lot of data to process, position dependent
+|=================================================
 
 ====== Voice recognition
 To make a person be able to communicate with Willy, the robot should be able to listen to
