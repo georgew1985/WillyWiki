@@ -55,7 +55,7 @@ Starting a conversation can be done by using different communication-techniques.
 Willy can ask questions to start a conversation. If the question is answered, Willy can react based on an algorithm. Because the answer depends on the reaction, this method is harder to achieve. However the attention of the person will be drawn more quickly because of the subject of the answer based on the input. 
 
 ====== Informing
-
+Willy can inform an end-user about the negative influence of garbage to our environment. However the user will not feel he is in a conversation.
 
 ==== Person to Willy
 This chapter contains possibilities for a person to communicate to Willy.
