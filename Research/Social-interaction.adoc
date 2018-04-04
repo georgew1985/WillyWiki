@@ -46,7 +46,7 @@ Willy can give information by showing text on his display. This text can be stat
 ====== Text to speech 
 Willy can generate speech by converting text to speech. Nowadays, browsers can fulfill this conversion. If a Chatbot is used, this functionality is mostly included. There are third party variants available. Thirt party text to speech variate from compatibility possibilities, functionality and internet connection requirements.  
 ====== Visuals
-
+Because Willy has an onboard screen available, he is able to display visuals such as images and videos. The use of visuals can help by making people aware of garbage. 
 
 ===== Content of communication
 Starting a conversation can be done by using different communication-techniques. 
