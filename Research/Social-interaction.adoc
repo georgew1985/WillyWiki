@@ -97,11 +97,11 @@ The challenge with a speech bot is creating relevant answers to user input.
 A problem of many existing speech bots is that these bots have an hard time to prevent giving
 rude answers. Especially bots created by existing user input reflect this human input.
 
-There are many different existing solutions for speech bots. An import fueture these bots must 
-have is support for the Dutch language Here follows a list of options with Dutch support:
+There are many different existing solutions for speech bots. An import feature these bots must 
+have is support for the Dutch language. Here follows a list of options with Dutch support:
 
 [cols=",,,,",options="header",]
-|======================================================
+|=================================================
 |Name |Platform/language |License |Languages |Project link
 |*Live Agent* |https://www.ladesk.com/integrations-and-plugins/ |14 day trial |39 languages |https://www.ladesk.com/
 |*Semantic Machines* |? |? |Language independent |http://www.semanticmachines.com/
@@ -110,19 +110,22 @@ have is support for the Dutch language Here follows a list of options with Dutch
 |*Microsoft Bot Framework* |.NET and Node.js SDK |Open source |A lot (including Dutch) |https://docs.botframework.com/en-us/
 |*Chatfuel* |JSON API, RSS, Subscribe plugin, Digest, IFTTT, Zapier, User input, Live Chat |Free |A lot (including Dutch) |https://chatfuel.com/
 |*Chatterbot* |Python, Django |Open source BSD-3 |Langue independent |http://chatterbot.readthedocs.io/en/stable/
-|======================================================
+|=================================================
+
+From these solutions, the free ones should be prioritized. An other important necessity is 
+the support of a platform already used in the project. All solutions except Live Agent and 
+Semantic Machines are free to use.
 
 ==== Recommendations
 This chapter contains recommendations for the best appliances in communication with Willy.
 
-==== Sources
 
 [bibliography]
 ==== Bibliography
 
 [bibliography]
 .Websites
-- [[[Author]]] Naam website. 'Naam artikel'. URL.
+- [[[Author]]] Chatbotsjournal.com. '25 Chatbot Platforms, A Comparative Table'. https://chatbotsjournal.com/25-chatbot-platforms-a-comparative-table-aeefc932eaff.
 - [[[Author]]] Naam website. 'Naam artikel'. URL.
 
 
