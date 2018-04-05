@@ -142,7 +142,7 @@ This chapter contains recommendations for the best appliances in communication w
 ===== Self created solution
 
 ===== Speech Bot
-T
+The speech bot will be the most interactive solution. A speech bot will also be the most smart and innovative solution, however the use of a speech bot has several disadvantages. 
 
 
 [bibliography]
