@@ -140,9 +140,16 @@ the feeling of social interaction that given by a existing chat bots. However, t
 This chapter contains recommendations for the best appliances in communication with Willy.
 
 ===== Self created solution
+A self created solution can contain, questions, vizuals, videoś, information speeches or choices. 
 
 ===== Speech Bot
 The speech bot will be the most interactive solution. A speech bot will also be the most smart and innovative solution, however the use of a speech bot has several disadvantages. 
+
+* A speech bot will mostly give general answers and sometimes give wrong answers. 
+* To make the speech bot more smart, internet connection is required. 
+* Because the above disadvantages, a speech bot may not be fulfill the main goal of social interaction very efficiently.
+
+
 
 
 [bibliography]
