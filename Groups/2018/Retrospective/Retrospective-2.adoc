@@ -50,4 +50,6 @@ i9, I12, O12, O11
 planning bijwerken (I10, I11
 8.  Meer eigen werkwijze in planning van de sprints, duidelijk waar
 komende sprints ‘globaal’ aan gewerkt wordt (I11
-9.
+
+
+
