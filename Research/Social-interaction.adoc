@@ -133,15 +133,16 @@ Semantic Machines are free to use.
 
 ===== Self created solutions
 Another option is the creation of a custom self built system. The advantage of this is the fact
-that it can be runned offline. A disadvantage is that it is hard to creative and might not give
-the feeling of responsiveness given by existing solutions. However, the main goal is to create awareness about the impact of garbage. A Self created solution may fulfill this task better than a speech bot. 
+that it can be runned offline. A disadvantage is that it is more work to creative and might not give
+the feeling of social interaction that given by a existing chat bots. However, the main goal is to create awareness about the impact of garbage. A Self created solution may fulfill this task better than a speech bot. 
 
 ==== Recommendations
 This chapter contains recommendations for the best appliances in communication with Willy.
 
-===== Willy to Person
-===== Person to Willy
+===== Self created solution
+
 ===== Speech Bot
+T
 
 
 [bibliography]
