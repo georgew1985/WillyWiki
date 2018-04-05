@@ -31,6 +31,8 @@ Starting a conversation can be done by using different communication-techniques.
 ====== Questioning
 Willy can ask questions to start a conversation. If the question is answered, Willy can react based on an algorithm. Because the answer depends on the reaction, this method is harder to achieve. However the attention of the person will be drawn more quickly because of the subject of the answer based on the input. 
 
+Another option is to give the end-user different options by asking multiple choice questions. The algortim behind the response will be much simpler. Willy can search for certain words witin the answer to select a certain answer. 
+
 ====== Informing
 Willy can inform an end-user about the negative influence of garbage to our environment. However the user will not feel he is in a conversation.
 
@@ -101,13 +103,13 @@ By using a LEAP-sensor (see previous paragraph) it is also possible to recognize
 The different gestures can be showed or explained on the touchscreen. This is also possible
 with the Kinect, but with somewhat less possibilities.
 
-==== Speech Bot
-To process the incoming speech and create answers for that, Willy should have a speech bot.
-The challenge with a speech bot is creating relevant answers to user input. 
+==== Content of communication
+===== Speech bot
+
+A speech bot is designed to process an incoming speech and create answers for the input.
+The challenge with a speech bot is creating relevant answers to user input, and some relation with garbage disposal. 
 A problem of many existing speech bots is that these bots have an hard time to prevent giving
 rude answers. Especially bots created by existing user input reflect this human input.
-
-===== Existing solutions
 
 There are many different existing solutions for speech bots. An import feature these bots must 
 have is support for the Dutch language. Here follows a list of options with Dutch support:
