@@ -105,3 +105,4 @@ sprints kan verspreiden (M13)
 * Iedereen aanwezig 9:30
 * Iedereen definieert persoonlijke doelen
 * Versienummers, 1.0 is definitief versie daarvoor 0.x
+
