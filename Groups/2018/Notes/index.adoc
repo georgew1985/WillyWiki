@@ -4,3 +4,6 @@ include::Notulen-1-2.adoc[]
 
 // Notulen 9-2
 include::Notulen-9-2.adoc[]
+
+// Notulen 6-4
+include::Notulen-6-4.adoc[]
