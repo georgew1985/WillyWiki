@@ -22,4 +22,4 @@ Create map /home/willy/Documents/Speechtest
 
 `npm install snowboy --save`
 
-`node microphone.js`
+`node server.js`
