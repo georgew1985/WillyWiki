@@ -10,16 +10,10 @@
 
 `pip install pyaudio`
 
-Create map /home/willy/Documents/Speechtest
-
-`git clone (onze link naar git voor speechbot)`
-
-`cd (onze bestandsnaam van git speechbot)`
-
-`npm install node-record-lpcm16`
-
 `sudo apt-get install libmagic-dev libatlas-base-dev`
 
-`npm install snowboy --save`
+`git clone https://github.com/ArtOfRobotics/Speechtest.git`
+
+`cd Speechtest`
 
 `node server.js`
