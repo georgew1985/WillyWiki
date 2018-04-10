@@ -1,9 +1,5 @@
 ===== Speech configuration
 
-`curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -`
-
-`sudo apt-get install -y nodejs`
-
 `curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -`
 
 `sudo apt-get install -y nodejs`
@@ -16,7 +12,7 @@
 
 Create map /home/willy/Documents/Speechtest
 
-`git clone (onze code voor speechbot)`
+`git clone (onze link naar git voor speechbot)`
 
 `cd (onze bestandsnaam van git speechbot)`
 
