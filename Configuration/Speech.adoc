@@ -1,0 +1,29 @@
+===== Speech configuration
+
+`curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -`
+
+`sudo apt-get install -y nodejs`
+
+`curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -`
+
+`sudo apt-get install -y nodejs`
+
+`sudo apt-get install -y build-essential`
+
+`sudo apt-get install python-pyaudio python3-pyaudio sox`
+
+`pip install pyaudio`
+
+Create map /home/willy/Documents/Speechtest
+
+`git clone (onze code voor speechbot)`
+
+`cd (onze bestandsnaam van git speechbot)`
+
+`npm install node-record-lpcm16`
+
+`sudo apt-get install libmagic-dev libatlas-base-dev`
+
+`npm install snowboy --save`
+
+`node microphone.js`
