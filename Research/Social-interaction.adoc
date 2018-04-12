@@ -159,6 +159,12 @@ The speech bot will be the most interactive solution. A speech bot will also be 
 * To make the speech bot more smart, internet connection is required. 
 * Because the above disadvantages, a speech bot may not be fulfill the main goal of social interaction very efficiently.
 
+==== Screen Designs
+image:media/social-interaction/1.png[image,width=604,height=427]
+image:media/social-interaction/2.png[image,width=604,height=427]
+image:media/social-interaction/3.png[image,width=604,height=427]
+image:media/social-interaction/4.png[image,width=604,height=427]
+image:media/social-interaction/5.png[image,width=604,height=427]
 
 
 
