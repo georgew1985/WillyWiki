@@ -249,8 +249,8 @@ image:media/back-up/image38.png[http://clonezilla.org/clonezilla-live/doc/02_Res
 
 image:media/back-up/image39.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-11-img-restore-done-choose-poweroff.png,width=587,height=439]
 
-[bibliography]
-== References
+
+==== References
 
 - _how-to-convert-a-remote-physical-linux-server-to-a-virtual-machine-vmware-virtualbox-instructions_.
 (2017, Januari 12). Retrieved from joe0.com:
