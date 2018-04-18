@@ -7,7 +7,7 @@
 [cols=",,,",options="header",]
 |===================================================================
 |Version |Date |Person |Note
-|V0.1 |04-03-18 |Vincent van Dijk |?
+|V0.1 |04-03-18 |Vincent van Dijk |First draft
 |V1.0 |13-03-18 |Gerard Zeeman |Checked and fixed grammatical errors
 |===================================================================
 
