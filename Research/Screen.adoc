@@ -6,7 +6,7 @@
 [cols=",,,",options="header",]
 |===========================
 |Version |Date |Person |Note
-|V0.1 |04-02-18 | |
+|V0.1 |04-02-18 |Jesse |
 |===========================
 
 ==== Preface
@@ -82,9 +82,9 @@ has to use the external converter. Even if there is a new screen, like
 the one stated in chapter three, the power consumption decreases by more
 than 60%.
 
-==== Bibliography
+==== References
 
-LG. (n.d.). _Televisies_. Retrieved from lg.com:
+- LG. (n.d.). _Televisies_. Retrieved from lg.com:
 http://www.lg.com/nl/televisies/lg-43LJ5150salland.eu. (n.d.).
-_smit-visual-focus-touch-lcd-monitor_. Retrieved from Salland.eu:
+- _smit-visual-focus-touch-lcd-monitor_. Retrieved from Salland.eu:
 https://www.salland.eu/product/710817/smit-visual-focus-touch-lcd-monitor-42i-42-inch-106-6-cm-full-hd-14029-210.html
