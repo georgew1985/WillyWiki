@@ -122,13 +122,13 @@ The advise is to use a touchpad at this state of the project. Because
 this project is all about prototyping, a cheap and reliable alternative
 might be the best idea.
 
-==== Bibliography
+==== References
 
-Frank Weichert, D. B. (2013, May 14). _Sensors_. Retrieved from National
+- Frank Weichert, D. B. (2013, May 14). _Sensors_. Retrieved from National
 Centre for Biotechnology Information:
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3690061/Leap Motion.
-(n.d.). _Documentation_. Retrieved from developer.leapmotion.com:
+- (n.d.). _Documentation_. Retrieved from developer.leapmotion.com:
 https://developer.leapmotion.com/documentation/javascript/api/Leap.Controller.htmlMicrosoft.
-(n.d.). _Documentation - Sensor components and Specs_. Retrieved from
+- (n.d.). _Documentation - Sensor components and Specs_. Retrieved from
 Microsoft Development Network:
 https://msdn.microsoft.com/en-us/library/jj131033.aspx
