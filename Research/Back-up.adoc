@@ -1,5 +1,5 @@
 
-=== Alternative interaction
+=== Back-up
 
 [discrete]
 ==== Version history
@@ -106,19 +106,19 @@ variants can be used in almost the same way.
 
 ==== Step 1; Create a bootable Clonezilla-USB. +
 
-Fist download an recent version of Clonezilla from, +
+First download a recent version of Clonezilla from, +
 http://www.clonezilla.org/downloads/download.php?branch=stable +
 Choose the ISO variant with AMD64 processor architecture.
 
 There are different approaches to create a bootable storage device. The
-use of Diskpart don’t require any third-party software by using Windows.
+use of Diskpart doesn't require any third-party software by using Windows.
 The use of Rufus automates this process. See https://rufus.akeo.ie/ for
 more details. Download Rufus from; +
 https://rufus.akeo.ie/
 
 image:media/back-up/image2.png[image,width=173,height=233]
 
-1.  Choose the correct Device from the ‘Aparaat’ list.
+1.  Choose the correct Device from the ‘Apparaat’ list.
 2.  Give the USB a new volume label
 3.  Select the Clonezill ISO
 4.  Start
