@@ -36,7 +36,7 @@ Te vinden in:
 /home/willy/Documents/logs/
 Bijvoorbeeld:
 
-image::images\image1.png[]
+image::media\image1.png[]
 Om live te volgen wat de status is van git sync. 
 
 ==== Github Repo Willy 
