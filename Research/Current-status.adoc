@@ -224,7 +224,7 @@ navigation is researched by a previous group. (Navigation design v0.1,
 
 The sensors all use 5V as can be seen in the schematic:
 
-image:media/current-status/image9.jpg[image,width=604,height=427]
+image:media/current-status/image9.jpg[image,width=604,height=427](!!!OLD!!!)
 
 As shown in the schematic above, all the 16 sensors are connected to the
 Arduino.
