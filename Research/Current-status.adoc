@@ -226,7 +226,7 @@ The sensors all use 5V as can be seen in the schematic:
 
 image:media/current-status/image9.jpg[image,width=604,height=427]
 
-As shown in the schematic above, all the 10 sensors are connected to the
+As shown in the schematic above, all the 16 sensors are connected to the
 Arduino.
 
 The sensors are connected in the following order:
