@@ -261,7 +261,9 @@ All odd numbered sensors are read first, and after a small delay the
 even numbered sensors are read. This is because sensors placed next to
 each other can interfere the readings of each other.
 
-1.  image:media/current-status/image11.png[image,width=266,height=92]Kinect sensor
+==== Kinect Sensor
+
+image:media/current-status/image11.png[image,width=266,height=92]
 
 As a method to navigate inside, the Kinect was chosen. A Kinect can
 create a framework of a person and see all movements of that person. By
