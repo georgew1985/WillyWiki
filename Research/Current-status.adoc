@@ -256,6 +256,11 @@ The sensors are placed as follows:
 
 image:media/current-status/image10_3.jpg[image,width=339,height=476]
 
+It should be noted that not all the sensor are read at the same time. 
+All odd numbered sensors are read first, and after a small delay the 
+even numbered sensors are read. This is because sensors placed next to
+each other can interfere the readings of each other.
+
 1.  image:media/current-status/image11.png[image,width=266,height=92]Kinect sensor
 
 As a method to navigate inside, the Kinect was chosen. A Kinect can
