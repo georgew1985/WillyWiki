@@ -1,3 +1,4 @@
 # Output directory for HTML files
 output/
 .vscode/
+Configuration/index.adoc

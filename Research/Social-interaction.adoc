@@ -168,12 +168,11 @@ image:media/social-interaction/5.png[image,width=604,height=427]
 
 
 
-[bibliography]
-==== Bibliography
 
-[bibliography]
+==== References
+
+
 .Websites
-- [[[Author]]] Chatbotsjournal.com. '25 Chatbot Platforms, A Comparative Table'. https://chatbotsjournal.com/25-chatbot-platforms-a-comparative-table-aeefc932eaff.
-- [[[Author]]] Naam website. 'Naam artikel'. URL.
+- Chatbotsjournal.com. '25 Chatbot Platforms, A Comparative Table'. https://chatbotsjournal.com/25-chatbot-platforms-a-comparative-table-aeefc932eaff.
 
 

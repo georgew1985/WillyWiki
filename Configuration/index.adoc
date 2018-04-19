@@ -4,4 +4,8 @@ include::remote.adoc[]
 
 include::github.adoc[]
 
+<<<<<<< HEAD
 include::devices-network.adoc[]
+=======
+include::Speech.adoc[]
+>>>>>>> dce19a0e59c5a9436786fb80fe1f4440f1e81e6f

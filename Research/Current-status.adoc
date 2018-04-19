@@ -642,18 +642,18 @@ image:media/current-status/image17.png[image]
 ==== Interface
 The interface can be reused because it is also written in NodeJS
 
-==== Bibliography
+==== References
 
-_Kinect 1 specifications_. (sd). Opgehaald van
+- _Kinect 1 specifications_. (sd). Opgehaald van
 https://msdn.microsoft.com/en-us/library/jj131033.aspx__Kinect 1 vs 2
-specifications:__ . (sd). Opgehaald van
+- specifications:__ . (sd). Opgehaald van
 http://www.imaginativeuniversal.com/blog/2014/03/05/Quick-Reference-Kinect-1-vs-Kinect-2/_Kinect_.
-(2017, December 21). Opgehaald van Wikipedia:
+- (2017, December 21). Opgehaald van Wikipedia:
 https://nl.wikipedia.org/wiki/Kinect__Main factors/features of most
-industrial computer vision hardware.__ (sd). Opgehaald van
+- industrial computer vision hardware.__ (sd). Opgehaald van
 http://robotics.stackexchange.com/questions/7014/what-main-factors-features-explain-the-high-price-of-most-industrial-computer-viNavigation
-design v0.1, Research (2017).Ontwerpverslag (2016).Research localization
-system v1.1, Research (2017)._ROS_. (2018, Januari 1). Opgehaald van
+- design v0.1, Research (2017).Ontwerpverslag (2016).Research localization
+- system v1.1, Research (2017)._ROS_. (2018, Januari 1). Opgehaald van
 ROS: http://wiki.ros.org/sick_timSysteem Dossier (2016).System overview
-V1.0, Hardware overview (2017)._Wikipedia_. (2017, November 7).
+- V1.0, Hardware overview (2017)._Wikipedia_. (2017, November 7).
 Opgehaald van Wikipedia: https://nl.wikipedia.org/wiki/Lidar
