@@ -254,7 +254,7 @@ The sensors are connected in the following order:
 
 The sensors are placed as follows:
 
-image:media/current-status/image10_2.jpg[image,width=339,height=476]
+image:media/current-status/image10_3.jpg[image,width=339,height=476]
 
 1.  image:media/current-status/image11.png[image,width=266,height=92]Kinect sensor
 
