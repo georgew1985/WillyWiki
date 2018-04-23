@@ -97,10 +97,10 @@ batteries is that these could be placed lower under the frame. Our
 advice is to keep the batteries as low as possible in the frame because
 the centre of gravity is lower which increases stability during driving.
 
-==== Sources
+==== References
 
-kiwi-electronics. (n.d.). _components and parts_. Retrieved from kiwi-electronics:
+- kiwi-electronics. (n.d.). _components and parts_. Retrieved from kiwi-electronics:
 https://www.kiwi-electronics.nl/42byg-stappenmotor-12v
 
-Sony. (n.d.). _Energy efficiency chart._ Retrieved from esupport.sony.com:
+- Sony. (n.d.). _Energy efficiency chart._ Retrieved from esupport.sony.com:
 https://docs.sony.com/release//Flyer_KDL32W700B-40W600B-42W800-48W600B-50W800B-55W800B-60W600B-60W850B-70W850B-KLV32R422B-40R472B-KD-55X8500B-65X8500B-65X9000B-79X9000B.pdf
