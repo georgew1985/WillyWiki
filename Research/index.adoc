@@ -22,4 +22,4 @@ include::Alternative-interaction.adoc[]
 include::Social-interaction.adoc[]
 
 // Leap
-include::Leap.adoc[]
+include::Leap-interaction.adoc[]
