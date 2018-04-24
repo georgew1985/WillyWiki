@@ -25,7 +25,7 @@ Leap_motion ROS can used to connect the leap with the ROS framework. however it 
 Mudramouse is easy to install and works very well. The mouse cursor can be moved with the Leap and with a certain gesture, click functionality can be realized. However it is not free to use and close source. 
 
 ==== Leap touch (chrome plugin)
-Leap touch comes with the same functionality as Mudramouse, however Leap Touch works as a browser plug-in. For our project, this is a advantage because the web browser cannot be closed with the leap touch plug-in. Also funtionality is customizable. The only disadvantages are that it is also closed source and functionality feels a little less natural compared with Mudramouse.
+Leap touch comes with the same functionality as Mudramouse, however Leap Touch works as a browser plug-in. For our project, this is a advantage because the web browser cannot be closed with the leap touch plug-in. Also functionality is customizable. The only disadvantages are that it is also closed source and functionality feels a little less natural compared with Mudramouse.
 
 
 
