@@ -1,0 +1,22 @@
+=== Leap advice
+
+Navigating trough the web platform will be supported by the leap. There are several packages examined, and the following where tested.
+
+* desktopLeapr
+* Pyleapmouse
+* Xleapmouse
+* Leap_motion ROS
+* Mudra mouse
+* Leap touch
+
+==== DesktopLeapr
+DesktopLeapr runs on python. It can be cloned from Git and requires several dependencies. DesktopLeapr can be used to move the mouse cursor with the Leap, also click functionality can be realized by detecting certain gestures.  However it not user friendly, it has a lot of features and is very advanced. The goal is that a passerby immediately understands how he can interacact with willy.
+
+==== Pyleapmouse
+Pyleapmouse is comparible with Desktopleapr in functionality. After installation, we have tested the functionality of Pyleapmouse. However functionality is not very stable and straight forward tough. 
+
+==== Xleapmouse
+Pyleapmouse is rewritten in C++ and is called Xleapmouse. After installation of Xleapmouse, we got a lot of error messages. After a few hours of troubleshooting we clancled testing. 
+
+==== Leap_motion ROS
+Leap_motion ROS can used to connect the leap with the ROS framework. however it only delivers coordinates when subscribed. So customization is required. 
