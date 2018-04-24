@@ -20,3 +20,6 @@ include::Alternative-interaction.adoc[]
 
 // Social Interaction
 include::Social-interaction.adoc[]
+
+// Leap
+include::Leap.adoc[]
