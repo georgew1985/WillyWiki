@@ -35,7 +35,7 @@ virtual machine can also be used to restore important data.
 * Install guide
 
 When the operation system is corrupt, and current back-ups do not offer
-a solution, there is no other options than rebuilding the OS. The
+a solution, there is no other options than rebuilding the OS. Also a clean install can be a good idea when the operation system becomes slow by a lot of troubleshouting or testing. The
 install guide contains all the steps that are needed to get the git code
 up and running on top of a clean installation. Mainly Linux dependencies
 will be installed by following the install guide. An install guide can
@@ -43,32 +43,12 @@ also be useful to create a better understanding of the software
 components ‘Willy’ contains.
 
 ==== Different backup methods
+===== Imaging
+There different approaches to create a system backup.
+Different manufactures, have different tools back-up tools available to migrate or convert operations systems. One of the more used methods contains, making a full system backup that can be created by cloning a HDD on low
+bit level into an image. An image is a compressed version a HDD that can be restored using imaging software.
 
-There are three different approaches to create a full system backup.
-Firstly, different virtualizations manufactures, have different tools
-available to migrate or convert operations systems.
-
-Secondly, a full system backup can be created by cloning a HDD on low
-bit level into an image. An image is a compressed version a HDD that can
-be restored using imaging software.
-
-==== VMware converter
-
-VMware has certain tools available to manage, create and modify virtual
-machines. The advantage of using such software (tools) is that the
-target OS can be left unchanged. VMware converter can be used for
-converting physical machines remotely to virtual machines by using SSH
-in case of a Linux OS. However only if the target OS contains a windows
-machine, it can be converted directly into a VMware workstation VM. By
-converting a Linux machine into a VM, EXSI is required. Also, it is hard
-to convert a virtual machine into a physical machine. Because of this,
-VMware converter is not used to backup ‘Willy’.
-(how-to-convert-a-remote-physical-linux-server-to-a-virtual-machine-vmware-virtualbox-instructions,
-2017)
-
-==== Imaging
-
-The second option is to boot from an external installation medium and
+Imaging is done by booting from an external installation medium and
 use another external storage device as image-repository to read/write
 data. The image-repository can be used to store and read backup-images.
 No changes to the operation system are required.
@@ -84,6 +64,17 @@ mediums.
 
 (Using-disk-imaging-software-in-data-backup-and-recovery, sd)
 
+==== VMware converter
+
+VMware converter can be used to craete a P2V back-up. The advantage of using such software (tools) is that the
+target OS can be left unchanged. VMware converter can be used for converting physical machines remotely to virtual machines by using SSH
+in case of a Linux OS. However only if the target OS contains a windows
+machine, it can be converted directly into a VMware workstation VM. By converting a Linux machine into a VM, EXSI is required. Also, it is hard
+to convert a virtual machine into a physical machine. Because of this,
+VMware converter is not used to backup ‘Willy’.
+(how-to-convert-a-remote-physical-linux-server-to-a-virtual-machine-vmware-virtualbox-instructions,
+2017)
+
 ==== Backup using the operation system
 
 The operation system can also be used to make a full system backup.
@@ -93,8 +84,7 @@ derivative software systems that can create a customized Live CD/Live
 USB (a remaster) of Linux and its derivatives. Remastersys can also back
 up an entire system, including user data, to an installable Live CD/DVD.
 
-The disadvantage of using Remastersys or certain tools remains because
-the operations system requires extra software. Because the OS is in use
+The disadvantage of using Remastersys or certain tools are that the operations system requires extra software. Because the OS is in use
 during creation of the backup this method is less fault Torrance.
 
 (remastersys, sd)
@@ -102,7 +92,7 @@ during creation of the backup this method is less fault Torrance.
 ==== Imaging using clonezilla
 
 Clonezilla is free, opensource and lightweight imaging software. Other
-variants can be used in almost the same way.
+imaging variants can be used in almost the same way.
 
 ==== Step 1; Create a bootable Clonezilla-USB. +
 
