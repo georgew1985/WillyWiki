@@ -1,6 +1,6 @@
 === Willy Git setup 
-Commandos gebruikt om de git repos in willy op te zetten
-Startpunt: /home/willy/
+Commands used to set up the git repos in willy.
+Starting point: /home/willy/
 
 [source,text]
 ----
@@ -20,8 +20,8 @@ git push -u origin test
 -	Password: 
 ----
 
-==== Github sychronisatie 
-Vervolgens is er een crontab aangemaakt die ervoor zorgt dat Willy up to date blijft met Github. Omdat Willy geen vast ip of domein heeft gekoppeld kan helaas geen gebruik gemaakt worden van Github webhooks. Daarom is een Crontab Job ingesteld, welke als volgt geconfigureerd is: 
+==== Github synchronisation
+Then a crontab has been created which ensures that Willy stays up-to-date with Github. Because Willy does not have a fixed external-IP or domain, it is unfortunately not possible to use Github Webhooks. That is why a Crontab Job has been set up, which is configured as follows:
 
 [source,text]
 ----
@@ -30,20 +30,20 @@ sudo crontab -e
 */1 * * * * su -s /bin/sh -c '/home/willy/Documents/WTGD/bin/gitsync.sh ' >> /home/willy/Documents/logs/git.log 2>&1
 ----
 
-Let op: momenteel zorgt deze regel voor een pull van de test branch, later is gewenst dit te veranderen naar de master branch voor productiecode.
+Note: currently this line creates a pull of the test branch, later it is desirable to change this to the master branch for production code.
 Logs
-Te vinden in:
+Can be found in:
 /home/willy/Documents/logs/
-Bijvoorbeeld:
+For example:
 
 image::media\image1.png[]
-Om live te volgen wat de status is van git sync. 
+To track the status of git sync live.
 
-==== Github Repo Willy 
-Te vinden in /home/willy/Documents/WTGD 
+==== Github Repo Willy
+Can be found in /home/willy/Documents/WTGD
 
-==== Github Repo Web platform 
-Te vinden in /home/willy/Documents/WWEB 
+==== Github Repo Web platform
+Can be found in /home/willy/Documents/WWEB
 
 ==== build
 
