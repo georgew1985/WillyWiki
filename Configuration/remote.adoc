@@ -1,5 +1,5 @@
 === Remote access
-The following config is used to deploy RDP fluxionality by using XRDP and XFCE4 
+The following configuration was used when RDP was deployed by using XRDP and XFCE4 
 
 [source,text]
 ----
