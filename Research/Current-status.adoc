@@ -168,7 +168,7 @@ requirements
 
 image:media/current-status/image3.jpeg[image,width=155,height=116]Motor controller
 
-Willy contains 2 motors from a second-hand scooter. A previous project
+Willy contains 2 motors from a second-hand mobility scooter. A previous project
 group has chosen this option as documented in the ‘Ontwerp verslag’.
 (Ontwerpverslag, 2016)
 
@@ -194,7 +194,6 @@ image:media/current-status/image5.jpg[image,width=604,height=427]
 [[_Toc508714671]]
 
 ==== Motor brake functionality
-
 
 The two engines of willy contain both a brake. This brake is controlled
 by the engine itself. When the active signal to the motors is lost, the
@@ -299,7 +298,6 @@ specifications, sd) (Main factors/features of most industrial computer
 vision hardware., sd)
 
 ==== GPS & Compass sensor
-
 
 To allow Willy to drive outdoor by using a precomputed route, a GPS
 sensor and a compass are required. The GPS sensor is linked to the
@@ -486,7 +484,6 @@ ROS-lunar-rosbridge-server
 
 ==== Install dependencies
 
-
 To install above dependencies, the following commands are required.
 
 Install Ross
@@ -537,7 +534,6 @@ sudo apt-get install ros-kinetic-rosapi
 sudo apt-get install ros-kinetic-rosbridge-server
 ----
 
-
 Give user permission to access USB ports
 
 [source,shell]
@@ -545,13 +541,11 @@ Give user permission to access USB ports
 sudo usermod -a -G dialout willy
 ----
 
-
 With the above installation changes made to Ubuntu, the current ‘WTGD’
 code was able to run. Packages listed in the 11.1. can be used as
 reference material.
 
 ==== Web Platform
-
 
 The current status of the web platform uses various components to
 achieve a platform on which you can remotely control Willy and retrieve
@@ -602,7 +596,7 @@ written in NodeJS (JavaScript)
 ==== Chatterbot
 
 Chatterbot is currently used as a tool for social interaction but is
-limited in its abilities. We found that this choice was only based on
+limited in its capabilities. We found that this choice was only based on
 the ease of use. However this does add another layer of complexity to
 the whole web platform because it’s written in another language then all
 of the other components. As a side note, integrating a complete social
@@ -610,7 +604,6 @@ interaction was not the goal of the previous groups and thus need
 further research.
 
 ==== Database
-
 
 The database used is PostgreSQL, while this is a reliable and mature
 database system and targeted on it is quite heavy to run and the main

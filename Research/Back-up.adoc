@@ -143,7 +143,7 @@ image:media/back-up/image12.png[http://clonezilla.org/clonezilla-live/doc/01_Sav
 image:media/back-up/image13.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-08-sdb1-dir-list.png,width=563,height=422]
 
 *Select the directory where the image will be stored, if this must be
-the roost of the USB. Done can directly be selected by using the TAB
+the root of the USB. Done can directly be selected by using the TAB
 key. +
 *
 
