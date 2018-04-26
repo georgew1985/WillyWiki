@@ -1,22 +1,37 @@
 link:welcome.adoc[Welcome]::
-    - link:Welcome/README.adoc[Landingspage]    
-    - link:Welcome/README.adoc[How the wiki is setup]
-link:willy.adoc[Hardware]::
-    link:Willy/README.adoc[ROS];; 
-    link:Willy/README.adoc[Actuators];;   
-        - link:Willy/README.adoc[Motor]
-        - link:Willy/README.adoc[Blabla]
-    link:Willy/README.adoc[Sensors];;   
-        - link:Willy/README.adoc[Sonars]
-        - link:Willy/README.adoc[Lidar]
-        - link:Willy/README.adoc[Kinect]
-    link:Willy/README.adoc[Navigation];;   
-        - link:Willy/README.adoc[Rvis]
+    
+
+link:Willy/README.adoc[Using Willy]:: 
+        - link:Willy/README.adoc[ROS]
+        - link:Willy/README.adoc[Willy Web]
+        - link:Willy/README.adoc[Driving Willy]
+        - link:Willy/README.adoc[Social interaction]
+        - link:Willy/README.adoc[Login remote]
+link:Willy/README.adoc[Configuration]::  
+        - link:Willy/README.adoc[Ubuntu]
+        - link:Willy/README.adoc[ROS]
+        - link:Willy/README.adoc[GIT]
+        - link:Welcome/README.adoc[Wiki]
+        - link:Willy/README.adoc[Hardware]
+link:Willy/README.adoc[Software]::         *link:Willy/README.adoc[ROS]*
+        link:Willy/README.adoc[Navigation];;
+        - link:Willy/README.adoc[Actuators]
+        - link:Willy/README.adoc[Sensors]
+        link:Willy/README.adoc[Web-interface];;
+- link:Willy/README.adoc[Functional]
+- link:Willy/README.adoc[Technical]
+- link:Willy/README.adoc[Interaction]
+
+        
+        
+    link:Willy/README.adoc[Troubleshouting]::
+        - link:Willy/README.adoc[Most frequent bugs]
+        
+link:Willy/README.adoc[Research]::
 link:Willy/README.adoc[Design]::
-link:web.adoc[Web]::
-    link:Willy/README.adoc[Functional];;   
-        - link:Willy/README.adoc[Usecases]
-    link:Willy/README.adoc[Design];;
-        - link:Willy/README.adoc[Pages]
-    link:Willy/README.adoc[Technical];;   
-        - link:Willy/README.adoc[Overview]
+
+link:Willy/README.adoc[Archive]::
+        - link:Willy/README.adoc[(2016/2) Initial design ]
+        - link:Willy/README.adoc[(2017/1) Base & Functionalities ]
+        - link:Willy/README.adoc[(2017/2) Research]
+        - link:Willy/README.adoc[(2018/1) Stabilization & Realisation]
