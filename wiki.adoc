@@ -11,24 +11,25 @@ link:Willy/README.adoc[Configuration]::
         - link:Willy/README.adoc[Ubuntu]
         - link:Willy/README.adoc[ROS]
         - link:Willy/README.adoc[GIT]
-        - link:Welcome/README.adoc[Wiki]
+        - link:Willy/README.adoc[Wiki]
         - link:Willy/README.adoc[Hardware]
-link:Willy/README.adoc[Software]::         *link:Willy/README.adoc[ROS]*
-        link:Willy/README.adoc[Navigation];;
-        - link:Willy/README.adoc[Actuators]
-        - link:Willy/README.adoc[Sensors]
-        link:Willy/README.adoc[Web-interface];;
+
+link:Willy/README.adoc[ROS]::
+        - link:Willy/README.adoc[ROS generic]
+        - link:Willy/README.adoc[ROS navigation]
+        
+link:Willy/README.adoc[Web-interface]::
 - link:Willy/README.adoc[Functional]
 - link:Willy/README.adoc[Technical]
 - link:Willy/README.adoc[Interaction]
+- link:Willy/README.adoc[Snowboy]
 
-        
-        
-    link:Willy/README.adoc[Troubleshouting]::
+link:Willy/README.adoc[Troubleshouting]::
         - link:Willy/README.adoc[Most frequent bugs]
         
 link:Willy/README.adoc[Research]::
 link:Willy/README.adoc[Design]::
+link:Willy/README.adoc[Current status and advice]::
 
 link:Willy/README.adoc[Archive]::
         - link:Willy/README.adoc[(2016/2) Initial design ]
