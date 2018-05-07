@@ -50,7 +50,6 @@ F/Q/P = functional / Quality / Principle
 |====================
 F/Q/P = functional / Quality / Principle
 
-
 *WillyWiki*
 [width="100%",options="header,footer"]
 |====================
@@ -62,3 +61,12 @@ F/Q/P = functional / Quality / Principle
 |====================
 F/Q/P = functional / Quality / Principle
 
+*WillyWeb*
+[width="100%",options="header,footer"]
+|====================
+|Requirement  |F/Q/P | Test case | Result by ..
+| The WillyWeb must be dynamic and scalable |Quality scalability  |The WillyWeb must be wide compatible with other software components of Willy |
+| The WillyWeb must able to display real time information about Willy | Quality availability | The WillyWeb is compatible with ROS (previous requirement) and have a delay less that a second | 
+| The WillyWeb can Read and Read data to ROS | Principle | The WillyWeb can subscribe to ROS topics | 
+|====================
+F/Q/P = functional / Quality / Principle
