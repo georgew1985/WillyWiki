@@ -1,0 +1,46 @@
+=== Progress quality monitoring
+
+
+[width="100%",options="header,footer"]
+|====================
+|Milestone  |Researched  |Realized  |Tested  |Category  
+|Assessment current status|Done  |Done  |Done  |Documentation  
+|Willy Improvisation  |Done  |Done  |Done  |Hardware Software Documentation  
+|  |  |  |  |  
+|  |  |  |  |  
+|====================
+
+==== Progress report
+*Assigment current status*
+[width="100%",options="header,footer"]
+|====================
+|Requirement  |F/Q/P | Test case | Result by ..
+|Documentation corresponds to
+the current status of Willy  |functional  |compare documentation with the current status of Willy  |Positive by Vincent (example)
+|Documentation meets the DOD  |Principle  |Documentation is reviewed conform the DOD  |
+|All components of Willy are explained  |functional  |Hardware, Software and Documentation is understandable and traceable |
+|====================
+F/Q/P = functional / Quality / Principle
+
+*Willy Improvisation*
+[width="100%",options="header,footer"]
+|====================
+|Requirement  |F/Q/P | Test case | Result
+|Current status of Willy correspondents to the current documentation and expectations of the client  |Functional  |Documentation and expectations of the client are compared with the current status of Willy  |
+|Hardware, Software and Documentation satisfies the DOD   |Principle  |  |
+|  |  |  |
+|  |  |  |
+|====================
+F/Q/P = functional / Quality / Principle
+
+*Assigment current status*
+[width="100%",options="header,footer"]
+|====================
+|Requirement  |F/Q/P | Test case | Result by ..
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|====================
+F/Q/P = functional / Quality / Principle
+
+
