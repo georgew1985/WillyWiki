@@ -46,8 +46,18 @@ F/Q/P = functional / Quality / Principle
 |The design meets the expectations of the client
   |Principle  |The design has been approved by the client  |
 |Dimensions are traceable from the design  |Principle  |Dimensions can be digitally exported from the design  |
-|The design is flexible  |Quality scalability  |New adjustments can be made by future groups  |
+|The design is flexible  |Quality scalability  |New adjustments can be made by future groups by editing a flexible file format (sldprt - Solidworks) |
 |====================
 F/Q/P = functional / Quality / Principle
 
+*WillyWiki*
+[width="100%",options="header,footer"]
+|====================
+|Requirement  |F/Q/P | Test case | Result by ..
+|The WillyWikki is simple to understand  |Quality manageability  |Design and user documentation is available.  |
+|Documentation is up-to-date  |Principle  |All documentation is trasfered into .adoc format and added to GIT  |
+|The WillyWiki is modular  |Principle  |Information on the WillyWiki is exportable to multiple file formats.  | 
+|New information can be added  |Quality Managebility  | The Willywiki automatic updates based on a git repository  |
+|====================
+F/Q/P = functional / Quality / Principle
 
