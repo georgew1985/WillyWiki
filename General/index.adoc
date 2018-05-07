@@ -1,3 +1,2 @@
 == General
-
-=== No items yet
+include::Progress-and-quality.adoc[]
