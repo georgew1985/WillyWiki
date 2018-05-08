@@ -1,38 +1,55 @@
+**Sidebar Block:**
+****
+here *is* my text
+****
+
+[.toc2]
 link:welcome.adoc[Welcome]::
     
 
 link:Willy/README.adoc[Using Willy]:: 
-        - link:Willy/README.adoc[ROS]
-        - link:Willy/README.adoc[Willy Web]
-        - link:Willy/README.adoc[Driving Willy]
-        - link:Willy/README.adoc[Social interaction]
-        - link:Willy/README.adoc[Login remote]
-link:Willy/README.adoc[Configuration]::  
-        - link:Willy/README.adoc[Ubuntu]
-        - link:Willy/README.adoc[ROS]
-        - link:Willy/README.adoc[GIT]
-        - link:Willy/README.adoc[Wiki]
-        - link:Willy/README.adoc[Hardware]
-
-link:Willy/README.adoc[ROS]::
-        - link:Willy/README.adoc[ROS generic]
-        - link:Willy/README.adoc[ROS navigation]
+        - link:Willy/ROS.adoc[ROS]
+        - link:Willy/Willy-Web.adoc[Willy Web]
+        - link:Willy/Driving-Willy.adoc[Driving Willy]
+        - link:Willy/Social-interaction.adoc[Social interaction]
+        - link:Willy/Login-remote.adoc[Login remote]
         
-link:Willy/README.adoc[Web-interface]::
-- link:Willy/README.adoc[Functional]
-- link:Willy/README.adoc[Technical]
-- link:Willy/README.adoc[Interaction]
-- link:Willy/README.adoc[Snowboy]
+link:Config/README.adoc[Configuration]::  
+        - link:Config/Ubuntu.adoc[Ubuntu]
+        - link:Config/ROS.adoc[ROS]
+        - link:Config/GIT.adoc[GIT]
+        - link:Config/Wiki.adoc[Wiki]
+        - link:Config/Hardware.adoc[Hardware]
 
-link:Willy/README.adoc[Troubleshouting]::
-        - link:Willy/README.adoc[Most frequent bugs]
+link:ROS/README.adoc[ROS]::
+        - link:ROS/Generic.adoc[Generic]
+        - link:ROS/Navigation.adoc[Navigation]
         
-link:Willy/README.adoc[Research]::
-link:Willy/README.adoc[Design]::
-link:Willy/README.adoc[Current status and advice]::
+link:WEB/README.adoc[Web-interface]::
+        - link:WEB/Development.adoc[Development Guide]
+        - link:WEB/Functional.adoc[Functional]
+        - link:WEB/Technical.adoc[Technical]
+        - link:WEB/Interaction.adoc[Interaction]
 
-link:Willy/README.adoc[Archive]::
-        - link:Willy/README.adoc[(2016/2) Initial design ]
-        - link:Willy/README.adoc[(2017/1) Base & Functionalities ]
-        - link:Willy/README.adoc[(2017/2) Research]
-        - link:Willy/README.adoc[(2018/1) Stabilization & Realisation]
+link:Troubleshouting/README.adoc[Troubleshouting]::
+        - link:Troubleshouting/Known-bugs.adoc[Known Bugs]
+
+link:Research/README.adoc[Research]::
+		- link:Research/Social-interaction.adoc[Social interaction]
+		- link:Research/Social-interaction.adoc[Hardware]
+		- link:Research/Social-interaction.adoc[Peripherals]
+        
+link:Design/README.adoc[Design]::
+		- link:Design/Design-Guide.adoc[Design Guide]
+        - link:Design/Background.adoc[Background]
+        - link:Design/Technical.adoc[Technical]
+        
+link:Status/README.adoc[Status and Advice]::
+		- link:Status/Status.adoc[Status]
+        - link:Status/Todo.adoc[Todo & Advice]
+
+link:Archive/README.adoc[Archive]::
+        - link:Archive/README.adoc[(2016/2) Initial design ]
+        - link:Archive/README.adoc[(2017/1) Base & Functionalities ]
+        - link:Archive/README.adoc[(2017/2) Research]
+        - link:Archive/README.adoc[(2018/1) Stabilization & Realisation]
