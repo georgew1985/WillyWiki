@@ -66,9 +66,13 @@ Willy will now start the software and hardware to start the manual driving proje
 
 **Keys for the control of Willy**
     Q -> Stop moving
+
     W -> Move forward
+    
     A -> Move left
+    
     S -> Move backward
+    
     D -> Move right
 
 ===== Web Interface
