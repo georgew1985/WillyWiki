@@ -1,0 +1,163 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="author" content="Asciidoc"><title>Markdown languages</title><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" name="viewport"><link href="http://wackywendell.github.io/reveal.js//css/reveal.css" rel="stylesheet"><link rel="stylesheet" href="http://wackywendell.github.io/reveal.js//css/theme/serif.css" id="theme"><script type="text/x-mathjax-config">MathJax.Hub.Config({
+tex2jax: {
+  inlineMath: [["\\(", "\\)"]],
+  displayMath: [["\\[", "\\]"]],
+  ignoreClass: "nostem|nolatexmath"
+},
+asciimath2jax: {
+  delimiters: [["\\$", "\\$"]],
+  ignoreClass: "nostem|noasciimath"
+},
+TeX: { equationNumbers: { autoNumber: "none" } }
+});</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.4.0/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script><style>/* Pygments CSS disabled. Pygments is not available. */</style><link href="http://wackywendell.github.io/reveal.js//lib/css/zenburn.css" rel="stylesheet"><style>
+table.tableblock{max-width:100%;border-collapse:separate ! important}
+table.tableblock td>.paragraph:last-child p>p:last-child,table.tableblock th>p:last-child,table.tableblock td>p:last-child{margin-bottom:0 ! important}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede ! important}
+table.grid-all th.tableblock,table.grid-all td.tableblock{border-width:0 1px 1px 0 ! important}
+table.grid-all tfoot>tr>th.tableblock,table.grid-all tfoot>tr>td.tableblock{border-width:1px 1px 0 0 ! important}
+table.grid-cols th.tableblock,table.grid-cols td.tableblock{border-width:0 1px 0 0 ! important}
+table.grid-all *>tr>.tableblock:last-child,table.grid-cols *>tr>.tableblock:last-child{border-right-width:0 ! important}
+table.grid-rows th.tableblock,table.grid-rows td.tableblock{border-width:0 0 1px 0 ! important}
+table.grid-all tbody>tr:last-child>th.tableblock,table.grid-all tbody>tr:last-child>td.tableblock,table.grid-all thead:last-child>tr>th.tableblock,table.grid-rows tbody>tr:last-child>th.tableblock,table.grid-rows tbody>tr:last-child>td.tableblock,table.grid-rows thead:last-child>tr>th.tableblock{border-bottom-width:0 ! important}
+table.grid-rows tfoot>tr>th.tableblock,table.grid-rows tfoot>tr>td.tableblock{border-width:1px 0 0 0 ! important}
+table.frame-all{border-width:1px ! important}
+table.frame-sides{border-width:0 1px ! important}
+table.frame-topbot{border-width:1px 0 ! important}
+th.halign-left,td.halign-left{text-align:left ! important}
+th.halign-right,td.halign-right{text-align:right ! important}
+th.halign-center,td.halign-center{text-align:center ! important}
+th.valign-top,td.valign-top{vertical-align:top ! important}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom ! important}
+th.valign-middle,td.valign-middle{vertical-align:middle ! important}
+table thead th,table tfoot th{font-weight:bold ! important}
+tbody tr th{display:table-cell;line-height:1.6;background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none ! important;padding:0 ! important}
+p.tableblock{font-size:1em ! important}
+td>div.verse{white-space:pre ! important}
+</style><script>document.write( '<link rel="stylesheet" href="http://wackywendell.github.io/reveal.js//css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script></head><body><div class="reveal"><div class="slides"><section><h1>Markdown languages</h1><h4 class="author">Asciidoc</h4></section><section><section id="s_what_are_markdown_languages"><h2>What are Markdown languages?</h2><div class="ulist"><ul><li><p>Purpose</p></li><li><p>Advantages</p></li><li><p>Disadvantages</p></li></ul></div></section><section id="s_different_markdown_languages"><h3>Different markdown languages</h3><div class="ulist"><ul><li><p>CommonMark</p></li><li><p>reStructuredText</p></li><li><p>Asciidoc</p></li></ul></div></section></section>
+<section><section id="s_what_has_markdown_to_do_with_willy"><h2>What has markdown to do with 'Willy'?</h2><div class="paragraph"><p><a href="https://artofrobotics.github.io/WillyWiki//Startup/index.html" class="bare">https://artofrobotics.github.io/WillyWiki//Startup/index.html</a></p></div></section><section id="s_why_we_choose_asciidoc"><h3>Why we choose Asciidoc</h3></section></section>
+<section id="s_how_we_made_it_user_friendly_for_the_next_group"><h3>How we made it user friendly for the next group?</h3><div class="imageblock" style=""><div class="content"><img src="http://mgreau.com/posts/images/cover-asciidoc-ghpages.svg" alt="canvas"></div></div></section>
+<section><section id="s_github_pages"><h2>Github pages?</h2><div class="videoblock"><div class="content"><iframe src="https://www.youtube.com/embed/2MsN8gpT6jY?rel=0&amp;start=30" frameborder="0" allowfullscreen></iframe></div></div></section><section id="s_so_why_nog_using_asciidoc"><h3>So why nog using asciidoc?</h3></section></section>
+<section id="s_presentation_source_code"><h3>Presentation source code</h3><div class="paragraph"><p>Simple?</p></div>
+<div class="listingblock"><div class="content"><pre class="pygments highlight"><code class="asciidoc language-asciidoc">"= Markdown languages
+Asciidoc
+:date: April 28, 2015
+:source-highlighter: pygments
+:pygments-style: autumn
+:revealjs_theme: serif
+:revealjs_previewLinks: true
+// :revealjs_width: 1280
+// :revealjs_height: 1000
+:revealjs_margin: 0.04
+:revealjsdir: http://wackywendell.github.io/reveal.js/
+// :revealjsdir: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.0.0/
+:stem: latexmath
+
+
+
+== What are Markdown languages?
+
+- Purpose
+- Advantages
+- Disadvantages
+
+=== Different markdown languages
+- CommonMark
+- reStructuredText
+- Asciidoc
+
+== What has markdown to do with 'Willy'?
+
+https://artofrobotics.github.io/WillyWiki//Startup/index.html
+
+
+== How we made it user friendly for the next group?
+
+image::http://mgreau.com/posts/images/cover-asciidoc-ghpages.svg[canvas,size=contain]
+
+== Github pages?
+
+video::2MsN8gpT6jY[youtube, start=30]
+
+=== So why nog using asciidoc?
+
+== Presentation source code
+Simple?"</code></pre></div></div></section></div></div><script src="http://wackywendell.github.io/reveal.js//lib/js/head.min.js"></script><script src="http://wackywendell.github.io/reveal.js//js/reveal.js"></script><script>// See https://github.com/hakimel/reveal.js#configuration for a full list of configuration options
+Reveal.initialize({
+  // Display controls in the bottom right corner
+  controls: true,
+  // Display a presentation progress bar
+  progress: true,
+  // Display the page number of the current slide
+  slideNumber: false,
+  // Push each slide change to the browser history
+  history: false,
+  // Enable keyboard shortcuts for navigation
+  keyboard: true,
+  // Enable the slide overview mode
+  overview: true,
+  // Vertical centering of slides
+  center: true,
+  // Enables touch navigation on devices with touch input
+  touch: true,
+  // Loop the presentation
+  loop: false,
+  // Change the presentation direction to be RTL
+  rtl: false,
+  // Turns fragments on and off globally
+  fragments: true,
+  // Flags if the presentation is running in an embedded mode,
+  // i.e. contained within a limited portion of the screen
+  embedded: false,
+  // Number of milliseconds between automatically proceeding to the
+  // next slide, disabled when set to 0, this value can be overwritten
+  // by using a data-autoslide attribute on your slides
+  autoSlide: 0,
+  // Stop auto-sliding after user input
+  autoSlideStoppable: true,
+  // Enable slide navigation via mouse wheel
+  mouseWheel: false,
+  // Hides the address bar on mobile devices
+  hideAddressBar: true,
+  // Opens links in an iframe preview overlay
+  previewLinks: true,
+  // Theme (e.g., beige, black, league, night, serif, simple, sky, solarized, white)
+  // NOTE setting the theme in the config no longer works in reveal.js 3.x
+  //theme: Reveal.getQueryHash().theme || 'serif',
+  // Transition style (e.g., none, fade, slide, convex, concave, zoom)
+  transition: Reveal.getQueryHash().transition || 'slide',
+  // Transition speed (e.g., default, fast, slow)
+  transitionSpeed: 'default',
+  // Transition style for full page slide backgrounds (e.g., none, fade, slide, convex, concave, zoom)
+  backgroundTransition: 'fade',
+  // Number of slides away from the current that are visible
+  viewDistance: 3,
+  // Parallax background image (e.g., "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'")
+  parallaxBackgroundImage: 'http://blog.visme.co/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg',
+  // Parallax background size in CSS syntax (e.g., "2100px 900px")
+  parallaxBackgroundSize: '',
+
+  // The "normal" size of the presentation, aspect ratio will be preserved
+  // when the presentation is scaled to fit different resolutions. Can be
+  // specified using percentage units.
+  width: 960,
+  height: 700,
+
+  // Factor of the display size that should remain empty around the content
+  margin: 0.04,
+
+  // Bounds for smallest/largest possible scale to apply to content
+  minScale: 0.2,
+  maxScale: 1.5,
+
+  // Optional libraries used to extend on reveal.js
+  dependencies: [
+      { src: 'http://wackywendell.github.io/reveal.js//lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'http://wackywendell.github.io/reveal.js//plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'http://wackywendell.github.io/reveal.js//plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      
+      { src: 'http://wackywendell.github.io/reveal.js//plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: 'http://wackywendell.github.io/reveal.js//plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+  ]
+});</script></body></html>
