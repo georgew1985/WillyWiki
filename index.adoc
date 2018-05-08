@@ -1,11 +1,11 @@
 [#toc.toc2]
 link:welcome.html[Welcome]::
     
-link:Willy/index.html[Using Willy]:: 
-        - link:Willy/ROS.html[ROS]
-        - link:Willy/Willy-Web.html[Willy Web]
-        - link:Willy/Driving-Willy.html[Driving Willy]
-        - link:Willy/Remote.html[Remote]
+link:Startup/index.html[Using Willy]:: 
+        - link:Startup/ROS.html[ROS]
+        - link:Startup/Willy-Web.html[Willy Web]
+        - link:Startup/Driving-Willy.html[Driving Willy]
+        - link:Startup/Remote.html[Remote]
         
 link:Config/index.html[Configuration]::  
         - link:Config/Ubuntu.html[Ubuntu]
@@ -17,7 +17,11 @@ link:Config/index.html[Configuration]::
 link:ROS/index.html[ROS]::
         - link:ROS/Generic.html[Generic]
         - link:ROS/Navigation.html[Navigation]
-        
+
+link:Willy/index.hml[Willy]
+        - link:ROS/Development.html[Development Guide]
+        - link:ROS/Technical.html[Technical]
+
 link:WEB/index.html[Web-interface]::
         - link:WEB/Development.html[Development Guide]
         - link:WEB/Functional.html[Functional]

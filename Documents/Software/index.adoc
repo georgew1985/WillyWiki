@@ -1,5 +1,0 @@
-== Software
-
-include::Arduino.adoc[]
-include::Manual.adoc[]
-include::Autonomous.adoc[]
