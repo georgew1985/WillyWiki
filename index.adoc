@@ -1,50 +1,50 @@
 [#toc.toc2]
-link:welcome.adoc[Welcome]::
+link:welcome.html[Welcome]::
     
-link:Willy/index.adoc[Using Willy]:: 
-        - link:Willy/ROS.adoc[ROS]
-        - link:Willy/Willy-Web.adoc[Willy Web]
-        - link:Willy/Driving-Willy.adoc[Driving Willy]
-        - link:Willy/Remote.adoc[Remote]
+link:Willy/index.html[Using Willy]:: 
+        - link:Willy/ROS.html[ROS]
+        - link:Willy/Willy-Web.html[Willy Web]
+        - link:Willy/Driving-Willy.html[Driving Willy]
+        - link:Willy/Remote.html[Remote]
         
-link:Config/index.adoc[Configuration]::  
-        - link:Config/Ubuntu.adoc[Ubuntu]
-        - link:Config/ROS.adoc[ROS]
-        - link:Config/GIT.adoc[GIT]
-        - link:Config/Wiki.adoc[Wiki]
-        - link:Config/Hardware.adoc[Hardware]
+link:Config/index.html[Configuration]::  
+        - link:Config/Ubuntu.html[Ubuntu]
+        - link:Config/ROS.html[ROS]
+        - link:Config/GIT.html[GIT]
+        - link:Config/Wiki.html[Wiki]
+        - link:Config/Hardware.html[Hardware]
 
-link:ROS/index.adoc[ROS]::
-        - link:ROS/Generic.adoc[Generic]
-        - link:ROS/Navigation.adoc[Navigation]
+link:ROS/index.html[ROS]::
+        - link:ROS/Generic.html[Generic]
+        - link:ROS/Navigation.html[Navigation]
         
-link:WEB/index.adoc[Web-interface]::
-        - link:WEB/Development.adoc[Development Guide]
-        - link:WEB/Functional.adoc[Functional]
-        - link:WEB/Technical.adoc[Technical]
-        - link:WEB/Interaction.adoc[Interaction]
+link:WEB/index.html[Web-interface]::
+        - link:WEB/Development.html[Development Guide]
+        - link:WEB/Functional.html[Functional]
+        - link:WEB/Technical.html[Technical]
+        - link:WEB/Interaction.html[Interaction]
 
-link:Troubleshooting/index.adoc[Troubleshouting]::
-        - link:Troubleshooting/Known-bugs.adoc[Known Bugs]
+link:Troubleshooting/index.html[Troubleshouting]::
+        - link:Troubleshooting/Known-bugs.html[Known Bugs]
 
-link:Research/index.adoc[Research]::
-	- link:Research/Social-interaction.adoc[Social interaction]
-	- link:Research/Hardware.adoc[Hardware]
-	- link:Research/Peripherals.adoc[Peripherals]
+link:Research/index.html[Research]::
+	- link:Research/Social-interaction.html[Social interaction]
+	- link:Research/Hardware.html[Hardware]
+	- link:Research/Peripherals.html[Peripherals]
         
-link:Design/index.adoc[Design]::
-	- link:Design/Design-Guide.adoc[Design Guide]
-        - link:Design/Background.adoc[Background]
-        - link:Design/Technical.adoc[Technical]
+link:Design/index.html[Design]::
+	- link:Design/Design-Guide.html[Design Guide]
+        - link:Design/Background.html[Background]
+        - link:Design/Technical.html[Technical]
         
-link:Status/index.adoc[Status and Advice]::
-	- link:Status/Status.adoc[Status]
-        - link:Status/Todo.adoc[Todo & Advice]
+link:Status/index.html[Status and Advice]::
+	- link:Status/Status.html[Status]
+        - link:Status/Todo.html[Todo & Advice]
 
-link:Archive/index.adoc[Archive]::
-        - link:Archive/2016-2.adoc[(2016/2) Initial design ]
-        - link:Archive/2017-1.adoc[(2017/1) Base & Functionalities ]
-        - link:Archive/2017-2.adoc[(2017/2) Research]
-        - link:Archive/2018-1.adoc[(2018/1) Stabilization & Realisation]
+link:Archive/index.html[Archive]::
+        - link:Archive/2016-2.html[(2016/2) Initial design ]
+        - link:Archive/2017-1.html[(2017/1) Base & Functionalities ]
+        - link:Archive/2017-2.html[(2017/2) Research]
+        - link:Archive/2018-1.html[(2018/1) Stabilization & Realisation]
 
 include::welcome.adoc[]
