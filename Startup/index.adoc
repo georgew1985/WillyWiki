@@ -15,6 +15,5 @@ include::ROS.adoc[]
 
 include::Willy-Web.adoc[]
 
-include::../index.adoc[]
 
 
