@@ -29,8 +29,8 @@ link:Troubleshooting/index.adoc[Troubleshouting]::
 
 link:Research/index.adoc[Research]::
 	- link:Research/Social-interaction.adoc[Social interaction]
-	- link:Research/Social-interaction.adoc[Hardware]
-	- link:Research/Social-interaction.adoc[Peripherals]
+	- link:Research/Hardware.adoc[Hardware]
+	- link:Research/Peripherals.adoc[Peripherals]
         
 link:Design/index.adoc[Design]::
 	- link:Design/Design-Guide.adoc[Design Guide]
