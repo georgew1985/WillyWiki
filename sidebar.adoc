@@ -1,4 +1,4 @@
-:url: https://artofrobotics.github.io/WillyWiki
+:url: https://artofrobotics.github.io/WillyWiki/
 
 [#toc.toc2]
 link:welcome.html[Welcome]::
