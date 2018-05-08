@@ -1,4 +1,4 @@
-==== Driving of willy
+== Driving of willy
 ===== Steps for autonomous driving
 These steps will start the autonomous driving of willy. If you want to drive manually by using the keyboard? 
 Then take a look at the steps for manual driving underneath.
