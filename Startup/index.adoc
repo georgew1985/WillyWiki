@@ -1,5 +1,5 @@
 :numbered:
-:toc: top
+:toc:
 :toclevels: 5
 
 Startup and global knowledge
