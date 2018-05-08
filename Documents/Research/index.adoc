@@ -1,0 +1,25 @@
+== Research 
+// Batteries
+include::batteries.adoc[]
+
+// Indoor Navigation
+//include::Indoor-navigation.adoc[]
+
+
+// Back-up
+include::Back-up.adoc[]
+
+// Screen
+include::Screen.adoc[]
+
+// Inventorisement Current status
+include::Current-status.adoc[]
+
+// Alternative Interaction
+include::Alternative-interaction.adoc[]
+
+// Social Interaction
+include::Social-interaction.adoc[]
+
+// Leap
+include::Leap-research.adoc[]

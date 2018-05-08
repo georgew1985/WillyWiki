@@ -1,9 +1,3 @@
-=== Startup Guide
-
-Welcome to the Willy Startup Guide!
-To start Willy The Garbage Disposal Robot, a few steps are required.
-Each step is explained in the subchapters.
-
 ==== Driving of willy
 ===== Steps for autonomous driving
 These steps will start the autonomous driving of willy. If you want to drive manually by using the keyboard? 
@@ -75,19 +69,3 @@ Willy will now start the software and hardware to start the manual driving proje
     S -> Move backward
     
     D -> Move right
-
-===== Web Interface
-
-1. **Start the Willy Web**
-To control Willy in a graphical interface, you need to start the web interface. To do so, run the following command: +
-`cd /home/willy/Documents/willyweb` +
-`sudo dotnet Willy.Web.dll` +
-The web interface will now start. +
-
-2. **Open the WillyWeb**
-To open the web interface, navigate in a browser (Chrome or Firefox) to 192.168.0.100. Login using the credenticals from the data page.
-
-3. **Go to remote control and control Willy**
-Navigate in the Willy Web to `Remote Control` and control Willy by using the joystick
-
-IMPORTANT: Do not close the terminals. Otherwise the web interface will be terminated!
