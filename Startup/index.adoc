@@ -2,7 +2,7 @@
 :toc:
 :toclevels: 5
 
-include::../sidebar.adoc[]
+include::sidebar.adoc[]
 
 Startup and global knowledge
 
