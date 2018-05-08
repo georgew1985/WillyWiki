@@ -1,13 +1,12 @@
-:table-caption!:
 :numbered:
 :toc: top
 :toclevels: 5
 
 Startup and global knowledge
 
-include::Driving-Willy.html[]
-include::Remote.html[]
-include::ROS.html[]
-include::Willy-Web.html[]
+include::Driving-Willy.adoc[]
+include::Remote.adoc[]
+include::ROS.adoc[]
+include::Willy-Web.adoc[]
 
 
