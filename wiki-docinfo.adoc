@@ -1,4 +1,4 @@
-[#toc][.toc2]
+[#toc.toc2]
 link:welcome.adoc[Welcome]::
     
 link:Willy/README.adoc[Using Willy]:: 
