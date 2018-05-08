@@ -1,0 +1,96 @@
+=== Autonomous driving
+
+[discrete]
+==== Version history
+
+[cols=",,,",options="header",]
+|===============================================
+|Version |Date |Person |Note
+|V0.1 |08-05-18 |Martijn van Olst |Created Document
+|V0.2 |08-05-18 |Martijn van Olst |Finished Initalizing
+|===============================================
+
+==== Preface
+
+The following definition list is to clear up confusion about certain
+terms used in this document.
+
+[cols=",",options="header",]
+|=======================================================================
+|_Term_ |_Definition_
+
+|UpperCamelCase |This means that each word is capitalized. Example:
+SetAlarmOfAndroid.
+
+|LowerCamelCase |This means that each word is capitalized except for the
+first word. Example: setAlarmOfAndroid.
+
+|Odometry |The technique of measuring the amount of movement of the
+wheels with special sensors.
+
+|ROS |Robot Operating System, the framework Willy has been built on.
+|=======================================================================
+
+==== Rostopic overview
+
+image:media/rostopic.png[image,width=929,height=421]
+
+For the Autonomous driving of our robot are we using ROS. ROS is a platform to help a mobile platform to navigate and communicate
+with different programs and devices. There is a schematic view of our rostopics in the image above. 
+
+Let's explain it a little bit. 
+Our mobile base consist of 7 rosnodes. These rosnodes provide the neccesairly data for the move_base topic to navigate inside.
+
+1. **tf or transform topic.**
+This node determinate the transformations and rotations of the different devices from the rotation point of the mobile base.
+2. **TIM551 Lidar topic.**
+This node provides 'LaserScan' information from the sick_tim 551 lidar and published this data on the /scan topic.
+3. **Kinect topic.**
+This node provides 'PointCloud2' information from the kinect and publish these information on the /camera topic and /camera subtopics.
+4. **Move base topic.**
+This node is provided by the ros navigation stack. It request all information from the /tf and /map topic and provides movement commands from goals send by rviz which can be send to the /cmd_vel topic provided by our driving_willy package.
+5. **Hector mapping.**
+This topic request information from the /scan and /camera topic and creates a map from this data to navigate in. This map is requested by the move_base.
+6. **Driving willy.**
+This topic is provided by our own driving_willy package. It provides a /cmd_vel topic to control the motors of our mobile base. Also the GPS, compass, sonars, keyboard and joystick are controlled with this node.
+7. **Rviz.**
+Rviz is a ros visualization tool to view sensor data. Rviz can view the generated map and the user can send navigation goals in rviz. Rviz then views the planned route and also the obstacles.
+
+===== Code Overview
+
+image:media/Arduino3.jpg[image,width=264,height=847]
+
+image:media/Arduino4.jpg[image,width=221,height=254]
+
+image:media/Arduino5.jpg[image,width=231,height=306]
+
+image:media/Arduino6.jpg[image,width=401,height=298]
+
+image:media/Arduino7.jpg[image,width=291,height=332]
+
+==== Design Decisions
+
+In the past the decision has been made to make the hardware modular.
+Unfortunately the reason behind this decision is not documented.
+
+The motor controller (odometry) is made by the group of the second
+semester of 2016/17. The odometry code subscribes from the topic
+“/cmd_vel” and publishes to the topic “wheel_encoder”. The code reads
+the data from the odometry sensors and publishes it to ROS, and writes
+data it gets from ROS to the motors.
+
+The sonar code is reading the 10 sonar sensors and publishes it to ROS
+on the topic “sonar”. The code has been written by the group of the
+second semester of 2016/17.
+
+The GPS and compass code is written by the group of the first semester
+of 2017/18. The setup is made ambiguous. The compass has a Arduino and
+the GPS has a Arduino. The data from the GPS is sent to the Arduino with
+the compass. From that Arduino the data from the Compass and the data
+from the GPS is both being published to two separate ROS topics. The
+topic with compass data is “compass” and the topic with GPS data is
+“gps”. This setup has not been fixed yet.
+
+==== Bibliography
+
+*The current document contains no sources.*
