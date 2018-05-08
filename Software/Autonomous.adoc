@@ -1,15 +1,6 @@
 === Autonomous driving
 
 [discrete]
-==== Version history
-
-[cols=",,,",options="header",]
-|===============================================
-|Version |Date |Person |Note
-|V0.1 |08-05-18 |Martijn van Olst |Created Document
-|V0.2 |08-05-18 |Martijn van Olst |Finished Initalizing
-|===============================================
-
 ==== Preface
 
 The following definition list is to clear up confusion about certain
@@ -19,14 +10,11 @@ terms used in this document.
 |=======================================================================
 |_Term_ |_Definition_
 
-|UpperCamelCase |This means that each word is capitalized. Example:
-SetAlarmOfAndroid.
+|PointCloud2 |This is a ros message type mostly used by the Xbox 360 kinect. Its an array of points readed by the kinect including the distance to each point.
 
-|LowerCamelCase |This means that each word is capitalized except for the
-first word. Example: setAlarmOfAndroid.
+|LaserScan |This is a ros message type mostly used by lidar systems. Its a 2D, 360 or 270 degrees laserscan with all the distances from the scan to the base frame of the robot.
 
-|Odometry |The technique of measuring the amount of movement of the
-wheels with special sensors.
+|Mappinng |The technique of visualization a space using sensor data.
 
 |ROS |Robot Operating System, the framework Willy has been built on.
 |=======================================================================
