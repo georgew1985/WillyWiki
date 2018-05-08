@@ -1,7 +1,7 @@
 [#toc.toc2]
 link:welcome.html[Welcome]::
     
-link:Startup/index.html[Using Willy]:: 
+link:/Startup/index.html[Using Willy]:: 
         - link:Startup/ROS.html[ROS]
         - link:Startup/Willy-Web.html[Willy Web]
         - link:Startup/Driving-Willy.html[Driving Willy]
