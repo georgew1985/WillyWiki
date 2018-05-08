@@ -29,7 +29,7 @@ Finally run the package using the following command: +
 `roslaunch willy_navigation willy_navigation.launch` +
 Willy will now start the software and hardware to start the autonomous driving project. +
 
-WARNING: Do not forget to depress the emergency stop when the steps above are finished. Otherwise willy will not drive.
+IMPORTANT: Do not forget to depress the emergency stop when the steps above are finished. Otherwise willy will not drive.
 
 ===== Steps for manual driving 
 These steps are optional. Only execute the following steps if you want to drive Willy manually.
@@ -60,7 +60,7 @@ Finally run the package using the following command: +
 `rosrun driving_willy main` +
 Willy will now start the software and hardware to start the manual driving project. +
 
-WARNING: Do not forget to depress the emergency stop when the steps above are finished. Otherwise willy will not drive.
+IMPORTANT: Do not forget to depress the emergency stop when the steps above are finished. Otherwise willy will not drive.
 
 **Keys for the control of Willy**
 
