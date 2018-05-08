@@ -5,6 +5,9 @@ To start Willy The Garbage Disposal Robot, a few steps are required.
 Each step is explained in the subchapters.
 
 ==== Steps for autonomous driving
+These steps will start the autonomous driving of willy. If you want to drive manually by using the keyboard? 
+Then take a look at the steps for manual driving underneath.
+
 1. **Deploy the brakes**
 To start Willy, the brakes need to be deployed. Otherwise Willy will not be able to drive. 
 To deploy the brakes you have to use the levers on the front of the engines. 
