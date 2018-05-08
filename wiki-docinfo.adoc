@@ -1,18 +1,12 @@
-**Sidebar Block:**
-****
-here *is* my text
-****
-
 [.toc2][#toc]
 link:welcome.adoc[Welcome]::
     
-
 link:Willy/README.adoc[Using Willy]:: 
         - link:Willy/ROS.adoc[ROS]
         - link:Willy/Willy-Web.adoc[Willy Web]
         - link:Willy/Driving-Willy.adoc[Driving Willy]
         - link:Willy/Social-interaction.adoc[Social interaction]
-        - link:Willy/Login-remote.adoc[Login remote]
+        - link:Willy/Remote.adoc[Remote]
         
 link:Config/README.adoc[Configuration]::  
         - link:Config/Ubuntu.adoc[Ubuntu]
