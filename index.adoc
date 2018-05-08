@@ -1,36 +1,3 @@
 include::sidebar.adoc[]
 
-link:Willy/index.hml[Willy]
-        - link:Willy/Development.html[Development Guide]
-        - link:Willy/Technical.html[Technical]
-
-link:WEB/index.html[Web-interface]::
-        - link:WEB/Development.html[Development Guide]
-        - link:WEB/Functional.html[Functional]
-        - link:WEB/Technical.html[Technical]
-        - link:WEB/Interaction.html[Interaction]
-
-link:Troubleshooting/index.html[Troubleshouting]::
-        - link:Troubleshooting/Known-bugs.html[Known Bugs]
-
-link:Research/index.html[Research]::
-	- link:Research/Social-interaction.html[Social interaction]
-	- link:Research/Hardware.html[Hardware]
-	- link:Research/Peripherals.html[Peripherals]
-        
-link:Design/index.html[Design]::
-	- link:Design/Design-Guide.html[Design Guide]
-        - link:Design/Background.html[Background]
-        - link:Design/Technical.html[Technical]
-        
-link:Status/index.html[Status and Advice]::
-	- link:Status/Status.html[Status]
-        - link:Status/Todo.html[Todo & Advice]
-
-link:Archive/index.html[Archive]::
-        - link:Archive/2016-2.html[(2016/2) Initial design ]
-        - link:Archive/2017-1.html[(2017/1) Base & Functionalities ]
-        - link:Archive/2017-2.html[(2017/2) Research]
-        - link:Archive/2018-1.html[(2018/1) Stabilization & Realisation]
-
 include::welcome.adoc[]
