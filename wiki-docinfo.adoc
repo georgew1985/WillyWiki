@@ -2,8 +2,9 @@
 ****
 here *is* my text
 ****
-
-[.toc2][#toc]
+[#toc]
+--
+[.toc2]
 link:welcome.adoc[Welcome]::
     
 
@@ -53,3 +54,4 @@ link:Archive/README.adoc[Archive]::
         - link:Archive/README.adoc[(2017/1) Base & Functionalities ]
         - link:Archive/README.adoc[(2017/2) Research]
         - link:Archive/README.adoc[(2018/1) Stabilization & Realisation]
+--
