@@ -19,8 +19,8 @@ link:ROS/index.html[ROS]::
         - link:ROS/Navigation.html[Navigation]
 
 link:Willy/index.hml[Willy]
-        - link:ROS/Development.html[Development Guide]
-        - link:ROS/Technical.html[Technical]
+        - link:Willy/Development.html[Development Guide]
+        - link:Willy/Technical.html[Technical]
 
 link:WEB/index.html[Web-interface]::
         - link:WEB/Development.html[Development Guide]

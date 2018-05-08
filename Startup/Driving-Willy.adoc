@@ -3,21 +3,21 @@
 These steps will start the autonomous driving of willy. If you want to drive manually by using the keyboard? 
 Then take a look at the steps for manual driving underneath.
 
-1. **Deploy the brakes**
+1. **Deploy the brakes** +
 To start Willy, the brakes need to be deployed. Otherwise Willy will not be able to drive. 
 To deploy the brakes you have to use the levers on the front of the engines. 
 You can check if the brakes are deployed by trying to push Willy. 
 The brakes are appled when the wheels can't rotate anymore.
 
-2. **Turn the power on**
+2. **Turn the power on** +
 Willy needs power to be able to operate. 
 Make sure the power levers on the side of Willy are both turned on (under the voltage display).
 
-3. **Turn the motor controller off**
+3. **Turn the motor controller off** +
 Willy cannot start when the engines are turned on. 
 To turn the motor controller off, use the switch on the bottom of the pc case. (or the emergency button for convenience)
 
-4. **Start Willy by running the startup command**
+4. **Start Willy by running the startup command** +
 Willy is now able to start. You can easily start willy by running our startup package.
 To run this package, navigate to the following directory: +
 `/home/willy/Documents/WTGD/willy` +
@@ -31,24 +31,24 @@ Willy will now start the software and hardware to start the autonomous driving p
 
 IMPORTANT: Do not forget to depress the emergency stop when the steps above are finished. Otherwise willy will not drive.
 
-===== Steps for manual driving
+===== Steps for manual driving 
 These steps are optional. Only execute the following steps if you want to drive Willy manually.
 
-1. **Deploy the brakes**
+1. **Deploy the brakes** +
 To start Willy, the brakes need to be deployed. Otherwise Willy will not be able to drive. 
 To deploy the brakes you have to use the levers on the front of the engines. 
 You can check if the brakes are deployed by trying to push Willy. 
 The brakes are appled when the wheels can't rotate anymore.
 
-2. **Turn the power on**
+2. **Turn the power on** +
 Willy needs power to be able to operate. 
 Make sure the power levers on the side of Willy are both turned on (under the voltage display).
 
-3. **Turn the motor controller off**
+3. **Turn the motor controller off** +
 Willy cannot start when the engines are turned on. 
 To turn the motor controller off, use the switch on the bottom of the pc case. (or the emergency button for convenience)
 
-4. **Start Willy by running the startup command**
+4. **Start Willy by running the startup command** +
 Willy is now able to start. You can easily start willy by running our startup package.
 To run this package, navigate to the following directory: +
 `/home/willy/Documents/WTGD/willy` +
