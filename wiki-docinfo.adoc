@@ -3,7 +3,7 @@
 here *is* my text
 ****
 
-[.toc2]
+[.toc2, #toc]
 link:welcome.adoc[Welcome]::
     
 
