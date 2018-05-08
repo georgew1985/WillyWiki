@@ -4,7 +4,7 @@ Welcome to the Willy Startup Guide!
 To start Willy The Garbage Disposal Robot, a few steps are required.
 Each step is explained in the subchapters.
 
-==== Steps
+==== Steps for autonomous driving
 1. **Deploy the brakes**
 To start Willy, the brakes need to be deployed. Otherwise Willy will not be able to drive. 
 To deploy the brakes you have to use the levers on the front of the engines. 
@@ -20,55 +20,52 @@ Willy cannot start when the engines are turned on.
 To turn the motor controller off, use the switch on the bottom of the pc case. (or the emergency button for convenience)
 
 4. **Start Willy by running the startup command**
-Willy is now able to start. You can easily start willy by running our startup script. This script is located in the following folder:
-`/home/willy/Documents/WTGD/bin/startup.sh`
-This startup script can be runned using the following commands:
-`cd /home/willy/Documents/WTGD/bin`
-`./startup.sh`
-Willy will now start the arduino's.
+Willy is now able to start. You can easily start willy by running our startup package.
+To run this package, navigate to the following directory:
+`/home/willy/Documents/WTGD/willy`
+Run the following command to build the package:
+`catkin_make`
+Then make the terminal point to the source code by running the following command:
+`source devel/setup.bash`
+Finally run the package using the following command:
+`roslaunch willy_navigation willy_navigation.launch`
+Willy will now start the software and hardware to start the autonomous driving project.
 
-===== WillyController
-
+===== Steps for manual driving
 These steps are optional. Only execute the following steps if you want to drive Willy manually.
 
-1. **Build the project**
-For building the project you first have to go to the correct directory by doing:
-`cd /home/willy/Documents/WTGD/willy`
-The project can then be built with the command:
+1. **Deploy the brakes**
+To start Willy, the brakes need to be deployed. Otherwise Willy will not be able to drive. 
+To deploy the brakes you have to use the levers on the front of the engines. 
+You can check if the brakes are deployed by trying to push Willy. 
+The brakes are appled when the wheels can't rotate anymore.
+
+2. **Turn the power on**
+Willy needs power to be able to operate. 
+Make sure the power levers on the side of Willy are both turned on (under the voltage display).
+
+3. **Turn the motor controller off**
+Willy cannot start when the engines are turned on. 
+To turn the motor controller off, use the switch on the bottom of the pc case. (or the emergency button for convenience)
+
+4. **Start Willy by running the startup command**
+Willy is now able to start. You can easily start willy by running our startup package.
+To run this package, navigate to the following directory:
+`/home/willy/Documents/WTGD/willy`
+Run the following command to build the package:
 `catkin_make`
-
-2. **Setting the source for ROS**
-To setup the workspace for ROS, run the following command:
+Then make the terminal point to the source code by running the following command:
 `source devel/setup.bash`
-
-3. **Start the WillyController**
-To make Willy drive, the code has to run with the following command:
+Finally run the package using the following command:
 `rosrun driving_willy main`
+Willy will now start the software and hardware to start the manual driving project.
 
-4. **(Optional) Listing topics**
-To list the current running topics, run the command:
-`rostopic list`
-The following topics (among others) should be running:
-- command_vel
-- sonar
-- compass
-- gps
-
-===== LiDAR
-
-These steps are required when the LiDAR is used. Execute the following commands to run the LiDAR software:
-
-1. **Start sick_tim** 
-by running the following commands:
-`roslaunch sick_tim`
-and
-`sick_tim551_2050001.launch`
-
-2. **Run Rviz** by executing the command:
-`rosrun rviz rviz`
-
-3. **Opening Rviz**
-Subscribe in the interface to the topic of the LiDAR
+**Keys for the control of Willy**
+    Q -> Stop moving
+    W -> Move forward
+    A -> Move left
+    S -> Move backward
+    D -> Move right
 
 ===== Web Interface
 

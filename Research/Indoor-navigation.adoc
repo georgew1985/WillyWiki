@@ -203,6 +203,8 @@ collisions.
 
 * Difficult to set up
 * Needs further research for implementation
+* Small field of view
+* Loose its recognition very fast
 * Latency
 
 * LiDAR
@@ -228,7 +230,7 @@ localization
 Conclusion
 ----------
 
-For the indoor navigation of Willy a combination of options can be used.
+For the indoor navigation of Willy, a combination of options can be used.
 Because of the documentation which is available for the Kinect V1 and
 the fact that these are cheap, we will do a further investigating of
 using the Kinect on Willy.
