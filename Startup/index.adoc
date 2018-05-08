@@ -1,3 +1,0 @@
-== Startup 
-// Startup Guide
-include::Startup-guide.adoc[]
