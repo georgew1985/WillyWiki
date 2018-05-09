@@ -1,9 +1,9 @@
 include::../Header.adoc[]
 
-include::../Hardware.adoc[]
+include::Hardware.adoc[]
 
-include::../Perpherals.adoc[]
+include::Perpherals.adoc[]
 
-include::../Social-interaction.adoc[]
+include::Social-interaction.adoc[]
 
-include::../Indoor-navigation.adoc[]
+include::Indoor-navigation.adoc[]
