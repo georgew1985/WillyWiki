@@ -1,1 +1,11 @@
-Technical documentation of willy
+include::../Header.adoc[]
+
+== Hardware Architecture Documentation
+
+=== Hardware
+
+=== Software
+
+==== Mini pc
+
+==== Arduino's 
