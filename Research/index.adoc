@@ -7,3 +7,5 @@ include::Perpherals.adoc[]
 include::Social-interaction.adoc[]
 
 include::Indoor-navigation.adoc[]
+
+include::Leap.adoc
