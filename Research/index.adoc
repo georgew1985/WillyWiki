@@ -1,0 +1,7 @@
+include::../Header.adoc[]
+
+include::../Hardware.adoc[]
+
+include::../Perpherals.adoc[]
+
+include::../Social-interaction.adoc[]
