@@ -9,7 +9,7 @@ link:{url}/Startup/index.html[Using Willy]::
         - link:{url}/Startup/Driving-Willy.html[Driving Willy]
         - link:{url}/Startup/Remote.html[Remote]
         
-link:Config/index.html[Configuration]::  
+link:{url}/Config/index.html[Configuration]::  
         - link:{url}/Config/Ubuntu.html[Ubuntu]
         - link:{url}/Config/ROS.html[ROS]
         - link:{url}/Config/GIT.html[GIT]
