@@ -4,6 +4,19 @@ include::../Header.adoc[]
 
 === Hardware
 
+==== Overview
+
+==== Components
+
+===== Mini pc
+===== Motors
+===== Sonars
+===== GPS / Compass
+===== Screen
+===== LIDAR
+===== Kinect
+===== External lights
+
 === Software
 
 ==== Mini pc
