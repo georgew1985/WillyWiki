@@ -9,3 +9,5 @@ include::ROS.adoc[]
 include::Ubuntu.adoc[]
 
 include::Wiki.adoc[]
+
+include::Remote.adoc[]
