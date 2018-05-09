@@ -1,7 +1,7 @@
 :url: https://artofrobotics.github.io/WillyWiki
 
 [#toc.toc2]
-link:welcome.html[Welcome]::
+link:{url}/welcome.html[Welcome]::
     
 link:{url}/Startup/index.html[Using Willy]:: 
         - link:{url}/Startup/ROS.html[ROS]
