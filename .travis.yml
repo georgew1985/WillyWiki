@@ -29,6 +29,7 @@ after_success:
   - cp -R Research/media Software/media Hardware/media General/media Configuration/media Design/media Startup/media Groups/media media ; 
   - cp media output/media; cd media ; cp -R media ../output/media; cd .. ;
   - find . -name '*html' | cpio -pdm output ;
+  - find . -name '*pdf' | cpio -pdm output ;
   - cd output ;
   - git init
   - git config user.name "${GH_USER_NAME}"
