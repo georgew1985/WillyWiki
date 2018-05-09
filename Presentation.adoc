@@ -1,15 +1,3 @@
-= Markdown languages
-Asciidoc
-:source-highlighter: pygments
-:pygments-style: autumn
-:revealjs_theme: serif
-:revealjs_previewLinks: true
-:revealjs_parallaxBackgroundImage: http://blog.visme.co/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg
-:revealjs_margin: 0.04
-:revealjsdir: http://wackywendell.github.io/reveal.js/
-:stem: latexmath
-
-
 == What are Markdown languages?
 
 - Purpose
