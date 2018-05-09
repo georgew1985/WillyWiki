@@ -17,6 +17,8 @@ include::../Header.adoc[]
 ===== Kinect
 ===== External lights
 
+==== Schematics
+
 === Software
 
 ==== Mini pc
