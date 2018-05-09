@@ -1,0 +1,5 @@
+:numbered:
+:toc:
+:toclevels: 5
+
+include::../sidebar.adoc[]

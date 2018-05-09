@@ -1,8 +1,4 @@
-:numbered:
-:toc:
-:toclevels: 5
-
-include::../sidebar.adoc[]
+include::../Header.adoc[]
 
 Startup and global knowledge
 

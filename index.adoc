@@ -1,5 +1,3 @@
 include::sidebar.adoc[]
 
 include::welcome.adoc[]
-
-include::Presentation.adoc[]
