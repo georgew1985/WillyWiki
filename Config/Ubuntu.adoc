@@ -144,6 +144,104 @@ With the above installation changes made to Ubuntu, the current ‘WTGD’
 code was able to run. Packages listed in the 11.1. can be used as
 reference material.
 
+=== Devices network
+
+The following information can be used to connect with the 'devices' wifi-network at Windesheim.
+
+IP-adres: 145.44.211.32
+Subnet mask: 255.255.255.192
+Default gateway: 145.44.211.1
+DNS: 8.8.8.8
+
+An connection can only be made with the following MAC address. If this is changed, please ask the support-desk of Windesheim to change the MAC-address.
+
+MAC: 10:4a:7d:21:f2:d2
+
+The configuration on Willy is as shown below
+
+image::media/Ipconfig.png[ipconfig]
+image::media/wifisettings.png[wifisettings]
+
+== Speech configuration
+
+`curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -`
+
+`sudo apt-get install -y nodejs`
+
+`sudo apt-get install -y build-essential`
+
+`sudo apt-get install python-pyaudio python3-pyaudio sox`
+
+`pip install pyaudio`
+
+`sudo apt-get install libmagic-dev libatlas-base-dev`
+
+`git clone https://github.com/ArtOfRobotics/Speechtest.git`
+
+`cd Speechtest`
+
+`node server.js`
+
+== Remote access
+=== RDP
+The following configuration was used when RDP was deployed by using XRDP and XFCE4 
+
+[source,text]
+----
+sudo apt-get install xrdp
+sudo apt-get install xfce4
+----
+
+Edit .Xsesion file in home directory 
+
+[source,text]
+----
+echo xfce4-session >~/.xsession 
+----
+
+Edit XRDP configfile: “/etc/xrdp/starwm.sh” for using XFCE4 
+
+[source,bash]
+----
+#!/bin/sh
+if [ -r /etc/default/locale ]; then
+  . /etc/default/locale
+export LANG LANGUAGE
+fi
+startxfce4 
+----
+
+Fix the Tab button by editing: 
+
+[source,text]
+----
+~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml 
+----
+Replacing 
+[source,text]
+----
+<property name="&lt;Super&gt;Tab" type="string" value="switch_window_key"/> 
+----
+By
+[source,text]
+----
+<property name="&lt;Super&gt;Tab" type="string" value="empty"/> 
+----
+
+=== Openssh server
+Install open-ssh
+
+[source,]
+----
+sudo apt-get install openssh-server 
+----
+Enable ssh on boot
+[source,]
+----
+sudo systemctl enable ssh
+----
+
 [bibliography]
 === References
 - link: {url}/Documents/#_inventorisement_current_status
+
