@@ -38,7 +38,6 @@ link:{url}/Research/index.html[Research]::
 	- link:{url}/Research/Hardware.html[Hardware]
 	- link:{url}/Research/Peripherals.html[Peripherals]
 	- link:{url}/Research/Indoor-navigation.html[Indoor-navigation]
-	- link:{url}/Research/Leap.html[Leap]
         
 link:{url}/Design/index.html[Design]::
 	- link:{url}/Design/Design-Guide.html[Design Guide]
