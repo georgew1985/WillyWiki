@@ -5,14 +5,18 @@ include::../Header.adoc[]
 === Hardware
 
 ==== Overview
+A simple overview of all the hardware in Willy is made in the 
+following scheme:
+//Insert scheme here//
 
 ==== Components
+This chapter contains all the components with information.
 
 ===== Mini pc
 
 ===== Motors and controller
-Willy contains 2 motors from a second-hand mobility scooter. A previous project
-group has chosen this option as documented in the ‘Ontwerp verslag’.
+Willy contains 2 motors from a second-hand mobility scooter. A previous 
+project group has chosen this option as documented in the ‘Ontwerp verslag’.
 (Ontwerpverslag, 2016)
 
 These motors need 24 volts and use 20 amps. One of the previous project
