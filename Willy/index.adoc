@@ -1,3 +1,7 @@
 include::../Header.adoc[]
 
-Documentation of willy hardware
+include::Code.adoc[]
+
+include::Development.adoc[]
+
+include::Technical.adoc[]
