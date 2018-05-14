@@ -1,0 +1,53 @@
+include::../Header.adoc[]
+
+== Code Overview Documentation
+
+=== Hardware
+
+Here goes information about the code of the arduino's in willy
+
+==== Overview
+
+=== Software
+
+Here goes information about the code of the DrivingWilly ROS package
+
+==== Overview
+
+image:media/overview/DrivingWilly.png[image,width=1200,height=1500]
+
+Our driving willy code consists of modulair components named controllers. 
+These controllers controls the functionality of willy. Every piece of hardware
+has it's own controller which controls the methods and stores the variables.
+A global class diagram can be found in the image above.
+
+By using this way of coding, functionality of willy can be easily extended.
+Just create a new controller and add your methods to it.
+A detailed explaination of this can be found in the "Extending functionality" 
+paragraph on this page below.
+
+==== Controller setup
+
+Every controller is created and declared in the main. The main creates the class object 
+and returns a pointer to it. 
+
+image:media/overview/ControllerDeclaration.png[image,width=1588,height=520]
+
+This pointer is forwarded to the subcontroller of willy
+named "DrivingController". 
+
+image:media/overview/DrivingController.png[image,width=2708,height=90]
+
+In this class the subcontrollers are declared.
+The current subcontrollers of willy are:
+
+1. VisionController
+2. GeneralController
+3. VisionController
+
+The pointers of the controllers are forwarded to the subcontrollers above in the "DrivingController"
+
+image:media/overview/DrivingSubcontroller.png[image,width=1000,height=110]
+
+Now every controller has acces to their subscontroller and the subcontroller has acces to the main where the other controllers are declared.
+By using this method we can always access all data and methods of the controllers and subcontrollers.
