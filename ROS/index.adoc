@@ -1,1 +1,7 @@
+
 include::../Header.adoc[]
+
+include::Generic.adoc[]
+
+include::Navigation.adoc[]
+
