@@ -1,0 +1,4 @@
+include::../../header.adoc[]
+
+// Include all documents
+include::main.adoc[]
