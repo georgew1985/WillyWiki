@@ -11,6 +11,3 @@ include::ROS.adoc[]
 
 include::Willy-Web.adoc[]
 
-include::media[]
-
-
