@@ -1,1 +1,15 @@
 include::../Header.adoc[]
+
+== Remote
+=== Setup Wifi connection
+Before any form of connection can be realized, a physical connection is required. When the powerswitch is turned on, the router will setup a wifi access point. Connection with the access point can be setup with the following data.
+
+SSID:   Willy  
+WPA2-password:  See password file.
+
+=== Remote Desktop connection
+If a wifi connection is established. An RDP connection can be realized. The following working method applies to a Windows environment.
+
+Start -> Run -> MSTSC -> 192.168.0.100 0 -> Connect
+
+image::media/mstsc.png[]

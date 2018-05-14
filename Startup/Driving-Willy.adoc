@@ -1,7 +1,7 @@
 include::../Header.adoc[]
 
 == Driving of willy
-===== Steps for autonomous driving
+=== Steps for autonomous driving
 These steps will start the autonomous driving of willy. If you want to drive manually by using the keyboard? 
 Then take a look at the steps for manual driving underneath.
 
@@ -33,7 +33,7 @@ Willy will now start the software and hardware to start the autonomous driving p
 
 IMPORTANT: Do not forget to depress the emergency stop when the steps above are finished. Otherwise willy will not drive.
 
-===== Steps for manual driving 
+=== Steps for manual driving 
 These steps are optional. Only execute the following steps if you want to drive Willy manually.
 
 1. **Deploy the brakes** +
