@@ -1,0 +1,215 @@
+include::../Header.adoc[]
+
+== Code Overview Documentation
+
+=== Hardware
+
+Here goes information about the code of the arduino's in willy
+
+==== Overview
+
+=== Software
+
+Here goes information about the code of the DrivingWilly ROS package
+
+==== Overview
+
+image:media/overview/DrivingWilly.png[image,width=1200,height=1500]
+
+Our driving willy code consists of modulair components named controllers. 
+These controllers controls the functionality of willy. Every piece of hardware
+has it's own controller which controls the methods and stores the variables.
+A global class diagram can be found in the image above.
+
+By using this way of coding, functionality of willy can be easily extended.
+Just create a new controller and add your methods to it.
+A detailed explaination of this can be found in the "Extending functionality" 
+paragraph on this page below.
+
+
+==== Components
+
+===== Mini pc
+
+===== Motors and controller
+Willy contains 2 motors from a second-hand mobility scooter. A previous project
+group has chosen this option as documented in the ‘Ontwerp verslag’.
+(Ontwerpverslag, 2016)
+
+These motors need 24 volts and use 20 amps. One of the previous project
+groups created the motor controller to control the motors. This is
+documented in the ‘Systeem dossier’ from a previous project group.
+(Systeem Dossier,
+2016)image:media/current-status/image4.jpeg[image,width=112,height=149]
+
+This motor controller is made by using an Arduino Mega and a custom
+shield with additional custom hardware. This hardware makes sure the
+data from the wheel encoders are sent to the proper digital pins on the
+Arduino board. The motor controller processes the data and sends it to
+the ROS framework. This data is then processed by the WillyController,
+which is running as a node on the ROS framework.
+
+The current to the motors is also controlled by this Arduino.
+
+The motor controller is built as shown below:
+
+image:media/current-status/image5.jpg[image,width=604,height=427]
+
+====== Brakes
+
+The two engines of willy contain both a brake. This brake is controlled
+by the engine itself. When the active signal to the motors is lost, the
+motor will automatically activate the brake. To start the driving_willy
+project, you NEED to deploy the brakes. Otherwise Willy will not drive!
+
+image:media/current-status/image6.jpeg[image,width=268,height=358]image:media/current-status/image7.png[image,width=269,height=359]
+
+Make sure to deploy the brakes. Otherwise Willy won’t work!! There is
+only one way to detect if the brakes are deployed. It’s by simply
+testing if the wheel can turn (Or a very little bit) anymore.
+
+
+===== Batteries
+
+===== Sonars
+To prevent collisions, ultrasonic sensors are used. These sensors
+measure distance by using sound. This is made possible by sending out
+bursts of high frequency noise, and then waiting for a reflection of
+that sound.image:media/current-status/image8.jpeg[image,width=208,height=117]
+
+By using this data Willy is be able to decide if he is able to drive any
+further in a certain direction. In the event of Willy being not able to
+drive any further, he will decide if there is a direction where he is
+able to drive further. This way Willy will be able to drive around
+autonomously without collisions. How Willy reacts to objects in his
+navigation is researched by a previous group. (Navigation design v0.1,
+2017)
+
+The sensors all use 5V as can be seen in the schematic:
+
+image:media/current-status/image9.jpg[image,width=604,height=427](!!!OLD!!!)
+
+As shown in the schematic above, all the 16 sensors are connected to the
+Arduino.
+
+The sensors are connected in the following order:
+
+[cols=",",options="header",]
+|===============================================
+|Arduino Digital Pin Number |Sonar Sensor Number
+|3 |Sensor 0
+|4 |Sensor 1
+|5 |Sensor 2
+|6 |Sensor 3
+|7 |Sensor 4
+|8 |Sensor 5
+|9 |Sensor 6
+|10 |Sensor 7
+|11 |Sensor 8
+|12 |Sensor 9
+|13 |Sensor 10
+|A0 |Sensor 11
+|A1 |Sensor 12
+|A2 |Sensor 13
+|A3 |Sensor 14
+|A4 |Sensor 15
+|===============================================
+
+The sensors are placed as follows:
+
+image:media/current-status/image10_3.jpg[image,width=339,height=476]
+
+It should be noted that not all the sensor are read at the same time. 
+All odd numbered sensors are read first, and after a small delay the 
+even numbered sensors are read. This is because sensors placed next to
+each other can interfere the readings of each other.
+
+
+===== GPS / Compass
+To allow Willy to drive outdoor by using a precomputed route, a GPS
+sensor and a compass are required. The GPS sensor is linked to the
+WillyController using ROS. In WillyController the raw data is processed
+to usable coordinates. These coordinates are only used to draw a line
+where Willy has driven in the code of the previous group. +
+The Compass is used to determinate the direction of willy. This is
+needed for navigation when willy is going to drive precomputed routes.
+
+The sensors are connected according to the following scheme:
+
+image:media/current-status/image12.jpg[image,width=604,height=427]
+
+As can be seen in the scheme, there are two Arduino’s used to measure
+sensor data. Both Arduino’s are connected with I2C (see pins A4 and A5).
+The second Arduino with the GPS sensor is powered with the 5V pin from
+the first Arduino. At the moment of writing this has not been fixed and
+reduced to one Arduino.
+
+
+===== Screen
+
+===== LIDAR
+The previous group has also done research on a Lidar sensor.
+Unfortunately the previous documentation stated that it was not possible
+to link a Lidar to ROS. Also other methods where somehow researched by a
+previous group but not in the form of a Lidar. (Research localization
+system v1.1, 2017)
+
+A LIDAR sensor uses a laser to measure distance. With these measurements
+the sensor makes a map of all the objects in the environment.
+
+image:media/current-status/image13.jpeg[image,width=130,height=174]The current state of
+Willy has no LIDAR installed. The previous group has done some research
+concerning LIDAR and the link to ROS. But came to the conclusion that it
+is not possible to create a link between LIDAR and ROS. Therefore they
+decided to not implement the LIDAR sensor.
+
+After doing some research we found that it is possible and supported to
+link ROS to a LIDAR sensor.
+
+
+===== Kinect
+image:media/current-status/image11.png[image,width=266,height=92]
+
+As a method to navigate inside, the Kinect was chosen. A Kinect can
+create a framework of a person and see all movements of that person. By
+adding a Kinect to willy, willy will be able to recognize people and
+interact with them by using the speech recognition of the Kinect.
+
+There are two versions of the Microsoft Kinect: Kinect 1 for Xbox 360
+and Kinect 2 for Xbox one. See table 1 which list all the different
+features of both versions.
+
+[cols=",,",options="header",]
+|======================================================
+|Feature |Kinect 1 |Kinect 2
+|Color Camera |640 x 480 @30 fps |1920 x 1080 @30 fps
+|Depth Camera |320 x 240 |512 x 424
+|Max Depth Distance |apr. 4.5 m |8 m
+|Min Depth Distance |40 cm in near mode |50 cm
+|Depth Horizontal Field of View |57 degrees |70 degrees
+|Depth Vertical Field of View |43 degrees |60 degrees
+|Tilt Motor |Yes |no
+|Skeleton Joints Defined |20 joints |25 joints
+|Full Skeletons Tracked |2 |6
+|USB Standard |2.0 |3.0
+|======================================================
+
+The main difference which is most important for us is the Field of View
+(FoV). The bigger the FoV, the more Willy can see in front of him. The
+Kinect 2 can also recognize more people and can see further away, which
+are both nice features to have when the social aspect of Willy will be
+implemented in the future. This makes the Kinect 2 more futureproof than
+its precursor. (Kinect 1 vs 2 specifications: , sd) (Kinect 1
+specifications, sd) (Main factors/features of most industrial computer
+vision hardware., sd)
+
+
+===== External lights
+
+==== Schematics
+
+=== Software
+
+==== Mini pc
+
+==== Arduino's 
