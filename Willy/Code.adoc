@@ -85,7 +85,7 @@ image:media/overview/rc.png[image,width=855,height=54]
 *Running when char received*
 subLed() -> LedCallback() -> Advertise ColorRGBA on 'led' topic()
 
-image:media/overview/lb.png[image,width=300,height=500]
+image:media/overview/lb.png[image,width=300,height=1470]
 
 IMPORTANT: The following paragraph is about the ros navigation stack. To learn the basics about ros_navigation, see our ros navigation wiki page.
 
@@ -104,4 +104,4 @@ image:media/overview/willynav.png[image,width=1000,height=466]
 
 This file starts all of the external plugin launch files. All of these external launch files can be find in our git repository.
 
-image:media/overview/launchfiles.png[]
+image:media/overview/launchfiles.png[image,width=400,height=500]
