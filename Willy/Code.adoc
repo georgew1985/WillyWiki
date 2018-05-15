@@ -14,7 +14,7 @@ Here goes information about the code of the DrivingWilly ROS package
 
 ==== Overview
 
-image:media/overview/DrivingWilly.png[image,width=1200,height=1500]
+image:media/overview/DrivingWilly.png[image,width=500,height=600]
 
 Our driving willy code consists of modulair components named controllers. 
 These controllers controls the functionality of willy. Every piece of hardware
@@ -31,12 +31,12 @@ paragraph on this page below.
 Every controller is created and declared in the main. The main creates the class object 
 and returns a pointer to it. 
 
-image:media/overview/ControllerDeclaration.png[image,width=1588,height=520]
+image:media/overview/ControllerDeclaration.png[image,width=750,height=250]
 
-This pointer is forwarded to the subcontroller of willy
+This pointer is forwarded to the controller of willy
 named "DrivingController". 
 
-image:media/overview/DrivingController.png[image,width=2708,height=90]
+image:media/overview/DrivingController.png[image,width=1008,height=90]
 
 In this class the subcontrollers are declared.
 The current subcontrollers of willy are:
@@ -47,23 +47,25 @@ The current subcontrollers of willy are:
 
 The pointers of the controllers are forwarded to the subcontrollers above in the "DrivingController"
 
-image:media/overview/DrivingSubcontrollers.png[image,width=1000,height=110]
+image:media/overview/DrivingSubcontrollers.png[image,width=500,height=60]
 
 Now every controller has acces to their subscontroller and the subcontroller has acces to the main where the other controllers are declared.
 By using this method we can always access all data and methods of the controllers and subcontrollers.
 To make that possible, we have to send class object pointers between functions. Thats done by using the "static_cast" in C++
 
-image:media/overview/sc.png[image,width=2290,height=360]
+image:media/overview/sc.png[image,width=1000,height=200]
 
 Above is an example of the "static_cast" in the "MovementController"
 
 The "static_cast" make it possible to convert a void pointer back into a class object pointer without declaring the class again.
 
+image:media/overview/rsc.png[]
+
 ==== ROS setup
 
 To make the communication between nodes easy accessibly, we created some advertisers and subscribers in the ROS cloud.
 
-image:media/overview/Subscribers.png[image,width=1921,height=786]
+image:media/overview/Subscribers.png[image,width=1000,height=500]
 image:media/overview/Advertise.PNG[image,width=1000,height=77]
 
 IMPORTANT: To see the basics of ROS and the general purpose, please visit our ROS generic wiki page on: //LINK TO ROS GENERAL page
@@ -73,14 +75,33 @@ and read that data all over the code of willy. Because you can echo the rostopic
 
 Using ROS we're able to push keyboard characters on the 'keyboard' topic and subscribe on the keyboard topic. This means that when the code is running
 and you pressed a key, the function that you gave to the keyboard subscriber will be launched. In our code this means that the led lighting will turn red 
-if you press the 'r' button on the keyboard.
+if you press the 'r' button on the keyboard. The flowchart is shown on this page below.
 
-===== Always running (DrivingController)
+*Always running (DrivingController)*
 MovementController -> GetKeyboardController() -> ReadCharacter()
 
 image:media/overview/rc.png[image,width=855,height=54]
 
-===== Running when char received
-LedSub() -> LedCallback() in LedController -> Advertise ColorRGBA on 'led' topic()
+*Running when char received*
+subLed() -> LedCallback() -> Advertise ColorRGBA on 'led' topic()
 
-image:media/overview/lb.png[image,width=882,height=1470]
+image:media/overview/lb.png[image,width=300,height=1470]
+
+IMPORTANT: The following paragraph is about the ros navigation stack. To learn the basics about ros_navigation, see our ros navigation wiki page.
+
+The autonomous driving of Willy is controlled by external ROS plugins. These plugins are:
+
+*Move_base* -> Used for sending Twist messages to Willy out of goals send to the ros navigation stack. +
+*Hector_Mapping* -> Used for creating a map based on the LiDaR and transforms. +
+*Sick_tim551* -> Used for initilization of the LiDaR and creating the /scan topic for the map. +
+*Transform* -> Used the send the transformation and rotations from the devices on the robot to the rotation point of the robot. +
+*Kinect* -> Used for the recognition of people and creating the /camera topic. +
+*Rviz* -> Used for visualization of the map and sensors on the base frame. +
+
+All of these external plugin are started using the 'willy_navigation.launch'.
+
+image:media/overview/willynav.png[image,width=1000,height=466]
+
+This file starts all of the external plugin launch files. All of these external launch files can be find in our git repository.
+
+image:media/overview/launchfiles.png[image,width=400,height=500]
