@@ -59,6 +59,8 @@ Above is an example of the "static_cast" in the "MovementController"
 
 The "static_cast" make it possible to convert a void pointer back into a class object pointer without declaring the class again.
 
+image:media/overview/rsc.png[]
+
 ==== ROS setup
 
 To make the communication between nodes easy accessibly, we created some advertisers and subscribers in the ROS cloud.
