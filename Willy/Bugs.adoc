@@ -19,6 +19,9 @@ of Willy, the ultrasonic sensors are the only sensors controlling the back of Wi
 When Willy is driving backwards, this can cause problems.
 
 === Design
+- Because of the width of Willy with garbage bins attached to the side, it is impossible
+to go through a door without detaching the bins, including the detachable buffers with
+ultrasonic sensors in it.
 
 === Web Interface
-
+- ?
