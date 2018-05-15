@@ -73,14 +73,29 @@ and read that data all over the code of willy. Because you can echo the rostopic
 
 Using ROS we're able to push keyboard characters on the 'keyboard' topic and subscribe on the keyboard topic. This means that when the code is running
 and you pressed a key, the function that you gave to the keyboard subscriber will be launched. In our code this means that the led lighting will turn red 
-if you press the 'r' button on the keyboard.
+if you press the 'r' button on the keyboard. The flowchart is shown on this page below.
 
-===== Always running (DrivingController)
+*Always running (DrivingController)*
 MovementController -> GetKeyboardController() -> ReadCharacter()
 
 image:media/overview/ReadCharacter.PNG[image,width=855,height=54]
 
-===== Running when char received
-LedSub() -> LedCallback() in LedController -> Advertise ColorRGBA on 'led' topic()
+*Running when char received*
+subLed() -> LedCallback() -> Advertise ColorRGBA on 'led' topic()
 
 image:media/overview/LedCallback.PNG[image,width=882,height=1470]
+
+IMPORTANT: The following paragraph is about the ros navigation stack. To learn the basics about ros_navigation, see our ros navigation wiki page.
+
+The autonomous driving of Willy is controlled by external ROS plugins. These plugins are:
+
+Move_base -> Used for sending Twist messages to Willy out of goals send to the ros navigation stack.
+Hector_Mapping -> Used for creating a map based on the LiDaR and transforms.
+Sick_tim551 -> Used for initilization of the LiDaR and creating the /scan topic for the map.
+Transform -> Used the send the transformation and rotations from the devices on the robot to the rotation point of the robot.
+Kinect -> Used for the recognition of people and creating the /camera topic
+Rviz -> Used for visualization of the map and sensors on the base frame.
+
+All of these external plugin are started using the 'willy_navigation.launch'.
+
+image:media/overview/willynav.png[image,width=1000,height=466]
