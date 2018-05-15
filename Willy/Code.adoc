@@ -83,4 +83,4 @@ image:media/overview/rc.png[image,width=855,height=54]
 ===== Running when char received
 LedSub() -> LedCallback() in LedController -> Advertise ColorRGBA on 'led' topic()
 
-image:media/overview/LedCallback.PNG[image,width=882,height=1470]
+image:media/overview/lb.png[image,width=882,height=1470]
