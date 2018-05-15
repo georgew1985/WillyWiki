@@ -23,7 +23,7 @@ These motors need 24 volts and use 20 amps. One of the previous project
 groups created the motor controller to control the motors. This is
 documented in the ‘Systeem dossier’ from a previous project group.
 (Systeem Dossier,
-2016)image:media/current-status/image4.jpeg[image,width=112,height=149]
+2016)image:../Archive/2018-1/Research/media/current-status/image4.jpeg[image,width=112,height=149]
 
 This motor controller is made by using an Arduino Mega and a custom
 shield with additional custom hardware. This hardware makes sure the
@@ -36,7 +36,7 @@ The current to the motors is also controlled by this Arduino.
 
 The motor controller is built as shown below:
 
-image:media/current-status/image5.jpg[image,width=604,height=427]
+image:../Archive/2018-1/Research/media/current-status/image5.jpg[image,width=604,height=427]
 
 ====== Brakes
 
