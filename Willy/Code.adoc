@@ -47,13 +47,13 @@ The current subcontrollers of willy are:
 
 The pointers of the controllers are forwarded to the subcontrollers above in the "DrivingController"
 
-image:media/overview/DrivingSubcontroller.png[image,width=1000,height=110]
+image:media/overview/DrivingSubcontrollers.png[image,width=1000,height=110]
 
 Now every controller has acces to their subscontroller and the subcontroller has acces to the main where the other controllers are declared.
 By using this method we can always access all data and methods of the controllers and subcontrollers.
 To make that possible, we have to send class object pointers between functions. Thats done by using the "static_cast" in C++
 
-image:media/overview/StaticCast.png[image,width=2290,height=360]
+image:media/overview/StaticCast.PNG[image,width=2290,height=360]
 
 Above is an example of the "static_cast" in the "MovementController"
 
@@ -64,7 +64,7 @@ The "static_cast" make it possible to convert a void pointer back into a class o
 To make the communication between nodes easy accessibly, we created some advertisers and subscribers in the ROS cloud.
 
 image:media/overview/Subscribers.png[image,width=1921,height=786]
-image:media/overview/Advertise.png[image,width=1000,height=77]
+image:media/overview/Advertise.PNG[image,width=1000,height=77]
 
 IMPORTANT: To see the basics of ROS and the general purpose, please visit our ROS generic wiki page on: //LINK TO ROS GENERAL page
 
@@ -78,9 +78,9 @@ if you press the 'r' button on the keyboard.
 ===== Always running (DrivingController)
 MovementController -> GetKeyboardController() -> ReadCharacter()
 
-image:media/overview/ReadCharacter.png[image,width=855,height=54]
+image:media/overview/ReadCharacter.PNG[image,width=855,height=54]
 
 ===== Running when char received
 LedSub() -> LedCallback() in LedController -> Advertise ColorRGBA on 'led' topic()
 
-image:media/overview/LedCallback.png[image,width=882,height=1470]
+image:media/overview/LedCallback.PNG[image,width=882,height=1470]
