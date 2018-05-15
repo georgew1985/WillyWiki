@@ -33,7 +33,7 @@ and returns a pointer to it.
 
 image:media/overview/ControllerDeclaration.png[image,width=1588,height=520]
 
-This pointer is forwarded to the subcontroller of willy
+This pointer is forwarded to the controller of willy
 named "DrivingController". 
 
 image:media/overview/DrivingController.png[image,width=2708,height=90]
