@@ -1,0 +1,22 @@
+== Known Bugs
+
+This file contains a list of known bugs.
+
+=== Driving
+- It is quite hard to deploy and undeploy the brakes.
+- When the battery voltage drows below a certain level, Willy will stop driving at 
+irregular intervals. This is probably an internal security system. The brakes are
+also deployed causing an abrupt stop.
+- When driving manually, Willy uses characters pressed on the keyboard to move. When 
+a lot of characters are pressed in a short time, Willy will try to process the complete
+list of characters, seeming to be uncontrollable.
+- Willy has difficulty driving through doors when driving autonomously. This is caused
+by Willy being quite wide and limitations in the software for autonomous driving.
+- The ultrasonic sensors have a lot of blind spots. Since the LIDAR can't scan the back
+of Willy, the ultrasonic sensors are the only sensors controlling the back of Willy.
+When Willy is driving backwards, this can cause problems.
+
+=== Design
+
+=== Web Interface
+
