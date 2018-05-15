@@ -45,7 +45,8 @@ by the engine itself. When the active signal to the motors is lost, the
 motor will automatically activate the brake. To start the driving_willy
 project, you NEED to deploy the brakes. Otherwise Willy will not drive!
 
-image:../Archive/2018-1/Research/media/current-status/image6.jpeg[image]../Archive/2018-1/Research/image:media/current-status/image7.png[image]
+image:../Archive/2018-1/Research/media/current-status/image6.jpeg[image]
+image:../Archive/2018-1/Research/media/current-status/image7.png[image]
 
 Make sure to deploy the brakes. Otherwise Willy won’t work!! There is
 only one way to detect if the brakes are deployed. It’s by simply
@@ -153,11 +154,12 @@ system v1.1, 2017)
 A LIDAR sensor uses a laser to measure distance. With these measurements
 the sensor makes a map of all the objects in the environment.
 
-image:../Archive/2018-1/Research/media/current-status/image13.jpeg[image]The current state of
-Willy has no LIDAR installed. The previous group has done some research
-concerning LIDAR and the link to ROS. But came to the conclusion that it
-is not possible to create a link between LIDAR and ROS. Therefore they
-decided to not implement the LIDAR sensor.
+image:../Archive/2018-1/Research/media/current-status/image13.jpeg[image]
+
+The current state of Willy has no LIDAR installed. The previous group has 
+done some research concerning LIDAR and the link to ROS. But came to the 
+conclusion that it is not possible to create a link between LIDAR and ROS. 
+Therefore they decided to not implement the LIDAR sensor.
 
 After doing some research we found that it is possible and supported to
 link ROS to a LIDAR sensor.
