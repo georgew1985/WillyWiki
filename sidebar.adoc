@@ -4,7 +4,6 @@
 link:{url}/welcome.html[Welcome]::
     
 link:{url}/Startup/index.html[Using Willy]:: 
-        - link:{url}/Startup/ROS.html[ROS]
         - link:{url}/Startup/Willy-Web.html[Willy Web]
         - link:{url}/Startup/Driving-Willy.html[Driving Willy]
         - link:{url}/Startup/Remote.html[Remote]
