@@ -53,7 +53,7 @@ Now every controller has acces to their subscontroller and the subcontroller has
 By using this method we can always access all data and methods of the controllers and subcontrollers.
 To make that possible, we have to send class object pointers between functions. Thats done by using the "static_cast" in C++
 
-image:media/overview/StaticCast.PNG[image,width=2290,height=360]
+image:media/overview/sc.png[image,width=2290,height=360]
 
 Above is an example of the "static_cast" in the "MovementController"
 
@@ -78,12 +78,12 @@ if you press the 'r' button on the keyboard. The flowchart is shown on this page
 *Always running (DrivingController)*
 MovementController -> GetKeyboardController() -> ReadCharacter()
 
-image:media/overview/ReadCharacter.PNG[image,width=855,height=54]
+image:media/overview/rc.png[image,width=855,height=54]
 
 *Running when char received*
 subLed() -> LedCallback() -> Advertise ColorRGBA on 'led' topic()
 
-image:media/overview/LedCallback.PNG[image,width=882,height=1470]
+image:media/overview/lb.png[image,width=882,height=1470]
 
 IMPORTANT: The following paragraph is about the ros navigation stack. To learn the basics about ros_navigation, see our ros navigation wiki page.
 
