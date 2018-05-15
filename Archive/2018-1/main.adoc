@@ -1,20 +1,8 @@
-// Startup
-include::Startup/index.adoc[]
-
-// General
-include::General/index.adoc[]
-
 // Configuration
 include::Configuration/index.adoc[]
 
-// Hardware
-include::Hardware/index.adoc[]
-
 // Software
 include::Software/index.adoc[]
-
-// Design
-include::Design/index.adoc[]
 
 // Research
 include::Research/index.adoc[]
