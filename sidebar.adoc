@@ -51,7 +51,7 @@ link:{url}/Status/index.html[Status and Advice]::
         - link:{url}/Status/Todo.html[Todo & Advice]
 
 link:{url}/Archive/index.html[Archive]::
-        - link:{url}/Archive/2016-2.html[(2016/2) Initial design ]
-        - link:{url}/Archive/2017-1.html[(2017/1) Base & Functionalities ]
-        - link:{url}/Archive/2017-2.html[(2017/2) Research]
-        - link:{url}/Archive/2018-1.html[(2018/1) Stabilization & Realisation]
+        - link:{url}/Archive/2016S2.html[(2016/2) Initial design ]
+        - link:{url}/Archive/2017S1.html[(2017/1) Base & Functionalities ]
+        - link:{url}/Archive/2017S2.html[(2017/2) Research]
+        - link:{url}/Archive/2018S1.html[(2018/1) Stabilization & Realisation]
