@@ -1,1 +1,31 @@
 include::../Header.adoc[]
+
+== Software Technical Document
+
+=== Flow Chart
+
+image:media/screen_designs/flowchart.jpg[image]
+
+=== Screen Designs
+
+==== English
+
+image:media/screen_designs/en/1.png[image]
+image:media/screen_designs/en/2.png[image]
+image:media/screen_designs/en/3.png[image]
+image:media/screen_designs/en/4.png[image]
+image:media/screen_designs/en/5.png[image]
+image:media/screen_designs/en/6.png[image]
+image:media/screen_designs/en/7.png[image]
+image:media/screen_designs/en/8.png[image]
+
+==== Dutch
+
+image:media/screen_designs/nl/1.png[image]
+image:media/screen_designs/nl/2.png[image]
+image:media/screen_designs/nl/3.png[image]
+image:media/screen_designs/nl/4.png[image]
+image:media/screen_designs/nl/5.png[image]
+image:media/screen_designs/nl/6.png[image]
+image:media/screen_designs/nl/7.png[image]
+image:media/screen_designs/nl/8.png[image]
