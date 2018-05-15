@@ -78,7 +78,7 @@ if you press the 'r' button on the keyboard.
 ===== Always running (DrivingController)
 MovementController -> GetKeyboardController() -> ReadCharacter()
 
-image:media/overview/rc2.png[image,width=855,height=54]
+image:media/overview/rc.png[image,width=855,height=54]
 
 ===== Running when char received
 LedSub() -> LedCallback() in LedController -> Advertise ColorRGBA on 'led' topic()
