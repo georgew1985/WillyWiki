@@ -91,13 +91,17 @@ IMPORTANT: The following paragraph is about the ros navigation stack. To learn t
 
 The autonomous driving of Willy is controlled by external ROS plugins. These plugins are:
 
-Move_base -> Used for sending Twist messages to Willy out of goals send to the ros navigation stack.
-Hector_Mapping -> Used for creating a map based on the LiDaR and transforms.
-Sick_tim551 -> Used for initilization of the LiDaR and creating the /scan topic for the map.
-Transform -> Used the send the transformation and rotations from the devices on the robot to the rotation point of the robot.
-Kinect -> Used for the recognition of people and creating the /camera topic
-Rviz -> Used for visualization of the map and sensors on the base frame.
+*Move_base* -> Used for sending Twist messages to Willy out of goals send to the ros navigation stack. +
+*Hector_Mapping* -> Used for creating a map based on the LiDaR and transforms. +
+*Sick_tim551* -> Used for initilization of the LiDaR and creating the /scan topic for the map. +
+*Transform* -> Used the send the transformation and rotations from the devices on the robot to the rotation point of the robot. +
+*Kinect* -> Used for the recognition of people and creating the /camera topic. +
+*Rviz* -> Used for visualization of the map and sensors on the base frame. +
 
 All of these external plugin are started using the 'willy_navigation.launch'.
 
 image:media/overview/willynav.png[image,width=1000,height=466]
+
+This file starts all of the external plugin launch files. All of these external launch files can be find in our git repository.
+
+image:media/overview/launchfiles.png[]
