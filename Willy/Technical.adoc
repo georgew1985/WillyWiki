@@ -23,7 +23,7 @@ These motors need 24 volts and use 20 amps. One of the previous project
 groups created the motor controller to control the motors. This is
 documented in the ‘Systeem dossier’ from a previous project group.
 (Systeem Dossier,
-2016)image:../Archive/2018-1/Research/media/current-status/image4.jpeg[image,width=112,height=149]
+2016)image:../Archive/2018-1/Research/media/current-status/image4.jpeg[image]
 
 This motor controller is made by using an Arduino Mega and a custom
 shield with additional custom hardware. This hardware makes sure the
@@ -36,7 +36,7 @@ The current to the motors is also controlled by this Arduino.
 
 The motor controller is built as shown below:
 
-image:../Archive/2018-1/Research/media/current-status/image5.jpg[image,width=604,height=427]
+image:../Archive/2018-1/Research/media/current-status/image5.jpg[image]
 
 ====== Brakes
 
@@ -45,7 +45,7 @@ by the engine itself. When the active signal to the motors is lost, the
 motor will automatically activate the brake. To start the driving_willy
 project, you NEED to deploy the brakes. Otherwise Willy will not drive!
 
-image:media/current-status/image6.jpeg[image,width=268,height=358]image:media/current-status/image7.png[image,width=269,height=359]
+image:../Archive/2018-1/Research/media/current-status/image6.jpeg[image]../Archive/2018-1/Research/image:media/current-status/image7.png[image]
 
 Make sure to deploy the brakes. Otherwise Willy won’t work!! There is
 only one way to detect if the brakes are deployed. It’s by simply
@@ -71,7 +71,7 @@ All the batteries are 60Ah. They are connected placing 2 batteries in serial
 To prevent collisions, ultrasonic sensors are used. These sensors
 measure distance by using sound. This is made possible by sending out
 bursts of high frequency noise, and then waiting for a reflection of
-that sound.image:media/current-status/image8.jpeg[image,width=208,height=117]
+that sound.image:../Archive/2018-1/Research/media/current-status/image8.jpeg[image]
 
 By using this data Willy is be able to decide if he is able to drive any
 further in a certain direction. In the event of Willy being not able to
@@ -83,7 +83,7 @@ navigation is researched by a previous group. (Navigation design v0.1,
 
 The sensors all use 5V as can be seen in the schematic:
 
-image:media/current-status/image9.jpg[image,width=604,height=427](!!!OLD!!!)
+image:../Archive/2018-1/Research/media/current-status/image9.jpg[image](!!!OLD!!!)
 
 As shown in the schematic above, all the 16 sensors are connected to the
 Arduino.
@@ -113,7 +113,7 @@ The sensors are connected in the following order:
 
 The sensors are placed as follows:
 
-image:media/current-status/image10_3.jpg[image,width=339,height=476]
+image:../Archive/2018-1/Research/media/current-status/image10_3.jpg[image]
 
 It should be noted that not all the sensor are read at the same time. 
 All odd numbered sensors are read first, and after a small delay the 
@@ -132,7 +132,7 @@ needed for navigation when willy is going to drive precomputed routes.
 
 The sensors are connected according to the following scheme:
 
-image:media/current-status/image12.jpg[image,width=604,height=427]
+image:../Archive/2018-1/Research/media/current-status/image12.jpg[image]
 
 As can be seen in the scheme, there are two Arduino’s used to measure
 sensor data. Both Arduino’s are connected with I2C (see pins A4 and A5).
@@ -153,7 +153,7 @@ system v1.1, 2017)
 A LIDAR sensor uses a laser to measure distance. With these measurements
 the sensor makes a map of all the objects in the environment.
 
-image:media/current-status/image13.jpeg[image,width=130,height=174]The current state of
+image:../Archive/2018-1/Research/media/current-status/image13.jpeg[image]The current state of
 Willy has no LIDAR installed. The previous group has done some research
 concerning LIDAR and the link to ROS. But came to the conclusion that it
 is not possible to create a link between LIDAR and ROS. Therefore they
@@ -164,7 +164,7 @@ link ROS to a LIDAR sensor.
 
 
 ===== Kinect
-image:media/current-status/image11.png[image,width=266,height=92]
+image:../Archive/2018-1/Research/media/current-status/image11.png[image]
 
 As a method to navigate inside, the Kinect was chosen. A Kinect can
 create a framework of a person and see all movements of that person. By
