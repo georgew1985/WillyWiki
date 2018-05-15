@@ -54,6 +54,19 @@ testing if the wheel can turn (Or a very little bit) anymore.
 
 ===== Batteries
 
+====== Old situation
+In the old situation Willy contained 2 12V batteries connected in serial,
+adding up to 24V. Both batteries are 52Ah.
+
+//Include schematic//
+
+====== New situation
+In the new situation the 2 batteries are replaced with 6 new 12V batteries.
+All the batteries are 60Ah. They are connected placing 2 batteries in serial
+3 times in parallel. This adds again up to 24V.
+
+//Include schematic//
+
 ===== Sonars
 To prevent collisions, ultrasonic sensors are used. These sensors
 measure distance by using sound. This is made possible by sending out
