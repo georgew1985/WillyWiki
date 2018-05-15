@@ -205,9 +205,3 @@ vision hardware., sd)
 ===== External lights
 
 ==== Schematics
-
-=== Software
-
-==== Mini pc
-
-==== Arduino's 
