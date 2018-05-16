@@ -23,7 +23,7 @@ These motors need 24 volts and use 20 amps. One of the previous project
 groups created the motor controller to control the motors. This is
 documented in the ‘Systeem dossier’ from a previous project group.
 (Systeem Dossier,
-2016)image:../Archive/2018-1/Research/media/current-status/image4.jpeg[image]
+2016)image:../Archive/2018S1/Research/media/current-status/image4.jpeg[image]
 
 This motor controller is made by using an Arduino Mega and a custom
 shield with additional custom hardware. This hardware makes sure the
@@ -36,7 +36,7 @@ The current to the motors is also controlled by this Arduino.
 
 The motor controller is built as shown below:
 
-image:../Archive/2018-1/Research/media/current-status/image5.jpg[image]
+image:../Archive/2018S1/Research/media/current-status/image5.jpg[image]
 
 ====== Brakes
 
@@ -45,8 +45,8 @@ by the engine itself. When the active signal to the motors is lost, the
 motor will automatically activate the brake. To start the driving_willy
 project, you NEED to deploy the brakes. Otherwise Willy will not drive!
 
-image:../Archive/2018-1/Research/media/current-status/image6.jpeg[image]
-image:../Archive/2018-1/Research/media/current-status/image7.png[image]
+image:../Archive/2018S1/Research/media/current-status/image6.jpeg[image]
+image:../Archive/2018S1/Research/media/current-status/image7.png[image]
 
 Make sure to deploy the brakes. Otherwise Willy won’t work!! There is
 only one way to detect if the brakes are deployed. It’s by simply
@@ -72,7 +72,7 @@ image:media/technical/batteries_new.png[image]
 To prevent collisions, ultrasonic sensors are used. These sensors
 measure distance by using sound. This is made possible by sending out
 bursts of high frequency noise, and then waiting for a reflection of
-that sound.image:../Archive/2018-1/Research/media/current-status/image8.jpeg[image]
+that sound.image:../Archive/2018S1/Research/media/current-status/image8.jpeg[image]
 
 By using this data Willy is be able to decide if he is able to drive any
 further in a certain direction. In the event of Willy being not able to
@@ -114,7 +114,7 @@ The sensors are connected in the following order:
 
 The sensors are placed as follows:
 
-image:../Archive/2018-1/Research/media/current-status/image10_3.jpg[image]
+image:../Archive/2018S1/Research/media/current-status/image10_3.jpg[image]
 
 It should be noted that not all the sensor are read at the same time. 
 All odd numbered sensors are read first, and after a small delay the 
@@ -133,7 +133,7 @@ needed for navigation when willy is going to drive precomputed routes.
 
 The sensors are connected according to the following scheme:
 
-image:../Archive/2018-1/Research/media/current-status/image12.jpg[image]
+image:../Archive/2018S1/Research/media/current-status/image12.jpg[image]
 
 As can be seen in the scheme, there are two Arduino’s used to measure
 sensor data. Both Arduino’s are connected with I2C (see pins A4 and A5).
@@ -154,7 +154,7 @@ system v1.1, 2017)
 A LIDAR sensor uses a laser to measure distance. With these measurements
 the sensor makes a map of all the objects in the environment.
 
-image:../Archive/2018-1/Research/media/current-status/image13.jpeg[image]
+image:../Archive/2018S1/Research/media/current-status/image13.jpeg[image]
 
 The current state of Willy has no LIDAR installed. The previous group has 
 done some research concerning LIDAR and the link to ROS. But came to the 
@@ -166,7 +166,7 @@ link ROS to a LIDAR sensor.
 
 
 ===== Kinect
-image:../Archive/2018-1/Research/media/current-status/image11.png[image]
+image:../Archive/2018S1/Research/media/current-status/image11.png[image]
 
 As a method to navigate inside, the Kinect was chosen. A Kinect can
 create a framework of a person and see all movements of that person. By
