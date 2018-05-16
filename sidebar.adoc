@@ -23,6 +23,7 @@ link:{url}/Willy/index.html[Willy]::
         - link:{url}/Willy/Development.html[Development Guide]
         - link:{url}/Willy/Technical.html[Technical]
         - link:{url}/Willy/Code.html[Code]
+        - link:{url}/Willy/Parameters.html[Parameters]
         - link:{url}/Willy/Bugs.html[Known Bugs]
 
 link:{url}/WEB/index.html[Web-interface]::
