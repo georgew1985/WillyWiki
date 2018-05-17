@@ -1,4 +1,6 @@
-=== Progress and quality
+include::../Header.adoc[]
+
+== Progress and quality
 
 
 [width="100%",options="header,footer"]
@@ -14,7 +16,7 @@
 |Social interaction |Done  |In progress  |  |Software
 |====================
 
-==== Progress report
+=== Progress report
 *Assigment current status*
 [width="100%",options="header,footer"]
 |====================
