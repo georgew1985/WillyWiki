@@ -30,9 +30,6 @@ link:{url}/WEB/index.html[Web-interface]::
         - link:{url}/WEB/Technical.html[Technical]
         - link:{url}/WEB/Interaction.html[Interaction]
 
-link:{url}/Troubleshooting/index.html[Troubleshouting]::
-        - link:{url}/Troubleshooting/Known-bugs.html[Known Bugs]
-
 link:{url}/Research/index.html[Research]::
 	- link:{url}/Research/Social-interaction.html[Social interaction]
 	- link:{url}/Research/Hardware.html[Hardware]
