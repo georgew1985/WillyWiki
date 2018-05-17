@@ -49,7 +49,7 @@ link:{url}/Status/index.html[Status and Advice]::
         - link:{url}/Status/Todo.html[Todo & Advice]
 
 link:{url}/Archive/index.html[Archive]::
-        - link:https://drive.google.com/drive/folders/1LfOfbxBTFASBrozYIklAt7_7a3ubFFy0?usp=sharing[(2016/2) Initial design ]
-        - link:https://drive.google.com/drive/folders/1yCVk6iNJNQlaouU2WDvMt3BISoHCuz6l?usp=sharing[(2017/1) Base & Functionalities ]
-        - link:https://drive.google.com/drive/folders/1S904hDK_63HIpyPnBgMHzZx-zt0xNpim?usp=sharing[(2017/2) Research]
+        - link:https://drive.google.com/drive/u/1/folders/1LfOfbxBTFASBrozYIklAt7_7a3ubFFy0[(2016/2) Initial design ]
+        - link:https://drive.google.com/drive/u/1/folders/1yCVk6iNJNQlaouU2WDvMt3BISoHCuz6l[(2017/1) Base & Functionalities ]
+        - link:https://drive.google.com/drive/u/1/folders/1S904hDK_63HIpyPnBgMHzZx-zt0xNpim[(2017/2) Research]
         - link:{url}/Archive/2018S1.html[(2018/1) Stabilization & Realisation]

@@ -2,8 +2,8 @@ include::../Header.adoc[]
 
 == Archive
 
-https://drive.google.com/drive/folders/1S904hDK_63HIpyPnBgMHzZx-zt0xNpim?usp=sharing[2017S2]
+https://drive.google.com/drive/u/1/folders/1S904hDK_63HIpyPnBgMHzZx-zt0xNpim[2017S2]
 
-https://drive.google.com/drive/folders/1yCVk6iNJNQlaouU2WDvMt3BISoHCuz6l?usp=sharing[2017S1]
+https://drive.google.com/drive/u/1/folders/1yCVk6iNJNQlaouU2WDvMt3BISoHCuz6l[2017S1]
 
-https://drive.google.com/drive/folders/1LfOfbxBTFASBrozYIklAt7_7a3ubFFy0?usp=sharing[2016S2]
+https://drive.google.com/drive/u/1/folders/1LfOfbxBTFASBrozYIklAt7_7a3ubFFy0[2016S2]

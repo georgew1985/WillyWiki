@@ -1,2 +1,5 @@
 image:https://travis-ci.org/ArtOfRobotics/WillyWiki.svg?branch=master["Build Status", link="https://travis-ci.org/ArtOfRobotics/WillyWiki"]
-This is a welcome document
+
+Welcome to project Willy. Before you start it is useful to know a few things. Our first advice is to become acquainted with Willy. Follow our Willywiki from begin to end and try to understand how to use Willy. Documentation on the Wiki containts hardware and software details about Willy. If certain details about designdecisions, configuration, hardware or o
+
+Daarna is het goed om te weten hoe Willy softwarematig en hardwarematig is gerealiseerd.
