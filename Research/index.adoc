@@ -1,11 +1,13 @@
 include::../Header.adoc[]
 
-include::Hardware.adoc[]
-
-include::Perpherals.adoc[]
+include::Peripherals.adoc[]
 
 include::Social-interaction.adoc[]
 
 include::Indoor-navigation.adoc[]
 
-include::Leap.adoc
+include::Leap.adoc[]
+
+include::Back-up.adoc[]
+
+
