@@ -106,4 +106,6 @@ image:media/overview/willynav.png[image,width=1000,height=466]
 
 This file starts all of the external plugin launch files. All of these external launch files can be find in our git repository.
 
-image:media/overview/launchfiles.png[image,width=400,height=500]
+image:media/overview/launchfiles.png[image,width=300,height=400]
+
+IMPORTANT: To learn more about the parameters in the launch files. See our 'parameter' wiki page.
