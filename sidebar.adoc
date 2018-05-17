@@ -40,6 +40,7 @@ link:{url}/Research/index.html[Research]::
 	- link:{url}/Research/Indoor-navigation.html[Indoor-navigation]
 	- link:{url}/Research/Back-up.html[Back-up Willy]
 	- link:{url}/Research/Leap.html[Leap motion]
+	- link:{url}/Research/Findings.html[Findings]
         
 link:{url}/Design/index.html[Design]::
 	- link:{url}/Design/Design-Guide.html[Design Guide]
