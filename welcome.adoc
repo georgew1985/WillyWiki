@@ -1,5 +1,29 @@
+include::../Header.adoc[]
+
+
 image:https://travis-ci.org/ArtOfRobotics/WillyWiki.svg?branch=master["Build Status", link="https://travis-ci.org/ArtOfRobotics/WillyWiki"]
 
-Welcome to project Willy. Before you start it is useful to know a few things. Our first advice is to become acquainted with Willy. Follow our Willywiki from begin to end and try to understand how to use Willy. Documentation on the Wiki containts hardware and software details about Willy. If certain details about designdecisions, configuration, hardware or o
+= Welcome
 
-Daarna is het goed om te weten hoe Willy softwarematig en hardwarematig is gerealiseerd.
+Welcome to project Willy. Before starting the project it is useful to know a few things. Our first advice is to become acquainted with Willy. Follow our Willywiki from begin to end and try to understand how to use Willy. Documentation on the Wiki containts all the details about Willy tot startup the project. If certain details about designdecisions, configuration, hardware or other components about Willy are unclear, more details can be found on google drive. The arhive menu contains links to the google-drive. 
+
+== Status
+
+The table below shows all the milestones and their current status.
+
+[width="100%",options="header,footer"]
+|====================
+|Milestone  |Researched  |Realized  |Tested  |Category  
+|Assessment current status|Done  |Done  |Done  |Documentation  
+|Willy Improvisation  |Done  |Done  |Done  |Hardware Software Documentation  
+|Design  |Done  |Done  |Done  |Software
+|WillyWiki    |Done  |Done  |Done  |Software
+|Willy web | Done | Done  | Done  | Software
+|Indoor navigation  |Done  |Done  |In progress (fine tuning)  |Software Hardware
+|Plating | Done  | In progress |  |Hardware
+|Social interaction |Done  |In progress  |  |Software
+|====================
+
+=== outdoor navagion
+
+The only thing that has been realized so far with regard to indoor navigation contains GPS. GPS coordinates can be received inside ROS when subscribed on the /GPS topic. 
