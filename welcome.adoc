@@ -36,5 +36,6 @@ Offline word recognition has been realized through the use of 'Snowboy'. Documen
 http://docs.kitt.ai/snowboy/[Snowboy Documentation].
 
 Implementation of Snowboy on Willy is described here;
+https://artofrobotics.github.io/WillyWiki/Config/index.html#_install_snowboy
 
 
