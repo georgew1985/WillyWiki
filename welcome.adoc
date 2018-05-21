@@ -27,3 +27,10 @@ The table below shows all the milestones and their current status.
 === outdoor navagion
 
 The only thing that has been realized so far with regard to indoor navigation contains GPS. GPS coordinates can be received inside ROS when subscribed on the /GPS topic. 
+
+=== Social interaction
+Social interaction is onderzocht. Wij hebben ons als groep gefocused op offline funtionaliteit op verzoek van de opdrachtgever. Offline funtionaliteit is onderzocht; 
+
+https://artofrobotics.github.io/WillyWiki/Research/Social-interaction.html[Research Social Interaction]
+
+Offline spraakherkenning is gerealiseerd door het gebruik van 'Snowboy'. 

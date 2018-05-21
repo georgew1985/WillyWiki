@@ -162,7 +162,7 @@ The configuration on Willy is as shown below
 image::media/Ipconfig.png[ipconfig]
 image::media/wifisettings.png[wifisettings]
 
-== Speech configuration
+== Install Snowboy
 
 `curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -`
 
