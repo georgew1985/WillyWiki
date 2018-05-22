@@ -25,7 +25,7 @@ link:{url}/Willy/index.html[Willy]::
         - link:{url}/Willy/Bugs.html[Known Bugs]
 
 link:{url}/WEB/index.html[Web-interface]::
-        - link:{url}/WEB/Development.html[Development Guide]
+        - link:{url}/WEB/Development-guide.html[Development Guide]
         - link:{url}/WEB/Functional.html[Functional]
         - link:{url}/WEB/Technical.html[Technical]
         - link:{url}/WEB/Interaction.html[Interaction]
