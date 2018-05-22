@@ -1,0 +1,21 @@
+== ToDo
+=== Indoor navigation
+
+Binnennavigatie is gerealiseerd met het gebruik van een lidar en ultrasoon sensoren. Willy kan een ruimte in kaart brengen en hierbinnen routes plannen. De volgende features en verbeteringen zijn aan te raden:
+
+* Binnennavigatie finetunen
+* Binnennavigatie localisatie registratie;
+Onthouden waar Willy in een bepaalde ruimte is geweest zodat hij nieuwe plekken als eerste verkend. 
+* Het opslaan en inladen van eerder gemapte ruimtes en hierin Willyś huidige locatie herkennen om verder te navigeren.
+* Het navigeren in ruimtes met veel publiek. Het herkennen van bewegende objecten en op basis hiervan navigatie beslissingen ondernemen.
+
+=== Outdoor navigation
+
+* Locatiebepaling op basis van GPS
+* GPS locatie vizualiseren.
+* Toegankelijkheid bepaling op basis van locatie
+* Routebepaling op basis van GPS en locatiebepaling
+* Binnennavigatie localisatie registratie om Willy binnen een bepaald gebied te houden.
+
+=== Social interaction
+

@@ -1,7 +1,7 @@
 include::../Header.adoc[]
 
-include::../Code.adoc[]
+include::Code.adoc[]
 
-include::../Development-guide.adoc[]
+include::Development-guide.adoc[]
 
-include::../Technical.adoc[]
+include::Technical.adoc[]
