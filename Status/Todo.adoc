@@ -1,21 +1,34 @@
 == ToDo
 === Indoor navigation
 
-Binnennavigatie is gerealiseerd met het gebruik van een lidar en ultrasoon sensoren. Willy kan een ruimte in kaart brengen en hierbinnen routes plannen. De volgende features en verbeteringen zijn aan te raden:
+Indoor navigation was realized with the use of a lidar and ultrasonic sensors. Willy can map a space and plan routes within it. The following features and improvements are recommended:
 
-* Binnennavigatie finetunen
-* Binnennavigatie localisatie registratie;
-Onthouden waar Willy in een bepaalde ruimte is geweest zodat hij nieuwe plekken als eerste verkend. 
-* Het opslaan en inladen van eerder gemapte ruimtes en hierin Willyś huidige locatie herkennen om verder te navigeren.
-* Het navigeren in ruimtes met veel publiek. Het herkennen van bewegende objecten en op basis hiervan navigatie beslissingen ondernemen.
+* Fine-tune inside navigation
+* Indoor navigation localization registration;
+Remember where Willy was in a certain room so he explored new places first.
+* The storage and loading of previously mapped spaces and recognizing Willy¶'s current location for further navigation.
+* Navigating in spaces with a large audience. Recognizing moving objects and making decisions based on this.
 
 === Outdoor navigation
 
-* Locatiebepaling op basis van GPS
-* GPS locatie vizualiseren.
-* Toegankelijkheid bepaling op basis van locatie
-* Routebepaling op basis van GPS en locatiebepaling
-* Binnennavigatie localisatie registratie om Willy binnen een bepaald gebied te houden.
+The only thing that has been realized so far with regard to indoor navigation contains GPS. GPS coordinates can be received inside ROS when subscribed on the /GPS topic. 
+
+* Location based on GPS
+* Visualize GPS location.
+* Accessibility determination based on location
+* Route determination based on GPS and location determination
+* Indoor navigation localization registration to keep Willy within a certain area.
+
 
 === Social interaction
+Social interaction has been investigated. As a group we have focused on offline functionality at the request of the client. Offline functionality has been investigated; 
+https://artofrobotics.github.io/WillyWiki/Research/Social-interaction.html[Research Social Interaction]
+
+Offline word recognition has been realized through the use of 'Snowboy'. Documentation about Snowboy can be found on;
+http://docs.kitt.ai/snowboy/[Snowboy Documentation].
+
+Implementation of Snowboy on Willy is described here;
+https://artofrobotics.github.io/WillyWiki/Config/index.html#_install_snowboy
+
+
 

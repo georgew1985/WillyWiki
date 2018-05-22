@@ -24,18 +24,4 @@ The table below shows all the milestones and their current status.
 |Social interaction |Done  |In progress  |  |Software
 |====================
 
-=== outdoor navagion
-
-The only thing that has been realized so far with regard to indoor navigation contains GPS. GPS coordinates can be received inside ROS when subscribed on the /GPS topic. 
-
-=== Social interaction
-Social interaction has been investigated. As a group we have focused on offline functionality at the request of the client. Offline functionality has been investigated; 
-https://artofrobotics.github.io/WillyWiki/Research/Social-interaction.html[Research Social Interaction]
-
-Offline word recognition has been realized through the use of 'Snowboy'. Documentation about Snowboy can be found on;
-http://docs.kitt.ai/snowboy/[Snowboy Documentation].
-
-Implementation of Snowboy on Willy is described here;
-https://artofrobotics.github.io/WillyWiki/Config/index.html#_install_snowboy
-
 
