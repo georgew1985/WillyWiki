@@ -1,3 +1,13 @@
 include::../Header.adoc[]
 
 == Functional
+
+== Dashboard
+
+== Configuration
+
+== Control
+
+== Visualisation
+
+== Social interaction
