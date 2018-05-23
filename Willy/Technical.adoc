@@ -156,11 +156,16 @@ The second Arduino with the GPS sensor is powered with the 5V pin from
 the first Arduino. At the moment of writing this has not been fixed and
 reduced to one Arduino.
 
+IMPORTANT: The GPS and compass are currently implemented but not used in 
+the code on the mini-pc.
 
 ===== Screen
 The screen used is a KDL-42W815B from Sony. The screen is connected to 
 the mini-pc with a VGA cable. The manual can be found at the bottom of 
 this document.
+
+IMPORTANT: The current screen is a replacement of the old screen. This 
+screen was very heavy and energy consuming.
 
 ===== LIDAR
 The previous group has also done research on a Lidar sensor.
