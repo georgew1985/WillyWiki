@@ -98,7 +98,7 @@ autonomously without collisions. How Willy reacts to objects in his
 navigation is researched by a previous group. (Navigation design v0.1,
 2017)
 
-The datasheet for the HC-SR04 is included in the sources at the bottom 
+The datasheet <<1>> for the HC-SR04 is included in the sources at the bottom 
 of this document.
 
 The sensors all use 5V as can be seen in the schematic:
@@ -163,7 +163,7 @@ IMPORTANT: The GPS and compass are currently implemented but not used in
 the code on the mini-pc.
 
 ===== Screen
-The screen used is a KDL-42W815B from Sony. The screen is connected to 
+The screen used is a KDL-42W815B <<2>> from Sony. The screen is connected to 
 the mini-pc with a VGA cable. The manual can be found at the bottom of 
 this document.
 
@@ -233,5 +233,5 @@ vision hardware., sd) test: <<pp>>.
 [bibliography]
 === References
 
-- [[[pp]]] HCSR04 Datasheet version 1. Retrieved from https://www.electroschematics.com/wp-content/uploads/2013/07/HCSR04-datasheet-version-1.pdf
+- [[[1]]] HCSR04 Datasheet version 1. Retrieved from https://www.electroschematics.com/wp-content/uploads/2013/07/HCSR04-datasheet-version-1.pdf
 - [[[2]]] Sony KDL42w815 Manual. Retrieved from https://www.sony.nl/electronics/support/res/manuals/4489/44895371M.pdf
