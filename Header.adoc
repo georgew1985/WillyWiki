@@ -1,5 +1,6 @@
 :numbered:
 :toc:
 :toclevels: 5
+:icons: font
 
 include::sidebar.adoc[]
