@@ -1,8 +1,8 @@
 include::../Header.adoc[]
 
-== Known Bugs
+== Common problems
 
-This file contains a list of known bugs.
+This file contains a list of the most common problems and the problems we found during development.
 
 === Driving
 - It is quite hard to deploy and undeploy the brakes.
@@ -25,3 +25,4 @@ ultrasonic sensors in it.
 
 === Web Interface
 - ?
+

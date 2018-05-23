@@ -1,0 +1,42 @@
+include::../Header.adoc[]
+
+== Fidings
+
+This file contains all the things we have found while prototyping and may be usefull to other project groups
+
+=== Mechanics
+- When the kinect is used together with the LIDAR for indoor navigation, the kinect can
+not handle the fast scan frequency of the LIDAR which will cause the transform of the robot 
+to become unknown. Then the robot will lost its orientation.
+- The kinect cannot look further than 10 meters away. Thats makes the kinect not usefull
+for indoor navigation.
+- The motor controller is a device that is used to control the cmd_vel topic created by the
+ros navigation stack. The ros navigation stack published geometry::Twist messages 
+- The current batteries are not powerfull enough to power the current Willy.
+- The 230 volt touchscreen in combination with the power converter is way to powerfull 
+and needs to be replaced by a 19v led display.
+- There are a lot of ways to communicate with Willy. The ones we're using are:
+-> Leap
+-> kinect
+-> Voice recognition
+-> TTS (Text to Speech)
+-> Lights (Led and sirene)
+-> Keyboard
+-> Mouse
+- The current battery shell will not fit because of the new motorcontroller. Therefore we
+created a set of new brackets to mount the 6 batteries onto the chassis.
+- The brakes are not easy to deploy. Thats because the levers on the side of willy are to loose
+to deploy the brake. We can't tight them because the screw is malformed.
+- Offline speech recognition is limited. There are a few solutions for hot-word detection like Snowboy.
+- ROS is complicated and difficult to learn. But if everything is setup just right, ROS makes it really easy 
+to communicate between your hardware. 
+- If you want to create files to start multiple projects? Do not use bash files. ROS can't handle bash files properly.
+use ros launch files instead.
+- The making of the DrivingController was a complex situation. That is because of the fact every ROS node has only one ROS nodehandler.
+To make it possible to subscribe and advertise everywhere in the DrivingWilly code, we must send the nodehandler to every
+subcontroller by using pointers. This request a detailed knowledge of C++ and ROS.
+- The setup of the ROS navigation stack is difficult because of the fact that every robot is different.
+A lot of components needs to be setup on your own. As example the move_base, the transformations and rotations
+and the cmd_vel topic. 
+
+
