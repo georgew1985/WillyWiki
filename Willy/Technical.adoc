@@ -82,7 +82,7 @@ The fuse called T5L250V is rated for 250V with 5A.
 To prevent collisions, ultrasonic sensors are used. These sensors
 measure distance by using sound. This is made possible by sending out
 bursts of high frequency noise, and then waiting for a reflection of
-that sound.image:../Archive/2018S1/Research/media/current-status/image8.jpeg[image]
+that sound using the HC-SR04 ultrasonic sensor. image:../Archive/2018S1/Research/media/current-status/image8.jpeg[image]
 
 By using this data Willy is be able to decide if he is able to drive any
 further in a certain direction. In the event of Willy being not able to
@@ -91,6 +91,9 @@ able to drive further. This way Willy will be able to drive around
 autonomously without collisions. How Willy reacts to objects in his
 navigation is researched by a previous group. (Navigation design v0.1,
 2017)
+
+The datasheet for the HC-SR04 is included in the sources at the bottom 
+of this document.
 
 The sensors all use 5V as can be seen in the schematic:
 
@@ -215,3 +218,6 @@ vision hardware., sd)
 ===== External lights
 
 ==== Schematics
+
+
+https://www.electroschematics.com/wp-content/uploads/2013/07/HCSR04-datasheet-version-1.pdf
