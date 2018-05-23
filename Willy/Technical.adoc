@@ -51,8 +51,10 @@ image:../Archive/2018S1/Research/media/current-status/image7.png[image]
 
 Make sure to deploy the brakes. Otherwise Willy won’t work!! There is
 only one way to detect if the brakes are deployed. It’s by simply
-testing if the wheel can turn (Or a very little bit) anymore.
+testing if the wheel can't turn (Or a very little bit) anymore. 
 
+IMPORTANT: The wheels should not be able to turn for Willy to function 
+normally. The brakes will automatically be released by Willy when driving.
 
 ===== Batteries
 
@@ -137,7 +139,6 @@ All odd numbered sensors are read first, and after a small delay the
 even numbered sensors are read. This is because sensors placed next to
 each other can interfere the readings of each other.
 
-
 ===== GPS / Compass
 To allow Willy to drive outdoor by using a precomputed route, a GPS
 sensor and a compass are required. The GPS sensor is linked to the
@@ -188,7 +189,6 @@ Therefore they decided to not implement the LIDAR sensor.
 After doing some research we found that it is possible and supported to
 link ROS to a LIDAR sensor.
 
-
 ===== Kinect
 image:../Archive/2018S1/Research/media/current-status/image11.png[image]
 
@@ -224,7 +224,6 @@ implemented in the future. This makes the Kinect 2 more futureproof than
 its precursor. (Kinect 1 vs 2 specifications: , sd) (Kinect 1
 specifications, sd) (Main factors/features of most industrial computer
 vision hardware., sd)
-
 
 ===== External lights
 
