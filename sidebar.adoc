@@ -21,6 +21,8 @@ link:{url}/ROS/index.html[ROS]::
 link:{url}/Willy/index.html[Willy]::
         - link:{url}/Willy/Technical.html[Technical]
         - link:{url}/Willy/Code.html[Code]
+        - link:{url}/Willy/Bugs.html[Bugs]
+        - link:{url}/Willy/Findings.html[Findings]
         - link:{url}/Willy/Parameters.html[Parameters]
         - link:{url}/Willy/Bugs.html[Known Bugs]
 

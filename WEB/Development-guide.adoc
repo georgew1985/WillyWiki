@@ -1,3 +1,40 @@
 include::../Header.adoc[]
 
-== Development
+== Development Guide
+
+=== Prerequirements
+
+* Install Git & Editor
+* Install NodeJS
+* Install Sails
+* If on Windows:
+. Install Ubuntu
+- Got to Microsoft store 
+- Search for 'Ubuntu'
+- Click get/install
+. Install ROS
+- Follow installation at: http://wiki.ros.org/kinetic/Installation/Ubuntu 
+(this might take some time)
+[source,bash]
+sudo apt-get install ros-kinetic-desktop-full
+- And enviroment setup
+[source,bash]
+echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+- Test the installation running ROS
+[source,bash]
+roscore
+(ctrl+c)
+
+=== Development
+* Clone Git Repo
+* Switch to test branch
+
+=== Compilation
+* Run without ros:
+* Run with Ros:
+ . Start Roscore
+ . Run webplatform
+
+
+== Notes
