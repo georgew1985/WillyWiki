@@ -1,3 +1,12 @@
 include::../Header.adoc[]
 
 == ROS navigation
+
+Willy uses the ROS navigation stack to navigate inside. The ROS navigation stack is a complex collection of multiple ROS packages.
+These packages reads the sensor data we provided from our sensors to create a map of the environment. 
+When the user provides a goal from rviz, the global planner will provide a path to that goal and calculate the costs in that map.
+costs can be compared with obstacles. The bigger the obstacle, the higher the cost.
+
+
+
+In the image above you can see the overview of the ROS navigation stack in our project. 

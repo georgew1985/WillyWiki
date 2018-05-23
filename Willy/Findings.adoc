@@ -31,6 +31,8 @@ for indoor navigation.
 and needs to be replaced by a 19v led display.
 - The brakes are not easy to deploy. Thats because the levers on the side of willy are to loose
 to deploy the brake. We can't tight them because the screw is malformed.
+- The GPS sensor and compass only work outside and are controlled using the GPSController.
+- The kinect cannot be used outside. The IR camera can't handle the bright sunlight.
 
 === Design
 - The current battery shell will not fit because of the new motorcontroller. Therefore we
