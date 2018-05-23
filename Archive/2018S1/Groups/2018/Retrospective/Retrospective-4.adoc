@@ -62,7 +62,7 @@
 . Willy uiterlijk + fotos
 . Back-up
 . Willy hardware + fotos
-. Startup
+. Stabiliseren Willy
 
 ==== Beheren
 . Planning

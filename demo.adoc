@@ -1,3 +1,5 @@
+include::../Header.adoc[]
+
 Asciidoctor Demo
 ================
 :description: A demo of Asciidoctor. This document +
