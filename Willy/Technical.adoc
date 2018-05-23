@@ -23,8 +23,9 @@ project group has chosen this option as documented in the ‘Ontwerp verslag’.
 These motors need 24 volts and use 20 amps. One of the previous project
 groups created the motor controller to control the motors. This is
 documented in the ‘Systeem dossier’ from a previous project group.
-(Systeem Dossier,
-2016)image:../Archive/2018S1/Research/media/current-status/image4.jpeg[image]
+(Systeem Dossier, 2016)
+
+image:../Archive/2018S1/Research/media/current-status/image4.jpeg[image]
 
 This motor controller is made by using an Arduino Mega and a custom
 shield with additional custom hardware. This hardware makes sure the
@@ -229,6 +230,8 @@ vision hardware., sd)
 
 ==== Schematics
 
+[bibliography]
+=== References
 
-https://www.electroschematics.com/wp-content/uploads/2013/07/HCSR04-datasheet-version-1.pdf
-https://www.sony.nl/electronics/support/res/manuals/4489/44895371M.pdf
+- [[[1]]] HCSR04 Datasheet version 1. Retrieved from https://www.electroschematics.com/wp-content/uploads/2013/07/HCSR04-datasheet-version-1.pdf
+- [[[2]]] Sony KDL42w815 Manual. Retrieved from https://www.sony.nl/electronics/support/res/manuals/4489/44895371M.pdf
