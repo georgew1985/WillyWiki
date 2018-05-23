@@ -224,7 +224,7 @@ are both nice features to have when the social aspect of Willy will be
 implemented in the future. This makes the Kinect 2 more futureproof than
 its precursor. (Kinect 1 vs 2 specifications: , sd) (Kinect 1
 specifications, sd) (Main factors/features of most industrial computer
-vision hardware., sd) <<pp>>
+vision hardware., sd) test: <<pp>>
 
 ===== External lights
 
