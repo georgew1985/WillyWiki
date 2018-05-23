@@ -7,6 +7,7 @@ include::../Header.adoc[]
 ==== Overview
 A simple overview of all the hardware in Willy is made in the 
 following scheme:
+
 image:media/overview/overview.png[image]
 
 ==== Components
