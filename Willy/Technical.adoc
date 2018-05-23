@@ -82,7 +82,9 @@ The fuse called T5L250V is rated for 250V with 5A.
 To prevent collisions, ultrasonic sensors are used. These sensors
 measure distance by using sound. This is made possible by sending out
 bursts of high frequency noise, and then waiting for a reflection of
-that sound using the HC-SR04 ultrasonic sensor. image:../Archive/2018S1/Research/media/current-status/image8.jpeg[image]
+that sound using the HC-SR04 ultrasonic sensor. 
+
+image:../Archive/2018S1/Research/media/current-status/image8.jpeg[image]
 
 By using this data Willy is be able to decide if he is able to drive any
 further in a certain direction. In the event of Willy being not able to
