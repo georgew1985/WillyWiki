@@ -140,7 +140,7 @@ To allow Willy to drive outdoor by using a precomputed route, a GPS
 sensor and a compass are required. The GPS sensor is linked to the
 WillyController using ROS. In WillyController the raw data is processed
 to usable coordinates. These coordinates are only used to draw a line
-where Willy has driven in the code of the previous group. +
+where Willy has driven in the code of the previous group.
 The Compass is used to determinate the direction of willy. This is
 needed for navigation when willy is going to drive precomputed routes.
 
@@ -156,6 +156,8 @@ reduced to one Arduino.
 
 
 ===== Screen
+The screen used is a KDL-42W815B from Sony. The manual can be found at
+the bottom of this document.
 
 ===== LIDAR
 The previous group has also done research on a Lidar sensor.
@@ -221,3 +223,4 @@ vision hardware., sd)
 
 
 https://www.electroschematics.com/wp-content/uploads/2013/07/HCSR04-datasheet-version-1.pdf
+https://www.sony.nl/electronics/support/res/manuals/4489/44895371M.pdf
