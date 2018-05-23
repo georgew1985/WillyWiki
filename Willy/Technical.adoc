@@ -68,6 +68,16 @@ All the batteries are 60Ah. They are connected placing 2 batteries in serial
 
 image:media/technical/batteries_new.png[image]
 
+===== Power Supply
+The 19 volts for the mini-pc and the screen is provided by a step-down converter.
+The module is based on the Xl4015 buch DC to DC converter. The input voltage
+range is 8-36V and the adjustable output range is 1.25V to 32V. The converter
+is rated for a max current of 5 amps.
+
+====== Fuse
+Between the batteries and the step-down converter, there is a fuse placed. 
+The fuse called T5L250V is rated for 250V with 5A.
+
 ===== Sonars
 To prevent collisions, ultrasonic sensors are used. These sensors
 measure distance by using sound. This is made possible by sending out
