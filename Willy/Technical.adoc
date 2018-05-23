@@ -156,8 +156,9 @@ reduced to one Arduino.
 
 
 ===== Screen
-The screen used is a KDL-42W815B from Sony. The manual can be found at
-the bottom of this document.
+The screen used is a KDL-42W815B from Sony. The screen is connected to 
+the mini-pc with a VGA cable. The manual can be found at the bottom of 
+this document.
 
 ===== LIDAR
 The previous group has also done research on a Lidar sensor.
