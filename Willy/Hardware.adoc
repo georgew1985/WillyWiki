@@ -12,6 +12,29 @@ image:media/overview/overview.png[image]
 This chapter contains all the components with information.
 
 ==== Mini pc
+This is the Dedicated PC for running the ROS Server. Al the calculational 
+work will be done on this PC. Therefore, we chose for a PC with some 
+calculation power as well as enough RAM.
+
+[cols=",",options="header",]
+|===============================================
+|Product |Dell Optiplex 3020 Micro (3020-9806)
+|CPU |Intel Core I5 4670T quad-core
+|Video Chip |Intel HD Graphics 4600
+|RAM |16 GB DDR3L Sodimm
+|Harddisk |Western Digital Black 500GB 2,5" HDD
+|Amount of USB Ports 
+a|
+- 2x USB3.0
+- 4x USB2.0
+|Other Ports 
+a|
+- 1x VGA
+- 1x DisplayPort
+- 1x 1GB/s Network Port
+- 1x Microphone Jack
+- 1x Headphone Jack
+|Wireless Connection options |WLAN chip
 
 ==== Motors and controller
 Willy contains 2 motors from a second-hand mobility scooter. A previous 
