@@ -152,18 +152,18 @@ Defines whether or not to eat up the plan as the robot moves along the path.
 This param file can be found in the following directory: `/home/willy/WTGD/willy/src/willy_navigation/param/costmap_common_params.yaml` +
 It's possible that some parameters are not used yet. These can be added when needed. +
 
-*`max_obstacle_height`* (double, default: 1.0) + 
+`*max_obstacle_height*` (double, default: 1.0) + 
 The max obstacle height the robot can handle in meters. +
-*`obstacle_range`* (double, default: 2.5) +
+`*obstacle_range*` (double, default: 2.5) +
 the maximum range sensor reading that will result in an obstacle being put into the costmap. +
-*`raytrace_range`* (double, default: 3.0) +
+`*raytrace_range*` (double, default: 3.0) +
 determines the range to which we will raytrace freespace given a sensor reading. +
-*`robot_radius`* (double, default: 0.8) +
-*`footprint`* (double array, default: [[0.3, 0.3],  [0.3, -0.3], [-1.0, -0.3], [-1.0, 0.3]]) +
+`*robot_radius*` (double, default: 0.8) +
+`*footprint*` (double array, default: [[0.3, 0.3],  [0.3, -0.3], [-1.0, -0.3], [-1.0, 0.3]]) +
 Here we set either the footprint of the robot or the radius of the robot if it is circular. +
-*`cost_scaling_factor`* (double, default: 2.58) +
+`*cost_scaling_factor*` (double, default: 2.58) +
 A scaling factor to apply to cost values during inflation. +
-*`inflation_radius`* (double, default: 1.75) +
+`*inflation_radius*` (double, default: 1.75) +
 The radius in meters to which the map inflates obstacle cost values. +
 
 # voxel map configuration; z-voxels 0 are filled by bumpers and 1 by laser scan (kinect)
