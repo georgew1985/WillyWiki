@@ -18,7 +18,7 @@ Willy contains 2 motors from a second-hand mobility scooter. A previous
 project group has chosen this option as documented in the ‘Ontwerp verslag’.
 (Ontwerpverslag, 2016)
 
-These motors need 24 volts and use 20 amps. One of the previous project
+These motors need 24 volts and use a max of 20 amps. One of the previous project
 groups created the motor controller to control the motors. This is
 documented in the ‘Systeem dossier’ from a previous project group.
 (Systeem Dossier, 2016)
@@ -37,6 +37,30 @@ The current to the motors is also controlled by this Arduino.
 The motor controller is built as shown below:
 
 image:../Archive/2018S1/Research/media/current-status/image5.jpg[image]
+
+The 3 cables to the internal motor controller (built in in the wheelchair 
+frame) is connected to the original cable with a simple circuit. The pinout 
+of the connector attached to the cable is as follows:
+
+image:media/overview/connector.png[image]
+
+[cols=",,",options="header",]
+|===============================================
+|Pin number |Description |Internal Cable Color
+|1 |+ 24V | Red 
+|2 |- 0V | Black
+|3 |Driving data |White
+|4 |Unknown (not used) |Yellow
+|5 |Enable | Blue
+|6 |Actuator Data (not used) |Green
+|===============================================
+
+The drive data pin (3) is used to send driving commands to the internal 
+controller. The yellow cable is not used and the function is unknown.
+The enable pin is connected to the emergency button and the switch on 
+the motor controller. The motors only work when the voltage level on this 
+cable is 5 volts. The actuator pin is not used in this project. In the 
+original wheelchair this pin is used for the lighting etc.
 
 ===== Brakes
 
