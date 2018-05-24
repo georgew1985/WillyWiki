@@ -18,3 +18,4 @@ and yet another group might have discovered a computer vision approach that work
 ROS was designed specifically for groups like these to collaborate and build upon each other's work, as is described throughout this site.
 
 image:media/ros.png[]
+
