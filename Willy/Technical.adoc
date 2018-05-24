@@ -62,6 +62,10 @@ the motor controller. The motors only work when the voltage level on this
 cable is 5 volts. The actuator pin is not used in this project. In the 
 original wheelchair this pin is used for the lighting etc.
 
+NOTE: The motor controller also contains a connection for charging the 
+batteries. The connector at the side of the box is connected to the + 
+and - of the cable to the internal motor controller.
+
 ===== Brakes
 
 The two engines of willy contain both a brake. This brake is controlled
