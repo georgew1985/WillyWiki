@@ -44,7 +44,7 @@ of the connector attached to the cable is as follows:
 
 image:media/overview/connector.png[image]
 
-[cols=",",options="header",]
+[cols=",,",options="header",]
 |===============================================
 |Pin number |Description |Internal Cable Color
 |1 |+ 24V | Red 
