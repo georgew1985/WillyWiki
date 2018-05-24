@@ -1,5 +1,3 @@
-include::../Header.adoc[]
-
 == Development Guide
 
 === Prerequirements
