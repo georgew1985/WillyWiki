@@ -2,7 +2,7 @@ include::../Header.adoc[]
 
 include::Hardware.adoc[]
 
-include::Code.adoc[]
+include::Software.adoc[]
 
 include::Parameters.adoc[]
 
