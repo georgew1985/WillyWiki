@@ -34,7 +34,7 @@ To interact with a topic, two methods are used, subscribing and publishing.
 
 ==== Subscribing
 *Subscribing* is getting data from a topic. Everytime the data in a topic is updated, a message 
-will be called to all subscribing nodes. This way a node can use this information.
+will be passed to all subscribing nodes. This way a node can use this information.
 
 ==== Publishing
 *Publishing* is sending data to a topic. When a node has new information, a message will 
