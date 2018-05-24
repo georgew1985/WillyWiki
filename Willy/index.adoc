@@ -4,6 +4,8 @@ include::Code.adoc[]
 
 include::Parameters.adoc[]
 
+include::Findings.adoc[]
+
 include::Bugs.adoc[]
 
 include::Technical.adoc[]
