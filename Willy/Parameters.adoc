@@ -53,6 +53,8 @@ The rate in Hz at which to run the global planning loop. If the frequency is set
 `max_planning_retries` (int32_t, default: -1) +
 How many times to allow for planning retries before executing recovery behaviors. A value of -1.0 corresponds to an infinite retries. +
 
+==== Base local planner
+
 *base_local_planner_params.yaml*
 
 This param file can be found in the following directory: `/home/willy/WTGD/willy/src/willy_navigation/param/base_local_planner_params.yaml` +
@@ -141,3 +143,37 @@ How far the robot must travel in meters before oscillation flags are reset +
 
 --Global Plan Parameters-- +
 `prune_plan` (bool, default: true) +
+Defines whether or not to eat up the plan as the robot moves along the path.
+
+==== Common costmap
+
+*costmap_common_params.yaml*
+
+This param file can be found in the following directory: `/home/willy/WTGD/willy/src/willy_navigation/param/costmap_common_params.yaml` +
+It's possible that some parameters are not used yet. These can be added when needed. +
+
+`*max_obstacle_height*` (double, default: 1.0) + 
+The max obstacle height the robot can handle in meters. +
+`*obstacle_range*` (double, default: 2.5) +
+the maximum range sensor reading that will result in an obstacle being put into the costmap. +
+`*raytrace_range*` (double, default: 3.0) +
+determines the range to which we will raytrace freespace given a sensor reading. +
+`*robot_radius*` (double, default: 0.8) +
+`*footprint*` (double array, default: [[0.3, 0.3],  [0.3, -0.3], [-1.0, -0.3], [-1.0, 0.3]]) +
+Here we set either the footprint of the robot or the radius of the robot if it is circular. +
+`*cost_scaling_factor*` (double, default: 2.58) +
+A scaling factor to apply to cost values during inflation. +
+`*inflation_radius*` (double, default: 1.75) +
+The radius in meters to which the map inflates obstacle cost values. +
+
+# voxel map configuration; z-voxels 0 are filled by bumpers and 1 by laser scan (kinect)
+map_type: voxel
+origin_z: 0.0
+z_resolution: 0.2
+z_voxels: 2
+publish_voxel_map: false
+
+observation_sources: scan kinect
+
+scan: {data_type: LaserScan, topic: scan, marking: true, clearing: true, min_obstacle_height: -1, max_obstacle_height: 1.0}
+kinect: {data_type: PointCloud2, topic: camera/depth_registered/cloud, marking: true, clearing: false, min_obstacle_height: -1, max_obstacle_height: 1}

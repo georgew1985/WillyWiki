@@ -1,6 +1,6 @@
 include::../Header.adoc[]
 
-== Code Overview Documentation
+== Software Architecture Document
 
 === Hardware
 

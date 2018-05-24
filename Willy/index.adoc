@@ -1,12 +1,12 @@
 include::../Header.adoc[]
 
-include::Code.adoc[]
+include::Hardware.adoc[]
+
+include::Software.adoc[]
 
 include::Parameters.adoc[]
 
 include::Findings.adoc[]
 
 include::Bugs.adoc[]
-
-include::Technical.adoc[]
 

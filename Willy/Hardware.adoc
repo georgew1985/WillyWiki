@@ -1,6 +1,6 @@
 include::../Header.adoc[]
 
-== Hardware Architecture Documentation
+== Hardware Architecture Document
 
 === Overview
 A simple overview of all the hardware in Willy is made in the 
@@ -12,6 +12,30 @@ image:media/overview/overview.png[image]
 This chapter contains all the components with information.
 
 ==== Mini pc
+This is the Dedicated PC for running the ROS Server. Al the calculational 
+work will be done on this PC. Therefore, we chose for a PC with some 
+calculation power as well as enough RAM.
+
+[cols=",",options="header",]
+|===============================================
+|Product |Dell Optiplex 3020 Micro (3020-9806)
+|CPU |Intel Core I5 4670T quad-core
+|Video Chip |Intel HD Graphics 4600
+|RAM |16 GB DDR3L Sodimm
+|Harddisk |Western Digital Black 500GB 2,5" HDD
+|Amount of USB Ports 
+a|
+- 2x USB3.0
+- 4x USB2.0
+|Other Ports 
+a|
+- 1x VGA
+- 1x DisplayPort
+- 1x 1GB/s Network Port
+- 1x Microphone Jack
+- 1x Headphone Jack
+|Wireless Connection options |WLAN chip
+|===============================================
 
 ==== Motors and controller
 Willy contains 2 motors from a second-hand mobility scooter. A previous 
@@ -62,6 +86,10 @@ the motor controller. The motors only work when the voltage level on this
 cable is 5 volts. The actuator pin is not used in this project. In the 
 original wheelchair this pin is used for the lighting etc.
 
+NOTE: The motor controller also contains a connection for charging the 
+batteries. The connector at the side of the box is connected to the + 
+and - of the cable to the internal motor controller.
+
 ===== Brakes
 
 The two engines of willy contain both a brake. This brake is controlled
@@ -70,6 +98,7 @@ motor will automatically activate the brake. To start the driving_willy
 project, you NEED to deploy the brakes. Otherwise Willy will not drive!
 
 image:../Archive/2018S1/Research/media/current-status/image6.jpeg[image]
+
 image:../Archive/2018S1/Research/media/current-status/image7.png[image]
 
 Make sure to deploy the brakes. Otherwise Willy won’t work!! There is
@@ -163,6 +192,9 @@ even numbered sensors are read. This is because sensors placed next to
 each other can interfere the readings of each other.
 
 ==== GPS / Compass
+IMPORTANT: The GPS and compass are currently implemented but not used in 
+the code on the mini-pc.
+
 To allow Willy to drive outdoor by using a precomputed route, a GPS
 sensor and a compass are required. The GPS sensor is linked to the
 WillyController using ROS. In WillyController the raw data is processed
@@ -181,15 +213,12 @@ The second Arduino with the GPS sensor is powered with the 5V pin from
 the first Arduino. At the moment of writing this has not been fixed and
 reduced to one Arduino.
 
-IMPORTANT: The GPS and compass are currently implemented but not used in 
-the code on the mini-pc.
-
 ==== Screen
 The screen used is a KDL-42W815B <<2>> from Sony. The screen is connected to 
 the mini-pc with a VGA cable. The manual can be found at the bottom of 
 this document.
 
-IMPORTANT: The current screen is a replacement of the old screen. This 
+NOTE: The current screen is a replacement of the old screen. This 
 screen was very heavy and energy consuming.
 
 ==== LIDAR
@@ -215,10 +244,12 @@ link ROS to a LIDAR sensor.
 ==== Kinect
 image:../Archive/2018S1/Research/media/current-status/image11.png[image]
 
-As a method to navigate inside, the Kinect was chosen. A Kinect can
-create a framework of a person and see all movements of that person. By
-adding a Kinect to willy, willy will be able to recognize people and
-interact with them by using the speech recognition of the Kinect.
+As a method to navigate inside, initially the Kinect was chosen. This is 
+not true anymore. The Kinect is now used to detect if there is a person 
+in front of Willy. A Kinect can create a framework of a person and see 
+all movements of that person. By adding a Kinect to willy, willy will 
+be able to recognize people and interact with them by using the speech 
+recognition of the Kinect.
 
 There are two versions of the Microsoft Kinect: Kinect 1 for Xbox 360
 and Kinect 2 for Xbox one. See table 1 which list all the different
@@ -247,6 +278,8 @@ implemented in the future. This makes the Kinect 2 more futureproof than
 its precursor. (Kinect 1 vs 2 specifications: , sd) (Kinect 1
 specifications, sd) (Main factors/features of most industrial computer
 vision hardware., sd)
+
+The Kinect used in Willy is a version 1 Kinect, the old one.
 
 ==== External lights
 
