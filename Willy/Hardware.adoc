@@ -1,6 +1,6 @@
 include::../Header.adoc[]
 
-== Hardware Architecture Documentation
+== Hardware Architecture Document
 
 === Overview
 A simple overview of all the hardware in Willy is made in the 
