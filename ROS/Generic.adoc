@@ -11,7 +11,7 @@ communicate between different parts of the robot.
 In the case of Willy, ROS is especially handy because Willy is made with a modular design. 
 All modules can be removed without disrupting the other functionalities of Willy. 
 For example, when the web interface is removed, Willy is still able to drive, but 
-with an other module as for example the keyboard controller. Or the removal of the motor 
+with another module as for example the keyboard controller. Or the removal of the motor 
 driver makes Willy still able to interact with public.
 
 === Nodes
