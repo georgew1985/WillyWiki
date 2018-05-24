@@ -3,8 +3,8 @@ include::../Header.adoc[]
 == ROS Introduction
 
 === An introduction
-As a requirement from the product owner, ROS is used as framework on Willy. ROS, the Robot 
-Operating System, is a flexible software framework for use in robots. It consists of a 
+As a requirement from the product owner, *ROS* is used as framework on Willy. ROS, the Robot 
+Operating System, is a flexible software *framework* for use in robots. It consists of a 
 collection of libraries, tools and conventions that provide basic infrastructure to 
 communicate between different parts of the robot.
 
@@ -15,7 +15,21 @@ with an other module as for example the keyboard controller. Or the removal of t
 driver makes Willy still able to interact with public.
 
 === Nodes
+A *node* in ROS can be seen as a module. It is an executable that communicates through ROS 
+to other nodes to send and receive data. A node can be for example a c++ application, or 
+a piece of Python code, or even an Arduino connected with USB running code. A piece of 
+information a node receives or sends is called a *message*. 
+
+NOTE: More information can be found at http://wiki.ros.org/ROS/Tutorials/UnderstandingNodes
 
 === Topics
+A topic is a bus over which nodes can exchange data messages. A topic always has a name, 
+so all topics can be identified.
+
+NOTE: More information can be found at http://wiki.ros.org/Topics
+
+==== Subscribing
+
+==== Publishing
 
 image:media/ros.png[]
