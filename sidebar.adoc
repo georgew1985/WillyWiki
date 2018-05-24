@@ -15,7 +15,7 @@ link:{url}/Config/index.html[Configuration]::
         - link:{url}/Config/Hardware.html[Hardware]
 
 link:{url}/ROS/index.html[ROS]::
-        - link:{url}/ROS/Generic.html[Generic]
+        - link:{url}/ROS/Generic.html[Introduction to ROS]
         - link:{url}/ROS/Navigation.html[Navigation]
 
 link:{url}/Willy/index.html[Technical]::

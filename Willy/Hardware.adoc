@@ -71,7 +71,7 @@ image:media/overview/connector.png[image]
 [cols=",,",options="header",]
 |===============================================
 |Pin number |Description |Internal Cable Color
-|1 |+ 24V | Red 
+|1 |\{plus} 24V | Red 
 |2 |- 0V | Black
 |3 |Driving data |White
 |4 |Unknown (not used) |Yellow
@@ -87,7 +87,7 @@ cable is 5 volts. The actuator pin is not used in this project. In the
 original wheelchair this pin is used for the lighting etc.
 
 NOTE: The motor controller also contains a connection for charging the 
-batteries. The connector at the side of the box is connected to the + 
+batteries. The connector at the side of the box is connected to the \{plus} 
 and - of the cable to the internal motor controller.
 
 ===== Brakes
