@@ -19,3 +19,6 @@ ROS was designed specifically for groups like these to collaborate and build upo
 
 image:media/ros.png[]
 
+=== An introduction
+As a requirement from the product owner, ROS is used as framework on Willy. ROS, the Robot 
+Operating System, is a flexible software framework for use in robots.

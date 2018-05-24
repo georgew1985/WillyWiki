@@ -35,6 +35,7 @@ a|
 - 1x Microphone Jack
 - 1x Headphone Jack
 |Wireless Connection options |WLAN chip
+|===============================================
 
 ==== Motors and controller
 Willy contains 2 motors from a second-hand mobility scooter. A previous 
