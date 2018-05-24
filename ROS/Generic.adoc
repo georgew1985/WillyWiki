@@ -26,9 +26,9 @@ NOTE: More information can be found at http://wiki.ros.org/ROS/Tutorials/Underst
 A topic is a bus over which nodes can exchange data messages. A topic always has a name, 
 so all topics can be identified.
 
-NOTE: More information can be found at http://wiki.ros.org/Topics
-
 image:media/ros.png[]
+
+NOTE: More information can be found at http://wiki.ros.org/Topics
 
 To interact with a topic, two methods are used, subscribing and publishing.
 
