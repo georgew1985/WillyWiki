@@ -33,9 +33,9 @@ NOTE: More information can be found at http://wiki.ros.org/Topics
 To interact with a topic, two methods are used, subscribing and publishing.
 
 ==== Subscribing
-Subscribing is getting data from a topic. Everytime the data in a topic is updated, a message 
+*Subscribing* is getting data from a topic. Everytime the data in a topic is updated, a message 
 will be called to all subscribing nodes. This way a node can use this information.
 
 ==== Publishing
-Publishing is sending data to a topic. When a node has new information, a message will 
+*Publishing* is sending data to a topic. When a node has new information, a message will 
 automatically be sent to the linked topic, so this data is updated.
