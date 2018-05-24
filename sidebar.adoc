@@ -19,7 +19,7 @@ link:{url}/ROS/index.html[ROS]::
         - link:{url}/ROS/Navigation.html[Navigation]
 
 link:{url}/Willy/index.html[Willy]::
-        - link:{url}/Willy/Technical.html[Technical]
+        - link:{url}/Willy/Hardware.html[Technical]
         - link:{url}/Willy/Code.html[Code]
         - link:{url}/Willy/Findings.html[Findings]
         - link:{url}/Willy/Parameters.html[Parameters]
@@ -35,6 +35,7 @@ link:{url}/Research/index.html[Research]::
 	- link:{url}/Research/Social-interaction.html[Social interaction]
 	- link:{url}/Research/Hardware.html[Hardware]
 	- link:{url}/Research/Peripherals.html[Peripherals]
+        - link:{url}/Research/Screen.html[Screen]
 	- link:{url}/Research/Indoor-navigation.html[Indoor-navigation]
 	- link:{url}/Research/Back-up.html[Back-up Willy]
 	- link:{url}/Research/Leap.html[Leap motion]
