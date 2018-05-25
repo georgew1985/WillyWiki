@@ -32,7 +32,7 @@ after_success:
   - find . -name '*jpg' | cpio -pdm output ;
   - find . -name '*jpeg' | cpio -pdm output ;
   - cd output ;
-  - sed -i 's/class="article"/class="article toc2 toc-left"/g' index.html
+  - find -name "*.html" -exec sed -i 's/class="article"/class="article toc2 toc-left"/g' {} +
   - git init
   - git config user.name "${GH_USER_NAME}"
   - git config user.email "{GH_USER_EMAIL}"
