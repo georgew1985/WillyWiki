@@ -12,7 +12,6 @@ link:{url}/Config/index.html[Configuration]::
         - link:{url}/Config/Ubuntu.html[Ubuntu]
         - link:{url}/Config/GIT.html[GIT]
         - link:{url}/Config/Wiki.html[Wiki]
-        - link:{url}/Config/Hardware.html[Hardware]
 
 link:{url}/ROS/index.html[ROS]::
         - link:{url}/ROS/Generic.html[Introduction to ROS]
