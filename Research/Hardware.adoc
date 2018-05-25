@@ -1,1 +1,5 @@
 include::../Header.adoc[]
+
+== Hardware
+
+=== Batteries
