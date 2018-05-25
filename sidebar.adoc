@@ -24,20 +24,19 @@ link:{url}/Willy/index.html[Technical]::
         - link:{url}/Willy/Parameters.html[Parameters]
         - link:{url}/Willy/Bugs.html[Known Bugs]
 
-link:{url}/WEB/index.html[Web-interface]::
+link:{url}/WEB/index.html[Webinterface]::
         - link:{url}/WEB/Development-guide.html[Development Guide]
         - link:{url}/WEB/Functional.html[Functional]
         - link:{url}/WEB/Technical.html[Technical]
         - link:{url}/WEB/Interaction.html[Interaction]
 
 link:{url}/Research/index.html[Research]::
-	- link:{url}/Research/Social-interaction.html[Social interaction]
 	- link:{url}/Research/Hardware.html[Hardware]
+	- link:{url}/Research/Sensors.html[Sensors]
 	- link:{url}/Research/Peripherals.html[Peripherals]
-        - link:{url}/Research/Screen.html[Screen]
-	- link:{url}/Research/Indoor-navigation.html[Indoor-navigation]
-	- link:{url}/Research/Back-up.html[Back-up Willy]
-	- link:{url}/Research/Leap.html[Leap motion]
+	- link:{url}/Research/Software.html[Software]
+        - link:{url}/Research/Web-interface.html[Web interface]
+        - link:{url}/Research/Social-interaction.html[Social interaction]
         
 link:{url}/Design/index.html[Design]::
 	- link:{url}/Design/Design-Guide.html[Design Guide]
