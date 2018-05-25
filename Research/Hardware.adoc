@@ -3,3 +3,5 @@ include::../Header.adoc[]
 == Hardware
 
 === Batteries
+
+link:../Archive/2018S1/Research/batteries.html[Research Batteries]
