@@ -107,9 +107,11 @@ As you can see in the link:https://raw.githubusercontent.com/ArtOfRobotics/Willy
 
 [CAUTION]
 --
-For the sidebar to scale correctly we had to manualy add the toc classes because we do not use Docbook (yet).
+For the sidebar to scale correctly we had to manualy add the toc classes because we do not use Docbook (yet). Also see <<Recursive replace>>.
 [source, yml]
-  - sed -i 's/class="article"/class="article toc2 toc-left"/g' index.html
+----
+  - find -name "*.html" -exec sed -i 's/class="article"/class="article toc2 toc-left"/g' {} +
+----
 --
 
 [NOTE]
@@ -156,3 +158,4 @@ A hardcoded sidebar is used to avoid using Docbook, it might be worth to take a 
 
 - [[[Tutorial]]] link:http://mgreau.com/posts/2016/03/28/asciidoc-to-gh-pages-with-travis-ci-docker-asciidoctor.html[Maxime Gréau. Convert AsciiDoc to HTML/PDF & publish to GitHub Pages with Travis CI and Asciidoctor Docker containers]
 - [[[Markdown vs AsciiDoc]]] link:https://asciidoctor.org/docs/user-manual/#comparison-by-example[Asciidoctor, Markdown vs AsciiDoc]
+- [[[Recursive replace]]] link:https://superuser.com/questions/428493/how-can-i-do-a-recursive-find-and-replace-from-the-command-line[Stackoverflow, Recursive replace]
