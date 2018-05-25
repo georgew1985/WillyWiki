@@ -1,8 +1,5 @@
 include::../Header.adoc[]
 
-Startup and global knowledge
-
-
 include::Driving-Willy.adoc[]
 
 include::Remote.adoc[]
