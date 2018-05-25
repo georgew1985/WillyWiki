@@ -2,6 +2,9 @@
 
 [#toc.toc2]
 link:{url}/welcome.html[Welcome]::
+link:{url}/Project/index.html[Using Willy]:: 
+        - link:{url}/Project/Willy.html[Driving Willy]
+        - link:{url}/Project/Sponsors.html[Remote]
     
 link:{url}/Startup/index.html[Using Willy]:: 
         - link:{url}/Startup/Driving-Willy.html[Driving Willy]
@@ -42,13 +45,14 @@ link:{url}/Design/index.html[Design]::
         - link:{url}/Design/Background.html[Background]
 	- link:{url}/Design/Design-Guide.html[Design Guide]
         - link:{url}/Design/Technical.html[Technical]
+        - link:{url}/Design/Realisation.html[Realisation]
         
 link:{url}/Status/index.html[Status and Advice]::
 	- link:{url}/Status/Status.html[Status]
-         - link:{url}/Status/Todo.html[Todo & Advice]
+        - link:{url}/Status/Todo.html[Todo & Advice]
 
 link:{url}/Archive/index.html[Archive]::
-        - link:https://drive.google.com/drive/u/1/folders/1LfOfbxBTFASBrozYIklAt7_7a3ubFFy0[(2016/2) Initial design ]
-        - link:https://drive.google.com/drive/u/1/folders/1yCVk6iNJNQlaouU2WDvMt3BISoHCuz6l[(2017/1) Base & Functionalities ]
-        - link:https://drive.google.com/drive/u/1/folders/1S904hDK_63HIpyPnBgMHzZx-zt0xNpim[(2017/2) Research]
+        - link:{url}/Archive/2016S2.html[(2016/2) Initial design ]
+        - link:{url}/Archive/2017S1.html[(2017/1) Base & Functionalities ]
+        - link:{url}/Archive/2017S2.html[(2017/2) Research]
         - link:{url}/Archive/2018S1.html[(2018/1) Stabilization & Realisation]
