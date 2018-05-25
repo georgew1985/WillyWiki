@@ -1,6 +1,5 @@
 include::../Header.adoc[]
 
-<<<<<<< HEAD
 == Motor encoder
 
 
@@ -291,13 +290,3 @@ link ROS to a LIDAR sensor.
 [bibliography]
 == References
 - link: {url}/Documents/#_inventorisement_current_status
-=======
-== Hardware
-
-=== Batteries
-<<<<<<< HEAD
->>>>>>> ba531a077a1d26e52bcb05d4be7285f0a4c2df2b
-=======
-
-link:../Archive/2018S1/Research/batteries.html[Research Batteries]
->>>>>>> 7cdd8ad0d0b0c02f960b2b53a0099e29b93fcfc5
