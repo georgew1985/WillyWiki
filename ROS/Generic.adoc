@@ -1,21 +1,41 @@
 include::../Header.adoc[]
 
-== ROS generic
+== ROS Introduction
 
-The Robot Operating System (ROS) is a flexible framework for writing robot software. 
-It is a collection of tools, libraries, and conventions that aim to simplify the task of 
-creating complex and robust robot behavior across a wide variety of robotic platforms.
+=== An introduction
+As a requirement from the product owner, *ROS* is used as framework on Willy. ROS, the Robot 
+Operating System, is a flexible software *framework* for use in robots. It consists of a 
+collection of libraries, tools and conventions that provide basic infrastructure to 
+communicate between different parts of the robot.
 
-Why? Because creating truly robust, general-purpose robot software is hard. 
-From the robot's perspective, 
-problems that seem trivial to humans often vary wildly between instances of tasks and environments. 
-Dealing with these variations is so hard that no single individual, laboratory, or institution can hope to do it on their own.
+In the case of Willy, ROS is especially handy because Willy is made with a modular design. 
+All modules can be removed without disrupting the other functionalities of Willy. 
+For example, when the web interface is removed, Willy is still able to drive, but 
+with another module as for example the keyboard controller. Or the removal of the motor 
+driver makes Willy still able to interact with public.
 
-As a result, ROS was built from the ground up to encourage collaborative robotics software development. 
-For example, one laboratory might have experts in mapping indoor environments, 
-and could contribute a world-class system for producing maps. Another group might have experts at using maps to navigate, 
-and yet another group might have discovered a computer vision approach that works well for recognizing small objects in clutter. 
-ROS was designed specifically for groups like these to collaborate and build upon each other's work, as is described throughout this site.
+=== Nodes
+A *node* in ROS can be seen as a module. It is an executable that communicates through ROS 
+to other nodes to send and receive data. A node can be for example a c++ application, or 
+a piece of Python code, or even an Arduino connected with USB running code. A piece of 
+information a node receives or sends is called a *message*. 
+
+NOTE: More information can be found at http://wiki.ros.org/ROS/Tutorials/UnderstandingNodes
+
+=== Topics
+A topic is a bus over which nodes can exchange data messages. A topic always has a name, 
+so all topics can be identified.
 
 image:media/ros.png[]
 
+NOTE: More information can be found at http://wiki.ros.org/Topics
+
+To interact with a topic, two methods are used, subscribing and publishing.
+
+==== Subscribing
+*Subscribing* is getting data from a topic. Everytime the data in a topic is updated, a message 
+will be passed to all subscribing nodes. This way a node can use this information.
+
+==== Publishing
+*Publishing* is sending data to a topic. When a node has new information, a message will 
+automatically be sent to the linked topic, so this data is updated.

@@ -15,12 +15,12 @@ link:{url}/Config/index.html[Configuration]::
         - link:{url}/Config/Hardware.html[Hardware]
 
 link:{url}/ROS/index.html[ROS]::
-        - link:{url}/ROS/Generic.html[Generic]
+        - link:{url}/ROS/Generic.html[Introduction to ROS]
         - link:{url}/ROS/Navigation.html[Navigation]
 
-link:{url}/Willy/index.html[Willy]::
-        - link:{url}/Willy/Technical.html[Technical]
-        - link:{url}/Willy/Code.html[Code]
+link:{url}/Willy/index.html[Technical]::
+        - link:{url}/Willy/Hardware.html[Hardware]
+        - link:{url}/Willy/Software.html[Software]
         - link:{url}/Willy/Findings.html[Findings]
         - link:{url}/Willy/Parameters.html[Parameters]
         - link:{url}/Willy/Bugs.html[Known Bugs]
@@ -35,6 +35,7 @@ link:{url}/Research/index.html[Research]::
 	- link:{url}/Research/Social-interaction.html[Social interaction]
 	- link:{url}/Research/Hardware.html[Hardware]
 	- link:{url}/Research/Peripherals.html[Peripherals]
+        - link:{url}/Research/Screen.html[Screen]
 	- link:{url}/Research/Indoor-navigation.html[Indoor-navigation]
 	- link:{url}/Research/Back-up.html[Back-up Willy]
 	- link:{url}/Research/Leap.html[Leap motion]

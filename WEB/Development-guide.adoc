@@ -1,20 +1,23 @@
-include::../Header.adoc[]
-
 == Development Guide
 
 === Prerequirements
 
-* Install Git & Editor
-* Install NodeJS
+* Install Git & Editor +
+https://code.visualstudio.com/
+* Install NodeJS +
+https://nodejs.org/en/download/
+
 * Install Sails
+[source,bash]
+npm install sails -g
 * If on Windows:
 . Install Ubuntu
 - Got to Microsoft store 
 - Search for 'Ubuntu'
 - Click get/install
 . Install ROS
-- Follow installation at: http://wiki.ros.org/kinetic/Installation/Ubuntu 
-(this might take some time)
+- Follow ROS Kinetic installation + (this might take some time)
+http://wiki.ros.org/kinetic/Installation/Ubuntu 
 [source,bash]
 sudo apt-get install ros-kinetic-desktop-full
 - And enviroment setup
@@ -24,17 +27,36 @@ source ~/.bashrc
 - Test the installation running ROS
 [source,bash]
 roscore
+- Done for now
+[source,bash]
 (ctrl+c)
 
 === Development
+* Invite your personal Github account to acces ArtOfRobotics repos
+https://github.com/orgs/ArtOfRobotics/people
 * Clone Git Repo
+[source,bash]
+git clone https://github.com/ArtOfRobotics/WWEB
 * Switch to test branch
+[source,bash]
+git checkout -b origin/test
 
 === Compilation
+Compilation is done via catkin, this is done to create a rospackage so that nodejs can run in a ROS enviroment
+[source,bash]
+cd src
+npm install
+cd ..
+source /opt/ros/kinetic/setup.bash
+catkin_make
+
+=== Testing/Debugging
 * Run without ros:
+[source,bash]
+cd src
+sails lift (or node app.js)
 * Run with Ros:
  . Start Roscore
+ - Open a terminal (Ubuntu app on windows)
+ - 
  . Run webplatform
-
-
-== Notes
