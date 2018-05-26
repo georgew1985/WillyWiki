@@ -71,7 +71,7 @@ image:media/overview/connector.png[image]
 [cols=",,",options="header",]
 |===============================================
 |Pin number |Description |Internal Cable Color
-|1 |\{plus} 24V | Red 
+|1 |'{plus}' 24V | Red 
 |2 |- 0V | Black
 |3 |Driving data |White
 |4 |Unknown (not used) |Yellow
