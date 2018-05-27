@@ -2,9 +2,9 @@
 
 [#toc.toc2]
 link:{url}/welcome.html[Welcome]::
-link:{url}/Project/index.html[Using Willy]:: 
-        - link:{url}/Project/Willy.html[Driving Willy]
-        - link:{url}/Project/Sponsors.html[Remote]
+link:{url}/Project/index.html[Project Willy]:: 
+        - link:{url}/Project/Willy.html[Willy]
+        - link:{url}/Project/Sponsors.html[Sponsors]
     
 link:{url}/Startup/index.html[Using Willy]:: 
         - link:{url}/Startup/Driving-Willy.html[Driving Willy]
