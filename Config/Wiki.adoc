@@ -3,16 +3,18 @@ include::../Header.adoc[]
 image:https://travis-ci.org/ArtOfRobotics/WillyWiki.svg?branch=master["Build Status", link="https://travis-ci.org/ArtOfRobotics/WillyWiki"]
 
 == Willy Wiki
-This wiki is setup to increase the transferability of the project. Everything you need to start is documented here, detailed documents are referenced trough the wiki if you need more information.
+This wiki is setup to increase the transferability of the project. Everything you need to start is documented here.
+Detailed documents are referenced trough the wiki if you need more information.
 
 === Introduction
-The wiki is setup using AsciiDoc, TravisCI & Github pages. In practice we use AsciiDoc as source code, TravisCI to convert to html/pdf and Github Pages for publishing the website. This is visually shown in the image below, this is taken from the <<tutorial>> we followed.
+The wiki is setup using AsciiDoc, TravisCI & Github pages. In practice we use AsciiDoc as source code, TravisCI to convert to html/pdf and Github Pages for publishing the website. This is visually shown in the image below, this is taken from the http://mgreau.com/posts/2016/03/28/asciidoc-to-gh-pages-with-travis-ci-docker-asciidoctor.html[tutorial] 
+we followed.
 
 
 image::http://mgreau.com/posts/images/cover-asciidoc-ghpages.svg[AsciiDoc to Github Pages with Travis and Docker Asciidoctor,950]
 
 === Why AsciiDoc
-Why AsciiDoc is chosen as our markdown language. During the search for a good Wiki tool, we eventually stumbled upon Github Pages. Github pages in intended to automatically publish markdown for you as a html site and you can add more functions by Using Jekyll. But quickly limitations in Markdown where found and the Jekyll implementation made if far more complex due to different plugins. That's why it is decided to use AsciiDoc at it's raw form.
+Why AsciiDoc is chosen as our markdown language. During the search for a good Wiki tool, we eventually stumbled upon Github Pages. Github pages in intended to automatically publish markdown for you as a html site and you can add more functions by Using Jekyll. However quickly limitations in Markdown where found and the Jekyll implementation made if far more complex due to different plugins. That's why it is decided to use AsciiDoc at it's raw form.
 
 This is directly the main advantage of using Markdown, while you can use plugins it's main functionality makes it the perfect language for creating a Wiki. In terms of markdown languages you can follow this list as a rule of thumb:
 
@@ -135,6 +137,7 @@ for /r %%v in (*.docx) do pandoc -f "%%v" "%%v.adoc"
 
 === Publishing
 The end result of the Travis script is a folder with html files which can then be hosted on any server even offline.
+
 ==== Github Pages
 To do this we use Github Pages, as this is a free service and is perfect for hosting a static html site.
 

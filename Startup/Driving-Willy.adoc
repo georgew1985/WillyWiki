@@ -2,14 +2,14 @@ include::../Header.adoc[]
 
 == Driving of willy
 === Steps for autonomous driving
-These steps will start the autonomous driving of willy. If you want to drive manually by using the keyboard? 
+These steps will start the autonomous driving of willy. Do you want to drive manually by using the keyboard? 
 Then take a look at the steps for manual driving underneath.
 
 1. **Deploy the brakes** +
-To start Willy, the brakes need to be deployed. Otherwise Willy will not be able to drive. 
+To start Willy, the brakes need to be deployed. Otherwise, Willy will not be able to drive. 
 To deploy the brakes you have to use the levers on the front of the motors. 
 You can check if the brakes are deployed by trying to push Willy. 
-The brakes are appled when the wheels can't rotate anymore.
+The brakes are applied when the wheels can't rotate anymore.
 
 2. **Turn the power on** +
 Willy needs power to be able to operate. 
@@ -37,7 +37,7 @@ IMPORTANT: Do not forget to release the emergency stop when the steps above are 
 These steps are optional. Only execute the following steps if you want to drive Willy manually.
 
 1. **Deploy the brakes** +
-To start Willy, the brakes need to be deployed. Otherwise Willy will not be able to drive. 
+To start Willy, the brakes need to be deployed. Otherwise, Willy will not be able to drive. 
 To deploy the brakes you have to use the levers on the front of the motors. 
 You can check if the brakes are deployed by trying to push Willy. 
 The brakes are appled when the wheels can't rotate anymore.

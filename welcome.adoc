@@ -5,7 +5,7 @@ image:https://travis-ci.org/ArtOfRobotics/WillyWiki.svg?branch=master["Build Sta
 
 = Welcome
 
-Welcome to project Willy. Before starting the project it is useful to know a few things. Our first advice is to become acquainted with Willy. Follow our Willywiki from begin to end and try to understand how to use Willy. Documentation on the Wiki containts all the details about Willy tot startup the project. If certain details about designdecisions, configuration, hardware or other components about Willy are unclear, more details can be found on google drive. The arhive menu contains links to the google-drive. 
+Welcome to project Willy. Before starting the project it is useful to know a few things about the project. Our first advice is to become acquainted with Willy. Follow our WillyWiki from begin to end and try to understand how to use Willy. Documentation on the Wiki contains all the details about the beginning of this project. If certain details about design decisions, configuration, hardware or other components about Willy cannot be found, more details can be found on Google Drive. The archive menu contains links to the Google Drive. 
 
 == Status
 
@@ -20,7 +20,7 @@ The table below shows all the milestones and their current status.
 |WillyWiki    |Done  |Done  |Done  |Software
 |Willy web | Done | Done  | Done  | Software
 |Indoor navigation  |Done  |Done  |In progress (fine tuning)  |Software Hardware
-|Plating | Done  | In progress |  |Hardware
+|Plating | Done  | Done |  |Hardware
 |Social interaction |Done  |In progress  |  |Software
 |====================
 
