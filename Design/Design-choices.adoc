@@ -1,5 +1,0 @@
-include::../Header.adoc[]
-
-== Design choices
-=== Parts design choices
-=== Assembly design choices

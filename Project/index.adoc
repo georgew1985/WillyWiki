@@ -1,5 +1,7 @@
 include::../Header.adoc[]
 
-include::Sponsors.adoc[]
-
 include::Willy.adoc[]
+
+include::Publicity.adoc[]
+
+include::Sponsors.adoc[]

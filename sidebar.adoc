@@ -7,22 +7,23 @@ link:{url}/Project/index.html[Project Willy]::
         - link:{url}/Project/Publicity.html[Publicity]
         - link:{url}/Project/Sponsors.html[Sponsors]
     
-link:{url}/Startup/index.html[Using Willy]:: 
+link:{url}/Startup/index.html[Startup Willy]:: 
         - link:{url}/Startup/Driving-Willy.html[Driving Willy]
         - link:{url}/Startup/Remote.html[Remote]
         - link:{url}/Startup/Willy-Web.html[Willy Web]
         
 link:{url}/Config/index.html[Configuration]::
-        - link:{url}/Config/GIT.html[GIT]
+        - link:{url}/Config/GIT.html[GIT Setup]
         - link:{url}/Config/Ubuntu.html[Ubuntu]
         - link:{url}/Config/Remote.html[Remote]
         - link:{url}/Config/Wiki.html[Wiki]
 
 link:{url}/ROS/index.html[ROS]::
-        - link:{url}/ROS/Generic.html[Introduction to ROS]
+        - link:{url}/ROS/Introduction.html[Introduction to ROS]
         - link:{url}/ROS/Navigation.html[Navigation]
 
 link:{url}/Willy/index.html[Technical]::
+        - link:{url}/Willy/Development-guide.html[Development Guide]
         - link:{url}/Willy/Findings.html[Findings]
         - link:{url}/Willy/Hardware.html[Hardware]
         - link:{url}/Willy/Bugs.html[Known Bugs]

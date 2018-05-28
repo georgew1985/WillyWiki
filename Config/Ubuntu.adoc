@@ -1,5 +1,7 @@
 include::../Header.adoc[]
+
 == Operation system of Willy
+=== Configuration
 
 Currently, Willy is operating using ‘Linux Ubuntu’ as operation
 system. The ROS-framework is used for centralized communication between
