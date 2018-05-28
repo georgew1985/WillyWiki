@@ -40,8 +40,6 @@ _comm -23 <(apt-mark showmanual | sort -u) <(gzip -dc
 -u)_
 ----
 
-
-
 The following packages where manually installed;
 
 [source,text]

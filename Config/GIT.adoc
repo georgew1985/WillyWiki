@@ -31,13 +31,21 @@ sudo crontab -e
 */1 * * * * su -s /bin/sh -c '/home/willy/Documents/WTGD/bin/gitsync.sh ' >> /home/willy/Documents/logs/git.log 2>&1
 ----
 
-NOTE: Currently this line creates a pull of the test branch, later it is desirable to change this to the master branch for production code.
+[Note]
+--
+Currently this line creates a pull of the test branch, later it is desirable to change this to the master branch for production code.
 Logs can be found in:
-/home/willy/Documents/logs/
-For example:
+/home/willy/Documents/logs/git.log
+--
 
-image::media\image1.png[]
-To track the status of git sync live.
+[TIP]
+--
+To track the status of git sync live use the following command
+[source,text]
+----
+tail -f /home/willy/Documents/logs/git.log
+----
+--
 
 ==== Github Repo Willy
 Can be found in /home/willy/Documents/WTGD
@@ -45,11 +53,14 @@ Can be found in /home/willy/Documents/WTGD
 ==== Github Repo Web platform
 Can be found in /home/willy/Documents/WWEB
 
-==== build
+==== Build
+todo
 
 ==== Travis CI
+Not implemented yet
 
 ==== Accounts
+?
 
 
 [bibliography]
