@@ -1,9 +1,10 @@
 include::../Header.adoc[]
 
-== Archive
+include::2018S1.adoc[]
 
-https://drive.google.com/drive/u/1/folders/1S904hDK_63HIpyPnBgMHzZx-zt0xNpim[2017S2]
+include::2017S2.adoc[]
 
-https://drive.google.com/drive/u/1/folders/1yCVk6iNJNQlaouU2WDvMt3BISoHCuz6l[2017S1]
+include::2017S1.adoc[]
 
-https://drive.google.com/drive/u/1/folders/1LfOfbxBTFASBrozYIklAt7_7a3ubFFy0[2016S2]
+include::2016S2.adoc[]
+

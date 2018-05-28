@@ -2,54 +2,57 @@
 
 [#toc.toc2]
 link:{url}/welcome.html[Welcome]::
+link:{url}/Project/index.html[Project Willy]:: 
+        - link:{url}/Project/Willy.html[Willy]
+        - link:{url}/Project/Sponsors.html[Sponsors]
     
 link:{url}/Startup/index.html[Using Willy]:: 
-        - link:{url}/Startup/Willy-Web.html[Willy Web]
         - link:{url}/Startup/Driving-Willy.html[Driving Willy]
         - link:{url}/Startup/Remote.html[Remote]
+        - link:{url}/Startup/Willy-Web.html[Willy Web]
         
-link:{url}/Config/index.html[Configuration]::  
-        - link:{url}/Config/Ubuntu.html[Ubuntu]
+link:{url}/Config/index.html[Configuration]::
         - link:{url}/Config/GIT.html[GIT]
+        - link:{url}/Config/Ubuntu.html[Ubuntu]
         - link:{url}/Config/Wiki.html[Wiki]
-        - link:{url}/Config/Hardware.html[Hardware]
 
 link:{url}/ROS/index.html[ROS]::
         - link:{url}/ROS/Generic.html[Introduction to ROS]
         - link:{url}/ROS/Navigation.html[Navigation]
 
 link:{url}/Willy/index.html[Technical]::
-        - link:{url}/Willy/Hardware.html[Hardware]
-        - link:{url}/Willy/Software.html[Software]
         - link:{url}/Willy/Findings.html[Findings]
-        - link:{url}/Willy/Parameters.html[Parameters]
+        - link:{url}/Willy/Hardware.html[Hardware]
         - link:{url}/Willy/Bugs.html[Known Bugs]
+        - link:{url}/Willy/Parameters.html[Parameters]
+        - link:{url}/Willy/Software.html[Software]
 
-link:{url}/WEB/index.html[Webinterface]::
+link:{url}/WEB/index.html[Web interface]::
         - link:{url}/WEB/Development-guide.html[Development Guide]
         - link:{url}/WEB/Functional.html[Functional]
-        - link:{url}/WEB/Technical.html[Technical]
         - link:{url}/WEB/Interaction.html[Interaction]
+        - link:{url}/WEB/Technical.html[Technical]
 
 link:{url}/Research/index.html[Research]::
 	- link:{url}/Research/Hardware.html[Hardware]
-	- link:{url}/Research/Sensors.html[Sensors]
 	- link:{url}/Research/Peripherals.html[Peripherals]
+	- link:{url}/Research/Sensors.html[Sensors]
+        - link:{url}/Research/Social-interaction.html[Social interaction]
 	- link:{url}/Research/Software.html[Software]
         - link:{url}/Research/Web-interface.html[Web interface]
-        - link:{url}/Research/Social-interaction.html[Social interaction]
         
 link:{url}/Design/index.html[Design]::
-	- link:{url}/Design/Design-Guide.html[Design Guide]
         - link:{url}/Design/Background.html[Background]
+	- link:{url}/Design/Design-Guide.html[Design Guide]
         - link:{url}/Design/Technical.html[Technical]
+        - link:{url}/Design/Realisation.html[Realisation]
         
 link:{url}/Status/index.html[Status and Advice]::
 	- link:{url}/Status/Status.html[Status]
         - link:{url}/Status/Todo.html[Todo & Advice]
 
 link:{url}/Archive/index.html[Archive]::
-        - link:https://drive.google.com/drive/u/1/folders/1LfOfbxBTFASBrozYIklAt7_7a3ubFFy0[(2016/2) Initial design ]
-        - link:https://drive.google.com/drive/u/1/folders/1yCVk6iNJNQlaouU2WDvMt3BISoHCuz6l[(2017/1) Base & Functionalities ]
-        - link:https://drive.google.com/drive/u/1/folders/1S904hDK_63HIpyPnBgMHzZx-zt0xNpim[(2017/2) Research]
+        - link:{url}/Archive/2016S2.html[(2016/2) Initial design ]
+        - link:{url}/Archive/2017S1.html[(2017/1) Base & Functionalities ]
+        - link:{url}/Archive/2017S2.html[(2017/2) Research]
         - link:{url}/Archive/2018S1.html[(2018/1) Stabilization & Realisation]
