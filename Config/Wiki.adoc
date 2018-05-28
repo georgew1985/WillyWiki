@@ -154,7 +154,7 @@ The Asciidoctor wiki is a good source, you also might notice the familiar look
 link:https://asciidoctor.org/docs/user-manual/#introduction-to-asciidoctor[]
 
 [TIP]
-A hardcoded sidebar is used to avoid using Docbook, it might be worth to take a look at this format as it is being used by the official sources as well. The main disadvantage of this is that it makes the Wiki one long HTML page with a large index, however for PDF export this is fabiolous. See link:https://asciidoctor.org/docs/user-manual/#introduction-to-asciidoctor[Asciidoctor Wiki] as an example.
+A hardcoded sidebar is used to avoid using Docbook, it might be worth to take a look at this format as it is being used by the official sources as well. The main disadvantage of this is that it makes the Wiki one long HTML page with a large index, however for PDF export this would be fabiolous. See link:https://asciidoctor.org/docs/user-manual/#introduction-to-asciidoctor[Asciidoctor Wiki] as an example.
 
 [bibliography]
 === References

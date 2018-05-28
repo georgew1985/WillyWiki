@@ -1,9 +1,0 @@
-== Configuration
-
-include::remote.adoc[]
-
-include::github.adoc[]
-
-include::devices-network.adoc[]
-
-include::Speech.adoc[]

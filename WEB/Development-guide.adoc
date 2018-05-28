@@ -53,12 +53,41 @@ source /opt/ros/kinetic/setup.bash
 catkin_make
 
 === Testing/Debugging
-* Run without ros:
+*Run without ros:*
 [source,bash]
-cd src
+----
+cd WWEB/src
 sails lift (or node app.js)
-* Run with Ros:
- . Start Roscore
- - Open a terminal (Ubuntu app on windows)
- - 
- . Run webplatform
+----
+*Run with Ros:*
+
+. Start Roscore
+
+- Open a terminal (Ubuntu app on windows)
+-
+[source, bash]
+cd WWEB
+source devel/setup.bash
+roscore
+
+. Run webplatform
+- Open a terminal (Ubuntu app on windows)
+- 
+[source, bash]
+cd WWEB
+source devel/setup.bash
+rosrun willyweb start.sh
+
+
+[NOTE]
+--
+Rosrun makes it possible to communicate with ROS because it is now run as a ROS package
+--
+
+[NOTE]
+--
+The 'start.sh' script consist out of a simple run script which launches the webplatform
+[source, bash]
+#!/usr/bin/env bash
+node src/app.js
+--
