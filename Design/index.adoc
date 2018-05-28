@@ -1,3 +1,9 @@
-== Design
+include::../Header.adoc[]
 
-=== No items yet
+include::Background.adoc[]
+
+include::Design-guide.adoc[]
+
+include::Technical.adoc[]
+
+include::Realisation.adoc[]

@@ -2,4 +2,4 @@ include::../Header.adoc[]
 
 include::Status.adoc[]
 
-include::Todo.adoc
+include::Todo.adoc[]

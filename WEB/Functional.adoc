@@ -2,12 +2,12 @@ include::../Header.adoc[]
 
 == Functional
 
-== Dashboard
+=== Dashboard
 
-== Configuration
+=== Configuration
 
-== Control
+=== Control
 
-== Visualisation
+=== Visualisation
 
-== Social interaction
+=== Social interaction

@@ -2,10 +2,6 @@ include::../Header.adoc[]
 
 include::GIT.adoc[]
 
-include::Hardware.adoc[]
-
-include::ROS.adoc[]
-
 include::Ubuntu.adoc[]
 
 include::Wiki.adoc[]

@@ -6,4 +6,6 @@ include::Development-guide.adoc[]
 
 include::Functional.adoc[]
 
+include::Interaction.adoc[]
+
 include::Technical.adoc[]

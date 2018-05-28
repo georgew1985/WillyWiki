@@ -2,7 +2,7 @@ include::../Header.adoc[]
 
 == Development Guide
 
-=== Prerequirements
+=== Prerequisite 
 
 * Install Git & Editor +
 https://code.visualstudio.com/
