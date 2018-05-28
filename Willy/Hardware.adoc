@@ -237,13 +237,16 @@ the sensor makes a map of all the objects in the environment.
 
 image:../Archive/2018S1/Research/media/current-status/image13.jpeg[image]
 
-The current state of Willy has no LIDAR installed. The previous group has 
-done some research concerning LIDAR and the link to ROS. But came to the 
-conclusion that it is not possible to create a link between LIDAR and ROS. 
-Therefore they decided to not implement the LIDAR sensor.
+The previous group has done some research concerning LIDAR and the link to 
+ROS. But came to the conclusion that it is not possible to create a link 
+between LIDAR and ROS. Therefore they decided to not implement the LIDAR 
+sensor.
 
 After doing some research we found that it is possible and supported to
 link ROS to a LIDAR sensor.
+
+At this stage we use the LIDAR to navigate with Willy. The sensor is 
+placed at the front of the robot.
 
 ==== Kinect
 image:../Archive/2018S1/Research/media/current-status/image11.png[image]
