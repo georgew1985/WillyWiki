@@ -9,19 +9,25 @@ before_install:
 
 script:
   - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-html asciidoctor/docker-asciidoctor asciidoctor -a allow-uri-read  **/*.adoc
+  - docker run -v $TRAVIS_BUILD_DIR:/documents/Archive --name asciidoc-to-html-archive asciidoctor/docker-asciidoctor asciidoctor -a allow-uri-read  **/*.adoc
   - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-html-root asciidoctor/docker-asciidoctor asciidoctor -a allow-uri-read *.adoc
   - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-pdf asciidoctor/docker-asciidoctor asciidoctor-pdf **/*.adoc
+  - docker run -v $TRAVIS_BUILD_DIR:/documents/Archive --name asciidoc-to-pdf-archive asciidoctor/docker-asciidoctor asciidoctor-pdf **/*.adoc
   - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-pdf-root asciidoctor/docker-asciidoctor asciidoctor-pdf *.adoc
 
 after_error:
   - docker logs asciidoc-to-html
-  - docker logs asciidoc-to-pdf
+  - docker logs asciidoc-to-pdf  
+  - docker logs asciidoc-to-html-archive
+  - docker logs asciidoc-to-pdf-archive
   - docker logs asciidoc-to-html-root
   - docker logs asciidoc-to-pdf-root
 
 after_failure:
   - docker logs asciidoc-to-html
   - docker logs asciidoc-to-pdf
+  - docker logs asciidoc-to-html-archive
+  - docker logs asciidoc-to-pdf-archive
   - docker logs asciidoc-to-html-root
   - docker logs asciidoc-to-pdf-root
 

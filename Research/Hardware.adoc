@@ -4,4 +4,4 @@ include::../Header.adoc[]
 
 === Batteries
 
-link:../Archive/2018S1/Research/batteries.html[Research Batteries]\
+link:../Archive/2018S1/Research/batteries.html[Research Batteries]
