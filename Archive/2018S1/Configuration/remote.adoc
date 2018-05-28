@@ -1,3 +1,4 @@
+include::../Header.adoc[]
 === Remote access
 The following configuration was used when RDP was deployed by using XRDP and XFCE4 
 
