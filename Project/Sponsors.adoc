@@ -1,7 +1,18 @@
 include::../Header.adoc[]
 
 == Sponsors
+This document contains a list of all the companies sponsoring Willy.
 
-Hier is een foto van de sponsoren:
+=== Multibat
+The battery company Multibat showed via our product owner interest 
+in our project. After a conversation with the company they proposed 
+a deal. Multibat now provides six batteries to us.
 
-image:media/spons_oren1.jpg[image]
+image:media/multibat_logo_klein.png[image]
+
+=== Koers Polyestertechniek
+Our product owner found a company for us to create the outer plating 
+with. After creating a foam mold, we drove it to Koers in Nieuwleusen 
+and made the outer skin of Willy from fiberglass.
+
+image:media/koers-logo.gif[image]
