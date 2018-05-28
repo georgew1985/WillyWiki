@@ -14,6 +14,7 @@ link:{url}/Startup/index.html[Using Willy]::
 link:{url}/Config/index.html[Configuration]::
         - link:{url}/Config/GIT.html[GIT]
         - link:{url}/Config/Ubuntu.html[Ubuntu]
+        - link:{url}/Config/Remote.html[Remote]
         - link:{url}/Config/Wiki.html[Wiki]
 
 link:{url}/ROS/index.html[ROS]::
