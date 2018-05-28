@@ -1,3 +1,4 @@
+include::../Header.adoc[]
 === Devices network
 
 The following information can be used to connect with the 'devices' wifi-network at Windesheim.

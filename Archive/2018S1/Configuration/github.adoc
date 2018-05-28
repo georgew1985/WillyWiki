@@ -1,3 +1,4 @@
+include::../Header.adoc[]
 === Willy Git setup 
 Commands used to set up the git repos in willy.
 Starting point: /home/willy/

@@ -1,4 +1,4 @@
-
+include::../Header.adoc[]
 === Alternative interaction
 
 toc::[]

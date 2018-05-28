@@ -1,3 +1,4 @@
+include::../Header.adoc[]
 === Leap advice
 
 Navigating trough the web platform will be supported by the leap. There are several packages examined, and the following where tested.
