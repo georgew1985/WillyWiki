@@ -1,24 +1,44 @@
 include::../Header.adoc[]
 == Operation system of Willy
 
-Currently, Willy is operating using ‘Linux Ubuntu 14.04’ as operation
+Currently, Willy is operating using ‘Linux Ubuntu’ as operation
 system. The ROS-framework is used for centralized communication between
-nodes. Nodes are referred as different software/hardware components of
-‘Willy, think of; GPS, sensors, compass and software functions. Some
-nodes may require ‘dependent-ROS-packages’. To execute and compile
+nodes. 
+
+NOTE: For more information about nodes and the working of it, see our ROS Introduction wiki page.
+
+Nodes are referred as different software/hardware components of
+Willy: think of; GPS, sensors, compass and software functions. Some nodes may require 
+
+[source, bash]
+----
+dependent-ROS-packages
+----
+
+To execute and compile
 software nodes, these packages are required. Both ROS and dependencies
-require the same version. The current version of ROS is ‘ROS-kinetic’.
+require the same version. The current version of ROS is 
+
+[source, bash]
+----
+‘ROS-kinetic’
+----
 
 === Current installed packages
 
 The first step in updating the OS is to determine which packages and
-dependencies are installed. Because previous teams have made a lot of
-changes to ‘Willy’, not all Linux packages may be still required. To
-list the manual installed packages, the following command was used.
+dependencies are installed. Because previous teams made a lot of
+changes to Willy, not all Linux packages may still be required. To
+list the manually installed packages, the following command was used.
 
+[source, Bash]
+----
 _comm -23 <(apt-mark showmanual | sort -u) <(gzip -dc
 /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort
 -u)_
+----
+
+
 
 The following packages where manually installed;
 
@@ -51,23 +71,23 @@ xrdp
 ----
 
 Some of the above packages are required to compile and execute the
-‘WTGD’ code that is available from GIT, these packages are bold listed.
+WTGD code that is available from GIT. These packages are listed bold.
 Other packages may be required for the web platform or may have another
 goal than compiling and executing ROS code. In this project there will
 be major changes in the web platform, because some of the code will be
-changed, dependencies will be determined during the development of the
+changed. Dependencies will be determined during the development of the
 code. Other packages are explained in documentation that will be
 available with the final delivery.
 
 === Determined packages for Ubuntu 16.04 and ROS-kinetic
 
-To create a clear view about the current ‘WTGD’ code that ‘Willy’
+To create a clear view about the current ‘WTGD’ code that Willy
 contains, and how this works on Ubuntu 16.04 with ROS-Kinetic, a test
 environment was created. None of the previous listed packages where
 installed, only Ubuntu 16.04 was installed and the ROS-framework on top
 of this. The code was not able to build successful in this test
 environment, however based on the error messages, dependencies where
-determined. Every time a decency was missing, the error massage was
+determined. Every time a dependency was missing, the error massage was
 inspected. We concluded that the following packages are required to
 execute the ‘WTGD’ code on Willy.
 
@@ -78,14 +98,13 @@ Screen
 ROS-kinetic-rosserial
 ROS-kinetic-rosserial-arduino
 ROS-kinetic-rosapi
-ROS-kinetic-rosbridge-server
 ----
 
 === Install dependencies
 
 To install above dependencies, the following commands are required.
 
-Install Ross
+Install ROS:
 
 [source,shell]
 ----
@@ -107,7 +126,7 @@ sudo rosdep init
 rosdep update
 ----
 
-Link the ros framework to the ubuntu bash 
+Link the ROS framework to the ubuntu bash: 
 
 [source,shell]
 ----
@@ -115,14 +134,14 @@ echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ----
 
-Start a new bash prompt and run (test)
+Start a new bash prompt and run (test):
 
 [source,shell]
 ----
 roscore
 ----
 
-Install ROS-dependencies
+Install ROS-dependencies:
 
 [source, shell]
 ----
@@ -133,25 +152,27 @@ sudo apt-get install ros-kinetic-rosapi
 sudo apt-get install ros-kinetic-rosbridge-server
 ----
 
-Give user permission to access USB ports
+Give user permission to access USB ports:
 
 [source,shell]
 ----
 sudo usermod -a -G dialout willy
 ----
 
-With the above installation changes made to Ubuntu, the current ‘WTGD’
-code was able to run. Packages listed in the 11.1. can be used as
-reference material.
+With the above installation changes made to Ubuntu, the current WTGD
+code was able to run. 
 
 === Devices network
 
 The following information can be used to connect with the 'devices' wifi-network at Windesheim.
 
+[source,]
+----
 IP-adres: 145.44.211.32
 Subnet mask: 255.255.255.192
 Default gateway: 145.44.211.1
 DNS: 8.8.8.8
+----
 
 An connection can only be made with the following MAC address. If this is changed, please ask the support-desk of Windesheim to change the MAC-address.
 
@@ -229,7 +250,7 @@ By
 ----
 
 === Openssh server
-Install open-ssh
+Install openssh
 
 [source,]
 ----

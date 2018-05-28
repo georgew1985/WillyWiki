@@ -9,10 +9,10 @@ following scheme:
 image:media/overview/overview.png[image]
 
 === Components
-This chapter contains all the components with information.
+This chapter contains all the components with explanation.
 
 ==== Mini pc
-This is the Dedicated PC for running the ROS Server. Al the calculational 
+This is the dedicated PC for running the ROS Server. Al the calculational 
 work will be done on this PC. Therefore, we chose for a PC with some 
 calculation power as well as enough RAM.
 
@@ -63,7 +63,7 @@ The motor controller is built as shown below:
 image:../Archive/2018S1/Research/media/current-status/image5.jpg[image]
 
 The 3 cables to the internal motor controller (built in in the wheelchair 
-frame) is connected to the original cable with a simple circuit. The pinout 
+frame) are connected to the original cable with a simple circuit. The pinout 
 of the connector attached to the cable is as follows:
 
 image:media/overview/connector.png[image]
