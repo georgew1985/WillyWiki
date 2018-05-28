@@ -1,0 +1,8 @@
+include::../Header.adoc[]
+
+== Publicity
+
+=== Stentor
+
+
+=== Windesheim newspaper Win'
