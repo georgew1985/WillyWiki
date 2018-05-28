@@ -86,6 +86,12 @@ script:
   - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-html asciidoctor/docker-asciidoctor asciidoctor -a allow-uri-read **/*.adoc
   - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-html-root asciidoctor/docker-asciidoctor asciidoctor -a allow-uri-read *.adoc
 ----
+
+[NOTE]
+--
+Because these commands do not allow for recursive generation more than one folder deep some more lines are added to make sure the Archive folder is converted. A better fix stil need to be implemented.
+--
+
 *After:* +
 Your general logging
 [source, yml]

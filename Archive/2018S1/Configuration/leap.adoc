@@ -1,3 +1,4 @@
+include::../Header.adoc[]
 === Leap
 
 Download the Leap package from https://www.leapmotion.com/setup/desktop/linux
