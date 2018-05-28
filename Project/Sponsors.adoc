@@ -2,4 +2,6 @@ include::../Header.adoc[]
 
 == Sponsors
 
-=== -
+Hier is een foto van de sponsoren:
+
+image:media/spons_oren1.jpg[image]
