@@ -97,9 +97,9 @@ by the engine itself. When the active signal to the motors is lost, the
 motor will automatically activate the brake. To start the driving_willy
 project, you NEED to deploy the brakes. Otherwise Willy will not drive!
 
-image:../Archive/2018S1/Research/media/current-status/image6.jpeg[image]
+image:../Archive/2018S1/Research/media/current-status/image6.jpeg[alt=image6,width=300,height=400]
 
-image:../Archive/2018S1/Research/media/current-status/image7.png[image]
+image:../Archive/2018S1/Research/media/current-status/image7.png[alt=image7,width=300,height=400]
 
 Make sure to deploy the brakes. Otherwise Willy won’t work!! There is
 only one way to detect if the brakes are deployed. It’s by simply
