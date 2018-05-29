@@ -1,6 +1,6 @@
 include::../Header.adoc[]
 
-== Realisation of the Design
+== Realisation
 
 === Steel work
 
