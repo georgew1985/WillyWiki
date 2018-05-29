@@ -62,6 +62,11 @@ The motor controller is built as shown below:
 
 image:../Archive/2018S1/Research/media/current-status/image5.jpg[image]
 
+NOTE: As can be seen in the image above, there are still cables for the odometry 
+sensors. These are however not used anymore. This has two reasons. The first 
+one is the fact that since using the lidar, the positioning is so accurate, 
+that the wheel encoders are not neccesary anymore. The second reason is that both the sensors don't function anymore.
+
 The 3 cables to the internal motor controller (built in in the wheelchair 
 frame) are connected to the original cable with a simple circuit. The pinout 
 of the connector attached to the cable is as follows:
