@@ -4,6 +4,50 @@ include::../Header.adoc[]
 
 === Prerequisite 
 
+To be able to develop Willy there are a few Prerequisites: +
+
+- Computer +
+- Visual Studio Code +
+- Internet connection +
+- Basic knowledge about C++ and C +
+- Basic knowledge about ROS +
+- GIT +
+
+*Computer* +
+A computer is required as medium to program and write code. +
+Without a computer and the software below, you cannont program Willy. +
+
+*Visual Studio Code* +
+Visual Studio Code is a Integrated Development Environment. This program is used +
+to write code and use git to send the documents to Willy. Visual studio can be +
+extended with a lot of extensions. These extensions make it possible to align +
+the code and see if the syntax of your code is correct or incorrect. +
+
+*Internet connection* +
+To make sure Willy get the code updates and git is working properly, a working  +
+internet connection is required. +
+
+*GIT* +
+GIT is used as file transfer and version manager of the current Willy project. +
+Everything starts with setting up the GIT repository and be able to push and pull + 
+parts of code. That makes GIT essential in the Willy development. +
+
+
+*Basic knowledge about C++ and C* +
+The Willy code is written in C++. To add features and understand the code, some basic +
+knowledge of C++ is required. If you want to learn the basics of C++? Follow a semester + 
+programming or see the following tutorial +
+
+NOTE: https://www.studytonight.com/cpp/introduction-to-cpp.php
+
+*Basic knowledge about ROS* +
+Because Willy is based on the Robot Operating System (ROS), a basic knowledge of ROS +
+is required to communicate with the different modulair parts of Willy. ROS learing +
+may be difficult, but you can follow the following tutorial to learn the basics: +
+
+NOTE: http://wiki.ros.org/ROS/Tutorials 
+
+
 === Development
 
 === Compilation
