@@ -4,12 +4,27 @@ include::../Header.adoc[]
 
 === Steel work
 ==== Frame
+
+image::media/st01.jpg[]
+
 ==== Mounting
+
+image::media/st02.jpg[]
+
 ==== Bumper preparation
 
 === Mold
 ==== Wooden frame
+
+image::media/wd01.jpg[]
+image::media/wd02.jpg[]
+
 ==== Styrofoam board
+
+image::media/sch01.jpg[]
+image::media/sch02.jpg[]
+image::media/sch03.jpg[]
+image::media/sch04.jpg[]
 
 === Polyester work
 
@@ -19,7 +34,19 @@ The mold is covered with glass fiber and polyester resin. Starting with one base
 
 
 ==== Preparation
+
+image::media/po01.jpg[]
+image::media/po02.jpg[]
+
 ==== Polyestering
+
+image::media/po03.jpg[]
+image::media/po04.jpg[]
+image::media/po05.jpg[]
+
+
 ==== Sanding/Sawing/Filling
 
+image::media/po06.jpg[]
+image::media/po07.jpg[]
 
