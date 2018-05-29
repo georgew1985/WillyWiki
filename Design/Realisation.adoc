@@ -1,11 +1,11 @@
 include::../Header.adoc[]
 
-= Realisation
+== Realisation
 
-== Steel work
+=== Steel work
 
-== Mold
+=== Mold
 
-== Polyester work
+=== Polyester work
 Koers Polyester Techniek Nieuwleusen
 http://koerspolyestertechniek.nl/
