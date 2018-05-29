@@ -244,5 +244,5 @@ sudo systemctl enable ssh
 
 [bibliography]
 === References
-- link: {url}/Documents/#_inventorisement_current_status
+- link: {url}/Archive/Research/Alternative-interaction.adoc
 
