@@ -5,7 +5,23 @@ image:https://travis-ci.org/ArtOfRobotics/WillyWiki.svg?branch=master["Build Sta
 
 = Welcome
 
-Welcome to project Willy. Before starting the project it is useful to know a few things about the project. Our first advice is to become acquainted with Willy. Follow our WillyWiki from begin to end and try to understand how to use Willy. Documentation on the Wiki contains all the details about the beginning of this project. If certain details about design decisions, configuration, hardware or other components about Willy cannot be found, more details can be found on Google Drive. The archive menu contains links to the Google Drive. 
+Welcome to project Willy. Before starting the project it is useful to know a few things about the project. Our first advice is to become acquainted with Willy. 
+Follow our WillyWiki from begin to end and try to understand how to use Willy. 
+
+== Wiki
+Documentation on the Wiki contains all the details about Willy and the project. 
+If certain details about design decisions, configuration, hardware or other components about Willy cannot be found, more details can be found on Google Drive. 
+
+
+[NOTE]
+--
+This wiki is public and should not contain any private information nor password for example.
+--
+
+[TIP]
+--
+Use Github's search to find certain keywords in the content of the wiki. link:https://github.com/ArtOfRobotics/WillyWiki[Github WillyWiki]
+--
 
 == Status
 
