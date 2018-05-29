@@ -23,8 +23,8 @@ include::../Header.adoc[]
 |Requirement  |F/Q/P | Test case | Result by ..
 |Documentation corresponds to
 the current status of Willy  |functional  |compare documentation with the current status of Willy  |Positive
-|Documentation meets the DOD  |Principle  |Documentation is reviewed conform the DOD  |Positive
-|All components of Willy are explained  |functional  |Hardware, Software and Documentation is understandable and traceable |Positive
+|Documentation meets the DOD  |Principle  |Documentation is reviewed conform the DOD  |
+|Components of Willy are explained  |functional  |Hardware, Software and Documentation is understandable and traceable |Positive
 |Configuration can be traced through Documentation  |Quality manageability | Willy can be installed from scratch without back-up |Positive
 |====================
 F/Q/P = functional / Quality / Principle
@@ -34,8 +34,8 @@ F/Q/P = functional / Quality / Principle
 |====================
 |Requirement  |F/Q/P | Test case | Result
 |Current status of Willy correspondents to the current documentation and expectations of the client  |Functional  |Documentation and expectations of the client are compared with the current status of Willy  |Positive
-|Hardware, Software and Documentation satisfies the DOD   |Principle  |The Current Documentation had been tested on the DOD  |Positive
-|Current functionality is reliable and stable |Quality (availability)|Current Software, Code and hardware is tested and is operational while tested multiple times  |
+|Hardware, Software and Documentation satisfies the DOD   |Principle  |The Current Documentation had been tested on the DOD  |
+|Current functionality is reliable and stable |Quality (availability)|Current Software, Code and hardware is tested and is operational while tested multiple times  | Positive
 |Design decisions are substantiated  |Principle  |Design decisions are underpinned by research or customer preference |Positive
 
 |====================
@@ -47,8 +47,8 @@ F/Q/P = functional / Quality / Principle
 |Requirement  |F/Q/P | Test case | Result by ..
 |The design meets the expectations of the client
   |Principle  |The design has been approved by the client  |Positive
-|Dimensions are traceable from the design  |Principle  |Dimensions can be digitally exported from the design  |
-|The design is flexible  |Quality scalability  |New adjustments can be made by future groups by editing a flexible file format (sldprt - Solidworks) |
+|Dimensions are traceable from the design  |Principle  |Dimensions can be digitally exported from the design  | Positive
+|The design is flexible  |Quality scalability  |New adjustments can be made by future groups by editing a flexible file format (sldprt - Solidworks) | Positive
 |====================
 F/Q/P = functional / Quality / Principle
 
@@ -56,10 +56,10 @@ F/Q/P = functional / Quality / Principle
 [width="100%",options="header,footer"]
 |====================
 |Requirement  |F/Q/P | Test case | Result by ..
-|The WillyWiki is simple to understand  |Quality manageability  |Design and user documentation is available.  |Positive
-|Documentation is up-to-date  |Principle  |All documentation is trasfered into .adoc format and added to GIT  |Positive
-|The WillyWiki is modular  |Principle  |Information on the WillyWiki is exportable to multiple file formats.  |Positive
-|New information can be added  |Quality Managebility  | The Willywiki automatic updates based on a git repository  |Positive
+|The WillyWikki is simple to understand  |Quality manageability  |Design and user documentation is available.  | Positive
+|Documentation is up-to-date  |Principle  |All documentation is trasfered into .adoc format and added to GIT  | Positive
+|The WillyWiki is modular  |Principle  |Information on the WillyWiki is exportable to multiple file formats.  | Positive
+|New information can be added  |Quality Managebility  | The Willywiki automatic updates based on a git repository  | Positive
 |====================
 F/Q/P = functional / Quality / Principle
 
@@ -67,8 +67,8 @@ F/Q/P = functional / Quality / Principle
 [width="100%",options="header,footer"]
 |====================
 |Requirement  |F/Q/P | Test case | Result by ..
-| The WillyWeb must be dynamic and scalable |Quality scalability  |The WillyWeb must be wide compatible with other software components of Willy |
-| The WillyWeb must able to display real time information about Willy | Quality availability | The WillyWeb is compatible with ROS (previous requirement) and have a delay less that a second | 
-| The WillyWeb can Read and Read data to ROS | Principle | The WillyWeb can subscribe to ROS topics | 
+| The WillyWeb must be dynamic and scalable |Quality scalability  |The WillyWeb must be wide compatible with other software components of Willy |Positive
+| The WillyWeb must able to display real time information about Willy | Quality availability | The WillyWeb is compatible with ROS (previous requirement) and have a delay less that a second | Positive
+| The WillyWeb can Read and Read data to ROS | Principle | The WillyWeb can subscribe to ROS topics |Positive 
 |====================
 F/Q/P = functional / Quality / Principle

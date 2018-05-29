@@ -1,11 +1,52 @@
 include::../Header.adoc[]
 
-= Realisation
+== Realisation
 
-== Steel work
+=== Steel work
+==== Frame
 
-== Mold
+image::media/st01.jpg[]
 
-== Polyester work
-Koers Polyester Techniek Nieuwleusen
-http://koerspolyestertechniek.nl/
+==== Mounting
+
+image::media/st02.jpg[]
+
+==== Bumper preparation
+
+=== Mold
+==== Wooden frame
+
+image::media/wd01.jpg[]
+image::media/wd02.jpg[]
+
+==== Styrofoam board
+
+image::media/sch01.jpg[]
+image::media/sch02.jpg[]
+image::media/sch03.jpg[]
+image::media/sch04.jpg[]
+
+=== Polyester work
+
+We used the workshop of Koers Polyester Techniek in Nieuwleusen. http://koerspolyestertechniek.nl/
+
+The mold is covered with glass fiber and polyester resin. Starting with one base layer with a 225 gr/m2 and following with four layers of 600 gr/m2. 
+
+
+==== Preparation
+
+image::media/po01.jpg[]
+image::media/po02.jpg[]
+
+==== Polyestering
+
+image::media/po03.jpg[]
+image::media/po04.jpg[]
+image::media/po05.jpg[]
+
+
+==== Sanding/Sawing/Filling
+
+image::media/po06.jpg[]
+image::media/po07.jpg[]
+

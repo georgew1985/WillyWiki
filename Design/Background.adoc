@@ -1,6 +1,6 @@
 include::../Header.adoc[]
 
-= Background
+== Background
 
 The original design is made by students of Industrial Product Design. One of the first things they produced was a morphological chart. The chart is made to create an overview of all options and functions of the robot. 
 

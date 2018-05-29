@@ -42,7 +42,7 @@ _comm -23 <(apt-mark showmanual | sort -u) <(gzip -dc
 
 The following packages where manually installed;
 
-[source,text]
+[source,text,subs=quotes]
 ----
 brightness-controller
 dhcpcd5
