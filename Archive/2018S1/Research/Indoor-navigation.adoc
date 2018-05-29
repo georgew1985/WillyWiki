@@ -1,7 +1,5 @@
-include::../Header.adoc[]
+include::../../../Header.adoc[]
 === Indoor-navigation
-
-toc::[]
 
 [discrete]
 ==== Version history

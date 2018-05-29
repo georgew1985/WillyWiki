@@ -183,6 +183,15 @@ The configuration on Willy is as shown below
 image::media/Ipconfig.png[ipconfig]
 image::media/wifisettings.png[wifisettings]
 
+=== Leap
+
+Download the Leap package from https://www.leapmotion.com/setup/desktop/linux
+
+Save the package and unzip the 64-bit version
+
+Go to the folder the .deb was unzipped to and run `sudo dpkg --install Leap-*-x64.deb`
+
+
 == Remote access
 === RDP
 The following configuration was used when RDP was deployed by using XRDP and XFCE4 
