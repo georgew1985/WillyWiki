@@ -62,6 +62,11 @@ The motor controller is built as shown below:
 
 image:../Archive/2018S1/Research/media/current-status/image5.jpg[image]
 
+NOTE: As can be seen in the image above, there are still cables for the odometry 
+sensors. These are however not used anymore. This has two reasons. The first 
+one is the fact that since using the lidar, the positioning is so accurate, 
+that the wheel encoders are not neccesary anymore. The second reason is that both the sensors don't function anymore.
+
 The 3 cables to the internal motor controller (built in in the wheelchair 
 frame) are connected to the original cable with a simple circuit. The pinout 
 of the connector attached to the cable is as follows:
@@ -116,7 +121,7 @@ adding up to 24V. Both batteries are 52Ah.
 
 image:media/technical/batteries_old.png[image]
 
-image:media/technical/battery_old.png[image]
+image:media/technical/battery_old.jpg[image]
 
 ===== New situation
 In the new situation the 2 batteries are replaced with 6 new 12V batteries.
@@ -125,7 +130,7 @@ All the batteries are 60Ah. They are connected placing 2 batteries in serial
 
 image:media/technical/batteries_new.png[image]
 
-image:media/technical/battery_new.png[image]
+image:media/technical/battery_new.jpg[image]
 
 ==== Power Supply
 The 19 volts for the mini-pc and the screen is provided by a step-down converter.
@@ -222,7 +227,7 @@ The screen used is a KDL-42W815B <<2>> from Sony. The screen is connected to
 the mini-pc with a VGA cable. The manual can be found at the bottom of 
 this document.
 
-NOTE: The current screen is a replacement of the old screen. This 
+NOTE: The current screen is a replacement for the old screen. This 
 screen was very heavy and energy consuming.
 
 ==== LIDAR
@@ -289,8 +294,6 @@ specifications, sd) (Main factors/features of most industrial computer
 vision hardware., sd)
 
 The Kinect used in Willy is a version 1 Kinect, the old one.
-
-=== Schematics
 
 [bibliography]
 == References
