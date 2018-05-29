@@ -30,13 +30,17 @@ wheels with special sensors.
 
 ==== System Overview
 
-image:../Archive/2018S1/Software/media/Arduino2.jpg[image,width=604,height=238]
+The following schematic shows an overview of how the Arduino's communicate with ROS.
 
+image:../Archive/2018S1/Software/media/Arduino2.jpg[image,width=604,height=238]
 ros_gps gps sonar odometry
 
-===== Code Overview
+NOTE: It should be stated that the code for the odometry is currently removed. 
+The reason for this can be found in the https://artofrobotics.github.io/WillyWiki/Technical/Hardware.html#_motors_and_controller[Technical Hardware document].
 
-image:../Archive/2018S1/Software/media/Arduino3.jpg[image,width=264,height=847]
+===== Code Overview
+In this chapter the structure of the C code on the Arduino's can be found. These 
+schemes are not class diagrams, since C is not object-oriented.
 
 image:../Archive/2018S1/Software/media/Arduino4.jpg[image,width=221,height=254]
 
@@ -53,9 +57,7 @@ Unfortunately the reason behind this decision is not documented.
 
 The motor controller (odometry) is made by the group of the second
 semester of 2016/17. The odometry code subscribes from the topic
-“/cmd_vel” and publishes to the topic “wheel_encoder”. The code reads
-the data from the odometry sensors and publishes it to ROS, and writes
-data it gets from ROS to the motors.
+“/cmd_vel”. The code writes data it gets from ROS to the motors.
 
 The sonar code was reading the 10 sonar sensors and publishes it to ROS
 on the topic “sonar”. The code has been written by the group of the

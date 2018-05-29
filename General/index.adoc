@@ -1,2 +1,0 @@
-== General
-include::Progress-and-quality.adoc[]
