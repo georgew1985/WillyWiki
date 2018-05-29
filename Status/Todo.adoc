@@ -49,3 +49,6 @@ Willy is a large and complicated project. There are a lot of things that
 can go wrong. At the start of the project this can give a lot of frustation.
 When this happens it is essential to know Willy. Dealing with such 
 situations can help understanding Willy even more.
+
+Another advice is that it is essential to keep updating this wiki. That way
+contunation of the project keeps guaranteed.
