@@ -2,15 +2,6 @@ include::../Header.adoc[]
 
 == Realisation
 
-<<<<<<< HEAD
-=== Steel work
-
-=== Mold
-
-=== Polyester work
-Koers Polyester Techniek Nieuwleusen
-http://koerspolyestertechniek.nl/
-=======
 == Steel work
 === Frame
 === Mounting
@@ -32,4 +23,3 @@ The mold is covered with glass fiber and polyester resin. Starting with one base
 === Sanding/Sawing/Filling
 
 
->>>>>>> 351a35f56dfa7ec5b58afee3b9cd366ec4b6939e
