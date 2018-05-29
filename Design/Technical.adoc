@@ -1,14 +1,5 @@
 include::../Header.adoc[]
 
-== Preface
-The document’s structure contains a paragraph per subject.
--	System overview
--	Parts overview
--	Design choices
-The system overview describes the robot assembly with each part included. It has a final render of the robot and describes the functionality. 
-Parts overview has a subparagraph for each part made in SolidWorks. Most of the subparagraphs contains a final render of the part and drawings with the most important dimensions included. 
-The paragraph Design choices contains the choices we (and earlier groups) made about the parts and the whole robot.
-
 === Definition List
 
 [width="100%"]
@@ -20,6 +11,7 @@ The paragraph Design choices contains the choices we (and earlier groups) made a
 Render  | JPEG image file of a Part or Assembly in high resolution. 
 |====================
 
+= Technical
 == System overview
 
 The render below contains all the parts and sub-assemblies that are included in our design. The 42” Display is used for interaction with people and as a way to bring information about the garbage problem and the robot. The speakers in the front are used to let Willy speak and can be used for the sound when displaying a video.
