@@ -76,7 +76,7 @@ image::media/bin_opening.JPG[]
 
 === Part 6 speaker grill
 
-The speaker grill is a part that protects the speaker from most of the larger items like rocks, cans and bottles. Besides that it protects the vulnerable speaker material from peoples’ vingers.
+The speaker grill is a part that protects the speaker from most of the larger items like rocks, cans and bottles. Besides that it protects the vulnerable speaker material from peoples’ fingers.
 
 image::media/fangrid.JPG[]
 
