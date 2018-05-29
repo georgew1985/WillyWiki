@@ -35,7 +35,7 @@ The following schematic shows an overview of how the Arduino's communicate with 
 image:../Archive/2018S1/Software/media/Arduino2.jpg[image,width=604,height=238]
 
 NOTE: It should be stated that the code for the odometry is currently removed. 
-The reason for this can be found in the Technical Hardware document.
+The reason for this can be found in the https://artofrobotics.github.io/WillyWiki/Technical/Hardware.html#_motors_and_controller[Technical Hardware document].
 
 ros_gps gps sonar odometry
 
