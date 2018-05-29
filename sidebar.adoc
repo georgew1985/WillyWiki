@@ -1,6 +1,6 @@
 :url: https://artofrobotics.github.io/WillyWiki
 
-[#toc.toc2]
+[.toc2]
 link:{url}/welcome.html[Welcome]::
 link:{url}/Project/index.html[Project Willy]:: 
         - link:{url}/Project/Willy.html[Willy]
