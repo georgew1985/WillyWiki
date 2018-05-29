@@ -11,6 +11,7 @@ include::../Header.adoc[]
 Render  | JPEG image file of a Part or Assembly in high resolution. 
 |====================
 
+= Technical
 == System overview
 
 The render below contains all the parts and sub-assemblies that are included in our design. The 42” Display is used for interaction with people and as a way to bring information about the garbage problem and the robot. The speakers in the front are used to let Willy speak and can be used for the sound when displaying a video.
