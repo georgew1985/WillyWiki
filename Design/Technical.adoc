@@ -111,6 +111,6 @@ The wheelchair assembly contains the motors and wheels combined with a frame tha
 
 image::media/wheelchair.jpg[]
 
-== Design choices
-=== Parts design choices
-=== Assembly design choices
+=== Design choices
+==== Parts design choices
+==== Assembly design choices
