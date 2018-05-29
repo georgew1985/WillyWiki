@@ -1,7 +1,5 @@
-include::../Header.adoc[]
+include::../../../Header.adoc[]
 === Alternative interaction
-
-toc::[]
 
 [discrete]
 ==== Version history
