@@ -119,18 +119,18 @@ normally. The brakes will automatically be released by Willy when driving.
 In the old situation Willy contained 2 12V batteries connected in serial,
 adding up to 24V. Both batteries are 52Ah.
 
-image:media/technical/batteries_old.png[image]
+image:media/technical/batteries_old.png[image,width=500]
 
-image:media/technical/battery_old.jpg[image]
+image:media/technical/battery_old.jpg[image,width=500]
 
 ===== New situation
 In the new situation the 2 batteries are replaced with 6 new 12V batteries.
 All the batteries are 60Ah. They are connected placing 2 batteries in serial
 3 times in parallel. This adds again up to 24V.
 
-image:media/technical/batteries_new.png[image]
+image:media/technical/batteries_new.png[image,width=500]
 
-image:media/technical/battery_new.jpg[image]
+image:media/technical/battery_new.jpg[image,width=500]
 
 ==== Power Supply
 The 19 volts for the mini-pc and the screen is provided by a step-down converter.
