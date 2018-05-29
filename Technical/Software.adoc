@@ -1,8 +1,8 @@
 include::../Header.adoc[]
 
-== Software Architecture Document
+== Software
 
-=== Hardware
+=== Arduino's
 
 This chapter contains a overview of the code on the different Arduino's 
 in Willy.
