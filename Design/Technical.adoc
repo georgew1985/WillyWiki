@@ -1,14 +1,5 @@
 include::../Header.adoc[]
 
-== Preface
-The document’s structure contains a paragraph per subject.
--	System overview
--	Parts overview
--	Design choices
-The system overview describes the robot assembly with each part included. It has a final render of the robot and describes the functionality. 
-Parts overview has a subparagraph for each part made in SolidWorks. Most of the subparagraphs contains a final render of the part and drawings with the most important dimensions included. 
-The paragraph Design choices contains the choices we (and earlier groups) made about the parts and the whole robot.
-
 === Definition List
 
 [width="100%"]
