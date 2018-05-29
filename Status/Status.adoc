@@ -34,7 +34,7 @@ F/Q/P = functional / Quality / Principle
 |====================
 |Requirement  |F/Q/P | Test case | Result
 |Current status of Willy correspondents to the current documentation and expectations of the client  |Functional  |Documentation and expectations of the client are compared with the current status of Willy  |Positive
-|Hardware, Software and Documentation satisfies the DOD   |Principle  |The Current Documentation had been tested on the DOD  |
+|Hardware, Software and Documentation satisfies the DOD   |Principle  |The Current Documentation had been tested on the DOD  |Positive
 |Current functionality is reliable and stable |Quality (availability)|Current Software, Code and hardware is tested and is operational while tested multiple times  |
 |Design decisions are substantiated  |Principle  |Design decisions are underpinned by research or customer preference |Positive
 
@@ -56,10 +56,10 @@ F/Q/P = functional / Quality / Principle
 [width="100%",options="header,footer"]
 |====================
 |Requirement  |F/Q/P | Test case | Result by ..
-|The WillyWikki is simple to understand  |Quality manageability  |Design and user documentation is available.  |
-|Documentation is up-to-date  |Principle  |All documentation is trasfered into .adoc format and added to GIT  |
-|The WillyWiki is modular  |Principle  |Information on the WillyWiki is exportable to multiple file formats.  | 
-|New information can be added  |Quality Managebility  | The Willywiki automatic updates based on a git repository  |
+|The WillyWiki is simple to understand  |Quality manageability  |Design and user documentation is available.  |Positive
+|Documentation is up-to-date  |Principle  |All documentation is trasfered into .adoc format and added to GIT  |Positive
+|The WillyWiki is modular  |Principle  |Information on the WillyWiki is exportable to multiple file formats.  |Positive
+|New information can be added  |Quality Managebility  | The Willywiki automatic updates based on a git repository  |Positive
 |====================
 F/Q/P = functional / Quality / Principle
 

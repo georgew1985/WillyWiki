@@ -119,18 +119,18 @@ normally. The brakes will automatically be released by Willy when driving.
 In the old situation Willy contained 2 12V batteries connected in serial,
 adding up to 24V. Both batteries are 52Ah.
 
-image:media/technical/batteries_old.png[image]
+image:media/technical/batteries_old.png[image,width=500]
 
-image:media/technical/battery_old.png[image]
+image:media/technical/battery_old.jpg[image,width=500]
 
 ===== New situation
 In the new situation the 2 batteries are replaced with 6 new 12V batteries.
 All the batteries are 60Ah. They are connected placing 2 batteries in serial
 3 times in parallel. This adds again up to 24V.
 
-image:media/technical/batteries_new.png[image]
+image:media/technical/batteries_new.png[image,width=500]
 
-image:media/technical/battery_new.png[image]
+image:media/technical/battery_new.jpg[image,width=500]
 
 ==== Power Supply
 The 19 volts for the mini-pc and the screen is provided by a step-down converter.
@@ -227,7 +227,7 @@ The screen used is a KDL-42W815B <<2>> from Sony. The screen is connected to
 the mini-pc with a VGA cable. The manual can be found at the bottom of 
 this document.
 
-NOTE: The current screen is a replacement of the old screen. This 
+NOTE: The current screen is a replacement for the old screen. This 
 screen was very heavy and energy consuming.
 
 ==== LIDAR
@@ -253,7 +253,7 @@ link ROS to a LIDAR sensor.
 At this stage we use the LIDAR to navigate with Willy. The sensor is 
 placed at the front of the robot.
 
-The LIDAR is connected with a ethernet connection to the pc.
+The LIDAR is connected with an ethernet connection via a router to the pc.
 
 ==== Kinect
 image:../Archive/2018S1/Research/media/current-status/image11.png[image]
