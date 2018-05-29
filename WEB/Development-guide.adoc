@@ -33,7 +33,7 @@ roscore
 [source,bash]
 (ctrl+c)
 
-=== Development
+=== Github
 * Invite your personal Github account to acces ArtOfRobotics repos
 https://github.com/orgs/ArtOfRobotics/people
 * Clone Git Repo
@@ -44,9 +44,9 @@ git clone https://github.com/ArtOfRobotics/WWEB
 git checkout -b origin/test
 
 === Compilation
-Compilation is done via catkin, this is done to create a rospackage so that nodejs can run in a ROS enviroment
+Compilation is done via catkin, this is done to create a rospackage so that nodejs can run in a ROS enviroment.
 [source,bash]
-cd src
+cd WWEB/src
 npm install
 cd ..
 source /opt/ros/kinetic/setup.bash
