@@ -253,7 +253,7 @@ link ROS to a LIDAR sensor.
 At this stage we use the LIDAR to navigate with Willy. The sensor is 
 placed at the front of the robot.
 
-The LIDAR is connected with a ethernet connection to the pc.
+The LIDAR is connected with an ethernet connection via a router to the pc.
 
 ==== Kinect
 image:../Archive/2018S1/Research/media/current-status/image11.png[image]
