@@ -46,7 +46,7 @@ link:{url}/Research/index.html[Research]::
         
 link:{url}/Design/index.html[Design]::
         - link:{url}/Design/Background.html[Background]
-	- link:{url}/Design/Design-Guide.html[Design Guide]
+	- link:{url}/Design/Design-guide.html[Design Guide]
         - link:{url}/Design/Technical.html[Technical]
         - link:{url}/Design/Realisation.html[Realisation]
         

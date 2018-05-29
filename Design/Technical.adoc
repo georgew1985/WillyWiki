@@ -27,7 +27,7 @@ image::media/image2.jpg[]
 The Kinect is used to look for people (skeletons) so that Willy can interact with them. The LiDAR which is placed on the front of the robot is used for indoor navigation and might be used for outdoor obstacle detection. 
 
 Behind the LiDAR there is a LEAP-motion controller which can be used to control the display with gestures.
-The bumpers in the front and in the back of the robot is filled with ultrasonic sensors. Six in the front, six in the back and four downwards to look for kerbstones  and potholes. Inside the robot there are six 60Ah car batteries which supply the necessary power. In the rear and top of Willy there are fans to cool the whole robot. 
+The bumpers in the front and in the back of the robot is filled with ultrasonic sensors. Six in the front, six in the back and four downwards to look for kerbstones  and potholes. Inside the robot there are six 33Ah car batteries which supply the necessary power. In the rear and top of Willy there are fans to cool the whole robot. 
 
 image::media/image3.jpg[]
 
@@ -111,6 +111,6 @@ The wheelchair assembly contains the motors and wheels combined with a frame tha
 
 image::media/wheelchair.jpg[]
 
-== Design choices
-=== Parts design choices
-=== Assembly design choices
+=== Design choices
+==== Parts design choices
+==== Assembly design choices
