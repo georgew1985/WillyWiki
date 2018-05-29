@@ -227,7 +227,7 @@ The screen used is a KDL-42W815B <<2>> from Sony. The screen is connected to
 the mini-pc with a VGA cable. The manual can be found at the bottom of 
 this document.
 
-NOTE: The current screen is a replacement of the old screen. This 
+NOTE: The current screen is a replacement for the old screen. This 
 screen was very heavy and energy consuming.
 
 ==== LIDAR
