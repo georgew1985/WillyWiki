@@ -290,8 +290,6 @@ vision hardware., sd)
 
 The Kinect used in Willy is a version 1 Kinect, the old one.
 
-=== Schematics
-
 [bibliography]
 == References
 
