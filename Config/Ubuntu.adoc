@@ -59,6 +59,11 @@ python-pip
 *ros-kinetic-joystick-drivers*
 *ros-kinetic-rosbridge-server*
 *ros-kinetic-rosserial-python*
+*ros-kinetic-move-base*
+*ros-kinetic-hector-mapping*
+*ros-kinetic-sicktim*
+*ros-kinetic-opencv*
+*ros-kinetic-openni*
 *ros-kinetic-rosserial-server*
 *ros-kinetic-teleop-twist-joy*
 *ros-kinetic-teleop-twist-keyboard*
