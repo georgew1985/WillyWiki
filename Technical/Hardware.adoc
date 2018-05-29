@@ -121,7 +121,7 @@ adding up to 24V. Both batteries are 52Ah.
 
 image:media/technical/batteries_old.png[image]
 
-image:media/technical/battery_old.png[image]
+image:media/technical/battery_old.jpg[image]
 
 ===== New situation
 In the new situation the 2 batteries are replaced with 6 new 12V batteries.
@@ -130,7 +130,7 @@ All the batteries are 60Ah. They are connected placing 2 batteries in serial
 
 image:media/technical/batteries_new.png[image]
 
-image:media/technical/battery_new.png[image]
+image:media/technical/battery_new.jpg[image]
 
 ==== Power Supply
 The 19 volts for the mini-pc and the screen is provided by a step-down converter.
