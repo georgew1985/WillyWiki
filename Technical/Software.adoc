@@ -42,13 +42,16 @@ The reason for this can be found in the https://artofrobotics.github.io/WillyWik
 In this chapter the structure of the C code on the Arduino's can be found. These 
 schemes are not class diagrams, since C is not object-oriented.
 
+image:../Archive/2018S1/Software/media/Arduino7.jpg[image,width=291,height=332]
+This is the code of the file in ros_gps. It is running on the Arduino connected to ros. The compass sensor is attached to this Arduino.
+
 image:../Archive/2018S1/Software/media/Arduino4.jpg[image,width=221,height=254]
+This code reads out the GPS sensor and sends it with a serial connection to the other Arduino (the one running ros_gps).
 
 image:../Archive/2018S1/Software/media/Arduino5.jpg[image,width=231,height=306]
+This is the code running the ultrasonic sensors
 
 image:../Archive/2018S1/Software/media/Arduino6.jpg[image,width=401,height=298]
-
-image:../Archive/2018S1/Software/media/Arduino7.jpg[image,width=291,height=332]
 
 ==== Design Decisions
 
