@@ -92,6 +92,16 @@ script:
 Because these commands do not allow for recursive generation more than one folder deep some more lines are added to make sure the Archive folder is converted. A better fix stil need to be implemented.
 --
 
+[CAUTION]
+--
+If the build is failing probably a root heading is used somewhere. This can cause conflicts with the sidebar configuration and is only used in the welcome document.
+[source, adoc]
+----
+= This is a root heading
+== This heading should be used troughout the wiki for the main chapters
+----
+--
+
 *After:* +
 Your general logging
 [source, yml]
@@ -145,7 +155,7 @@ for /r %%v in (*.docx) do pandoc -f "%%v" "%%v.adoc"
 The end result of the Travis script is a folder with html files which can then be hosted on any server even offline.
 
 ==== Github Pages
-To do this we use Github Pages, as this is a free service and is perfect for hosting a static html site.
+To do this we use Github Pages, as this is a free service and is perfect for hosting a static html site. It also helps keeping a history of changes.
 
 This is configured as following:
 . Go to Github, link:https://github.com/ArtOfRobotics/WillyWiki/settings[WillyWiki Settings] page
