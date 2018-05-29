@@ -1,7 +1,5 @@
-include::../Header.adoc[]
+include::../../../Header.adoc[]
 === Batteries
-
-toc::[]
 
 [discrete]
 ==== Version history

@@ -29,3 +29,24 @@ image:media/screen_designs/flowchart.jpg[image]
 6. image:media/screen_designs/nl/6.png[image,width=300]
 7. image:media/screen_designs/nl/7.png[image,width=300]
 8. image:media/screen_designs/nl/8.png[image,width=300]
+
+==== Speech configuration
+
+`curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -`
+
+`sudo apt-get install -y nodejs`
+
+`sudo apt-get install -y build-essential`
+
+`sudo apt-get install python-pyaudio python3-pyaudio sox`
+
+`pip install pyaudio`
+
+`sudo apt-get install libmagic-dev libatlas-base-dev`
+
+`git clone https://github.com/ArtOfRobotics/Speechtest.git`
+
+`cd Speechtest`
+
+`node server.js`
+
