@@ -15,7 +15,7 @@ If certain details about design decisions, configuration, hardware or other comp
 
 [NOTE]
 --
-This wiki is public and should not contain any private information nor password for example.
+This wiki is public and should not contain any private information nor passwords.
 --
 
 [TIP]
