@@ -50,13 +50,9 @@ documented in the ‘Systeem dossier’ from a previous project group.
 image:../Archive/2018S1/Research/media/current-status/image4.jpeg[image]
 
 This motor controller is made by using an Arduino Mega and a custom
-shield with additional custom hardware. This hardware makes sure the
-data from the wheel encoders are sent to the proper digital pins on the
-Arduino board. The motor controller processes the data and sends it to
-the ROS framework. This data is then processed by the WillyController,
-which is running as a node on the ROS framework.
-
-The current to the motors is also controlled by this Arduino.
+shield with additional custom hardware. The controller recieves data from ROS 
+and sends it to an internal controller. This is part of the wheelchair and 
+is named Penny and Giles Pilot Plus.
 
 The motor controller is built as shown below:
 
