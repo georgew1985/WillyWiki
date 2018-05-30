@@ -5,7 +5,7 @@ The full Software architecture document can be found at link:{url}\Archive\2018S
 
 === Login
 ==== Use case
-image::media/sad/image4.png[]
+image::media/sad/image5.png[]
 
 ==== Use case description
 *Authenticate with password*
@@ -19,7 +19,7 @@ After authentication and identification a user must be able to see who else is u
 
 
 ==== Wireframe
-image::media/sad/image4.png[]
+image::media/sad/image10.png[]
 
 ==== Wireframe description
 Login
@@ -43,7 +43,7 @@ Button	Identify	Identification	Identify
 
 === Dashboard
 ==== Use case
-image::media/sad/image4.png[]
+image::media/sad/image11.png[]
 ==== Use case description
 See ultrasonic senordata
 A user must be able to readout the sensordata from ultrasonic sensors to check a certain distance between an object.
