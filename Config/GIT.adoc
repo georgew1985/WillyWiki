@@ -54,13 +54,14 @@ Can be found in /home/willy/Documents/WTGD
 Can be found in /home/willy/Documents/WWEB
 
 ==== Build
-todo
+*Web interface*
+For building the web interface refer to the link:{url}/WEB/Development-guide.html[Development Guide] of the Web section.
 
-==== Travis CI
-Not implemented yet
+*Willy*
+For building the software used by Willy refer to the link:{url}/Technical/Development-guide.html[Development Guide] of the Technical section.
 
 ==== Accounts
-?
+All the accounts coupled to the email adress: willythegarbagedisposal@gmail.com can be found on the Google Drive
 
 
 [bibliography]
