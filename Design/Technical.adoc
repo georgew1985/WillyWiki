@@ -113,7 +113,7 @@ image::media/wheelchair.jpg[]
 
 === Design choices
 
-The first choice we had to make with the design is which design we wanted to use. We made a design ourselves and there was a design available. The design that was available was not yet usable on the current frame the design we made is usable.
+The first choice we had to make with the design is which design we wanted to use. We made a design ourselves and there was a design available. The design that was available was not yet usable on the current frame. The design we made was usable in the current frame.
 
 Together with the productowner we concluded that the available design should be the one. The reasons for that are that there was a team behind that design that had researched that idea and that it is a quite simple design to build.
 
