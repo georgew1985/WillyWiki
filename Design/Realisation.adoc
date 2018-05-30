@@ -14,6 +14,9 @@ image::media/st02.jpg[]
 ==== Bumper preparation
 
 === Mold
+
+image::media/maldesign.jpg[]
+
 ==== Wooden frame
 
 image::media/wd01.jpg[]

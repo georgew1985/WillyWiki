@@ -1,3 +1,20 @@
 include::../Header.adoc[]
 
 == Design guide
+
+=== Prerequisite
+
+SolidWorks is a 3D CAD software system. The program is used to design and test parts. SolidWorks has a render extension which makes it possible to make picture like images from the 3D models.
+
+Student edition: https://store.solidworks.com/studentstore/default.php?command=Step1
+
+Download: https://www.solidworks.com/sw/education/SDL_form.html
+
+[NOTE]
+For a student license: Mechanical Engineering has licenses which can be used. Ask at T1 for more information.
+
+
+Install SolidWorks following their install guide.
+
+[NOTE]
+It might be useful to look at http://www.3dleerlijn.nl/solidworks-leren-gebruiken/ for learning the basics.
