@@ -7,7 +7,7 @@ The full Software architecture document can be found at link:{url}\Archive\2018S
 image::media/sad/image4.png[]
 
 ==== ERD
- image::media/sad/image4.png[]
+image::media/sad/image4.png[]
 
 ===== Clarification
 It might seem quite minimal but the User object is the only model used as of the moment of writing. It is also because most of the objects created are not linked to a user model but rather to a RosNodeJS message type, and these messages are directly send to ROS and not saved in a model of some sort.
@@ -100,6 +100,7 @@ Publishing
 After the initialisation of the advertise topic the following function is used to publish data onto this ROS topic:
  
 In this example the earlier variable ‘pub’ is reused to call the function publish on the advertise topic. This function contains the data in JSON format that needs to be published onto the topic. Make sure this data is coherent to the official format used by the specific message type which can be found at ROS official wiki: http://wiki.ros.org/common_msgs?distro=kinetic 
+
 === Design Decisions
 
 ==== NodeJS
