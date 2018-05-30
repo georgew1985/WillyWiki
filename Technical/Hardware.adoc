@@ -227,6 +227,9 @@ The second Arduino with the GPS sensor is powered with the 5V pin from
 the first Arduino. At the moment of writing this has not been fixed and
 reduced to one Arduino.
 
+The GPS will not send data until a FIX has been established. When the 
+reciever is indoors, this can take a long time. GPS works best when outside.
+
 ==== Screen
 The screen used is a KDL-42W815B <<2>> from Sony. The screen is connected to 
 the mini-pc with a VGA cable. The manual can be found at the bottom of 
