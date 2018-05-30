@@ -1,3 +1,17 @@
 include::../Header.adoc[]
 
 == Design guide
+
+=== Prerequisite
+
+Install SolidWorks 
+
+Student edition: https://store.solidworks.com/studentstore/default.php?command=Step1
+Download: https://www.solidworks.com/sw/education/SDL_form.html
+
+[NOTE]
+--
+For a student license: Mechanical Engineering has licenses which can be used. Ask at T1 for more information.
+--
+
+Install SolidWorks following their install guide.
