@@ -168,6 +168,11 @@ image:media/technical/Sensors_schematic_updated.jpg[image]
 As shown in the schematic above, all the 16 sensors are connected to the
 Arduino.
 
+NOTE: The new sensors don't have a 'sig' pin, but two seperate pins called 
+'trig' and 'echo'. However, these two pins are connected to each other, so 
+both pins use the same pin on the Arduino. The code has been adapted to this 
+new situation.
+
 The sensors are connected in the following order:
 
 [cols=",",options="header",]
