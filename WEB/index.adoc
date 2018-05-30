@@ -1,7 +1,5 @@
 include::../Header.adoc[]
 
-include::Code.adoc[]
-
 include::Development-guide.adoc[]
 
 include::Functional.adoc[]
