@@ -10,8 +10,7 @@ Student edition: https://store.solidworks.com/studentstore/default.php?command=S
 Download: https://www.solidworks.com/sw/education/SDL_form.html
 
 [NOTE]
---
 For a student license: Mechanical Engineering has licenses which can be used. Ask at T1 for more information.
---
+
 
 Install SolidWorks following their install guide.
