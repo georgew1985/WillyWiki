@@ -13,6 +13,8 @@ image::media/st02.jpg[]
 
 ==== Bumper preparation
 
+image::media/bmp01.jpg[]
+
 === Mold
 
 image::media/maldesign.jpg[]

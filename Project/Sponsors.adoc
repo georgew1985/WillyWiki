@@ -3,6 +3,16 @@ include::../Header.adoc[]
 == Sponsors
 This document contains a list of all the companies sponsoring Willy.
 
+=== Windesheim
+Windesheim provides students and financial support for the project.
+
+image:media/windesheimlogo.jpg[image,width=300]
+
+=== The Art of Robotics
+The art of Robotics foundation is the product owner, financial support and a way of getting new sponsors.
+
+image:media/artofrobotics.jpg[image,width=300]
+
 === Sick
 Sick provided the project with a very expensive LIDAR sensor. Sick 
 provided this in cooperation with our product owner.

@@ -24,5 +24,8 @@ to go through a door without detaching the bins, including the detachable buffer
 ultrasonic sensors in it.
 
 === Web Interface
-- ?
+- There are no known bugs at this moment. 
+
+[NOTE] 
+The Web Interface is still in development.
 

@@ -50,13 +50,9 @@ documented in the ‘Systeem dossier’ from a previous project group.
 image:../Archive/2018S1/Research/media/current-status/image4.jpeg[image]
 
 This motor controller is made by using an Arduino Mega and a custom
-shield with additional custom hardware. This hardware makes sure the
-data from the wheel encoders are sent to the proper digital pins on the
-Arduino board. The motor controller processes the data and sends it to
-the ROS framework. This data is then processed by the WillyController,
-which is running as a node on the ROS framework.
-
-The current to the motors is also controlled by this Arduino.
+shield with additional custom hardware. The controller recieves data from ROS 
+and sends it to an internal controller. This is part of the wheelchair and 
+is named Penny and Giles Pilot Plus.
 
 The motor controller is built as shown below:
 
@@ -125,7 +121,7 @@ image:media/technical/battery_old.jpg[image,width=500]
 
 ===== New situation
 In the new situation the 2 batteries are replaced with 6 new 12V batteries.
-All the batteries are 60Ah. They are connected placing 2 batteries in serial
+All the batteries are 33Ah. They are connected placing 2 batteries in serial
 3 times in parallel. This adds again up to 24V.
 
 image:media/technical/batteries_new.png[image,width=500]
@@ -143,6 +139,10 @@ Between the batteries and the step-down converter, there is a fuse placed.
 The fuse called T5L250V is rated for 250V with 5A.
 
 ==== Sonars
+
+IMPORTANT: The sonars are currently not connected, because the frame bumper 
+are not yet made. These sensors have to be placed in this metal piece.
+
 To prevent collisions, ultrasonic sensors are used. These sensors
 measure distance by using sound. This is made possible by sending out
 bursts of high frequency noise, and then waiting for a reflection of
