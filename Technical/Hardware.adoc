@@ -125,7 +125,7 @@ image:media/technical/battery_old.jpg[image,width=500]
 
 ===== New situation
 In the new situation the 2 batteries are replaced with 6 new 12V batteries.
-All the batteries are 60Ah. They are connected placing 2 batteries in serial
+All the batteries are 33Ah. They are connected placing 2 batteries in serial
 3 times in parallel. This adds again up to 24V.
 
 image:media/technical/batteries_new.png[image,width=500]
