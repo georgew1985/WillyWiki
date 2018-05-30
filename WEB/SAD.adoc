@@ -1,4 +1,4 @@
 include::../Header.adoc[]
 
 == Social interaction
-link:media/SAD.PDF[software architecture document]
+link:media/SAD.pdf[software architecture document]
