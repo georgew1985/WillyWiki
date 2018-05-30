@@ -37,6 +37,7 @@ image::media/image3.jpg[]
 The front plane is one of three pieces which are made out of glass-fibre in combination with a polyester resin. A mould is made out of Styrofoam plates. The front plane contains the tv screen, place for a Kinect sensor, a LEAP motion controller, a SICK TIM551 LiDAR and two speakers with grills. The frame goes through the two holes at the bottom of the front plane.
 
 image::media/frontplane.jpg[]
+link:{ur}/media/frontplane.PDF[Frontplane]
 
 This part is made together with the midplane and backplane using the same mould. The front plane is fixed by the front of the frame.
 
@@ -45,6 +46,7 @@ This part is made together with the midplane and backplane using the same mould.
 The mid plane is a frame on which the front and back plane are fixed. There are possibilities to fix the tv screen as well. At the bottom there are notches for the swivel wheels on both sides.
 
 image::media/midplane.jpg[]
+link:{ur}/media/frame.PDF[Midplane]
 
 The midplane is made together with the front and backplane with the same mould.
 
@@ -53,6 +55,7 @@ The midplane is made together with the front and backplane with the same mould.
 The backplane contains slots where the fans can be placed. The design of the backplane improves the flow of air from the bottom to the top of the robot where the air is blown out.
 
 image::media/backplane.jpg[]
+link:{ur}/media/backplane.PDF[Backplane]
 
 The slanted part is used as a hood so there is still a possibility to work on the electronics. The backplane is made together with the front plane and midplane with the same mould.
 
@@ -61,6 +64,7 @@ The slanted part is used as a hood so there is still a possibility to work on th
 The bin is a part which is placed on both sides of the robot. It will be used to encourage people to throw away their garbage. There is a special bin opening part which is fitted on top of this bin. 
 
 image::media/bin.jpg[]
+link:{ur}/media/bin.PDF[Bin]
 
 ==== Part 5 bin opening
 
