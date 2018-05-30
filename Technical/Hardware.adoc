@@ -211,7 +211,7 @@ the code on the mini-pc.
 
 To allow Willy to drive outdoor by using a precomputed route, a GPS
 sensor and a compass are required. The GPS sensor is linked to the
-WillyController using ROS. In WillyController the raw data is processed
+GPSController using ROS. In the GPSController the raw data is processed
 to usable coordinates. These coordinates are only used to draw a line
 where Willy has driven in the code of the previous group.
 The Compass is used to determinate the direction of willy. This is
