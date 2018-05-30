@@ -139,6 +139,10 @@ Between the batteries and the step-down converter, there is a fuse placed.
 The fuse called T5L250V is rated for 250V with 5A.
 
 ==== Sonars
+
+IMPORTANT: The sonars are currently not connected, because the frame bumper 
+are not yet made. These sensors have to be placed in this metal piece.
+
 To prevent collisions, ultrasonic sensors are used. These sensors
 measure distance by using sound. This is made possible by sending out
 bursts of high frequency noise, and then waiting for a reflection of
