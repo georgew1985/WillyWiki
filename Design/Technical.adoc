@@ -112,5 +112,17 @@ The wheelchair assembly contains the motors and wheels combined with a frame tha
 image::media/wheelchair.jpg[]
 
 === Design choices
+
+The first choice we had to make with the design is which design we wanted to use. We made a design ourselves and there was a design available. The design that was available was not yet usable on the current frame the design we made is usable.
+
+Together with the productowner we concluded that the available design should be the one. The reasons for that are that there was a team behind that design that had researched that idea and that it is a quite simple design to build.
+
 ==== Parts design choices
+
+The bin had a problem that the opening was too small for bottles and cans. Because of that we made it a bit bulkier than the original design. The bin opening part is adjusted accordingly. 
+
 ==== Assembly design choices
+
+The front bumper and rear bumper were an aluminium plate in which the ultrasonic sensors were mounted. Because of the design this had to be changed. We made it in the shape of the plating itself. In this way there is only a little gap between the plating and the bumper. This also ment that it needed a sixth ultrasonic sensor because of the widened front part. 
+
+Besides the 360 degrees ultrasonic view it needed sensors which had to be aimed at the ground. This helps with finding curbs and unevennesses in the road. Both the front and rear bumper are adjusted to fit two sensors downwards.
