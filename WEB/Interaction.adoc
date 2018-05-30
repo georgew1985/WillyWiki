@@ -11,15 +11,24 @@ image:media/screen_designs/flowchart.jpg[image]
 ==== English
 
 1. image:media/screen_designs/en/1.png[image,width=300]
+This is the screen shown when Willy is driving around, and there is not yet a person to interact with.
 2. image:media/screen_designs/en/2.png[image,width=300]
+This screen is shown when a person is starting to interact with Willy. At the bottom there are two arroys pointing to the garbage bins.
 3. image:media/screen_designs/en/3.png[image,width=300]
+After that Willy asks permission to ask a question to the person in front of Willy.
 4. image:media/screen_designs/en/4.png[image,width=300]
+When the person says 'no', then this screen is shown, after wich the robot continues driving.
 5. image:media/screen_designs/en/5.png[image,width=300]
+When the person says 'yes', a random question is shown with a number of multiple choise answers.
 6. image:media/screen_designs/en/6.png[image,width=300]
+When the given answer is wrong, this screen is shown.
 7. image:media/screen_designs/en/7.png[image,width=300]
+When the given answer is right, this screen is shown.
 8. image:media/screen_designs/en/8.png[image,width=300]
+After the question, Willy starts to play an informative video about garbage.
 
 ==== Dutch
+For comments at each image, see the English version above.
 
 1. image:media/screen_designs/nl/1.png[image,width=300]
 2. image:media/screen_designs/nl/2.png[image,width=300]
