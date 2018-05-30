@@ -2,8 +2,8 @@ include::../Header.adoc[]
 
 include::Development-guide.adoc[]
 
-include::Functional.adoc[]
+// include::Functional.adoc[]
 
 include::Interaction.adoc[]
 
-include::Technical.adoc[]
+// include::Technical.adoc[]
