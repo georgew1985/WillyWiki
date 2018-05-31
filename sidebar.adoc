@@ -32,10 +32,11 @@ link:{url}/Technical/index.html[Technical]::
 
 link:{url}/WEB/index.html[Web interface]::
         - link:{url}/WEB/Development-guide.html[Development Guide]
-//      - link:{url}/WEB/Functional.html[Functional]
-        - link:{url}/WEB/Interaction.html[Interaction]
-//      - link:{url}/WEB/Technical.html[Technical]
         - link:{url}/WEB/SAD.html[SAD]
+        - link:{url}/WEB/Rosnodejs.html[RosNodeJs]
+        - link:{url}/WEB/Interaction.html[Interaction]
+
+
 
 link:{url}/Research/index.html[Research]::
 	- link:{url}/Research/Hardware.html[Hardware]

@@ -2,10 +2,10 @@ include::../Header.adoc[]
 
 include::Development-guide.adoc[]
 
-// include::Functional.adoc[]
+include::SAD.adoc[]
+
+include::Rosnodejs.adoc[]
 
 include::Interaction.adoc[]
 
-include::SAD.adoc[]
 
-// include::Technical.adoc[]
