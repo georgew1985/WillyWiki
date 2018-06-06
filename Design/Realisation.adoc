@@ -60,6 +60,6 @@ image::media/po07.jpg[]
 === Cooling
 Cooling is done by 9 140mm fans in sets of 3 across the robot, at every arrow a set can be found. We have not yet found a sponsor for fans after many tries.
 
-image::media/cooling1.jpg[]
-image::media/cooling2.jpg[]
-image::media/cooling3.jpg[]
+image::media/cooling1.JPG[]
+image::media/cooling2.JPG[]
+image::media/cooling3.JPG[]
