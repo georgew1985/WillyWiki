@@ -147,7 +147,7 @@ This board is placed at the left of the step-down converters.
 
 ==== Sonars
 
-IMPORTANT: The sonars are currently not connected, because the frame bumper 
+IMPORTANT: The sonars are currently not connected, because the frame bumpers
 are not yet made. These sensors have to be placed in this metal piece.
 
 To prevent collisions, ultrasonic sensors are used. These sensors
