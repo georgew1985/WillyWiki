@@ -138,9 +138,12 @@ The mini pc is connected to a small 19.5V DC step-down converter. This is needed
 because the screen needs the full amperage of the other 19.5 step-down converter.
 The mini pc use 65 Watt and the step-down converter can provide a maximum of 75 watt.
 
-===== Fuse
+The power for the step-down converters is provided by the batteries. 
 Between the batteries and the step-down converter, there is a fuse placed. 
-The fuse called T5L250V is rated for 250V with 5A.
+The fuse called T5L250V is rated for 250V with 5A. Then a switch is used to turn Willy
+on or off. 
+To split the 24v of the batteries to all the step-down converters, there is a homemade pcb plate created.
+This board is placed at the left of the step-down converters.
 
 ==== Sonars
 
