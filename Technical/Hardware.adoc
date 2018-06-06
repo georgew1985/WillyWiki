@@ -129,18 +129,25 @@ image:media/technical/batteries_new.png[image,width=500]
 image:media/technical/battery_new.jpg[image,width=500]
 
 ==== Power Supply
-The 19 volts for the mini-pc and the screen is provided by a step-down converter.
+The 19 volts for the screen is provided by a step-down converter.
 The module is based on the Xl4015 buch DC to DC converter. The input voltage
 range is 8-36V and the adjustable output range is 1.25V to 32V. The converter
 is rated for a max current of 5 amps.
 
-===== Fuse
+The mini pc is connected to a small 19.5V DC step-down converter. This is needed
+because the screen needs the full amperage of the other 19.5 step-down converter.
+The mini pc use 65 Watt and the step-down converter can provide a maximum of 75 watt.
+
+The power for the step-down converters is provided by the batteries. 
 Between the batteries and the step-down converter, there is a fuse placed. 
-The fuse called T5L250V is rated for 250V with 5A.
+The fuse called T5L250V is rated for 250V with 5A. Then a switch is used to turn Willy
+on or off. 
+To split the 24v of the batteries to all the step-down converters, there is a homemade pcb plate created.
+This board is placed at the left of the step-down converters.
 
 ==== Sonars
 
-IMPORTANT: The sonars are currently not connected, because the frame bumper 
+IMPORTANT: The sonars are currently not connected, because the frame bumpers
 are not yet made. These sensors have to be placed in this metal piece.
 
 To prevent collisions, ultrasonic sensors are used. These sensors
