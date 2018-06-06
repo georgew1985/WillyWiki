@@ -32,9 +32,11 @@ link:{url}/Technical/index.html[Technical]::
 
 link:{url}/WEB/index.html[Web interface]::
         - link:{url}/WEB/Development-guide.html[Development Guide]
-        - link:{url}/WEB/Functional.html[Functional]
+        - link:{url}/WEB/SAD.html[SAD]
+        - link:{url}/WEB/Rosnodejs.html[RosNodeJs]
         - link:{url}/WEB/Interaction.html[Interaction]
-        - link:{url}/WEB/Technical.html[Technical]
+
+
 
 link:{url}/Research/index.html[Research]::
 	- link:{url}/Research/Hardware.html[Hardware]
@@ -55,7 +57,7 @@ link:{url}/Status/index.html[Status and Advice]::
         - link:{url}/Status/Todo.html[Todo & Advice]
 
 link:{url}/Archive/index.html[Archive]::
-        - link:{url}/Archive/2016S2.html[(2016/2) Initial design ]
-        - link:{url}/Archive/2017S1.html[(2017/1) Base & Functionalities ]
-        - link:{url}/Archive/2017S2.html[(2017/2) Research]
-        - link:{url}/Archive/2018S1.html[(2018/1) Stabilization & Realisation]
+        - link:https://drive.google.com/drive/u/1/folders/1LfOfbxBTFASBrozYIklAt7_7a3ubFFy0[(2016/2) Initial design ]
+        - link:https://drive.google.com/drive/u/1/folders/1yCVk6iNJNQlaouU2WDvMt3BISoHCuz6l[(2017/1) Base & Functionalities ]
+        - link:https://drive.google.com/drive/u/1/folders/1S904hDK_63HIpyPnBgMHzZx-zt0xNpim[(2017/2) Research]
+//        - link:{url}/Archive/2018S1.html[(2018/1) Stabilization & Realisation]

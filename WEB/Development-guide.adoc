@@ -4,6 +4,8 @@ include::../Header.adoc[]
 
 === Prerequisite 
 
+* Basic knowlegde of NodeJs, Git and ROS
+
 * Install Git & Editor +
 https://code.visualstudio.com/
 * Install NodeJS +
