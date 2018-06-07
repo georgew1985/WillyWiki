@@ -24,6 +24,7 @@ Use Github's search to find certain keywords in the content of the wiki. link:ht
 --
 == Winnovation
 Project Willy is found at Windesheim Campus on T5, walking route is seen below:
+
 image::media/looproute.png[]
 
 == Status
