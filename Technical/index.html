@@ -1,0 +1,3632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.7.1">
+<title>Development Guide</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
+/* Uncomment @import statement below to use as custom stylesheet */
+/*@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}
+audio,canvas,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+script{display:none!important}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+a{background:transparent}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+dfn{font-style:italic}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,*::before,*::after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0;direction:ltr}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:none}
+p{font-family:inherit;font-weight:400;font-size:1em;line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #ddddd8;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em;height:0}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{font-size:1em;line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0;font-size:1em}
+ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
+ul.square{list-style-type:square}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+abbr,acronym{text-transform:uppercase;font-size:90%;color:rgba(0,0,0,.8);border-bottom:1px dotted #ddd;cursor:help}
+abbr{text-transform:none}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote cite{display:block;font-size:.9375em;color:rgba(0,0,0,.6)}
+blockquote cite::before{content:"\2014 \0020"}
+blockquote cite a,blockquote cite a:visited{color:rgba(0,0,0,.6)}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt,table tr:nth-of-type(even){background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+*:not(pre)>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background-color:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed;word-wrap:break-word}
+*:not(pre)>code.nobreak{word-wrap:normal}
+*:not(pre)>code.nowrap{white-space:nowrap}
+pre,pre>code{line-height:1.45;color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;text-rendering:optimizeSpeed}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background-color:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin-left:auto;margin-right:auto;margin-top:0;margin-bottom:0;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #ddddd8}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #ddddd8;padding-bottom:8px}
+#header .details{border-bottom:1px solid #ddddd8;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #ddddd8;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #efefed;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background-color:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #efefed;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #efefed;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:100%;background-color:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:rgba(255,255,255,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #efefed}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+table.tableblock #preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:inherit}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #ddddd8;color:rgba(0,0,0,.6)}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border-style:solid;border-width:1px;border-color:#e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;-webkit-border-radius:4px;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
+.sidebarblock{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock pre:not(.highlight),.listingblock pre[class="highlight"],.listingblock pre[class^="highlight "],.listingblock pre.CodeRay,.listingblock pre.prettyprint{background:#f7f7f8}
+.sidebarblock .literalblock pre,.sidebarblock .listingblock pre:not(.highlight),.sidebarblock .listingblock pre[class="highlight"],.sidebarblock .listingblock pre[class^="highlight "],.sidebarblock .listingblock pre.CodeRay,.sidebarblock .listingblock pre.prettyprint{background:#f2f1f1}
+.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{-webkit-border-radius:4px;border-radius:4px;word-wrap:break-word;padding:1em;font-size:.8125em}
+.literalblock pre.nowrap,.literalblock pre[class].nowrap,.listingblock pre.nowrap,.listingblock pre[class].nowrap{overflow-x:auto;white-space:pre;word-wrap:normal}
+@media screen and (min-width:768px){.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{font-size:1em}}
+.literalblock.output pre{color:#f7f7f8;background-color:rgba(0,0,0,.9)}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;-webkit-border-radius:4px;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:#999}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:#999}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+table.pyhltable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.pyhltable td{vertical-align:top;padding-top:0;padding-bottom:0;line-height:1.45}
+table.pyhltable td.code{padding-left:.75em;padding-right:0}
+pre.pygments .lineno,table.pyhltable td:not(.code){color:#999;padding-left:0;padding-right:.5em;border-right:1px solid #ddddd8}
+pre.pygments .lineno{display:inline-block;margin-right:.25em}
+table.pyhltable .linenodiv{background:none!important;padding-right:0!important}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock blockquote p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.5em;margin-right:.5ex;text-align:right}
+.quoteblock .quoteblock{margin-left:0;margin-right:0;padding:.5em 0;border-left:3px solid rgba(0,0,0,.6)}
+.quoteblock .quoteblock blockquote{padding:0 0 0 .75em}
+.quoteblock .quoteblock blockquote::before{display:none}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.abstract blockquote,.quoteblock.abstract blockquote p{word-spacing:0;line-height:1.6}
+.quoteblock.abstract blockquote::before,.quoteblock.abstract p::before{display:none}
+table.tableblock{max-width:100%;border-collapse:separate}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content{margin-bottom:-1.25em}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>thead>tr>.tableblock,table.grid-all>tbody>tr>.tableblock{border-width:0 1px 1px 0}
+table.grid-all>tfoot>tr>.tableblock{border-width:1px 1px 0 0}
+table.grid-cols>*>tr>.tableblock{border-width:0 1px 0 0}
+table.grid-rows>thead>tr>.tableblock,table.grid-rows>tbody>tr>.tableblock{border-width:0 0 1px}
+table.grid-rows>tfoot>tr>.tableblock{border-width:1px 0 0}
+table.grid-all>*>tr>.tableblock:last-child,table.grid-cols>*>tr>.tableblock:last-child{border-right-width:0}
+table.grid-all>tbody>tr:last-child>.tableblock,table.grid-all>thead:last-child>tr>.tableblock,table.grid-rows>tbody>tr:last-child>.tableblock,table.grid-rows>thead:last-child>tr>.tableblock{border-bottom-width:0}
+table.frame-all{border-width:1px}
+table.frame-sides{border-width:0 1px}
+table.frame-topbot,table.frame-ends{border-width:1px 0}
+table.stripes-all tr,table.stripes-odd tr:nth-of-type(odd){background:#f8f8f7}
+table.stripes-none tr,table.stripes-odd tr:nth-of-type(even){background:none}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{display:table-cell;line-height:1.6;background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+td>div.verse{white-space:pre}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+ul.checklist{margin-left:.625em}
+ul.checklist li>p:first-child>.fa-square-o:first-child,ul.checklist li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist li>p:first-child>input[type="checkbox"]:first-child{margin-right:.25em}
+ul.inline{display:-ms-flexbox;display:-webkit-box;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:solid 4px #fff;-webkit-box-shadow:0 0 0 1px #ddd;box-shadow:0 0 0 1px #ddd}
+.imageblock.left,.imageblock[style*="float: left"]{margin:.25em .625em 1.25em 0}
+.imageblock.right,.imageblock[style*="float: right"]{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+.gist .file-data>table{border:0;background:#fff;width:100%;margin-bottom:0}
+.gist .file-data>table td.line-data{width:99%}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background-color:#00fafa}
+.black{color:#000}
+.black-background{background-color:#000}
+.blue{color:#0000bf}
+.blue-background{background-color:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background-color:#fa00fa}
+.gray{color:#606060}
+.gray-background{background-color:#7d7d7d}
+.green{color:#006000}
+.green-background{background-color:#007d00}
+.lime{color:#00bf00}
+.lime-background{background-color:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background-color:#7d0000}
+.navy{color:#000060}
+.navy-background{background-color:#00007d}
+.olive{color:#606000}
+.olive-background{background-color:#7d7d00}
+.purple{color:#600060}
+.purple-background{background-color:#7d007d}
+.red{color:#bf0000}
+.red-background{background-color:#fa0000}
+.silver{color:#909090}
+.silver-background{background-color:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background-color:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background-color:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background-color:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background-color:rgba(0,0,0,.8);-webkit-border-radius:100px;border-radius:100px;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,span.alt{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background-color:#fffef7;border-color:#e0e0dc;-webkit-box-shadow:0 1px 4px #e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{-webkit-box-shadow:none!important;box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #ddddd8!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media print,amzn-kf8{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_development_guide">1. Development Guide</a>
+<ul class="sectlevel2">
+<li><a href="#_prerequisite">1.1. Prerequisite</a></li>
+<li><a href="#_development">1.2. Development</a></li>
+<li><a href="#_compilation">1.3. Compilation</a></li>
+<li><a href="#_testingdebugging">1.4. Testing/Debugging</a></li>
+</ul>
+</li>
+<li><a href="#_findings">2. Findings</a>
+<ul class="sectlevel2">
+<li><a href="#_software">2.1. Software</a></li>
+<li><a href="#_vision">2.2. Vision</a></li>
+<li><a href="#_hardware">2.3. Hardware</a></li>
+<li><a href="#_design">2.4. Design</a></li>
+<li><a href="#_social_interaction">2.5. Social interaction</a></li>
+</ul>
+</li>
+<li><a href="#_hardware_2">3. Hardware</a>
+<ul class="sectlevel2">
+<li><a href="#_overview">3.1. Overview</a></li>
+<li><a href="#_components">3.2. Components</a>
+<ul class="sectlevel3">
+<li><a href="#_mini_pc">3.2.1. Mini pc</a></li>
+<li><a href="#_motors_and_controller">3.2.2. Motors and controller</a>
+<ul class="sectlevel4">
+<li><a href="#_brakes">Brakes</a></li>
+</ul>
+</li>
+<li><a href="#_batteries">3.2.3. Batteries</a>
+<ul class="sectlevel4">
+<li><a href="#_old_situation">Old situation</a></li>
+<li><a href="#_new_situation">New situation</a></li>
+</ul>
+</li>
+<li><a href="#_power_supply">3.2.4. Power Supply</a></li>
+<li><a href="#_sonars">3.2.5. Sonars</a></li>
+<li><a href="#_gps_compass">3.2.6. GPS / Compass</a></li>
+<li><a href="#_screen">3.2.7. Screen</a></li>
+<li><a href="#_lidar">3.2.8. LIDAR</a></li>
+<li><a href="#_kinect">3.2.9. Kinect</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_references">References</a></li>
+<li><a href="#_common_problems">4. Common problems</a>
+<ul class="sectlevel2">
+<li><a href="#_driving">4.1. Driving</a></li>
+<li><a href="#_design_2">4.2. Design</a></li>
+<li><a href="#_web_interface">4.3. Web Interface</a></li>
+</ul>
+</li>
+<li><a href="#_launch_file_parameters">5. Launch file parameters</a>
+<ul class="sectlevel3">
+<li><a href="#_overview_2">5.1. Overview</a></li>
+<li><a href="#_parameters">5.2. parameters</a>
+<ul class="sectlevel4">
+<li><a href="#_move_base">Move base</a></li>
+</ul>
+</li>
+<li><a href="#_base_local_planner">5.3. Base local planner</a></li>
+<li><a href="#_common_costmap">5.4. Common costmap</a></li>
+<li><a href="#_global_costmap">5.5. Global costmap</a></li>
+<li><a href="#_local_costmap">5.6. Local costmap</a></li>
+</ul>
+</li>
+<li><a href="#_software_2">6. Software</a>
+<ul class="sectlevel2">
+<li><a href="#_arduinos">6.1. Arduino&#8217;s</a>
+<ul class="sectlevel3">
+<li><a href="#_system_overview">6.1.1. System Overview</a>
+<ul class="sectlevel4">
+<li><a href="#_code_overview">Code Overview</a></li>
+</ul>
+</li>
+<li><a href="#_design_decisions">6.1.2. Design Decisions</a></li>
+</ul>
+</li>
+<li><a href="#_software_3">6.2. Software</a>
+<ul class="sectlevel3">
+<li><a href="#_overview_3">6.2.1. Overview</a></li>
+<li><a href="#_controller_setup">6.2.2. Controller setup</a></li>
+<li><a href="#_ros_setup">6.2.3. ROS setup</a></li>
+<li><a href="#_autonomous_driving">6.2.4. autonomous driving</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="toc" class="dlist toc2">
+<dl>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/welcome.html">Welcome</a></dt>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Project/index.html">Project Willy</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Project/Willy.html">Willy</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Project/Publicity.html">Publicity</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Project/Sponsors.html">Sponsors</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Startup/index.html">Startup Willy</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Startup/Driving-Willy.html">Driving Willy</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Startup/Remote.html">Remote</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Startup/Willy-Web.html">Willy Web</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Config/index.html">Configuration</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Config/GIT.html">GIT Setup</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Config/Ubuntu.html">Ubuntu</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Config/Remote.html">Remote</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Config/Wiki.html">Wiki</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/ROS/index.html">ROS</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/ROS/Introduction.html">Introduction to ROS</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/ROS/Navigation.html">Navigation</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Technical/index.html">Technical</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Development-guide.html">Development Guide</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Findings.html">Findings</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Hardware.html">Hardware</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Bugs.html">Known Bugs</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Parameters.html">Parameters</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Software.html">Software</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/WEB/index.html">Web interface</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/WEB/Development-guide.html">Development Guide</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/WEB/SAD.html">SAD</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/WEB/Rosnodejs.html">RosNodeJs</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/WEB/Interaction.html">Interaction</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Research/index.html">Research</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Hardware.html">Hardware</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Peripherals.html">Peripherals</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Sensors.html">Sensors</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Social-interaction.html">Social interaction</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Software.html">Software</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Web-interface.html">Web interface</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Design/index.html">Design</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Design/Background.html">Background</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Design/Design-guide.html">Design Guide</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Design/Technical.html">Technical</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Design/Realisation.html">Realisation</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Status/index.html">Status and Advice</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Status/Status.html">Status</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Status/Todo.html">Todo &amp; Advice</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Archive/index.html">Archive</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://drive.google.com/drive/u/1/folders/1LfOfbxBTFASBrozYIklAt7_7a3ubFFy0">(2016/2) Initial design </a></p>
+</li>
+<li>
+<p><a href="https://drive.google.com/drive/u/1/folders/1yCVk6iNJNQlaouU2WDvMt3BISoHCuz6l">(2017/1) Base &amp; Functionalities </a></p>
+</li>
+<li>
+<p><a href="https://drive.google.com/drive/u/1/folders/1S904hDK_63HIpyPnBgMHzZx-zt0xNpim">(2017/2) Research</a></p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+<div id="toc" class="dlist toc2">
+<dl>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/welcome.html">Welcome</a></dt>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Project/index.html">Project Willy</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Project/Willy.html">Willy</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Project/Publicity.html">Publicity</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Project/Sponsors.html">Sponsors</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Startup/index.html">Startup Willy</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Startup/Driving-Willy.html">Driving Willy</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Startup/Remote.html">Remote</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Startup/Willy-Web.html">Willy Web</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Config/index.html">Configuration</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Config/GIT.html">GIT Setup</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Config/Ubuntu.html">Ubuntu</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Config/Remote.html">Remote</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Config/Wiki.html">Wiki</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/ROS/index.html">ROS</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/ROS/Introduction.html">Introduction to ROS</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/ROS/Navigation.html">Navigation</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Technical/index.html">Technical</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Development-guide.html">Development Guide</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Findings.html">Findings</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Hardware.html">Hardware</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Bugs.html">Known Bugs</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Parameters.html">Parameters</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Software.html">Software</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/WEB/index.html">Web interface</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/WEB/Development-guide.html">Development Guide</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/WEB/SAD.html">SAD</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/WEB/Rosnodejs.html">RosNodeJs</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/WEB/Interaction.html">Interaction</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Research/index.html">Research</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Hardware.html">Hardware</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Peripherals.html">Peripherals</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Sensors.html">Sensors</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Social-interaction.html">Social interaction</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Software.html">Software</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Web-interface.html">Web interface</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Design/index.html">Design</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Design/Background.html">Background</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Design/Design-guide.html">Design Guide</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Design/Technical.html">Technical</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Design/Realisation.html">Realisation</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Status/index.html">Status and Advice</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Status/Status.html">Status</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Status/Todo.html">Todo &amp; Advice</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Archive/index.html">Archive</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://drive.google.com/drive/u/1/folders/1LfOfbxBTFASBrozYIklAt7_7a3ubFFy0">(2016/2) Initial design </a></p>
+</li>
+<li>
+<p><a href="https://drive.google.com/drive/u/1/folders/1yCVk6iNJNQlaouU2WDvMt3BISoHCuz6l">(2017/1) Base &amp; Functionalities </a></p>
+</li>
+<li>
+<p><a href="https://drive.google.com/drive/u/1/folders/1S904hDK_63HIpyPnBgMHzZx-zt0xNpim">(2017/2) Research</a></p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+<div class="sect1">
+<h2 id="_development_guide">1. Development Guide</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_prerequisite">1.1. Prerequisite</h3>
+<div class="paragraph">
+<p>To be able to develop Willy there are a few Prerequisites:<br></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Integrated Development Environment<br></p>
+</li>
+<li>
+<p>Basic knowledge about C++ and C<br></p>
+</li>
+<li>
+<p>Basic knowledge about ROS<br></p>
+</li>
+<li>
+<p>Basic knowledge about GIT<br></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Integrated Development Environment</strong><br>
+Visual Studio Code is a Integrated Development Environment. This program is used<br>
+to write code and use git to send the documents to Willy. Visual studio can be<br>
+extended with a lot of extensions. These extensions make it possible to align<br>
+the code and see if the syntax of your code is correct or incorrect.<br></p>
+</div>
+<div class="paragraph">
+<p><strong>Basic knowledge about GIT</strong><br>
+GIT is used as file transfer and version manager of the current Willy project.<br>
+Everything starts with setting up the GIT repository and be able to push and pull<br>
+parts of code. That makes GIT essential in the Willy development.<br>
+A tutorial about GIT and the setup of GIT can be found here:</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<a href="https://www.atlassian.com/git/tutorials/setting-up-a-repository" class="bare">https://www.atlassian.com/git/tutorials/setting-up-a-repository</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong>Basic knowledge about C++ and C</strong><br>
+The Willy code is written in C++. To add features and understand the code, some basic<br>
+knowledge of C++ is required. If you want to learn the basics of C++? Follow a semester<br>
+programming or see the following tutorial<br></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<a href="https://www.studytonight.com/cpp/introduction-to-cpp.php" class="bare">https://www.studytonight.com/cpp/introduction-to-cpp.php</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong>Basic knowledge about ROS</strong><br>
+Because Willy is based on the Robot Operating System (ROS), a basic knowledge of ROS<br>
+is required to communicate with the different modulair parts of Willy. ROS learing<br>
+may be difficult, but you can follow the following tutorial to learn the basics:<br></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<a href="http://wiki.ros.org/ROS/Tutorials" class="bare">http://wiki.ros.org/ROS/Tutorials</a>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_development">1.2. Development</h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+To start development, make sure you complies to the requirements above.
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Make a folder on your local computer where you want the Willy project to take place.<br></p>
+</li>
+<li>
+<p>Install git.<br></p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Git can be downloaded from the following website: <a href="https://git-scm.com/downloads" class="bare">https://git-scm.com/downloads</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Clone the WTGD git repository.<br>
+This can be done with the following command:<br>
+    <code><strong>git clone <a href="https://github.com/ArtOfRobotics/WTGD" class="bare">https://github.com/ArtOfRobotics/WTGD</a></strong></code><br></p>
+</li>
+<li>
+<p>Checkout at the <code>test</code> branch.<br>
+This can be done with the following command:<br>
+    <code><strong>git checkout test</strong></code><br></p>
+</li>
+<li>
+<p>Open Visual Studio Code and open the cloned WTGD folder.<br>
+This can be done by following this steps:<br>
+    <strong>File</strong> &#8594; <strong>Open Folder</strong> &#8594; <strong>Navigate to WTGD folder</strong> &#8594; <strong>Select Folder</strong><br></p>
+</li>
+<li>
+<p>In the navigation window on the left, navigate to:<br>
+<strong>willy</strong> &#8594; <strong>src</strong><br></p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+In this folder all the Willy ROS packages are listed.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_compilation">1.3. Compilation</h3>
+<div class="paragraph">
+<p>To compile your changes you have made to the Willy project, a few steps are required.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Commit and push your changes to the GIT WTGD repository. This can be done using git bash or Visual Studio Code integrated source control.</p>
+</li>
+<li>
+<p>Startup the computer of Willy, login using the default login credenticals and open a terminal window.</p>
+</li>
+<li>
+<p>Enter the following command:
+<code><strong>cd /home/willy/Documents/WTGD/willy</strong></code></p>
+</li>
+<li>
+<p>Pull the git changes (There may be no changes because of the automatic git sync)
+<code><strong>sudo git pull</strong></code></p>
+</li>
+<li>
+<p>Build the package using catkin_make
+<code><strong>catkin_make</strong></code></p>
+</li>
+<li>
+<p>Make the terminal point to the source code of driving_willy
+<code><strong>source devel/setup.bash</strong></code></p>
+</li>
+<li>
+<p>Now you can launch the project as described in startup wiki page.</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+For more information about starting up willy? See our startup guide: <a href="https://artofrobotics.github.io/WillyWiki/Startup/Driving-Willy.html" class="bare">https://artofrobotics.github.io/WillyWiki/Startup/Driving-Willy.html</a>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_testingdebugging">1.4. Testing/Debugging</h3>
+<div class="paragraph">
+<p>To test the new builded code, you need to launch the project you builded.
+Make sure you followed the steps above and leave the terminal open.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Make sure to press the emergency button or the switch on the motor controller that makes the LED turn off.
+Otherwise the motors cannot start.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>To launch the willy_navigation package you can use the roslaunch command.
+    <code><strong>roslaunch willy_navigation willy_navigation.launch</strong></code></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Do not forget to depress the emergency button or switch the lever on the motor controller after starting the project. Otherwise Willy will not drive.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong>Step if Willy will not drive</strong></p>
+</div>
+<div class="paragraph">
+<p>Willy can sometimes be a little unreliable and stops driving. This can have multiple reasons. Here are some of them and the way to fix the problems:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Forgot to press the emergency button before starting up the project.<br>
+&#8594; Use the command <code><strong>pkill ros</strong></code> in a new terminal to stop ROS.<br>
+&#8594; Follow the steps above or the startup guide to restart Willy.<br></p>
+</li>
+<li>
+<p>Forgot to depress the emergency button after starting the project.<br>
+&#8594; Depress the emergency button and willy will start driving<br></p>
+</li>
+<li>
+<p>Forgot to set a goal to navigate to.<br>
+&#8594; Use your mouse to send a new goal in Rviz. This button can be found in the top navigation bar in rviz.<br></p>
+</li>
+<li>
+<p>Rviz hangs on startup<br>
+&#8594; Use the command <code><strong>pkill ros</strong></code> in a new terminal to stop ROS.<br>
+&#8594; Use the command <code><strong>pkill rviz</strong></code> in a new terminal to stop Rviz.<br>
+&#8594; Reboot the project as described in the startup guide.<br></p>
+</li>
+<li>
+<p>Mini pc will not power on.<br>
+&#8594; Use the switch on the top of willy to power on Willy.<br></p>
+</li>
+</ol>
+</div>
+<div id="toc" class="dlist toc2">
+<dl>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/welcome.html">Welcome</a></dt>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Project/index.html">Project Willy</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Project/Willy.html">Willy</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Project/Publicity.html">Publicity</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Project/Sponsors.html">Sponsors</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Startup/index.html">Startup Willy</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Startup/Driving-Willy.html">Driving Willy</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Startup/Remote.html">Remote</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Startup/Willy-Web.html">Willy Web</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Config/index.html">Configuration</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Config/GIT.html">GIT Setup</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Config/Ubuntu.html">Ubuntu</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Config/Remote.html">Remote</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Config/Wiki.html">Wiki</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/ROS/index.html">ROS</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/ROS/Introduction.html">Introduction to ROS</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/ROS/Navigation.html">Navigation</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Technical/index.html">Technical</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Development-guide.html">Development Guide</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Findings.html">Findings</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Hardware.html">Hardware</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Bugs.html">Known Bugs</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Parameters.html">Parameters</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Software.html">Software</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/WEB/index.html">Web interface</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/WEB/Development-guide.html">Development Guide</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/WEB/SAD.html">SAD</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/WEB/Rosnodejs.html">RosNodeJs</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/WEB/Interaction.html">Interaction</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Research/index.html">Research</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Hardware.html">Hardware</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Peripherals.html">Peripherals</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Sensors.html">Sensors</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Social-interaction.html">Social interaction</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Software.html">Software</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Web-interface.html">Web interface</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Design/index.html">Design</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Design/Background.html">Background</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Design/Design-guide.html">Design Guide</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Design/Technical.html">Technical</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Design/Realisation.html">Realisation</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Status/index.html">Status and Advice</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Status/Status.html">Status</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Status/Todo.html">Todo &amp; Advice</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Archive/index.html">Archive</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://drive.google.com/drive/u/1/folders/1LfOfbxBTFASBrozYIklAt7_7a3ubFFy0">(2016/2) Initial design </a></p>
+</li>
+<li>
+<p><a href="https://drive.google.com/drive/u/1/folders/1yCVk6iNJNQlaouU2WDvMt3BISoHCuz6l">(2017/1) Base &amp; Functionalities </a></p>
+</li>
+<li>
+<p><a href="https://drive.google.com/drive/u/1/folders/1S904hDK_63HIpyPnBgMHzZx-zt0xNpim">(2017/2) Research</a></p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_findings">2. Findings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This file contains all the things we have found while prototyping and may be usefull to other project groups</p>
+</div>
+<div class="sect2">
+<h3 id="_software">2.1. Software</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>The motor controller is a device that is used to control the cmd_vel topic created by the
+ros navigation stack. The ros navigation stack published geometry::Twist messages</p>
+</li>
+<li>
+<p>ROS is complicated and difficult to learn. But if everything is setup just right, ROS makes it really easy
+to communicate between your hardware.</p>
+</li>
+<li>
+<p>If you want to create files to start multiple projects? Do not use bash files. ROS can&#8217;t handle bash files properly.
+use ros launch files instead.</p>
+</li>
+<li>
+<p>The making of the DrivingController was a complex situation. That is because of the fact every ROS node has only one ROS nodehandler.
+To make it possible to subscribe and advertise everywhere in the DrivingWilly code, we must send the nodehandler to every
+subcontroller by using pointers. This request a detailed knowledge of C++ and ROS.</p>
+</li>
+<li>
+<p>The setup of the ROS navigation stack is difficult because of the fact that every robot is different.
+A lot of components needs to be setup on your own. As example the move_base, the transformations and rotations
+and the cmd_vel topic.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_vision">2.2. Vision</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>When the kinect is used together with the LIDAR for indoor navigation, the kinect can
+not handle the fast scan frequency of the LIDAR which will cause the transform of the robot
+to become unknown. Then the robot will lost its orientation.</p>
+</li>
+<li>
+<p>The kinect cannot look further than 10 meters away. Thats makes the kinect not usefull
+for indoor navigation.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_hardware">2.3. Hardware</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>The current batteries should be powerfull enough to power the current Willy.</p>
+</li>
+<li>
+<p>The 230 volt touchscreen in combination with the power converter is replaced by a 19v display.</p>
+</li>
+<li>
+<p>The brakes are not easy to deploy. Thats because the levers on the side of willy are to loose
+to deploy the brake. We can&#8217;t tight them because the screw is malformed.</p>
+</li>
+<li>
+<p>The GPS sensor and compass only work outside and are controlled using the GPSController.</p>
+</li>
+<li>
+<p>The kinect cannot be used outside. The IR camera can&#8217;t handle the bright sunlight.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_design">2.4. Design</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>The current battery shell will not fit because of the new motorcontroller. Therefore we
+created a set of new brackets to mount the 6 batteries onto the chassis.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_social_interaction">2.5. Social interaction</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>There are a lot of ways to communicate with Willy. The ones we&#8217;re using are:<br>
+&#8594; Leap<br>
+&#8594; kinect<br>
+&#8594; Voice recognition<br>
+&#8594; TTS (Text to Speech)<br>
+&#8594; Lights (Led and sirene)<br>
+&#8594; Keyboard<br>
+&#8594; Mouse<br></p>
+</li>
+<li>
+<p>Offline speech recognition is limited. There are a few solutions for hot-word detection like Snowboy.</p>
+</li>
+</ul>
+</div>
+<div id="toc" class="dlist toc2">
+<dl>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/welcome.html">Welcome</a></dt>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Project/index.html">Project Willy</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Project/Willy.html">Willy</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Project/Publicity.html">Publicity</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Project/Sponsors.html">Sponsors</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Startup/index.html">Startup Willy</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Startup/Driving-Willy.html">Driving Willy</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Startup/Remote.html">Remote</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Startup/Willy-Web.html">Willy Web</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Config/index.html">Configuration</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Config/GIT.html">GIT Setup</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Config/Ubuntu.html">Ubuntu</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Config/Remote.html">Remote</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Config/Wiki.html">Wiki</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/ROS/index.html">ROS</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/ROS/Introduction.html">Introduction to ROS</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/ROS/Navigation.html">Navigation</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Technical/index.html">Technical</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Development-guide.html">Development Guide</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Findings.html">Findings</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Hardware.html">Hardware</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Bugs.html">Known Bugs</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Parameters.html">Parameters</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Software.html">Software</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/WEB/index.html">Web interface</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/WEB/Development-guide.html">Development Guide</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/WEB/SAD.html">SAD</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/WEB/Rosnodejs.html">RosNodeJs</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/WEB/Interaction.html">Interaction</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Research/index.html">Research</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Hardware.html">Hardware</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Peripherals.html">Peripherals</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Sensors.html">Sensors</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Social-interaction.html">Social interaction</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Software.html">Software</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Web-interface.html">Web interface</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Design/index.html">Design</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Design/Background.html">Background</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Design/Design-guide.html">Design Guide</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Design/Technical.html">Technical</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Design/Realisation.html">Realisation</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Status/index.html">Status and Advice</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Status/Status.html">Status</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Status/Todo.html">Todo &amp; Advice</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Archive/index.html">Archive</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://drive.google.com/drive/u/1/folders/1LfOfbxBTFASBrozYIklAt7_7a3ubFFy0">(2016/2) Initial design </a></p>
+</li>
+<li>
+<p><a href="https://drive.google.com/drive/u/1/folders/1yCVk6iNJNQlaouU2WDvMt3BISoHCuz6l">(2017/1) Base &amp; Functionalities </a></p>
+</li>
+<li>
+<p><a href="https://drive.google.com/drive/u/1/folders/1S904hDK_63HIpyPnBgMHzZx-zt0xNpim">(2017/2) Research</a></p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_hardware_2">3. Hardware</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_overview">3.1. Overview</h3>
+<div class="paragraph">
+<p>A simple overview of all the hardware in Willy is made in the
+following scheme:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="media/overview/overview.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_components">3.2. Components</h3>
+<div class="paragraph">
+<p>This chapter contains all the components with explanation.</p>
+</div>
+<div class="sect3">
+<h4 id="_mini_pc">3.2.1. Mini pc</h4>
+<div class="paragraph">
+<p>This is the dedicated PC for running the ROS Server. Al the calculational
+work will be done on this PC. Therefore, we chose for a PC with some
+calculation power as well as enough RAM.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Product</th>
+<th class="tableblock halign-left valign-top">Dell Optiplex 3020 Micro (3020-9806)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CPU</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intel Core I5 4670T quad-core</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Video Chip</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intel HD Graphics 4600</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RAM</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16 GB DDR3L Sodimm</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Harddisk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Western Digital Black 500GB 2,5" HDD</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Amount of USB Ports</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>2x USB3.0</p>
+</li>
+<li>
+<p>4x USB2.0</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Other Ports</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>1x VGA</p>
+</li>
+<li>
+<p>1x DisplayPort</p>
+</li>
+<li>
+<p>1x 1GB/s Network Port</p>
+</li>
+<li>
+<p>1x Microphone Jack</p>
+</li>
+<li>
+<p>1x Headphone Jack</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wireless Connection options</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WLAN chip</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_motors_and_controller">3.2.2. Motors and controller</h4>
+<div class="paragraph">
+<p>Willy contains 2 motors from a second-hand mobility scooter. A previous
+project group has chosen this option as documented in the ‘Ontwerp verslag’.
+(Ontwerpverslag, 2016)</p>
+</div>
+<div class="paragraph">
+<p>These motors need 24 volts and use a max of 20 amps. One of the previous project
+groups created the motor controller to control the motors. This is
+documented in the ‘Systeem dossier’ from a previous project group.
+(Systeem Dossier, 2016)</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../Archive/2018S1/Research/media/current-status/image4.jpeg" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>This motor controller is made by using an Arduino Mega and a custom
+shield with additional custom hardware. The controller recieves data from ROS
+and sends it to an internal controller. This is part of the wheelchair and
+is named Penny and Giles Pilot Plus.</p>
+</div>
+<div class="paragraph">
+<p>The motor controller is built as shown below:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../Archive/2018S1/Research/media/current-status/image5.jpg" alt="image"></span></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+As can be seen in the image above, there are still cables for the odometry
+sensors. These are however not used anymore. This has two reasons. The first
+one is the fact that since using the lidar, the positioning is so accurate,
+that the wheel encoders are not neccesary anymore. The second reason is that both the sensors don&#8217;t function anymore.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The 3 cables to the internal motor controller (built in in the wheelchair
+frame) are connected to the original cable with a simple circuit. The pinout
+of the connector attached to the cable is as follows:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="media/overview/connector.png" alt="image"></span></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Pin number</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Internal Cable Color</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#43; 24V</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Red</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">- 0V</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Black</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Driving data</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">White</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unknown (not used)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yellow</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enable</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Blue</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Actuator Data (not used)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Green</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The drive data pin (3) is used to send driving commands to the internal
+controller. The yellow cable is not used and the function is unknown.
+The enable pin is connected to the emergency button and the switch on
+the motor controller. The motors only work when the voltage level on this
+cable is 5 volts. The actuator pin is not used in this project. In the
+original wheelchair this pin is used for the lighting etc.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The motor controller also contains a connection for charging the
+batteries. The connector at the side of the box is connected to the &#43;
+and - of the cable to the internal motor controller.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect4">
+<h5 id="_brakes">Brakes</h5>
+<div class="paragraph">
+<p>The two engines of willy contain both a brake. This brake is controlled
+by the engine itself. When the active signal to the motors is lost, the
+motor will automatically activate the brake. To start the driving_willy
+project, you NEED to deploy the brakes. Otherwise Willy will not drive!</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../Archive/2018S1/Research/media/current-status/image6.jpeg" alt="image6" width="300" height="400"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../Archive/2018S1/Research/media/current-status/image7.png" alt="image7" width="300" height="400"></span></p>
+</div>
+<div class="paragraph">
+<p>Make sure to deploy the brakes. Otherwise Willy won’t work!! There is
+only one way to detect if the brakes are deployed. It’s by simply
+testing if the wheel can&#8217;t turn (Or a very little bit) anymore.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+The wheels should not be able to turn for Willy to function
+normally. The brakes will automatically be released by Willy when driving.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_batteries">3.2.3. Batteries</h4>
+<div class="sect4">
+<h5 id="_old_situation">Old situation</h5>
+<div class="paragraph">
+<p>In the old situation Willy contained 2 12V batteries connected in serial,
+adding up to 24V. Both batteries are 52Ah.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="media/technical/batteries_old.png" alt="image" width="500"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="media/technical/battery_old.jpg" alt="image" width="500"></span></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_new_situation">New situation</h5>
+<div class="paragraph">
+<p>In the new situation the 2 batteries are replaced with 6 new 12V batteries.
+All the batteries are 33Ah. They are connected placing 2 batteries in serial
+3 times in parallel. This adds again up to 24V.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="media/technical/batteries_new.png" alt="image" width="500"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="media/technical/battery_new.jpg" alt="image" width="500"></span></p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_power_supply">3.2.4. Power Supply</h4>
+<div class="paragraph">
+<p>The 19 volts for the screen is provided by a step-down converter.
+The module is based on the Xl4015 buch DC to DC converter. The input voltage
+range is 8-36V and the adjustable output range is 1.25V to 32V. The converter
+is rated for a max current of 5 amps.</p>
+</div>
+<div class="paragraph">
+<p>The mini pc is connected to a small 19.5V DC step-down converter. This is needed
+because the screen needs the full amperage of the other 19.5 step-down converter.
+The mini pc use 65 Watt and the step-down converter can provide a maximum of 75 watt.</p>
+</div>
+<div class="paragraph">
+<p>The power for the step-down converters is provided by the batteries.
+Between the batteries and the step-down converter, there is a fuse placed.
+The fuse called T5L250V is rated for 250V with 5A. Then a switch is used to turn Willy
+on or off.
+To split the 24v of the batteries to all the step-down converters, there is a homemade pcb plate created.
+This board is placed at the left of the step-down converters.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_sonars">3.2.5. Sonars</h4>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+The sonars are currently not connected, because the frame bumpers
+are not yet made. These sensors have to be placed in this metal piece.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>To prevent collisions, ultrasonic sensors are used. These sensors
+measure distance by using sound. This is made possible by sending out
+bursts of high frequency noise, and then waiting for a reflection of
+that sound using the HC-SR04 ultrasonic sensor.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../Archive/2018S1/Research/media/current-status/image8.jpeg" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>By using this data Willy is be able to decide if he is able to drive any
+further in a certain direction. In the event of Willy being not able to
+drive any further, he will decide if there is a direction where he is
+able to drive further. This way Willy will be able to drive around
+autonomously without collisions. How Willy reacts to objects in his
+navigation is researched by a previous group. (Navigation design v0.1,
+2017)</p>
+</div>
+<div class="paragraph">
+<p>The datasheet <a href="#1">[1]</a> for the HC-SR04 is included in the sources at the bottom
+of this document.</p>
+</div>
+<div class="paragraph">
+<p>The sensors all use 5V as can be seen in the schematic:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="media/technical/Sensors_schematic_updated.jpg" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>As shown in the schematic above, all the 16 sensors are connected to the
+Arduino.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The new sensors don&#8217;t have a 'sig' pin, but two seperate pins called
+'trig' and 'echo'. However, these two pins are connected to each other, so
+both pins use the same pin on the Arduino. The code has been adapted to this
+new situation.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The sensors are connected in the following order:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Arduino Digital Pin Number</th>
+<th class="tableblock halign-left valign-top">Sonar Sensor Number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sensor 0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sensor 1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sensor 2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sensor 3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sensor 4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sensor 5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sensor 6</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sensor 7</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sensor 8</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sensor 9</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sensor 10</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sensor 11</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sensor 12</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sensor 13</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sensor 14</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sensor 15</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The sensors are placed as follows:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../Archive/2018S1/Research/media/current-status/image10_3.jpg" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>It should be noted that not all the sensor are read at the same time.
+All odd numbered sensors are read first, and after a small delay the
+even numbered sensors are read. This is because sensors placed next to
+each other can interfere the readings of each other.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_gps_compass">3.2.6. GPS / Compass</h4>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+The GPS and compass are currently implemented but not used in
+the code on the mini-pc.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>To allow Willy to drive outdoor by using a precomputed route, a GPS
+sensor and a compass are required. The GPS sensor is linked to the
+GPSController using ROS. In the GPSController the raw data is processed
+to usable coordinates. These coordinates are only used to draw a line
+where Willy has driven in the code of the previous group.
+The Compass is used to determinate the direction of willy. This is
+needed for navigation when willy is going to drive precomputed routes.</p>
+</div>
+<div class="paragraph">
+<p>The sensors are connected according to the following scheme:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../Archive/2018S1/Research/media/current-status/image12.jpg" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>As can be seen in the scheme, there are two Arduino’s used to measure
+sensor data. Both Arduino’s are connected with I2C (see pins A4 and A5).
+The second Arduino with the GPS sensor is powered with the 5V pin from
+the first Arduino. At the moment of writing this has not been fixed and
+reduced to one Arduino.</p>
+</div>
+<div class="paragraph">
+<p>The GPS will not send data until a FIX has been established. When the
+reciever is indoors, this can take a long time. GPS works best when outside.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_screen">3.2.7. Screen</h4>
+<div class="paragraph">
+<p>The screen used is a KDL-42W815B <a href="#2">[2]</a> from Sony. The screen is connected to
+the mini-pc with a VGA cable. The manual can be found at the bottom of
+this document.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The current screen is a replacement for the old screen. This
+screen was very heavy and energy consuming.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_lidar">3.2.8. LIDAR</h4>
+<div class="paragraph">
+<p>The previous group has also done research on a Lidar sensor.
+Unfortunately the previous documentation stated that it was not possible
+to link a Lidar to ROS. Also other methods where somehow researched by a
+previous group but not in the form of a Lidar. (Research localization
+system v1.1, 2017)</p>
+</div>
+<div class="paragraph">
+<p>A LIDAR sensor uses a laser to measure distance. With these measurements
+the sensor makes a map of all the objects in the environment.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../Archive/2018S1/Research/media/current-status/image13.jpeg" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>The previous group has done some research concerning LIDAR and the link to
+ROS. But came to the conclusion that it is not possible to create a link
+between LIDAR and ROS. Therefore they decided to not implement the LIDAR
+sensor.</p>
+</div>
+<div class="paragraph">
+<p>After doing some research we found that it is possible and supported to
+link ROS to a LIDAR sensor.</p>
+</div>
+<div class="paragraph">
+<p>At this stage we use the LIDAR to navigate with Willy. The sensor is
+placed at the front of the robot.</p>
+</div>
+<div class="paragraph">
+<p>The LIDAR is connected with an ethernet connection via a router to the pc.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_kinect">3.2.9. Kinect</h4>
+<div class="paragraph">
+<p><span class="image"><img src="../Archive/2018S1/Research/media/current-status/image11.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>As a method to navigate inside, initially the Kinect was chosen. This is
+not true anymore. The Kinect is now used to detect if there is a person
+in front of Willy. A Kinect can create a framework of a person and see
+all movements of that person. By adding a Kinect to willy, willy will
+be able to recognize people and interact with them by using the speech
+recognition of the Kinect.</p>
+</div>
+<div class="paragraph">
+<p>There are two versions of the Microsoft Kinect: Kinect 1 for Xbox 360
+and Kinect 2 for Xbox one. See table 1 which list all the different
+features of both versions.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Feature</th>
+<th class="tableblock halign-left valign-top">Kinect 1</th>
+<th class="tableblock halign-left valign-top">Kinect 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Color Camera</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">640 x 480 @30 fps</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1920 x 1080 @30 fps</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Depth Camera</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">320 x 240</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">512 x 424</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Max Depth Distance</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">apr. 4.5 m</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8 m</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Min Depth Distance</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">40 cm in near mode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">50 cm</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Depth Horizontal Field of View</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">57 degrees</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">70 degrees</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Depth Vertical Field of View</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">43 degrees</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">60 degrees</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tilt Motor</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Skeleton Joints Defined</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20 joints</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">25 joints</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Full Skeletons Tracked</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">USB Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3.0</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The main difference which is most important for us is the Field of View
+(FoV). The bigger the FoV, the more Willy can see in front of him. The
+Kinect 2 can also recognize more people and can see further away, which
+are both nice features to have when the social aspect of Willy will be
+implemented in the future. This makes the Kinect 2 more futureproof than
+its precursor. (Kinect 1 vs 2 specifications: , sd) (Kinect 1
+specifications, sd) (Main factors/features of most industrial computer
+vision hardware., sd)</p>
+</div>
+<div class="paragraph">
+<p>The Kinect used in Willy is a version 1 Kinect, the old one.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references">References</h2>
+<div class="sectionbody">
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p>[[[1]]] HCSR04 Datasheet version 1. Retrieved from <a href="https://www.electroschematics.com/wp-content/uploads/2013/07/HCSR04-datasheet-version-1.pdf" class="bare">https://www.electroschematics.com/wp-content/uploads/2013/07/HCSR04-datasheet-version-1.pdf</a></p>
+</li>
+<li>
+<p>[[[2]]] Sony KDL42w815 Manual. Retrieved from <a href="https://www.sony.nl/electronics/support/res/manuals/4489/44895371M.pdf" class="bare">https://www.sony.nl/electronics/support/res/manuals/4489/44895371M.pdf</a></p>
+</li>
+</ul>
+</div>
+<div id="toc" class="dlist toc2">
+<dl>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/welcome.html">Welcome</a></dt>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Project/index.html">Project Willy</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Project/Willy.html">Willy</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Project/Publicity.html">Publicity</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Project/Sponsors.html">Sponsors</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Startup/index.html">Startup Willy</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Startup/Driving-Willy.html">Driving Willy</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Startup/Remote.html">Remote</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Startup/Willy-Web.html">Willy Web</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Config/index.html">Configuration</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Config/GIT.html">GIT Setup</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Config/Ubuntu.html">Ubuntu</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Config/Remote.html">Remote</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Config/Wiki.html">Wiki</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/ROS/index.html">ROS</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/ROS/Introduction.html">Introduction to ROS</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/ROS/Navigation.html">Navigation</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Technical/index.html">Technical</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Development-guide.html">Development Guide</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Findings.html">Findings</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Hardware.html">Hardware</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Bugs.html">Known Bugs</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Parameters.html">Parameters</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Software.html">Software</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/WEB/index.html">Web interface</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/WEB/Development-guide.html">Development Guide</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/WEB/SAD.html">SAD</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/WEB/Rosnodejs.html">RosNodeJs</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/WEB/Interaction.html">Interaction</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Research/index.html">Research</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Hardware.html">Hardware</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Peripherals.html">Peripherals</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Sensors.html">Sensors</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Social-interaction.html">Social interaction</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Software.html">Software</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Web-interface.html">Web interface</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Design/index.html">Design</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Design/Background.html">Background</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Design/Design-guide.html">Design Guide</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Design/Technical.html">Technical</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Design/Realisation.html">Realisation</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Status/index.html">Status and Advice</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Status/Status.html">Status</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Status/Todo.html">Todo &amp; Advice</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Archive/index.html">Archive</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://drive.google.com/drive/u/1/folders/1LfOfbxBTFASBrozYIklAt7_7a3ubFFy0">(2016/2) Initial design </a></p>
+</li>
+<li>
+<p><a href="https://drive.google.com/drive/u/1/folders/1yCVk6iNJNQlaouU2WDvMt3BISoHCuz6l">(2017/1) Base &amp; Functionalities </a></p>
+</li>
+<li>
+<p><a href="https://drive.google.com/drive/u/1/folders/1S904hDK_63HIpyPnBgMHzZx-zt0xNpim">(2017/2) Research</a></p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_common_problems">4. Common problems</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This file contains a list of the most common problems and the problems we found during development.</p>
+</div>
+<div class="sect2">
+<h3 id="_driving">4.1. Driving</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>It is quite hard to deploy and undeploy the brakes.</p>
+</li>
+<li>
+<p>When the battery voltage drows below a certain level, Willy will stop driving at
+irregular intervals. This is probably an internal security system. The brakes are
+also deployed causing an abrupt stop.</p>
+</li>
+<li>
+<p>When driving manually, Willy uses characters pressed on the keyboard to move. When
+a lot of characters are pressed in a short time, Willy will try to process the complete
+list of characters, seeming to be uncontrollable.</p>
+</li>
+<li>
+<p>Willy has difficulty driving through doors when driving autonomously. This is caused
+by Willy being quite wide and limitations in the software for autonomous driving.</p>
+</li>
+<li>
+<p>The ultrasonic sensors have a lot of blind spots. Since the LIDAR can&#8217;t scan the back
+of Willy, the ultrasonic sensors are the only sensors controlling the back of Willy.
+When Willy is driving backwards, this can cause problems.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_design_2">4.2. Design</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Because of the width of Willy with garbage bins attached to the side, it is impossible
+to go through a door without detaching the bins, including the detachable buffers with
+ultrasonic sensors in it.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_web_interface">4.3. Web Interface</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>There are no known bugs at this moment.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The Web Interface is still in development.
+</td>
+</tr>
+</table>
+</div>
+<div id="toc" class="dlist toc2">
+<dl>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/welcome.html">Welcome</a></dt>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Project/index.html">Project Willy</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Project/Willy.html">Willy</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Project/Publicity.html">Publicity</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Project/Sponsors.html">Sponsors</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Startup/index.html">Startup Willy</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Startup/Driving-Willy.html">Driving Willy</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Startup/Remote.html">Remote</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Startup/Willy-Web.html">Willy Web</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Config/index.html">Configuration</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Config/GIT.html">GIT Setup</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Config/Ubuntu.html">Ubuntu</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Config/Remote.html">Remote</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Config/Wiki.html">Wiki</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/ROS/index.html">ROS</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/ROS/Introduction.html">Introduction to ROS</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/ROS/Navigation.html">Navigation</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Technical/index.html">Technical</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Development-guide.html">Development Guide</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Findings.html">Findings</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Hardware.html">Hardware</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Bugs.html">Known Bugs</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Parameters.html">Parameters</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Software.html">Software</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/WEB/index.html">Web interface</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/WEB/Development-guide.html">Development Guide</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/WEB/SAD.html">SAD</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/WEB/Rosnodejs.html">RosNodeJs</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/WEB/Interaction.html">Interaction</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Research/index.html">Research</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Hardware.html">Hardware</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Peripherals.html">Peripherals</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Sensors.html">Sensors</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Social-interaction.html">Social interaction</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Software.html">Software</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Web-interface.html">Web interface</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Design/index.html">Design</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Design/Background.html">Background</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Design/Design-guide.html">Design Guide</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Design/Technical.html">Technical</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Design/Realisation.html">Realisation</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Status/index.html">Status and Advice</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Status/Status.html">Status</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Status/Todo.html">Todo &amp; Advice</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Archive/index.html">Archive</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://drive.google.com/drive/u/1/folders/1LfOfbxBTFASBrozYIklAt7_7a3ubFFy0">(2016/2) Initial design </a></p>
+</li>
+<li>
+<p><a href="https://drive.google.com/drive/u/1/folders/1yCVk6iNJNQlaouU2WDvMt3BISoHCuz6l">(2017/1) Base &amp; Functionalities </a></p>
+</li>
+<li>
+<p><a href="https://drive.google.com/drive/u/1/folders/1S904hDK_63HIpyPnBgMHzZx-zt0xNpim">(2017/2) Research</a></p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_launch_file_parameters">5. Launch file parameters</h2>
+<div class="sectionbody">
+<div class="sect3">
+<h4 id="_overview_2">5.1. Overview</h4>
+<div class="paragraph">
+<p>The autonomous driving of Willy is controlled by external ROS plugins. These plugins are:</p>
+</div>
+<div class="paragraph">
+<p><strong>Move_base</strong> &#8594; Used for sending Twist messages to Willy out of goals send to the ros navigation stack.<br>
+<strong>Hector_Mapping</strong> &#8594; Used for creating a map based on the LiDaR and transforms.<br>
+<strong>Sick_tim551</strong> &#8594; Used for initilization of the LiDaR and creating the /scan topic for the map.<br>
+<strong>Transform</strong> &#8594; Used the send the transformation and rotations from devices on the robot to the rotation point of the robot.<br>
+<strong>Kinect</strong> &#8594; Used for the recognition of people and creating the /camera topic.<br>
+<strong>Rviz</strong> &#8594; Used for visualization of the map and sensors on the base frame.<br></p>
+</div>
+<div class="paragraph">
+<p>All of these plugins have their own launch file. Every launch file has it&#8217;s own parameters which can be tuned to finetune Willy.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_parameters">5.2. parameters</h4>
+<div class="sect4">
+<h5 id="_move_base">Move base</h5>
+<div class="paragraph">
+<p><strong>Move_base_param.yaml</strong></p>
+</div>
+<div class="paragraph">
+<p>This param file can be found in the following directory: <code>/home/willy/WTGD/willy/src/willy_navigation/param/move_base_params.yaml</code><br>
+It&#8217;s possible that some parameters are not used yet. These can be added when needed.<br></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code><strong>base_global_planner</strong></code> (string, default: "navfn/NavfnROS")<br>
+The name of the plugin for the global planner to use with move_base.<br></p>
+</li>
+<li>
+<p><code><strong>base_local_planner</strong></code> (string, default: "base_local_planner/TrajectoryPlannerROS")<br>
+The name of the plugin for the local planner to use with move_base.<br></p>
+</li>
+<li>
+<p><code><strong>recovery_behaviors</strong></code> (list, default: [{name: conservative_reset, type: clear_costmap_recovery/ClearCostmapRecovery}, {name: rotate_recovery, type: rotate_recovery/RotateRecovery}, {name: aggressive_reset, type: clear_costmap_recovery/ClearCostmapRecovery}])<br>
+A list of recovery behavior plugins to use with move_base, see pluginlib documentation for more details on plugins. These behaviors will be run when move_base fails to find a valid plan in the order that they are specified. After each behavior completes, move_base will attempt to make a plan. If planning is successful, move_base will continue normal operation. Otherwise, the next recovery behavior in the list will be executed.<br></p>
+</li>
+<li>
+<p><code><strong>controller_frequency</strong></code> (double, default: 20.0)<br>
+The rate in Hz at which to run the control loop and send velocity commands to the base.<br></p>
+</li>
+<li>
+<p><code><strong>planner_patience</strong></code> (double, default: 5.0)<br>
+How long the planner will wait in seconds in an attempt to find a valid plan before space-clearing operations are performed.<br></p>
+</li>
+<li>
+<p><code><strong>controller_patience</strong></code> (double, default: 15.0)<br>
+How long the controller will wait in seconds without receiving a valid control before space-clearing operations are performed.<br></p>
+</li>
+<li>
+<p><code><strong>conservative_reset_dist</strong></code> (double, default: 3.0)<br>
+The distance away from the robot in meters at which obstacles will be cleared from the costmap when attempting to clear space in the map. Note, this parameter is only used when the default recovery behaviors are used for move_base.<br></p>
+</li>
+<li>
+<p><code><strong>recovery_behavior_enabled</strong></code> (bool, default: true)<br>
+Whether or not to enable the move_base recovery behaviors to attempt to clear out space.<br></p>
+</li>
+<li>
+<p><code><strong>clearing_rotation_allowed</strong></code> (bool, default: true)<br>
+Determines whether or not the robot will attempt an in-place rotation when attempting to clear out space. Note: This parameter is only used when the default recovery behaviors are in use, meaning the user has not set the recovery_behaviors parameter to anything custom.<br></p>
+</li>
+<li>
+<p><code><strong>shutdown_costmaps</strong></code> (bool, default: false)<br>
+Determines whether or not to shutdown the costmaps of the node when move_base is in an inactive state.<br></p>
+</li>
+<li>
+<p><code><strong>oscillation_timeout</strong></code> (double, default: 0.0)<br>
+How long in seconds to allow for oscillation before executing recovery behaviors. A value of 0.0 corresponds to an infinite timeout.<br></p>
+</li>
+<li>
+<p><code><strong>oscillation_distance</strong></code> (double, default: 0.5)<br>
+How far in meters the robot must move to be considered not to be oscillating. Moving this far resets the timer counting up to the <code>oscillation_timeout</code><br></p>
+</li>
+<li>
+<p><code><strong>planner_frequency</strong></code> (double, default: 0.0)<br>
+The rate in Hz at which to run the global planning loop. If the frequency is set to 0.0, the global planner will only run when a new goal is received or the local planner reports that its path is blocked.<br></p>
+</li>
+<li>
+<p><code><strong>max_planning_retries</strong></code> (int32_t, default: -1)<br>
+How many times to allow for planning retries before executing recovery behaviors. A value of -1.0 corresponds to an infinite retries.<br></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_base_local_planner">5.3. Base local planner</h4>
+<div class="paragraph">
+<p><strong>base_local_planner_params.yaml</strong></p>
+</div>
+<div class="paragraph">
+<p>This param file can be found in the following directory: <code>/home/willy/WTGD/willy/src/willy_navigation/param/base_local_planner_params.yaml</code><br>
+It&#8217;s possible that some parameters are not used yet. These can be added when needed.<br></p>
+</div>
+<div class="paragraph">
+<p>--Robot configuration parameters--<br>
+- <code><strong>acc_lim_x</strong></code> (double, default: 2.5)<br>
+The x acceleration limit of the robot in meters/sec^2<br>
+- <code><strong>acc_lim_y</strong></code> (double, default: 2.5)<br>
+The y acceleration limit of the robot in meters/sec^2<br>
+- <code><strong>acc_lim_theta</strong></code> (double, default: 3.2)<br>
+The rotational acceleration limit of the robot in radians/sec^2<br>
+- <code><strong>max_vel_x</strong></code> (double, default: 0.5)<br>
+The maximum forward velocity allowed for the base in meters/sec<br>
+- <code><strong>min_vel_x</strong></code> (double, default: 0.1)<br>
+The minimum forward velocity allowed for the base in meters/sec.<br>
+- <code><strong>max_vel_theta</strong></code> (double, default: 1.0)<br>
+The maximum rotational velocity allowed for the base in radians/sec<br>
+- <code><strong>min_vel_theta</strong></code> (double, default: -1.0)<br>
+The minimum rotational velocity allowed for the base in radians/sec<br>
+- <code><strong>min_in_place_vel_theta</strong></code> (double, default: 0.4)<br>
+The minimum rotational velocity allowed for the base while performing in-place rotations in radians/sec<br>
+- <code><strong>escape_vel</strong></code> (double, default: -0.1)<br>
+Speed used for driving during escapes in meters/sec.<br>
+- <code><strong>holonomic_robot</strong></code> (bool, default: true)<br>
+Determines whether velocity commands are generated for a holonomic or non-holonomic robot. For holonomic robots, strafing velocity commands may be issued to the base. For non-holonomic robots, no strafing velocity commands will be issued.<br></p>
+</div>
+<div class="paragraph">
+<p>The following parameter is only used if holonomic_robot is set to true:<br>
+- <code><strong>y_vels</strong></code> (list, default: [-0.3, -0.1, 0.1, 0.3])<br>
+The strafing velocities that a holonomic robot will consider in meters/sec.<br></p>
+</div>
+<div class="paragraph">
+<p>--Goal Tolerance Parameters--<br>
+- <code><strong>yaw_goal_tolerance</strong></code> (double, defaultv: 0.05)<br>
+The tolerance in radians for the controller in yaw/rotation when achieving its goal.<br>
+- <code><strong>xy_goal_tolerance</strong></code> (double, default: 0.10)<br>
+The tolerance in meters for the controller in the x &amp; y distance when achieving a goal.<br>
+- <code><strong>latch_xy_goal_tolerance</strong></code> (bool, default: false)<br>
+If goal tolerance is latched, if the robot ever reaches the goal xy location it will simply rotate in place, even if it ends up outside the goal tolerance while it is doing so.<br></p>
+</div>
+<div class="paragraph">
+<p>--Forward Simulation Parameters--<br>
+- <code><strong>sim_time</strong></code> (double, default: 1.0)<br>
+The amount of time to forward-simulate trajectories in seconds<br>
+- <code><strong>sim_granularity</strong></code> (double, default: 0.025)<br>
+The step size, in meters, to take between points on a given trajectory<br>
+- <code><strong>angular_sim_granularity</strong></code> (double, default: <code>sim_granularity</code>)<br>
+The step size, in radians, to take between angular samples on a given trajectory.<br>
+- <code><strong>vx_samples</strong></code> (integer, default: 3)<br>
+The number of samples to use when exploring the x velocity space<br>
+- <code><strong>vtheta_samples</strong></code> (integer, default: 20)<br>
+The number of samples to use when exploring the theta velocity space<br>
+- <code><strong>controller_frequency</strong></code> (double, default: 20.0)<br>
+The frequency at which this controller will be called in Hz.<br></p>
+</div>
+<div class="paragraph">
+<p>--Trajectory Scoring Parameters--<br>
+The cost function used to score each trajectory is in the following form:<br>
+cost =<br>
+  pdist_scale * (distance to path from the endpoint of the trajectory in map cells or meters depending on the meter_scoring parameter)<br>
+  + gdist_scale * (distance to local goal from the endpoint of the trajectory in map cells or meters depending on the meter_scoring parameter)<br>
+  + occdist_scale * (maximum obstacle cost along the trajectory in obstacle cost (0-254))<br></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code><strong>meter_scoring</strong></code> (bool, default: false)<br>
+Whether the gdist_scale and pdist_scale parameters should assume that goal_distance and path_distance are expressed in units of meters or cells. Cells are assumed by default.<br></p>
+</li>
+<li>
+<p><code><strong>pdist_scale</strong></code> (double, default: 0.6)<br>
+The weighting for how much the controller should stay close to the path it was given, maximal possible value is 5.0.<br></p>
+</li>
+<li>
+<p><code><strong>gdist_scale</strong></code> (double, default: 0.8)<br>
+The weighting for how much the controller should attempt to reach its local goal, also controls speed, maximal possible value is 5.0.<br></p>
+</li>
+<li>
+<p><code><strong>occdist_scale</strong></code> (double, default: 0.01)<br>
+The weighting for how much the controller should attempt to avoid obstacles.<br></p>
+</li>
+<li>
+<p><code><strong>heading_lookahead</strong></code> (double, default: 0.325)<br>
+How far to look ahead in meters when scoring different in-place-rotation trajectories.<br></p>
+</li>
+<li>
+<p><code><strong>heading_scoring</strong></code> (bool, default: false)<br>
+Whether to score based on the robot&#8217;s heading to the path or its distance from the path.<br></p>
+</li>
+<li>
+<p><code><strong>heading_scoring_timestep</strong></code> (double, default: 0.8)<br>
+How far to look ahead in time in seconds along the simulated trajectory when using heading scoring.<br></p>
+</li>
+<li>
+<p><code><strong>dwa</strong></code> (bool, default: true)<br>
+Whether to use the Dynamic Window Approach (DWA)_ or whether to use Trajectory Rollout.<br></p>
+</li>
+<li>
+<p><code><strong>publish_cost_grid_pc</strong></code> (bool, default: false)<br>
+Whether or not to publish the cost grid that the planner will use when planning. When true, a sensor_msgs/PointCloud2 will be available on the <code>cost_cloud*</code> topic.<br>
+Each point cloud represents the cost grid and has a field for each individual scoring function component as well as the overall cost for each cell, taking the scoring parameters into account.<br></p>
+</li>
+<li>
+<p><code><strong>global_frame_id</strong></code> (string, default: odom)<br>
+The frame to set for the cost_cloud. Should be set to the same frame as the local costmap&#8217;s global frame.<br></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>--Oscillation Prevention Parameters--<br>
+- <code><strong>oscillation_reset_dist</strong></code> (double, default: 0.05)<br>
+How far the robot must travel in meters before oscillation flags are reset<br></p>
+</div>
+<div class="paragraph">
+<p>--Global Plan Parameters--<br>
+- <code><strong>prune_plan</strong>*</code> (bool, default: true)<br>
+Defines whether or not to eat up the plan as the robot moves along the path.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_common_costmap">5.4. Common costmap</h4>
+<div class="paragraph">
+<p><strong>costmap_common_params.yaml</strong></p>
+</div>
+<div class="paragraph">
+<p>This param file can be found in the following directory: <code>/home/willy/WTGD/willy/src/willy_navigation/param/costmap_common_params.yaml</code><br>
+It&#8217;s possible that some parameters are not used yet. These can be added when needed.<br></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code><strong>max_obstacle_height</strong></code> (double, default: 1.0)<br>
+The max obstacle height the robot can handle in meters.<br></p>
+</li>
+<li>
+<p><code><strong>obstacle_range</strong></code> (double, default: 2.5)<br>
+the maximum range sensor reading that will result in an obstacle being put into the costmap.<br></p>
+</li>
+<li>
+<p><code><strong>raytrace_range</strong></code> (double, default: 3.0)<br>
+determines the range to which we will raytrace freespace given a sensor reading.<br></p>
+</li>
+<li>
+<p><code><strong>robot_radius</strong></code> (double, default: 0.8)<br></p>
+</li>
+<li>
+<p><code><strong>footprint</strong></code> (double array, default: [[0.3, 0.3],  [0.3, -0.3], [-1.0, -0.3], [-1.0, 0.3]])<br>
+Here we set either the footprint of the robot or the radius of the robot if it is circular.<br></p>
+</li>
+<li>
+<p><code><strong>cost_scaling_factor</strong></code> (double, default: 2.58)<br>
+A scaling factor to apply to cost values during inflation.<br></p>
+</li>
+<li>
+<p><code><strong>inflation_radius</strong></code> (double, default: 1.75)<br>
+The radius in meters to which the map inflates obstacle cost values.<br></p>
+</li>
+<li>
+<p><code><strong>observation_sources</strong></code> (string, default: scan kinect)
+The sensor sensors used for the navigation. Listed below.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>scan: {data_type: LaserScan, topic: scan, marking: true, clearing: true, min_obstacle_height: -1, max_obstacle_height: 1.0}<br>
+kinect: {data_type: PointCloud2, topic: camera/depth_registered/cloud, marking: true, clearing: false, min_obstacle_height: -1, max_obstacle_height: 1}<br></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_global_costmap">5.5. Global costmap</h4>
+<div class="paragraph">
+<p><strong>global_costmap_params.yaml</strong></p>
+</div>
+<div class="paragraph">
+<p>This param file can be found in the following directory: <code>/home/willy/WTGD/willy/src/willy_navigation/param/global_costmap_params.yaml</code><br>
+It&#8217;s possible that some parameters are not used yet. These can be added when needed.<br></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code><strong>global_frame</strong></code> (string, default: /map)<br>
+The topic where the map is published.<br></p>
+</li>
+<li>
+<p><code><strong>robot_base_frame</strong></code> (string, default: /base_link)<br>
+The topic where the robot base frame is published and transformed.<br></p>
+</li>
+<li>
+<p><code><strong>update_frequency</strong></code> (double, default: 1.0)<br>
+Determines the frequency, in Hz, at which the costmap will run its update loop<br></p>
+</li>
+<li>
+<p><code><strong>static_map</strong></code> (bool, default: false)<br>
+Determines whether or not the costmap should initialize itself based on a map served by the map_server.<br></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_local_costmap">5.6. Local costmap</h4>
+<div class="paragraph">
+<p><strong>local_costmap_params.yaml</strong></p>
+</div>
+<div class="paragraph">
+<p>This param file can be found in the following directory: <code>/home/willy/WTGD/willy/src/willy_navigation/param/local_costmap_params.yaml</code><br>
+It&#8217;s possible that some parameters are not used yet. These can be added when needed.<br></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code><strong>global_frame</strong></code> (string, default: /odom)<br>
+The topic where the map is published.<br></p>
+</li>
+<li>
+<p><code><strong>robot_base_frame</strong></code> (string, default: /base_link)<br>
+The topic where the robot base frame is published and transformed.<br></p>
+</li>
+<li>
+<p><code><strong>update_frequency</strong></code> (double, default: 5.0)<br>
+Determines the frequency, in Hz, at which the costmap will run its update loop<br></p>
+</li>
+<li>
+<p><code><strong>publish_frequency</strong></code> (double, default: 2.0)<br>
+Determines the rate, in Hz, at which the costmap will publish visualization information.<br></p>
+</li>
+<li>
+<p><code><strong>static_map</strong></code> (bool, default: false)<br>
+Determines whether or not the costmap should initialize itself based on a map served by the map_server.<br></p>
+</li>
+<li>
+<p><code><strong>rolling_window</strong></code> (bool, default: true)<br>
+Setting the "rolling_window" parameter to true means that the costmap will remain centered around the robot as the robot moves through the world.<br></p>
+</li>
+<li>
+<p><code><strong>width</strong></code> (double, default: 6.0)<br>
+The width in meters of the costmap.<br></p>
+</li>
+<li>
+<p><code><strong>height</strong></code> (double, default: 6.0)<br>
+The height in meters of the costmap.<br></p>
+</li>
+<li>
+<p><code><strong>resolution</strong></code> (double, default: 0.05)<br>
+The resolution in meters / cell of the costmap.<br></p>
+</li>
+</ul>
+</div>
+<div id="toc" class="dlist toc2">
+<dl>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/welcome.html">Welcome</a></dt>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Project/index.html">Project Willy</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Project/Willy.html">Willy</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Project/Publicity.html">Publicity</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Project/Sponsors.html">Sponsors</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Startup/index.html">Startup Willy</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Startup/Driving-Willy.html">Driving Willy</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Startup/Remote.html">Remote</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Startup/Willy-Web.html">Willy Web</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Config/index.html">Configuration</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Config/GIT.html">GIT Setup</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Config/Ubuntu.html">Ubuntu</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Config/Remote.html">Remote</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Config/Wiki.html">Wiki</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/ROS/index.html">ROS</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/ROS/Introduction.html">Introduction to ROS</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/ROS/Navigation.html">Navigation</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Technical/index.html">Technical</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Development-guide.html">Development Guide</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Findings.html">Findings</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Hardware.html">Hardware</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Bugs.html">Known Bugs</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Parameters.html">Parameters</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Technical/Software.html">Software</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/WEB/index.html">Web interface</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/WEB/Development-guide.html">Development Guide</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/WEB/SAD.html">SAD</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/WEB/Rosnodejs.html">RosNodeJs</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/WEB/Interaction.html">Interaction</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Research/index.html">Research</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Hardware.html">Hardware</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Peripherals.html">Peripherals</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Sensors.html">Sensors</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Social-interaction.html">Social interaction</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Software.html">Software</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Research/Web-interface.html">Web interface</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Design/index.html">Design</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Design/Background.html">Background</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Design/Design-guide.html">Design Guide</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Design/Technical.html">Technical</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Design/Realisation.html">Realisation</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Status/index.html">Status and Advice</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Status/Status.html">Status</a></p>
+</li>
+<li>
+<p><a href="https://artofrobotics.github.io/WillyWiki/Status/Todo.html">Todo &amp; Advice</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1"><a href="https://artofrobotics.github.io/WillyWiki/Archive/index.html">Archive</a></dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://drive.google.com/drive/u/1/folders/1LfOfbxBTFASBrozYIklAt7_7a3ubFFy0">(2016/2) Initial design </a></p>
+</li>
+<li>
+<p><a href="https://drive.google.com/drive/u/1/folders/1yCVk6iNJNQlaouU2WDvMt3BISoHCuz6l">(2017/1) Base &amp; Functionalities </a></p>
+</li>
+<li>
+<p><a href="https://drive.google.com/drive/u/1/folders/1S904hDK_63HIpyPnBgMHzZx-zt0xNpim">(2017/2) Research</a></p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_software_2">6. Software</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_arduinos">6.1. Arduino&#8217;s</h3>
+<div class="paragraph">
+<p>This chapter contains a overview of the code on the different Arduino&#8217;s
+in Willy.</p>
+</div>
+<div class="paragraph">
+<p>The following definition list is to clear up confusion about certain
+terms used in this chapter.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><em>Term</em></th>
+<th class="tableblock halign-left valign-top"><em>Definition</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code conventions</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">These are rules that are used for programming and
+drawn up by the developers of Wake 'Em.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UpperCamelCase</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This means that each word is capitalized. Example:
+SetAlarmOfAndroid.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LowerCamelCase</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This means that each word is capitalized except for the
+first word. Example: setAlarmOfAndroid.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Odometry</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The technique of measuring the amount of movement of the
+wheels with special sensors.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ROS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Robot Operating System, the framework Willy has been built on.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect3">
+<h4 id="_system_overview">6.1.1. System Overview</h4>
+<div class="paragraph">
+<p>The following schematic shows an overview of how the Arduino&#8217;s communicate with ROS.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../Archive/2018S1/Software/media/Arduino2.jpg" alt="image" width="604" height="238"></span>
+ros_gps gps sonar odometry</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+It should be stated that the code for the odometry is currently removed.
+The reason for this can be found in the <a href="https://artofrobotics.github.io/WillyWiki/Technical/Hardware.html#_motors_and_controller">Technical Hardware document</a>.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect4">
+<h5 id="_code_overview">Code Overview</h5>
+<div class="paragraph">
+<p>In this chapter the structure of the C code on the Arduino&#8217;s can be found. These
+schemes are not class diagrams, since C is not object-oriented.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../Archive/2018S1/Software/media/Arduino7.jpg" alt="image" width="291" height="332"></span></p>
+</div>
+<div class="paragraph">
+<p>This is the code of the file in ros_gps. It is running on the Arduino connected
+to ros. The compass sensor is attached to this Arduino.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../Archive/2018S1/Software/media/Arduino4.jpg" alt="image" width="221" height="254"></span></p>
+</div>
+<div class="paragraph">
+<p>This code reads out the GPS sensor and sends it with a serial connection to the
+other Arduino (the one running ros_gps).</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../Archive/2018S1/Software/media/Arduino5.jpg" alt="image" width="231" height="306"></span></p>
+</div>
+<div class="paragraph">
+<p>This is the code running the ultrasonic sensors. All the sensors have a digital pin.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../Archive/2018S1/Software/media/Arduino6.jpg" alt="image" width="401" height="298"></span></p>
+</div>
+<div class="paragraph">
+<p>This is the code of the motor controller. It is called 'Odometry', but this part
+is removed from the code. The code receives data from ROS and controls the motors
+of the wheelchair by sending serial data to the built in wheelchair controller.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_design_decisions">6.1.2. Design Decisions</h4>
+<div class="paragraph">
+<p>In the past the decision has been made to make the hardware modular.
+Unfortunately the reason behind this decision is not documented.</p>
+</div>
+<div class="paragraph">
+<p>The motor controller (odometry) is made by the group of the second
+semester of 2016/17. The odometry code subscribes from the topic
+“/cmd_vel”. The code writes data it gets from ROS to the motors.</p>
+</div>
+<div class="paragraph">
+<p>The sonar code was reading the 10 sonar sensors and publishes it to ROS
+on the topic “sonar”. The code has been written by the group of the
+second semester of 2016/17.</p>
+</div>
+<div class="paragraph">
+<p>We updated the code so it uses 16 sensors, 6 for the front, 6 for the
+back, and 4 for facing down to the ground to detect if Willy is driving
+above a stair.</p>
+</div>
+<div class="paragraph">
+<p>The GPS and compass code is written by the group of the first semester
+of 2017/18. The setup is made ambiguous. The compass has a Arduino and
+the GPS has a Arduino. The data from the GPS is sent to the Arduino with
+the compass. From that Arduino the data from the Compass and the data
+from the GPS is both being published to two separate ROS topics. The
+topic with compass data is “compass” and the topic with GPS data is
+“gps”. This setup has not been fixed yet.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_software_3">6.2. Software</h3>
+<div class="paragraph">
+<p>Here goes information about the code of the DrivingWilly ROS package</p>
+</div>
+<div class="sect3">
+<h4 id="_overview_3">6.2.1. Overview</h4>
+<div class="paragraph">
+<p><span class="image"><img src="media/overview/DrivingWilly.png" alt="image" width="500" height="600"></span></p>
+</div>
+<div class="paragraph">
+<p>Our driving willy code consists of modulair components named controllers.
+These controllers controls the functionality of willy. Every piece of hardware
+has it&#8217;s own controller which controls the methods and stores the variables.
+A global class diagram can be found in the image above.</p>
+</div>
+<div class="paragraph">
+<p>By using this way of coding, functionality of willy can be easily extended.
+Just create a new controller and add your methods to it.
+A detailed explaination of this can be found in the "Extending functionality"
+paragraph on this page below.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_controller_setup">6.2.2. Controller setup</h4>
+<div class="paragraph">
+<p>Every controller is created and declared in the main. The main creates the class object
+and returns a pointer to it.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="media/overview/ControllerDeclaration.png" alt="image" width="750" height="250"></span></p>
+</div>
+<div class="paragraph">
+<p>This pointer is forwarded to the controller of willy
+named "DrivingController".</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="media/overview/DrivingController.png" alt="image" width="1008" height="90"></span></p>
+</div>
+<div class="paragraph">
+<p>In this class the subcontrollers are declared.
+The current subcontrollers of willy are:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>VisionController</p>
+</li>
+<li>
+<p>GeneralController</p>
+</li>
+<li>
+<p>VisionController</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The pointers of the controllers are forwarded to the subcontrollers above in the "DrivingController"</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="media/overview/DrivingSubcontrollers.png" alt="image" width="500" height="60"></span></p>
+</div>
+<div class="paragraph">
+<p>Now every controller has acces to their subscontroller and the subcontroller has acces to the main where the other controllers are declared.
+By using this method we can always access all data and methods of the controllers and subcontrollers.
+To make that possible, we have to send class object pointers between functions. Thats done by using the "static_cast" in C++</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="media/overview/sc.png" alt="image" width="1000" height="200"></span></p>
+</div>
+<div class="paragraph">
+<p>Above is an example of the "static_cast" in the "MovementController"</p>
+</div>
+<div class="paragraph">
+<p>The "static_cast" make it possible to convert a void pointer back into a class object pointer without declaring the class again.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="media/overview/rsc.png" alt="rsc"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ros_setup">6.2.3. ROS setup</h4>
+<div class="paragraph">
+<p>To make the communication between nodes easy accessibly, we created some advertisers and subscribers in the ROS cloud.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="media/overview/Subscribers.png" alt="image" width="1000" height="500"></span>
+<span class="image"><img src="media/overview/Advertise.PNG" alt="image" width="1000" height="77"></span></p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+To see the basics of ROS and the general purpose, please visit our ROS generic wiki page on: //LINK TO ROS GENERAL page
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>These publishers and advertisers make it possible to push data generated by hardware to a rostopic, as example the sonar topic,
+and read that data all over the code of willy. Because you can echo the rostopic data anywhere and anytime.</p>
+</div>
+<div class="paragraph">
+<p>Using ROS we&#8217;re able to push keyboard characters on the 'keyboard' topic and subscribe on the keyboard topic. This means that when the code is running
+and you pressed a key, the function that you gave to the keyboard subscriber will be launched. In our code this means that the led lighting will turn red
+if you press the 'r' button on the keyboard. The flowchart is shown on this page below.</p>
+</div>
+<div class="paragraph">
+<p><strong>Always running (DrivingController)</strong>
+MovementController &#8594; GetKeyboardController() &#8594; ReadCharacter()</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="media/overview/rc.png" alt="image" width="855" height="54"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Running when char received</strong>
+subLed() &#8594; LedCallback() &#8594; Advertise ColorRGBA on 'led' topic()</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="media/overview/lb.png" alt="image" width="300" height="1470"></span></p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+The following paragraph is about the ros navigation stack. To learn the basics about ros_navigation, see our ros navigation wiki page.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_autonomous_driving">6.2.4. autonomous driving</h4>
+<div class="paragraph">
+<p>The autonomous driving of Willy is controlled by external ROS plugins. These plugins are:</p>
+</div>
+<div class="paragraph">
+<p><strong>Move_base</strong> &#8594; Used for sending Twist messages to Willy out of goals send to the ros navigation stack.<br>
+<strong>Hector_Mapping</strong> &#8594; Used for creating a map based on the LiDaR and transforms.<br>
+<strong>Sick_tim551</strong> &#8594; Used for initilization of the LiDaR and creating the /scan topic for the map.<br>
+<strong>Transform</strong> &#8594; Used the send the transformation and rotations from devices on the robot to the rotation point of the robot.<br>
+<strong>Kinect</strong> &#8594; Used for the recognition of people and creating the /camera topic.<br>
+<strong>Rviz</strong> &#8594; Used for visualization of the map and sensors on the base frame.<br></p>
+</div>
+<div class="paragraph">
+<p>All of these external plugin are started using the 'willy_navigation.launch'.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="media/overview/willynav.png" alt="image" width="1000" height="466"></span></p>
+</div>
+<div class="paragraph">
+<p>This file starts all of the external plugin launch files. All of these external launch files can be find in our git repository.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="media/overview/launchfiles.png" alt="image" width="300" height="400"></span></p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+To learn more about the parameters in the launch files. See our 'parameter' wiki page.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2018-06-07 11:21:27 UTC
+</div>
+</div>
+</body>
+</html>
