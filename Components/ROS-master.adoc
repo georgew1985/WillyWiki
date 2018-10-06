@@ -1,0 +1,9 @@
+include::../Header.adoc[]
+
+== ROS master
+The ROS master will be used as servicebus between the different nodes. The ROS master node provides naming and registration services to the rest of the nodes in Willy. It tracks publishers and subscribers to topics. The role of the ROS Master is to let the nodes interact with each other without a direct connection.
+
+=== Repository
+====
+https://github.com/Windesheim-Willy/ROS-master[Windesheim-Willy/ROS-master, role="external", window="_blank"]
+====
