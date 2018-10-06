@@ -1,24 +1,24 @@
 include::../Header.adoc[]
 
-== Willy Git setup 
+== Willy Git setup
 Commands used to set up the git repos in willy.
 
 [source,text]
 ----
 cd /home/willy/Documents
-git clone https://github.com/ArtOfRobotics/WWEB
+git clone https://github.com/Windesheim-Willy/WWEB
 cd WWEB
 git checkout -b test
 git push -u origin test
 -	Username: willythegarbagedisposal@gmail.com
--	Password: 
+-	Password:
 cd ..
-git clone https://github.com/ArtOfRobotics/WTGD 
+git clone https://github.com/Windesheim-Willy/WTGD
 cd WTGD
 git checkout -b test
 git push -u origin test
 -	Username: willythegarbagedisposal@gmail.com
--	Password: 
+-	Password:
 ----
 
 ==== Github synchronisation
@@ -31,7 +31,7 @@ sudo crontab -e
 */1 * * * * su -s /bin/sh -c '/home/willy/Documents/WTGD/bin/gitsync.sh ' >> /home/willy/Documents/logs/git.log 2>&1
 ----
 
-The script used for syncing github can be found on link:https://raw.githubusercontent.com/ArtOfRobotics/WTGD/test/bin/gitsync.sh[Github]. The main purpose of the script is to do the following:
+The script used for syncing github can be found on link:https://raw.githubusercontent.com/Windesheim-Willy/WTGD/test/bin/gitsync.sh[Github]. The main purpose of the script is to do the following:
 
 * Update the WTGD code for driving
 * Set permissions for script folder

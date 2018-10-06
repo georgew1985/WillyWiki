@@ -2,7 +2,7 @@ include::../Header.adoc[]
 
 == Development Guide
 
-=== Prerequisite 
+=== Prerequisite
 
 * Basic knowlegde of NodeJs, Git and ROS
 
@@ -16,12 +16,12 @@ https://nodejs.org/en/download/
 npm install sails -g
 * If on Windows:
 . Install Ubuntu
-- Got to Microsoft store 
+- Got to Microsoft store
 - Search for 'Ubuntu'
 - Click get/install
 . Install ROS
 - Follow ROS Kinetic installation + (this might take some time)
-http://wiki.ros.org/kinetic/Installation/Ubuntu 
+http://wiki.ros.org/kinetic/Installation/Ubuntu
 [source,bash]
 sudo apt-get install ros-kinetic-desktop-full
 - And enviroment setup
@@ -36,11 +36,11 @@ roscore
 (ctrl+c)
 
 === Github
-* Invite your personal Github account to acces ArtOfRobotics repos
-https://github.com/orgs/ArtOfRobotics/people
+* Invite your personal Github account to acces Windesheim-Willy repos
+https://github.com/orgs/Windesheim-Willy/people
 * Clone Git Repo
 [source,bash]
-git clone https://github.com/ArtOfRobotics/WWEB
+git clone https://github.com/Windesheim-Willy/WWEB
 * Switch to test branch
 [source,bash]
 git checkout -b origin/test
@@ -74,7 +74,7 @@ roscore
 
 . Run webplatform
 - Open a terminal (Ubuntu app on windows)
-- 
+-
 [source, bash]
 cd WWEB
 source devel/setup.bash
@@ -85,14 +85,14 @@ rosrun willyweb start.sh
 The rosrun command might not have acces to port 80 for this to work use sudo -s
 [source,bash]
 ----
-sudo -s 
+sudo -s
 rosrun willyweb start.sh
 ----
 --
 
 === Running Scripts
-In the same manner as you would do <<Testing/Debugging>> you can also run scripts. 
-Scripts are located in the folder 'WWEB/src/scripts'. 
+In the same manner as you would do <<Testing/Debugging>> you can also run scripts.
+Scripts are located in the folder 'WWEB/src/scripts'.
 
 . Start Roscore
 
@@ -105,7 +105,7 @@ roscore
 
 . Run sending script
 - Open a terminal (Ubuntu app on windows)
-- 
+-
 [source, bash]
 cd WWEB
 source devel/setup.bash
@@ -113,7 +113,7 @@ rosrun willyweb scripts/send.js
 
 . Run receive script
 - Open a terminal (Ubuntu app on windows)
-- 
+-
 [source, bash]
 cd WWEB
 source devel/setup.bash

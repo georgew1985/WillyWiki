@@ -61,7 +61,7 @@ For comments at each image, see the English version above.
 
 `sudo apt-get install libmagic-dev libatlas-base-dev`
 
-`git clone https://github.com/ArtOfRobotics/Speechtest.git`
+`git clone https://github.com/Windesheim-Willy/Speechtest.git`
 
 `cd Speechtest`
 

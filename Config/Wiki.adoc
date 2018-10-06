@@ -1,13 +1,13 @@
 include::../Header.adoc[]
 
-image:https://travis-ci.org/ArtOfRobotics/WillyWiki.svg?branch=master["Build Status", link="https://travis-ci.org/ArtOfRobotics/WillyWiki"]
+image:https://travis-ci.org/Windesheim-Willy/WillyWiki.svg?branch=master["Build Status", link="https://travis-ci.org/Windesheim-Willy/WillyWiki"]
 
 == Willy Wiki
 This wiki is setup to increase the transferability of the project. Everything you need to start is documented here.
 Detailed documents are referenced trough the wiki if you need more information.
 
 === Introduction
-The wiki is setup using AsciiDoc, TravisCI & Github pages. In practice we use AsciiDoc as source code, TravisCI to convert to html/pdf and Github Pages for publishing the website. This is visually shown in the image below, this is taken from the http://mgreau.com/posts/2016/03/28/asciidoc-to-gh-pages-with-travis-ci-docker-asciidoctor.html[tutorial] 
+The wiki is setup using AsciiDoc, TravisCI & Github pages. In practice we use AsciiDoc as source code, TravisCI to convert to html/pdf and Github Pages for publishing the website. This is visually shown in the image below, this is taken from the http://mgreau.com/posts/2016/03/28/asciidoc-to-gh-pages-with-travis-ci-docker-asciidoctor.html[tutorial]
 we followed.
 
 
@@ -34,7 +34,7 @@ The wiki is setup fairly easy, especially when you know your way around Github a
 As told in the <<introduction>> AsciiDoc is used as a source language, which then can be converted to whatever format you like. Most commonly HTML and PDF.
 
 ==== Travis
-Travis is setup to convert all documents recursively to HTML and to PDF. 
+Travis is setup to convert all documents recursively to HTML and to PDF.
 
 ===== Setup
 Before you can use Travis you must give travis acces to the repository, this is already done using Willy's Github account.
@@ -43,20 +43,20 @@ The following environment variables must be set for the script to work properly.
 image:media/Wiki/env.png[]
 
 ===== Config
-The config file used by TravisCI is link:https://raw.githubusercontent.com/ArtOfRobotics/WillyWiki/master/.travis.yml[travis.yml]. If you are not familiar with Travis it basically asks you for the following:
+The config file used by TravisCI is link:https://raw.githubusercontent.com/Windesheim-Willy/WillyWiki/master/.travis.yml[travis.yml]. If you are not familiar with Travis it basically asks you for the following:
 
 * Some config elements (Setup)
 ** as of what kind of acces methods and what services you'd like to use
 * What to do before installation (Before)
-** Defined under before_installation 
+** Defined under before_installation
 * What script to run (Execution)
-** Defined under script: 
+** Defined under script:
 * What to do after the script has run (After)
 ** Defining after_error:, after_failure:, after_success:
 
 For this script a link:https://www.docker.com/[Docker] container is used specially made for link:https://asciidoctor.org/[Asciidoctor], the tool used for AsciiDoc conversion. You do not need any docker knowlegde to use this script because it uses a readymade Docker container. In this container the asciidoctor commands are executed.
 
-Currently the link:https://raw.githubusercontent.com/ArtOfRobotics/WillyWiki/master/.travis.yml[Travis Config] is setup as follows:
+Currently the link:https://raw.githubusercontent.com/Windesheim-Willy/WillyWiki/master/.travis.yml[Travis Config] is setup as follows:
 
 *Setup:* +
 Use of docker and sudo acces
@@ -79,7 +79,7 @@ Here is where all the documents are converted what basically comes down to this 
 ----
 asciidoctor -a allow-uri-read *.adoc
 ----
-With docker it looks like this in the link:https://raw.githubusercontent.com/ArtOfRobotics/WillyWiki/master/.travis.yml[travis.yml]
+With docker it looks like this in the link:https://raw.githubusercontent.com/Windesheim-Willy/WillyWiki/master/.travis.yml[travis.yml]
 [source, yml]
 ----
 script:
@@ -121,7 +121,7 @@ after_success:
   - git push
 ----
 Here the output folder contains all the converted documents in html files, but still the images need to be copied, else the images would not be shown. Everything that is copied into the output folder is then pushed to the gh-pages branch on GitHub.
-As you can see in the link:https://raw.githubusercontent.com/ArtOfRobotics/WillyWiki/master/.travis.yml[travis.yml] used some more actions are done by Travis to ensure everything works properly.
+As you can see in the link:https://raw.githubusercontent.com/Windesheim-Willy/WillyWiki/master/.travis.yml[travis.yml] used some more actions are done by Travis to ensure everything works properly.
 
 [CAUTION]
 --
@@ -134,7 +134,7 @@ For the sidebar to scale correctly we had to manualy add the toc classes because
 
 [NOTE]
 --
-For conversion from Word to AsciiDoc you can use link:https://pandoc.org/[Pandoc] to convert word documents or any other format to AsciiDoc fairly easy. 
+For conversion from Word to AsciiDoc you can use link:https://pandoc.org/[Pandoc] to convert word documents or any other format to AsciiDoc fairly easy.
 The following command can then be used after Pandoc is installed:
 [source]
 ----
@@ -158,7 +158,7 @@ The end result of the Travis script is a folder with html files which can then b
 To do this we use Github Pages, as this is a free service and is perfect for hosting a static html site. It also helps keeping a history of changes.
 
 This is configured as following:
-. Go to Github, link:https://github.com/ArtOfRobotics/WillyWiki/settings[WillyWiki Settings] page
+. Go to Github, link:https://github.com/Windesheim-Willy/WillyWiki/settings[WillyWiki Settings] page
 . Scroll down to Github Pages
 . Set branch to 'gh-pages' and you are done
 
