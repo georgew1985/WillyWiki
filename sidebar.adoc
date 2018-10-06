@@ -2,16 +2,16 @@
 
 [#toc.toc2]
 link:{url}/welcome.html[Welcome]::
-link:{url}/Project/index.html[Project Willy]:: 
+link:{url}/Project/index.html[Project Willy]::
         - link:{url}/Project/Willy.html[Willy]
         - link:{url}/Project/Publicity.html[Publicity]
         - link:{url}/Project/Sponsors.html[Sponsors]
-    
-link:{url}/Startup/index.html[Startup Willy]:: 
+
+link:{url}/Startup/index.html[Startup Willy]::
         - link:{url}/Startup/Driving-Willy.html[Driving Willy]
         - link:{url}/Startup/Remote.html[Remote]
         - link:{url}/Startup/Willy-Web.html[Willy Web]
-        
+
 link:{url}/Config/index.html[Configuration]::
         - link:{url}/Config/GIT.html[GIT Setup]
         - link:{url}/Config/Ubuntu.html[Ubuntu]
@@ -21,6 +21,9 @@ link:{url}/Config/index.html[Configuration]::
 link:{url}/ROS/index.html[ROS]::
         - link:{url}/ROS/Introduction.html[Introduction to ROS]
         - link:{url}/ROS/Navigation.html[Navigation]
+
+link:{url}/Components/index.html[Components]::
+        - link:{url}/Components/ROS-master.html[ROS master]
 
 link:{url}/Technical/index.html[Technical]::
         - link:{url}/Technical/Development-guide.html[Development Guide]
@@ -45,13 +48,13 @@ link:{url}/Research/index.html[Research]::
         - link:{url}/Research/Social-interaction.html[Social interaction]
 	- link:{url}/Research/Software.html[Software]
         - link:{url}/Research/Web-interface.html[Web interface]
-        
+
 link:{url}/Design/index.html[Design]::
         - link:{url}/Design/Background.html[Background]
 	- link:{url}/Design/Design-guide.html[Design Guide]
         - link:{url}/Design/Technical.html[Technical]
         - link:{url}/Design/Realisation.html[Realisation]
-        
+
 link:{url}/Status/index.html[Status and Advice]::
 	- link:{url}/Status/Status.html[Status]
         - link:{url}/Status/Todo.html[Todo & Advice]
