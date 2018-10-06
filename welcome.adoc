@@ -22,6 +22,13 @@ This wiki is public and should not contain any private information nor passwords
 --
 Use Github's search to find certain keywords in the content of the wiki. link:https://github.com/Windesheim-Willy/WillyWiki[Github WillyWiki]
 --
+
+[TIP]
+--
+For more information about Willy's previous life as garbage collector view link:https://artofrobotics.github.io/WillyWiki/[Willy the garbage collector]
+--
+
+
 == Winnovation
 Project Willy is found at Windesheim Campus on T5, walking route is seen below:
 
