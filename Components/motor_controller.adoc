@@ -1,0 +1,30 @@
+include::../Header.adoc[]
+
+== Motor controller
+The motor controller listens to the drive topic and controls the motor of Willy.
+
+=== Repository
+====
+https://github.com/Windesheim-Willy/motor_controller[Windesheim-Willy/motor_controller, role="external", window="_blank"]
+====
+
+=== How to run?
+To run only the motor controller the Docker can be used. The Dockerfile for the motor controller is automatically built on Dockerhub.
+
+====
+https://hub.docker.com/r/windesheimwinny/motor_controller[windesheimwinny/motor_controller, role="external", window="_blank"]
+====
+
+Run the build docker image:
+
+[source,shell]
+----
+docker-compose up
+----
+
+For development purposes it can be usefull to build the Dockerfile locally and to use this image. The docker-compose.build.yml file builds first the image and after the build start the container.
+
+[source,shell]
+----
+docker-compose -f docker-compose.yml -f docker-compose.build.yml up
+----
