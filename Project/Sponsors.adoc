@@ -14,28 +14,28 @@ The art of Robotics foundation is the product owner, financial support and a way
 image:media/artofrobotics.jpg[image,width=300]
 
 === Sick
-Sick provided the project with a very expensive LIDAR sensor. Sick 
+Sick provided the project with a very expensive LIDAR sensor. Sick
 provided this in cooperation with our product owner.
 
 image:media/sick.png[image,width=300]
 
 === Multibat
-The battery company Multibat showed via our product owner interest 
-in our project. After a conversation with the company they proposed 
+The battery company Multibat showed via our product owner interest
+in our project. After a conversation with the company they proposed
 a deal. Multibat now provides six batteries to us.
 
 image:media/multibat_logo_klein.png[image,width=300]
 
 === Automaterialenland
-When the batteries were sponsored by Multibat, there were unfortunately 
-no cables to connect the batteries. Then we got Automaterialenland as 
+When the batteries were sponsored by Multibat, there were unfortunately
+no cables to connect the batteries. Then we got Automaterialenland as
 contact to provide free cables.
 
 image:media/automaterialenland.png[image,width=300]
 
 === Koers Polyestertechniek
-Our product owner found a company for us to create the outer plating 
-with. After creating a foam mold, we drove it to Koers in Nieuwleusen 
+Our product owner found a company for us to create the outer plating
+with. After creating a foam mold, we drove it to Koers in Nieuwleusen
 and made the outer skin of Willy from fiberglass.
 
 image:media/koers.jpg[image,width=300]

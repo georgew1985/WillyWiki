@@ -1,0 +1,30 @@
+include::../Header.adoc[]
+
+== Brain
+The brain of Willy is a process with multiple sub processes to determine what Willy should do.
+
+=== Repository
+====
+https://github.com/Windesheim-Willy/brain[Windesheim-Willy/brain, role="external", window="_blank"]
+====
+
+=== How to run?
+To run only the ROS master the Docker can be used. The Dockerfile for the brain of Willy is automatically built on Dockerhub.
+
+====
+https://hub.docker.com/r/windesheimwinny/brain[windesheimwinny/brain, role="external", window="_blank"]
+====
+
+Run the build docker image:
+
+[source,shell]
+----
+docker-compose up
+----
+
+For development purposes it can be usefull to build the Dockerfile locally and to use this image. The docker-compose.build.yml file builds first the image and after the build start the container.
+
+[source,shell]
+----
+docker-compose -f docker-compose.yml -f docker-compose.build.yml up
+----

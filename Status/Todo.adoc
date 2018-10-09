@@ -16,7 +16,7 @@ Remember where Willy was in a certain room so he explores new places first.
 
 ==== Outdoor navigation
 
-The only thing that has been realized so far with regard to outdoor navigation is GPS and the compass. GPS coordinates can be received inside ROS when subscribed on the /GPS topic. 
+The only thing that has been realized so far with regard to outdoor navigation is GPS and the compass. GPS coordinates can be received inside ROS when subscribed on the /GPS topic.
 
 * Location based on GPS
 * Visualize GPS location.
@@ -26,28 +26,28 @@ The only thing that has been realized so far with regard to outdoor navigation i
 
 
 ==== Social interaction
-Social interaction has been investigated. As a group we have focused on offline functionality at the request of the client. Offline functionality has been investigated; 
-https://artofrobotics.github.io/WillyWiki/Research/Social-interaction.html[Research Social Interaction]
+Social interaction has been investigated. As a group we have focused on offline functionality at the request of the client. Offline functionality has been investigated;
+https://Windesheim-Willy.github.io/WillyWiki/Research/Social-interaction.html[Research Social Interaction]
 
 Offline wakeword recognition has been realized through the use of 'Snowboy'. Documentation about Snowboy can be found on:
 http://docs.kitt.ai/snowboy/[Snowboy Documentation].
 
 Implementation of Snowboy on Willy is described here:
-https://artofrobotics.github.io/WillyWiki/Config/index.html
+https://Windesheim-Willy.github.io/WillyWiki/Config/index.html
 
 
 
 === Advice
 
-First, it's important to try to understand Willy and get trusted with the 
-robot. Reading of all the documentation and trying to understand it is a 
-must. Use the documentation to drive Willy. Another essential part of 
-understanding Willy is the understanding of the underlying framework. 
+First, it's important to try to understand Willy and get trusted with the
+robot. Reading of all the documentation and trying to understand it is a
+must. Use the documentation to drive Willy. Another essential part of
+understanding Willy is the understanding of the underlying framework.
 Understanding how ROS works makes understanding Willy much easier.
 
-Willy is a large and complicated project. There are a lot of things that 
+Willy is a large and complicated project. There are a lot of things that
 can go wrong. At the start of the project this can give a lot of frustation.
-When this happens it is essential to know Willy. Dealing with such 
+When this happens it is essential to know Willy. Dealing with such
 situations can help understanding Willy even more.
 
 Another advice is that it is essential to keep updating this wiki. That way
