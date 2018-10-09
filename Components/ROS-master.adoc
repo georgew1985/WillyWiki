@@ -1,0 +1,30 @@
+include::../Header.adoc[]
+
+== ROS master
+The ROS master will be used as servicebus between the different nodes. The ROS master node provides naming and registration services to the rest of the nodes in Willy. It tracks publishers and subscribers to topics. The role of the ROS Master is to let the nodes interact with each other without a direct connection.
+
+=== Repository
+====
+https://github.com/Windesheim-Willy/ROS-master[Windesheim-Willy/ROS-master, role="external", window="_blank"]
+====
+
+=== How to run?
+To run only the ROS master the Docker can be used. The Dockerfile of Ros master is automatically built on Dockerhub.
+
+====
+https://hub.docker.com/r/windesheimwinny/ros-master[windesheimwinny/ros-master, role="external", window="_blank"]
+====
+
+Run the build docker image:
+
+[source,shell]
+----
+docker-compose up
+----
+
+For development purposes it can be usefull to build the Dockerfile locally and to use this image. The docker-compose.build.yml file builds first the image and after the build start the container.
+
+[source,shell]
+----
+docker-compose -f docker-compose.yml -f docker-compose.build.yml up
+----
