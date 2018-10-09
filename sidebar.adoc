@@ -26,6 +26,7 @@ link:{url}/Components/index.html[Components]::
         - link:{url}/Components/ROS-master.html[Willy main]
         - link:{url}/Components/ROS-master.html[ROS master]
         - link:{url}/Components/brain.html[Brain]
+        - link:{url}/Components/motor_controller.html[Motor controller]
 
 link:{url}/Technical/index.html[Technical]::
         - link:{url}/Technical/Development-guide.html[Development Guide]
