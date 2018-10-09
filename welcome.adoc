@@ -1,16 +1,16 @@
 include::Header.adoc[]
 
 
-image:https://travis-ci.org/ArtOfRobotics/WillyWiki.svg?branch=master["Build Status", link="https://travis-ci.org/ArtOfRobotics/WillyWiki"]
+image:https://travis-ci.org/Windesheim-Willy/WillyWiki.svg?branch=master["Build Status", link="https://travis-ci.org/Windesheim-Willy/WillyWiki"]
 
 = Welcome
 
-Welcome to project Willy. Before starting the project it is useful to know a few things about the project. Our first advice is to become acquainted with Willy. 
-Follow our WillyWiki from begin to end and try to understand how to use Willy. 
+Welcome to project Willy. Before starting the project it is useful to know a few things about the project. Our first advice is to become acquainted with Willy.
+Follow our WillyWiki from begin to end and try to understand how to use Willy.
 
 == Wiki
-Documentation on the Wiki contains all the details about Willy and the project. 
-If certain details about design decisions, configuration, hardware or other components about Willy cannot be found, more details can be found on Google Drive. 
+Documentation on the Wiki contains all the details about Willy and the project.
+If certain details about design decisions, configuration, hardware or other components about Willy cannot be found, more details can be found on Google Drive.
 
 
 [NOTE]
@@ -20,8 +20,15 @@ This wiki is public and should not contain any private information nor passwords
 
 [TIP]
 --
-Use Github's search to find certain keywords in the content of the wiki. link:https://github.com/ArtOfRobotics/WillyWiki[Github WillyWiki]
+Use Github's search to find certain keywords in the content of the wiki. link:https://github.com/Windesheim-Willy/WillyWiki[Github WillyWiki]
 --
+
+[TIP]
+--
+For more information about Willy's previous life as garbage collector view link:https://artofrobotics.github.io/WillyWiki/[Willy the garbage collector]
+--
+
+
 == Winnovation
 Project Willy is found at Windesheim Campus on T5, walking route is seen below:
 
@@ -33,9 +40,9 @@ The table below shows all the milestones and their current status.
 
 [width="100%",options="header,footer"]
 |====================
-|Milestone  |Researched  |Realized  |Tested  |Category  
-|Assessment current status|Done  |Done  |Done  |Documentation  
-|Willy Improvisation  |Done  |Done  |Done  |Hardware Software Documentation  
+|Milestone  |Researched  |Realized  |Tested  |Category
+|Assessment current status|Done  |Done  |Done  |Documentation
+|Willy Improvisation  |Done  |Done  |Done  |Hardware Software Documentation
 |Design  |Done  |Done  |Done  |Software
 |WillyWiki    |Done  |Done  |Done  |Software
 |Willy web | Done | Done  | Done  | Software

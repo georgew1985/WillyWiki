@@ -2,7 +2,7 @@ include::../Header.adoc[]
 
 == Development Guide
 
-=== Prerequisite 
+=== Prerequisite
 
 To be able to develop Willy there are a few Prerequisites: +
 
@@ -19,7 +19,7 @@ the code and see if the syntax of your code is correct or incorrect. +
 
 *Basic knowledge about GIT* +
 GIT is used as file transfer and version manager of the current Willy project. +
-Everything starts with setting up the GIT repository and be able to push and pull + 
+Everything starts with setting up the GIT repository and be able to push and pull +
 parts of code. That makes GIT essential in the Willy development. +
 A tutorial about GIT and the setup of GIT can be found here:
 
@@ -27,7 +27,7 @@ NOTE: https://www.atlassian.com/git/tutorials/setting-up-a-repository
 
 *Basic knowledge about {cpp} and C* +
 The Willy code is written in C++. To add features and understand the code, some basic +
-knowledge of {cpp} is required. If you want to learn the basics of {cpp}? Follow a semester + 
+knowledge of {cpp} is required. If you want to learn the basics of {cpp}? Follow a semester +
 programming or see the following tutorial +
 
 NOTE: https://www.studytonight.com/cpp/introduction-to-cpp.php
@@ -37,7 +37,7 @@ Because Willy is based on the Robot Operating System (ROS), a basic knowledge of
 is required to communicate with the different modulair parts of Willy. ROS learing +
 may be difficult, but you can follow the following tutorial to learn the basics: +
 
-NOTE: http://wiki.ros.org/ROS/Tutorials 
+NOTE: http://wiki.ros.org/ROS/Tutorials
 
 
 === Development
@@ -51,7 +51,7 @@ NOTE: Git can be downloaded from the following website: https://git-scm.com/down
 
 2. Clone the WTGD git repository. +
     This can be done with the following command: +
-        `*git clone https://github.com/ArtOfRobotics/WTGD*` +
+        `*git clone https://github.com/Windesheim-Willy/WTGD*` +
 3. Checkout at the `test` branch. +
     This can be done with the following command: +
         `*git checkout test*` +
@@ -61,7 +61,7 @@ NOTE: Git can be downloaded from the following website: https://git-scm.com/down
 5. In the navigation window on the left, navigate to: +
     *willy* -> *src* +
 
-NOTE: In this folder all the Willy ROS packages are listed. 
+NOTE: In this folder all the Willy ROS packages are listed.
 
 === Compilation
 
@@ -81,7 +81,7 @@ To compile your changes you have made to the Willy project, a few steps are requ
     `*source devel/setup.bash*`
 7. Now you can launch the project as described in startup wiki page.
 
-NOTE: For more information about starting up willy? See our startup guide: https://artofrobotics.github.io/WillyWiki/Startup/Driving-Willy.html
+NOTE: For more information about starting up willy? See our startup guide: https://Windesheim-Willy.github.io/WillyWiki/Startup/Driving-Willy.html
 
 === Testing/Debugging
 

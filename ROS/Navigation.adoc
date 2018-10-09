@@ -4,7 +4,7 @@ include::../Header.adoc[]
 
 === Navigation stack
 Willy uses the ROS navigation stack to navigate indoor. The ROS navigation stack is a complex collection of multiple ROS packages.
-These packages read the sensor data we provided from our sensors to create a map of the environment. 
+These packages read the sensor data we provided from our sensors to create a map of the environment.
 When the user provides a goal from rviz, the global planner will provide a path to that goal and calculate the costs in that map.
 costs can be compared with obstacles. The bigger the obstacle, the higher the cost.
 
@@ -19,10 +19,10 @@ image:media/rviz_planner.png[]
 
 === Autonomous driving
 When the path and costs are calculated, the move_base will send geometry::Twist messages to the mobile base.
-In our case this is the motorcontroller with the cmd_vel topic. 
+In our case this is the motorcontroller with the cmd_vel topic.
 When the motorcontroller receives a geometry::Twist message, the motor will go driving on the given X, Y and Z velocity from the Twist message.
 
-The ROS navigation stack has a lot of parameters. These parameters change the way the path is calculated and the maximum speed etc. 
+The ROS navigation stack has a lot of parameters. These parameters change the way the path is calculated and the maximum speed etc.
 For more information about these parameters see:
 
-NOTE: https://artofrobotics.github.io/WillyWiki/Willy/Parameters.html
+NOTE: https://Windesheim-Willy.github.io/WillyWiki/Willy/Parameters.html
