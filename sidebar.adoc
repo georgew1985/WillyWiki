@@ -27,6 +27,8 @@ link:{url}/Components/index.html[Components]::
         - link:{url}/Components/ROS-master.html[ROS master]
         - link:{url}/Components/brain.html[Brain]
         - link:{url}/Components/kinect.html[Kinect]
+        - link:{url}/Components/lidar.html[Lidar]
+        - link:{url}/Components/motor_controller.html[Motor controller]
 
 link:{url}/Technical/index.html[Technical]::
         - link:{url}/Technical/Development-guide.html[Development Guide]
