@@ -1,0 +1,30 @@
+include::../Header.adoc[]
+
+== Sonar
+The sonar is a node to process the raw sonar information to the sonar topic.
+
+=== Repository
+====
+https://github.com/Windesheim-Willy/sonar[Windesheim-Willy/sonar, role="external", window="_blank"]
+====
+
+=== How to run?
+To run only the sonar the Docker can be used. The Dockerfile for the sonar is automatically built on Dockerhub.
+
+====
+https://hub.docker.com/r/windesheimwinny/sonar[windesheimwinny/sonar, role="external", window="_blank"]
+====
+
+Run the build docker image:
+
+[source,shell]
+----
+docker-compose up
+----
+
+For development purposes it can be usefull to build the Dockerfile locally and to use this image. The docker-compose.build.yml file builds first the image and after the build start the container.
+
+[source,shell]
+----
+docker-compose -f docker-compose.yml -f docker-compose.build.yml up
+----
