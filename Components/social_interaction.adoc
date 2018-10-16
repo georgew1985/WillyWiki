@@ -1,0 +1,30 @@
+include::../Header.adoc[]
+
+== Social interaction
+The social interaction creates the interaction of Willy. He listens and speaks with people.
+
+=== Repository
+====
+https://github.com/Windesheim-Willy/social_interaction[Windesheim-Willy/social_interaction, role="external", window="_blank"]
+====
+
+=== How to run?
+To run only the social interaction the Docker can be used. The Dockerfile for the social interaction is automatically built on Dockerhub.
+
+====
+https://hub.docker.com/r/windesheimwinny/social_interaction[windesheimwinny/social_interaction, role="external", window="_blank"]
+====
+
+Run the build docker image:
+
+[source,shell]
+----
+docker-compose up
+----
+
+For development purposes it can be usefull to build the Dockerfile locally and to use this image. The docker-compose.build.yml file builds first the image and after the build start the container.
+
+[source,shell]
+----
+docker-compose -f docker-compose.yml -f docker-compose.build.yml up
+----
