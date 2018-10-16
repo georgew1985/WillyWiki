@@ -44,32 +44,44 @@ NOTE: http://wiki.ros.org/ROS/Tutorials
 
 NOTE: To start development, make sure you complies to the requirements above.
 
-1. Choose a component to extend development on, or create a new component
+Willy is based on various ROS nodes, called components. Before starting developing for Willy be aware of the infrastructure used to setup the system. +
+There are basically two forms of developing new features for Willy: +
 
-1.1 Requirements for willy components
+- Create a new Willy component
+- Extend an exisiting Willy component 
 
-	- Always a dockercompose
-	- Always 1 or more services
-	- Always a readme file
-	- Travis file
-	- Always contact a Fabian before starting
-	
-1.2 New component
+==== Willy component development
 
-	- Login to github windesheim-willy
-	- Create a new component repository on Windesheim-Willy/your-component-lowercase-with-lines-as-seperator
-	- Clone the master repository
-	- Create a new branch "git checkout -b feature/init-component"
-	- Go to your repository directory
-	- Add a README.md file
-	- Add a .travis.yml CI file
-	- Add a docker-compose.build.yml file
-	- Add a docker-compose.yml file
-	- Add a folder with the name "docker"
-	- Add a file with the name "Dockerfile"
-	- Commit the changes
-	- Push to github
-	- Create a pull request on the component master	
+To be able to develop Willy components and make them available within Willy, there are a few Prerequisites: +
+
+- A dockercompose file within the component directory +
+- One or more services pointed +
+- A readme file filled with at least a description +
+- A Travis file to provide the input for the CI +
+
+
+===== New Willy component
+
+1. Login on '*https://github.com/Windesheim-Willy*'
+2. Create a new component repository on '*Windesheim-Willy/your-component-lowercase-with-lines-as-seperator*'
+3. Clone the master repository
+4. Create a new branch "git checkout -b feature/init-component"
+5. Go to your repository directory
+6. Add a README.md file
+7. Add a .travis.yml CI file
+8. Add a docker-compose.build.yml file
+9. Add a docker-compose.yml file
+10. Add a folder with the name "docker"
+11. Add a file with the name "Dockerfile"
+12. Commit the changes
+13. Push to github
+14. Create a pull request on the component master	
+
+
+===== Exisiting Willy component
+
+==== Willy environment
+
 
 1.3 Integrate your component within the global willy system (only if you created a new component)
 
