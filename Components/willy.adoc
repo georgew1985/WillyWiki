@@ -24,6 +24,29 @@ https://git-scm.com/book/nl/v2/Git-Tools-Submodules[Documentation about git subm
 git submodule add <GIT URL> <FOLDER NAME>
 ----
 
+===== Keep submodules up-to-date
+
+When updating submodules for the first time, use:
+
+[source,shell]
+----
+git submodule update --init --recursive
+----
+
+When updating the current submodule branches, use:
+
+[source,shell]
+----
+git submodule update --recursive
+----
+
+When updating all submodules with the latest commits on the supermodule, use:
+
+[source,shell]
+----
+git submodule update --recursive --remote
+----
+
 === How to run?
 
 Run the build docker image:
@@ -32,3 +55,10 @@ Run the build docker image:
 ----
 docker-compose up
 ----
+
+=== How to manage the containers?
+Portainer gives a central overview of the Willy Docker host. From the dashboard, you can access and manage the containers for Willy. Portainer has access to the logs, container settings, performance and gives console access to the container.
+
+When the Willy Docker compose is running the portainer container is accessible from link:http://localhost:9000[localhost:9000]
+
+More information about portainer, see link:https://portainer.io/overview.html[portainer.io]
