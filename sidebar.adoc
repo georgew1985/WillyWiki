@@ -23,6 +23,7 @@ link:{url}/ROS/index.html[ROS]::
         - link:{url}/ROS/Navigation.html[Navigation]
 
 link:{url}/Components/index.html[Components]::
+        - link:{url}/Components/Development-guide.html[Development Guide]
         - link:{url}/Components/willy.html[Willy main]
         - link:{url}/Components/ROS-master.html[ROS master]
         - link:{url}/Components/brain.html[Brain]
