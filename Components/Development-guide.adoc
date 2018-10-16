@@ -1,6 +1,10 @@
-=== Development
+include::../Header.adoc[]
+
+== Development
 
 NOTE: To start development, make sure you complies to the requirements above.
+
+=== Important information
 
 Willy is based on various ROS nodes. These are called Willy components. For example: Sonar, Lidar, Kinect.
 Before starting developing for Willy, be aware of this infrastructure which is used to run the complete system.
@@ -10,8 +14,6 @@ There are basically two ways of developing new features for Willy: +
 - Create and develop a new Willy component
 - Extend and develop within an exisiting Willy component
 
-===== Existing component
-
 A valid Willy component complies with the following Prerequisites: +
 
 - A Dockercompose file +
@@ -19,76 +21,89 @@ A valid Willy component complies with the following Prerequisites: +
 - A README file with the component description +
 - A Travis file with the CI configuration +
 
-===== New component
+=== New component
 
-===== Create new component
+==== Create new component
 
-1. Login on: `*https://github.com/Windesheim-Willy*`
-2. Create a new repository with the following naming format:  `*your_component_lowercase_with_underscore_seperator*`
-3. Clone the repository: `*git clone https://github.com/Windesheim-Willy/your_component_lowercase_with_underscore_seperator.git*`
-4. Go to the location of your repository: `*cd your_component_lowercase_with_underscore_seperator*`
-5. Create a new development branch: `*git checkout -b feature/init-component*`
-6. Add a README.md file:
+- Login on: `*https://github.com/Windesheim-Willy*`
+- Create a new repository with the following naming format:  `*your_component_lowercase_with_underscore_seperator*`
+- Clone the repository: `*git clone https://github.com/Windesheim-Willy/your_component_lowercase_with_underscore_seperator.git*`
+- Go to the location of your repository: `*cd your_component_lowercase_with_underscore_seperator*`
+- Create a new development branch: `*git checkout -b feature/init-component*`
+- Add a README.md file:
 
-    # Sonar
-    [![Build Status](https://travis-ci.org/Windesheim-Willy/sonar.svg?branch=master)](https://travis-ci.org/Windesheim-Willy/sonar)  
-    The sonar is a node to process the raw sonar information to the sonar topic.
-    For more information, check out the wiki about the sonar [Wiki](https://windesheim-willy.github.io/WillyWiki/Components/sonar.html)
+[source, md]
+----
+# Keyboard
 
-7. Add a .travis.yml file:
+[![Build Status](https://travis-ci.org/Windesheim-Willy/keyboard.svg?branch=master)](https://travis-ci.org/Windesheim-Willy/keyboard)
 
-    sudo: required
-    language: ruby
-    services:
-        - docker
-    script:
-        - docker-compose -f docker-compose.yml -f docker-compose.build.yml build
+The keyboard is a node that can process the raw input information to the keyboard topic.
+
+For more information, check out the wiki about the keyboard [Wiki](https://windesheim-willy.github.io/WillyWiki/Components/keyboard.html)
+----
 
 
-8. Add a docker-compose.build.yml file:
+- Add a .travis.yml file:
 
-    # Override compose file for ROS-master with local build of the container.
+[source,yml]
+----
+sudo: required
+
+language: ruby
+
+services:
+  - docker
+
+script:
+  - docker-compose -f docker-compose.yml -f docker-compose.build.yml build
+----
+
+- Add a docker-compose.build.yml file:
+
+[source,yml]
+----
+
+# Override compose file for ROS-master with local build of the container.
     version: '2.1'
+    
     services:
       sonar:
+      
     build: ./docker
-    
-9. Add a docker-compose.yml file
-10. Add a folder with the name "docker"
-11. Add a file with the name "Dockerfile"
-12. Commit the changes
-13. Push to github
-14. Create a pull request on the component master	
+----    
+- Add a docker-compose.yml file
+- Add a folder with the name "docker"
+- Add a file with the name "Dockerfile"
+- Commit and push the changes
+- Create a pull request on the component master	
 
-====== Integrate new component
-
-
-===== Exisiting Willy component
-
-==== Willy environment
+==== Integrate new component
 
 
-1.3 Integrate your component within the global willy system (only if you created a new component)
+=== Exisiting component
 
-	- Checkout the master branch of the repo "willy"
-	- Create and checkout new branch "git checkout -b feature/add-component"
-	- Open the .gitmodules file
-	- Add a reference to your new component repository
-	- Pull all components "git submodule update --init --recursive"
-	- Commit your changes
-	- Push your branch
-	- Create a pull request on the master branch
-
-1.4 Existing component
-
-	- Clone the component repository via the wiki url.
-	- Checkout the master branch
-	- Create a new development branch from master
-	- Develop something...
-	- Git commit
-	- Git push your branch
-	- Create a pullrequest on master
+1. Clone the component repository via the wiki url.
+2. Checkout the master branch
+3. Create a new development branch from master
+4. Develop something...
+5. Git commit
+6. Git push your branch
+7. Create a pullrequest on master
 	
-1.5 Build the global willy system
+
+=== Willy environment
+
+Integrate your component within the global willy system (only if you created a new component)
+
+1. Checkout the master branch of the repo "willy"
+2. Create and checkout new branch "git checkout -b feature/add-component"
+3. Open the .gitmodules file
+4. Add a reference to your new component repository
+5. Pull all components "git submodule update --init --recursive"
+6. Commit your changes
+7. Push your branch
+8. Create a pull request on the master branch
+
 
 
