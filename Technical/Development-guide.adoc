@@ -44,6 +44,9 @@ NOTE: http://wiki.ros.org/ROS/Tutorials
 
 NOTE: To start development, make sure you complies to the requirements above.
 
+1. Choose a component to extend development on or create a new component
+2. 
+
 1. Make a folder on your local computer where you want the Willy project to take place. +
 2. Install git. +
 
