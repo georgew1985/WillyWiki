@@ -44,7 +44,9 @@ NOTE: http://wiki.ros.org/ROS/Tutorials
 
 NOTE: To start development, make sure you complies to the requirements above.
 
-Willy is based on various ROS nodes, called components. Before starting developing for Willy be aware of the infrastructure used to setup the system. +
+Willy is based on various ROS nodes. These are called Willy components. For example: Sonar, Lidar, Kinect.
+Before starting developing for Willy, be aware of the infrastructure used to setup the system.
+
 There are basically two forms of developing new features for Willy: +
 
 - Create a new Willy component
@@ -52,30 +54,40 @@ There are basically two forms of developing new features for Willy: +
 
 ==== Willy component development
 
-To be able to develop Willy components and make them available within Willy, there are a few Prerequisites: +
+A valid Willy component needs the following Prerequisites: +
 
-- A dockercompose file within the component directory +
-- One or more services pointed +
-- A readme file filled with at least a description +
-- A Travis file to provide the input for the CI +
-
+- A Dockercompose file +
+- At least one service referenced in the Dockercompose file +
+- A README file with the component description +
+- A Travis file with the CI configuration +
 
 ===== New Willy component
 
-1. Login on '*https://github.com/Windesheim-Willy*'
-2. Create a new component repository on '*Windesheim-Willy/your-component-lowercase-with-lines-as-seperator*'
-3. Clone the master repository
-4. Create a new branch "git checkout -b feature/init-component"
-5. Go to your repository directory
-6. Add a README.md file
-7. Add a .travis.yml CI file
-8. Add a docker-compose.build.yml file
-9. Add a docker-compose.yml file
-10. Add a folder with the name "docker"
-11. Add a file with the name "Dockerfile"
-12. Commit the changes
-13. Push to github
-14. Create a pull request on the component master	
+1. Login on *https://github.com/Windesheim-Willy*
+2. Create a new repository with the following naming format: `*your_component_lowercase_with_underscore_seperator*`
+3. Clone the repository you just created
+4. Go to the location of your repository: `*cd your_component_lowercase_with_underscore_seperator*`
+5. Create a new development branch: `*git checkout -b feature/init-component*`
+6. Add the README.md file: +
+
+---
+# Sonar
+
+[![Build Status](https://travis-ci.org/Windesheim-Willy/sonar.svg?branch=master)](https://travis-ci.org/Windesheim-Willy/sonar)
+
+The sonar is a node to process the raw sonar information to the sonar topic.
+
+For more information, check out the wiki about the sonar [Wiki](https://windesheim-willy.github.io/WillyWiki/Components/sonar.html)
+---
+
+8. Add a .travis.yml CI file
+9. Add a docker-compose.build.yml file
+10. Add a docker-compose.yml file
+11. Add a folder with the name "docker"
+12. Add a file with the name "Dockerfile"
+13. Commit the changes
+14. Push to github
+15. Create a pull request on the component master	
 
 
 ===== Exisiting Willy component
