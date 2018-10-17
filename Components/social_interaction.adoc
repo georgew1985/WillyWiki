@@ -28,3 +28,28 @@ For development purposes it can be usefull to build the Dockerfile locally and t
 ----
 docker-compose -f docker-compose.yml -f docker-compose.build.yml up
 ----
+
+=== Nodejs packages (npm)
+Never run `npm install` outside the Docker container to prefent OS conflicts between the Nodejs packages.
+
+Run the npm install command:
+[source,shell]
+----
+docker-compose run social_interaction npm install
+----
+
+=== Stylesheets
+The source files for the stylesheet are written in SASS. The should be compiled to CSS files what a browser can process.
+Gulp compiles the SASS files to CSS files.
+
+Compile only once the SASS file:
+[source,shell]
+----
+docker-compose run social_interaction npm run sass:build
+----
+
+Compile the SASS file on every file change:
+[source,shell]
+----
+docker-compose run social_interaction npm run sass:watch
+----
