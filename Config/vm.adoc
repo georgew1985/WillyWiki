@@ -6,9 +6,11 @@ For the development of Willy is a virtual machine availible. At some Windows sys
 === Run the virtual machine
 
 - Download the virtual machine link:https://liveadminwindesheim-my.sharepoint.com/:f:/r/personal/s1089453_student_windesheim_nl/Documents/Willy/Willy%20VM?csf=1&e=Fxs0kS[Ubuntu Willy]
-- Import the virtual machine
-- Open the terminal
-- Get the last updates from Willy
+- Import the virtual machine in link:https://www.virtualbox.org/[Virtualbox]
+- Start the virtual machine
+- Login to the virtual machine (username: willy, password: see password file)
+- Open the terminal in Ubuntu
+- Get the last updates for Willy from Github
 
 [source,shell]
 ----
@@ -25,14 +27,15 @@ cd ~/willy
 sudo docker-compose up
 ----
 
-- Happy coding!
+- Safe journey and happy coding!
 
-=== Installation of Willy machine
+=== Installation of Willy virtual machine
+This is only necessary when the existing virtual machine not available is.
 
 - Download Ubuntu 18.04 link:https://www.ubuntu.com/#download[www.ubuntu.com]
-- Install Ubuntu
+- Install Ubuntu as virtual machine in link:https://www.virtualbox.org/[Virtualbox]
 - Install the Virtualbox guest tools
-- Install packages
+- Install some additional packages
 
 [source,shell]
 ----
@@ -67,5 +70,3 @@ sudo chmod +x /usr/local/bin/docker-compose
 ----
 
 include::configure.adoc[leveloffset=+3,tag=installation]
-:leveloffset: auto
-
