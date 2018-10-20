@@ -13,6 +13,8 @@ link:{url}/Startup/index.html[Startup Willy]::
         - link:{url}/Startup/Willy-Web.html[Willy Web]
 
 link:{url}/Config/index.html[Configuration]::
+        - link:{url}/Config/configure.html[Configure]
+        - link:{url}/Config/vm.html[Willy development VM]
         - link:{url}/Config/GIT.html[GIT Setup]
         - link:{url}/Config/Ubuntu.html[Ubuntu]
         - link:{url}/Config/Remote.html[Remote]
@@ -31,7 +33,7 @@ link:{url}/Components/index.html[Components]::
         - link:{url}/Components/kinect.html[Kinect]
         - link:{url}/Components/lidar.html[Lidar]
         - link:{url}/Components/motor_controller.html[Motor controller]
-        - link:{url}/Components/keyboard.html[Keyboard] 
+        - link:{url}/Components/keyboard.html[Keyboard]
         - link:{url}/Components/social_interaction.html[Social interaction]
 
 link:{url}/Technical/index.html[Technical]::

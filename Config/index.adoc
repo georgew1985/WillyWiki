@@ -1,7 +1,7 @@
 include::../Header.adoc[]
 
-include::GIT.adoc[]
+include::configure.adoc[]
 
-include::Ubuntu.adoc[]
+include::vm.adoc[]
 
 include::Wiki.adoc[]

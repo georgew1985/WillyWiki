@@ -1,0 +1,71 @@
+include::../Header.adoc[]
+
+== Virtual machine for Willy development
+For the development of Willy is a virtual machine availible. At some Windows systems Docker won't run with the configuration of Willy. To solve this problem there is a virtual machine with the exact software configuration of notebook on Willy.
+
+=== Run the virtual machine
+
+- Download the virtual machine link:https://liveadminwindesheim-my.sharepoint.com/:f:/r/personal/s1089453_student_windesheim_nl/Documents/Willy/Willy%20VM?csf=1&e=Fxs0kS[Ubuntu Willy]
+- Import the virtual machine
+- Open the terminal
+- Get the last updates from Willy
+
+[source,shell]
+----
+cd ~/willy
+git pull origin master
+git submodule update --recursive --remote
+----
+
+- Start Willy
+
+[source,shell]
+----
+cd ~/willy
+sudo docker-compose up
+----
+
+- Happy coding!
+
+=== Installation of Willy machine
+
+- Download Ubuntu 18.04 link:https://www.ubuntu.com/#download[www.ubuntu.com]
+- Install Ubuntu
+- Install the Virtualbox guest tools
+- Install packages
+
+[source,shell]
+----
+sudo apt-get install vim git
+----
+
+- Install Docker on Ubuntu
+
+[source,shell]
+----
+sudo apt-get update
+sudo apt-get install -y \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+sudo apt-get update
+sudo apt-get install docker-ce
+----
+
+- Install docker compose
+
+[source,shell]
+----
+sudo curl -L "https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+----
+
+include::configure.adoc[lines=3]
+:leveloffset: auto
+
