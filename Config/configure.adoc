@@ -3,6 +3,7 @@ include::../Header.adoc[]
 == Setup of Willy
 The software of Willy is packaged inside Docker containers, so every system that is compatible with Docker could run Willy. This setup describes how a developer can run the containers of Willy.
 
+// tag::installation[]
 === Installation of Willy
 
 - link:https://docs.docker.com/install/[Install Docker]
@@ -26,3 +27,4 @@ docker-compose up
 --
 At some Linux systems it is required to run docker and docker-compose with sudo.
 --
+// end::installation[]
