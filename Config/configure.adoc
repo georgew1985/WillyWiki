@@ -3,10 +3,10 @@ include::../Header.adoc[]
 == Setup of Willy
 The software of Willy is packaged inside Docker containers, so every system that is compatible with Docker could run Willy. This setup describes how a developer can run the containers of Willy.
 
-// tag::installation[]
 === Installation of Willy
 
 - link:https://docs.docker.com/install/[Install Docker]
+// tag::installation[]
 - Clone the source code and configuration of Willy
 
 [source,shell]
