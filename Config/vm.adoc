@@ -24,10 +24,18 @@ git submodule update --recursive --remote
 [source,shell]
 ----
 cd ~/willy
-sudo docker-compose up
+sudo docker-compose up -d
 ----
 
-- Safe journey and happy coding!
+- Safe journey with Willy and happy coding!
+
+==== Stop Willy processes
+
+[source,shell]
+----
+cd ~/willy
+sudo docker-compose stop
+----
 
 === Installation of Willy virtual machine
 This is only necessary when the existing virtual machine not available is.
