@@ -3,6 +3,9 @@ include::../Header.adoc[]
 == Kinect
 The kinect is a node to process the raw kinect information to the kinect topic.
 
+=== Requirements
+This component has a requirement to a Kinect. The Kinect should be connected to the host system by the USB port. Docker will mount the kinect in the kinect component container with the link:https://docs.docker.com/compose/compose-file/compose-file-v2/#devices[devices configuration].
+
 === Repository
 ====
 https://github.com/Windesheim-Willy/kinect[Windesheim-Willy/kinect, role="external", window="_blank"]
