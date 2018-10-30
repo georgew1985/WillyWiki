@@ -41,7 +41,7 @@ Get the new changes from Github
 [source,shell]
 ----
 git pull origin master
-git submodule update --recursive
+git submodule update --recursive --init
 docker-compose pull
 ----
 
