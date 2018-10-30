@@ -28,3 +28,25 @@ docker-compose up
 At some Linux systems it is required to run docker and docker-compose with sudo.
 --
 // end::installation[]
+
+=== Update of Willy
+
+Stop Willy
+[source,shell]
+----
+docker-compose stop
+----
+
+Get the new changes from Github
+[source,shell]
+----
+git pull origin master
+git submodule update --recursive
+docker-compose pull
+----
+
+Start Willy
+[source,shell]
+----
+docker-compose up
+----
