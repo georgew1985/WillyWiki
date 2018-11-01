@@ -41,7 +41,7 @@ NOTE: To start development, make sure you complies to the requirements above.
 `cd your_component_lowercase_with_underscore_seperator`
 
 . Create a new development branch: +
-`git checkout -b feature/init-component`
+`git checkout -b master`
 
 . Add a README.md file(example):
 +
@@ -105,9 +105,9 @@ services:
 -----------------
 FROM ros:kinetic
 -----------------
-. Commit and push the changes: +
-`git add .` -> `git commit` -> `git push`
-. Create a pull request on the component master branch
+. Commit, push and create a master: +
+`git add .` -> `git commit` -> `git push origin master`
+
 
 ==== Integrate new component
 
