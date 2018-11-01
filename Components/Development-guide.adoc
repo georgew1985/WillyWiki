@@ -11,29 +11,39 @@ Before starting developing for Willy, be aware of this infrastructure which is u
 
 There are basically two ways of developing new features for Willy: +
 
-- Create and develop a new Willy component
-- Extend and develop within an exisiting Willy component
+. Create and develop a new Willy component
+. Extend and develop within an exisiting Willy component
 
 A valid Willy component complies with the following Prerequisites: +
 
-- A Dockercompose file +
-- At least one service referenced in the Dockercompose file +
-- A README file with the component description +
-- A Travis file with the CI configuration +
+. A Dockercompose file +
+. At least one service referenced in the Dockercompose file +
+. A README file with the component description +
+. A Travis file with the CI configuration +
 
 === New component
 
 ==== Create new component
 
-- Login on: `*https://github.com/Windesheim-Willy*`
-- Create a new repository with the following naming format:  `*your_component_lowercase_with_underscore_seperator*`
-- Clone the repository: `*git clone https://github.com/Windesheim-Willy/your_component_lowercase_with_underscore_seperator.git*`
-- Go to the location of your repository: `*cd your_component_lowercase_with_underscore_seperator*`
-- Create a new development branch: `*git checkout -b feature/init-component*`
-- Add a README.md file:
+. Login on: +
+`https://github.com/Windesheim-Willy`
 
-[source, md]
-----
+. Create a new repository with the following naming format: +
+`your_component_lowercase_with_underscore_seperator`
+
+. Clone the repository: +
+`git clone https://github.com/Windesheim-Willy/your_component_lowercase_with_underscore_seperator.git`
+
+. Go to the location of your repository: +
+`cd your_component_lowercase_with_underscore_seperator`
+
+. Create a new development branch: +
+`git checkout -b feature/init-component`
+
+. Add a README.md file(example):
++
+[source,md]
+-----------------
 # Keyboard
 
 [![Build Status](https://travis-ci.org/Windesheim-Willy/keyboard.svg?branch=master)](https://travis-ci.org/Windesheim-Willy/keyboard)
@@ -41,13 +51,12 @@ A valid Willy component complies with the following Prerequisites: +
 The keyboard is a node that can process the raw input information to the keyboard topic.
 
 For more information, check out the wiki about the keyboard [Wiki](https://windesheim-willy.github.io/WillyWiki/Components/keyboard.html)
-----
+-----------------
 
-
-- Add a .travis.yml file:
-
+. Add a .travis.yml file(example):
++
 [source,yml]
-----
+-----------------
 sudo: required
 
 language: ruby
@@ -57,13 +66,12 @@ services:
 
 script:
   - docker-compose -f docker-compose.yml -f docker-compose.build.yml build
-----
+-----------------
 
-- Add a docker-compose.build.yml file:
-
+. Add a docker-compose.build.yml file(example):
++
 [source,yml]
-----
-
+-----------------
 # Override compose file for ROS-master with local build of the container.
     version: '2.1'
     
@@ -71,39 +79,95 @@ script:
       sonar:
       
     build: ./docker
-----    
-- Add a docker-compose.yml file
-- Add a folder with the name "docker"
-- Add a file with the name "Dockerfile"
-- Commit and push the changes
-- Create a pull request on the component master	
+-----------------
+
+. Add a docker-compose.yml file(exmaple):
++
+[source,yml]
+-----------------
+# Main compose file for ROS-master with the container from Dockerhub.
+version: '2.1'
+
+services:
+  keyboard:
+    image: windesheimwinny/keyboard:latest
+    networks:
+      - ros
+    restart: always
+-----------------
+. Add a folder with the name "docker"
+. Add a file with the name "Dockerfile" without extension(example):
++
+[source,yml]
+-----------------
+FROM ros:kinetic
+-----------------
+. Commit and push the changes: +
+`git add .` -> `git commit` -> `git push`
+. Create a pull request on the component master branch
 
 ==== Integrate new component
+
+. If you do not have a clone of the Willy respository yet, clone the repo first: +
+`git clone https://github.com/Windesheim-Willy/willy.git`
+. Verify to checkout the master, unless you need another branch: +
+`git checkout master` 
+. Add your module to the .gitmodule file(example *url* and *path*): +
+`git submodule add https://github.com/Windesheim-Willy/keyboard.git components/keyboard`
+. Load the submodule into the repository: +
+`git submodule update --recursive --remote`
 
 
 === Exisiting component
 
-1. Clone the component repository via the wiki url.
-2. Checkout the master branch
-3. Create a new development branch from master
-4. Develop something...
-5. Git commit
-6. Git push your branch
-7. Create a pullrequest on master
-	
+. Clone the component repository via the wiki url: +
+`git clone https://github.com/Windesheim-Willy/component.git`
+. Go to the repository location: +
+`cd component`
+. Checkout the master branch: +
+`git checkout master`
+. Create a new development branch from master: +
+`git checkout -b feature/hello-world`
+. Develop something...(example): +
+`echo "Hello world!!" > helloWorld.txt`
+. Check git status of changes: +
+`git status`
+. Add all or specific changes: +
+`git add .`
+. Git commit: +
+`git commit`
+. Push your branch to the remote, if not pushed yet use the upstream origin parameter: +
+`git push --set-upstream origin feature/hello-world`
+. Create a pullrequest on master and merge the branches
+
 
 === Willy environment
 
-Integrate your component within the global willy system (only if you created a new component)
+Integrate your component within the global willy system (only if you created a new component) or update the components if any development has been made on one of them.
 
-1. Checkout the master branch of the repo "willy"
-2. Create and checkout new branch "git checkout -b feature/add-component"
-3. Open the .gitmodules file
-4. Add a reference to your new component repository
-5. Pull all components "git submodule update --init --recursive"
-6. Commit your changes
-7. Push your branch
-8. Create a pull request on the master branch
+==== Add new component
+. Checkout the master branch of the repo "willy": +
+`git clone https://github.com/Windesheim-Willy/willy.git`
+. Verify to checkout the master, unless you need another branch: +
+`git checkout master` 
+. Create and checkout new branch: +
+`git checkout -b feature/add-component_name`
+. Add your module to the .gitmodule file(example *url* and *path*): +
+`git submodule add https://github.com/Windesheim-Willy/keyboard.git components/keyboard`
+. Load the submodule into the repository: +
+`git submodule update --recursive --remote`
+. Add all or specific changes: +
+`git add .`
+. Git commit: +
+`git commit`
+. Push your branch to the remote, if not pushed yet use the upstream origin parameter: +
+`git push --set-upstream origin feature/add-component_name`
+. Create a pullrequest on master and merge the branches
 
+==== Update exisisting component
 
+. Update a specific component in the willy repository: +
+`git submodule update --init componentname`
+. Update all components in the willy repository: +
+`git submodule update --recursive --remote`
 
