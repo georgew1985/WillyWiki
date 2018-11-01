@@ -2,8 +2,6 @@ include::../Header.adoc[]
 
 == Development
 
-NOTE: To start development, make sure you complies to the requirements above.
-
 === Important information
 
 Willy is based on various ROS nodes. These are called Willy components. For example: Sonar, Lidar, Kinect.
@@ -17,11 +15,16 @@ There are basically two ways of developing new features for Willy: +
 A valid Willy component complies with the following Prerequisites: +
 
 . A Dockercompose file +
+*A docker-compose file to define the services for this component. This docker-compose file contains only the needed containers for this component (This services will be extended in the main repository)*
 . At least one service referenced in the Dockercompose file +
+*Define at least one service for this container, but when the component requires multiple services define all the needed services for this container.*
 . A README file with the component description +
 . A Travis file with the CI configuration +
+. A valid documentation on the WillyWiki +
 
 === New component
+
+NOTE: To start development, make sure you complies to the requirements above.
 
 ==== Create new component
 
@@ -89,8 +92,8 @@ script:
 version: '2.1'
 
 services:
-  keyboard:
-    image: windesheimwinny/keyboard:latest
+  <component name>:
+    image: windesheimwinny/<component name>:latest
     networks:
       - ros
     restart: always
@@ -113,12 +116,13 @@ FROM ros:kinetic
 . Verify to checkout the master, unless you need another branch: +
 `git checkout master` 
 . Add your module to the .gitmodule file(example *url* and *path*): +
-`git submodule add https://github.com/Windesheim-Willy/keyboard.git components/keyboard`
+`git submodule add https://github.com/Windesheim-Willy/<component name>.git components/<component name>`
 . Load the submodule into the repository: +
 `git submodule update --recursive --remote`
 
 
 === Exisiting component
+NOTE: To start development, make sure you complies to the requirements above.
 
 . Clone the component repository via the wiki url: +
 `git clone https://github.com/Windesheim-Willy/component.git`
@@ -146,14 +150,14 @@ FROM ros:kinetic
 Integrate your component within the global willy system (only if you created a new component) or update the components if any development has been made on one of them.
 
 ==== Add new component
-. Checkout the master branch of the repo "willy": +
+. Clone the branch of the repo "willy": +
 `git clone https://github.com/Windesheim-Willy/willy.git`
 . Verify to checkout the master, unless you need another branch: +
 `git checkout master` 
 . Create and checkout new branch: +
 `git checkout -b feature/add-component_name`
 . Add your module to the .gitmodule file(example *url* and *path*): +
-`git submodule add https://github.com/Windesheim-Willy/keyboard.git components/keyboard`
+`git submodule add https://github.com/Windesheim-Willy/<component name>.git components/<component name>`
 . Load the submodule into the repository: +
 `git submodule update --recursive --remote`
 . Add all or specific changes: +
@@ -170,4 +174,80 @@ Integrate your component within the global willy system (only if you created a n
 `git submodule update --init componentname`
 . Update all components in the willy repository: +
 `git submodule update --recursive --remote`
+
+=== Component documentation
+
+When a new component is created or a exisisting component has been modified, one has to bring the WillyWiki up-to-date so everybody can read about what a component does and why it's there.
+
+. Clone the branch of the repo "WillyWiki": +
+`git clone https://github.com/Windesheim-Willy/WillyWiki.git`
+. Verify to checkout the master, unless you need another branch: +
+`git checkout master` 
+. Create and checkout new documentation branch: +
+`git checkout -b feature/component-documentation`
+. Go to the components folder and create or choose a .adoc file: +
+`Components/component.adoc`
+. Add or edit information on behalf of your development (Lidar example): +
++
+[source,adoc]
+-----------------
+include::../Header.adoc[]
+
+== Lidar
+The lidar is a node to process the raw lidar information to the lidar topic.
+
+=== Repository
+====
+https://github.com/Windesheim-Willy/lidar[Windesheim-Willy/lidar, role="external", window="_blank"]
+====
+
+=== How to run?
+To run only the lidar the Docker can be used. The Dockerfile for the lidar is automatically built on Dockerhub.
+
+====
+https://hub.docker.com/r/windesheimwinny/lidar[windesheimwinny/lidar, role="external", window="_blank"]
+====
+
+Run the build docker image:
+
+[source,shell]
+----
+docker-compose up
+----
+
+For development purposes it can be usefull to build the Dockerfile locally and to use this image. The docker-compose.build.yml file builds first the image and after the build start the container.
+
+[source,shell]
+----
+docker-compose -f docker-compose.yml -f docker-compose.build.yml up
+----
+-----------------
+. Save the file
+. Go to the root folder and open the sidebar.adoc file: +
+`WillyWiki/sidebar.adoc`
+. Add your component or check if your component reference already exists in the section [Components]: +
++
+[source,adoc]
+-----------------
+link:{url}/Components/index.html[Components]::
+        - link:{url}/Components/Development-guide.html[Development Guide]
+        - link:{url}/Components/willy.html[Willy main]
+        - link:{url}/Components/ROS-master.html[ROS master]
+        - link:{url}/Components/brain.html[Brain]
+        - link:{url}/Components/sonar.html[Sonar]
+        - link:{url}/Components/kinect.html[Kinect]
+        - link:{url}/Components/lidar.html[Lidar]
+        - link:{url}/Components/motor_controller.html[Motor controller]
+        - link:{url}/Components/new_added_component.html[New component]
+-----------------
+. Save the sidebar.adoc file
+. Add all or specific changes: +
+`git add .`
+. Git commit: +
+`git commit`
+. Push your branch to the remote, if not pushed yet use the upstream origin parameter: +
+`git push --set-upstream origin feature/component-documentation`
+. Create a pullrequest on master and merge the branches
+
+
 
