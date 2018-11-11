@@ -1,0 +1,40 @@
+include::../Header.adoc[]
+
+== Microphone
+The microphone is a node to process the raw microphone data information to the audio topic.
+
+=== Requirements
+This component has a requirement to a microphone. The microphone should be connected to the host system by the USB port. Docker will mount the microphone in the microphone component container with the link:https://docs.docker.com/compose/compose-file/compose-file-v2/#devices[devices configuration].
+
+=== Repository
+====
+https://github.com/Windesheim-Willy/microphone[Windesheim-Willy/microphone, role="external", window="_blank"]
+====
+
+=== How to run?
+To run only the microphone the Docker can be used. The Dockerfile for the microphone is automatically built on Dockerhub.
+
+====
+https://hub.docker.com/r/windesheimwinny/microphone[windesheimwinny/microphone, role="external", window="_blank"]
+====
+
+Run the build docker image:
+
+[source,shell]
+----
+docker-compose up
+----
+
+For development purposes it can be usefull to build the Dockerfile locally and to use this image. The docker-compose.build.yml file builds first the image and after the build start the container.
+
+[source,shell]
+----
+docker-compose -f docker-compose.yml -f docker-compose.build.yml up
+----
+
+=== Development data
+For the text 'Hey Willy' is a development bag available. With this bag the input of a microphone can be mocked.
+
+link:assets/microphone/hey_willy.bag[Download the 'Hey Willy' bag, role="external", window="_blank"]
+
+link:http://wiki.ros.org/ROS/Tutorials/Recording%20and%20playing%20back%20data[More information how to use ROS bags, role="external", window="_blank"]
