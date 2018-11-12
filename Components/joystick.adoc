@@ -1,19 +1,19 @@
 include::../Header.adoc[]
 
-== Keyboard
+== Joystick
 
 The keyboard is a node to process the raw keyboard input signal to the direct input topic.
 
 === Repository
 ====
-https://github.com/Windesheim-Willy/keyboard[Windesheim-Willy/keyboard, role="external", window="_blank"]
+https://github.com/Windesheim-Willy/joystick[Windesheim-Willy/joystick, role="external", window="_blank"]
 ====
 
 === How to run?
 To run only the keyboard the Docker can be used. The Dockerfile for the keyboard is automatically built on Dockerhub.
 
 ====
-https://hub.docker.com/r/windesheimwinny/keyboard[windesheimwinny/keyboard, role="external", window="_blank"]
+https://hub.docker.com/r/windesheimwinny/joystick[windesheimwinny/joystick, role="external", window="_blank"]
 ====
 
 Run the build docker image:
