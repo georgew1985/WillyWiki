@@ -2,15 +2,18 @@ include::../Header.adoc[]
 
 == Joystick
 
-The keyboard is a node to process the raw keyboard input signal to the direct input topic.
+The joystick is a node to process the raw joystick input signal to the direct input topic.
 
 === Repository
 ====
 https://github.com/Windesheim-Willy/joystick[Windesheim-Willy/joystick, role="external", window="_blank"]
 ====
 
+=== Prerequisites
+The Docker container requires the device */dev/input/js0* to be connected to the host. In most cases a knockoff PS3 controller or Xbox controller wil do the trick. The controller requires to have _select_ button to be pressed when controlling Willy with the right analog stick. This component uses the default settings for teleop twist joy package, which may require a bit practice to maneuver through the building.
+
 === How to run?
-To run only the keyboard the Docker can be used. The Dockerfile for the keyboard is automatically built on Dockerhub.
+To run only the joystick the Docker can be used. The Dockerfile for the joystick is automatically built on Dockerhub.
 
 ====
 https://hub.docker.com/r/windesheimwinny/joystick[windesheimwinny/joystick, role="external", window="_blank"]
