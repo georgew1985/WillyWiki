@@ -11,29 +11,33 @@ image:media/overview/overview.png[image]
 === Components
 This chapter contains all the components with explanation.
 
-==== Mini pc
-This is the dedicated PC for running the ROS Server. Al the calculational 
-work will be done on this PC. Therefore, we chose for a PC with some 
+==== Laptop
+This is the dedicated computer for running the ROS Server. Al the calculational 
+work will be done on this laptop. Therefore, we chose for a computer with some 
 calculation power as well as enough RAM.
 
 [cols=",",options="header",]
 |===============================================
-|Product |Dell Optiplex 3020 Micro (3020-9806)
-|CPU |Intel Core I5 4670T quad-core
-|Video Chip |Intel HD Graphics 4600
+|Product |Fujitsu Lifebook E752
+|CPU |Intel Core I5 3210M 2.5GHz dual-core
+|Video Chip |Intel HD Graphics
 |RAM |16 GB DDR3L Sodimm
 |Harddisk |Western Digital Black 500GB 2,5" HDD
 |Amount of USB Ports 
 a|
-- 2x USB3.0
+- 1x USB3.0
+- 1x USB3.0 / eSATA
 - 4x USB2.0
 |Other Ports 
 a|
 - 1x VGA
 - 1x DisplayPort
 - 1x 1GB/s Network Port
+- 1x RS232
 - 1x Microphone Jack
 - 1x Headphone Jack
+- 1x PCMCIA
+- 1x SD Cardreader
 |Wireless Connection options |WLAN chip
 |===============================================
 
@@ -93,14 +97,17 @@ and - of the cable to the internal motor controller.
 
 ===== Brakes
 
-The two engines of willy contain both a brake. This brake is controlled
-by the engine itself. When the active signal to the motors is lost, the
-motor will automatically activate the brake. To start the driving_willy
-project, you NEED to deploy the brakes. Otherwise Willy will not drive!
+The two engines of Willy both used to contain a brake. This brake was controlled
+by the engine itself. The levers of the brakes are removed, rendering them always active. Before the
+removal of the brake levers, it was neccesary to verify wether the brakes were deployed or not.
+In order to let Willy move, the brakes had to be deployed. This was orginally a safety feature of the 
+mobility scooter, but was not needed any longer.
 
 image:../Archive/2018S1/Research/media/current-status/image6.jpeg[alt=image6,width=300,height=400]
 
 image:../Archive/2018S1/Research/media/current-status/image7.png[alt=image7,width=300,height=400]
+
+image:../Archive/2018S1/Research/media/current-status/brakeleverremoved.jpg[alt=brakeleverremoved,width=300,height=400]
 
 Make sure to deploy the brakes. Otherwise Willy won’t work!! There is
 only one way to detect if the brakes are deployed. It’s by simply
@@ -129,6 +136,28 @@ image:media/technical/batteries_new.png[image,width=500]
 image:media/technical/battery_new.jpg[image,width=500]
 
 ==== Power Supply
+The mains from the batteries run through a central fuse box mounted at Willy's 
+left hand side. The fusebox contains 4 circuitbreakers powering 4 step down convertors
+
+image:../Archive/2018S1/Research/media/current-status/fusebox.jpg[alt=fusebox,width=400,height=300]
+
+image:../Archive/2018S1/Research/media/current-status/fuseboxcircuitbreakers.jpg[alt=fuseboxcircuitbreakers,width=400,height=300]
+
+The powerleads after the circuit breakers are bundled and routed to a transparant plastic case which
+serves as a power distribution unit. The power distribution unit contains 4 step down converters, controlled
+by 4 switches toggling power for these converters.
+
+image:../Archive/2018S1/Research/media/current-status/powerconverterbox.jpg[alt=powerconverterbox,width=400,height=300]
+
+The monitor is powered with 19 volts provided from the powerconverter box.
+The laptop is powered with 19 volts provided from te powerconverter box.
+The fan on top of the powerconverter box is powered with 12 volts, connected internally.
+The last powerconverter is set to 5 volts, capable of powering various arduino components if needed.
+
+Al leads are connected to screwterminals at the far side of the powerconverter box.
+
+*ORIGINAL TEXT*
+-
 The 19 volts for the screen is provided by a step-down converter.
 The module is based on the Xl4015 buch DC to DC converter. The input voltage
 range is 8-36V and the adjustable output range is 1.25V to 32V. The converter
@@ -144,6 +173,8 @@ The fuse called T5L250V is rated for 250V with 5A. Then a switch is used to turn
 on or off. 
 To split the 24v of the batteries to all the step-down converters, there is a homemade pcb plate created.
 This board is placed at the left of the step-down converters.
+-
+*END OF ORIGINAL TEXT*
 
 ==== Sonars
 
