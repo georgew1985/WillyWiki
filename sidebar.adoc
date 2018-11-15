@@ -36,6 +36,7 @@ link:{url}/Components/index.html[Components]::
         - link:{url}/Components/joystick.html[Joystick]
         - link:{url}/Components/social_interaction.html[Social interaction]
 	- link:{url}/Components/Node_and_topics.html[Nodes and Topics]
+	- link:{url}/Components/Python_scripts.html[Python scripts]
 
 link:{url}/Technical/index.html[Technical]::
         - link:{url}/Technical/Development-guide.html[Development Guide]
