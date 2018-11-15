@@ -3,6 +3,13 @@ include::../Header.adoc[]
 == Microphone
 The microphone is a node to process the raw microphone data information to the audio topic.
 
+[NOTE]
+--
+At this moment the microphone isn't working properly!
+
+The library for gstreamer won't compile properly in the Dockerfile installations steps. After the compilation of gstreamer it can't find the microphone. As workaround it is possible to compile the gstreamer in the bash. After the compilation the microphone container is working fine.
+--
+
 === Requirements
 This component has a requirement to a microphone. The microphone should be connected to the host system by the USB port. Docker will mount the microphone in the microphone component container with the link:https://docs.docker.com/compose/compose-file/compose-file-v2/#devices[devices configuration].
 
