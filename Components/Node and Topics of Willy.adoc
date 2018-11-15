@@ -20,7 +20,7 @@ The three node categories are:
 
 A node is one or more programs or scripts in C++ or Python who independently of other nodes does its task. The nodes are shown in the next figure.
 
-image:media/ros_node_topic_overview.png[image]
+image:ros_node_topic_overview.png[image]
 
 
 === Nodes
