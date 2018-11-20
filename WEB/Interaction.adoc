@@ -23,6 +23,17 @@ API documentation for the connection between de NodeJS server and frontend.
 
 image:media/interaction/flow.png[image]
 
+=== Interactions
+The interaction has multiple type of interactions.
+
+==== About Willy
+Tell information about Willy and show the image of Willy.
+
+==== Information with a map
+Show a map at the frontend of Willy.
+
+The map requires a image file which will be shown to the user. This file should be located at the path `public/assets/map.png`.
+
 === Screen Designs
 
 ==== English
