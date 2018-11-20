@@ -2,6 +2,8 @@ include::../Header.adoc[]
 
 == Social interaction
 
+More information about the social interaction component see link:{url}/Components/social_interaction.html[Social Interaction component].
+
 === Software
 The social interaction is build with NodeJS. NodeJS has a webserver and connects with web sockets to the frontend of Willy. The NodeJS server processes all information of the interactions and passes this to the frontend. The frontend doesn't contains any logic of the social interaction, only the logic of displaying information to the website.
 
