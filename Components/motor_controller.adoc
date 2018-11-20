@@ -8,6 +8,22 @@ The motor controller listens to the drive topic and controls the motor of Willy.
 https://github.com/Windesheim-Willy/motor_controller[Windesheim-Willy/motor_controller, role="external", window="_blank"]
 ====
 
+=== How P&G Pilot Plus works
+The communication between the P&G (Penny and Giles) Joystick and Motorcontroller is done with a serial connection. Two variables in within the datapacket contain the throttle and direction. Both are signed integers with an limit of -100/100. They illustrate the 360 degrees position of the joystick.
+
+==== Arduino reading /cmd_vel messages from ROS
+The geometery twist messages broadcasted by ROS will be translated by the Arduino motorcontroller to match the serial communication done by the Joystick controller from P&G. The data send from ROS will be multiplied with 100 and capped on their max value. Only two axes of the message are being used.
+
+[source,cpp]
+----
+    throttle = twistMsg->linear.x * 100;
+    direction = twistMsg->angular.z * 100;
+----
+
+
+=== Broadcasting to the emergency channel
+Every iteration within the critical loop of the state of the emergency button will be broadcasted. The motor controller will interupt the circuits on a hardware level when the button is pushed. No software has been written to do any logic with the state of the button other than broadcasting its state.
+
 === How to run?
 To run only the motor controller the Docker can be used. The Dockerfile for the motor controller is automatically built on Dockerhub.
 
