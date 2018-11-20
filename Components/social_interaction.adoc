@@ -3,6 +3,8 @@ include::../Header.adoc[]
 == Social interaction
 The social interaction creates the interaction of Willy. He listens and speaks with people.
 
+More information about the social interaction see link:{url}/WEB/Interaction.html[Social Interaction].
+
 === Repository
 ====
 https://github.com/Windesheim-Willy/social_interaction[Windesheim-Willy/social_interaction, role="external", window="_blank"]

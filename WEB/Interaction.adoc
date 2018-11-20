@@ -1,10 +1,27 @@
 include::../Header.adoc[]
 
-== Interaction
+== Social interaction
+
+More information about the social interaction component see link:{url}/Components/social_interaction.html[Social Interaction component].
+
+=== Software
+The social interaction is build with NodeJS. NodeJS has a webserver and connects with web sockets to the frontend of Willy. The NodeJS server processes all information of the interactions and passes this to the frontend. The frontend doesn't contains any logic of the social interaction, only the logic of displaying information to the website.
+
+==== Websocket API
+API documentation for the connection between de NodeJS server and frontend.
+
+[options="header"]
+|=======================
+|Name|Purpose|Type|Example data
+|changeMood|Change the body class of the website|String|blue
+|changeFormat|Change the format of the content and Willy image wrapper|Object|
+{willy_height: '80%', content_height: '20%'}
+|changeContent|Change the content below Willy|String|<h1>Hi!</h1>
+|=======================
 
 === Flow Chart
 
-image:media/screen_designs/flowchart.jpg[image]
+image:media/interaction/flow.png[image]
 
 === Screen Designs
 
@@ -46,24 +63,3 @@ For comments at each image, see the English version above.
 6. image:media/screen_designs/nl/6.png[image,width=300]
 7. image:media/screen_designs/nl/7.png[image,width=300]
 8. image:media/screen_designs/nl/8.png[image,width=300]
-
-==== Speech configuration
-
-`curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -`
-
-`sudo apt-get install -y nodejs`
-
-`sudo apt-get install -y build-essential`
-
-`sudo apt-get install python-pyaudio python3-pyaudio sox`
-
-`pip install pyaudio`
-
-`sudo apt-get install libmagic-dev libatlas-base-dev`
-
-`git clone https://github.com/Windesheim-Willy/Speechtest.git`
-
-`cd Speechtest`
-
-`node server.js`
-
