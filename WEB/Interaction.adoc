@@ -34,6 +34,16 @@ Show a map at the frontend of Willy.
 
 The map requires a image file which will be shown to the user. This file should be located at the path `public/assets/map.png`.
 
+==== Information with the schedule
+Show a image with the schedule at the frontend of Willy.
+
+The schedule requires a image file which will be shown to the user. This file should be located at the path `public/assets/schedule.png`.
+
+==== Information with the directions
+Show a image with the directions at the frontend of Willy.
+
+The map requires a image file which will be shown to the user. This file should be located at the path `public/assets/directions.png`.
+
 === Screen Designs
 
 ==== English
