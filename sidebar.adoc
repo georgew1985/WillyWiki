@@ -48,12 +48,10 @@ link:{url}/Technical/index.html[Technical]::
         - link:{url}/Technical/Software.html[Software]
 
 link:{url}/WEB/index.html[Web interface]::
+        - link:{url}/WEB/Interaction.html[Social Interaction]
         - link:{url}/WEB/Development-guide.html[Development Guide]
         - link:{url}/WEB/SAD.html[SAD]
         - link:{url}/WEB/Rosnodejs.html[RosNodeJs]
-        - link:{url}/WEB/Interaction.html[Interaction]
-
-
 
 link:{url}/Research/index.html[Research]::
 	- link:{url}/Research/Hardware.html[Hardware]
