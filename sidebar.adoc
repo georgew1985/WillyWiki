@@ -32,6 +32,7 @@ link:{url}/Components/index.html[Components]::
         - link:{url}/Components/sonar.html[Sonar]
         - link:{url}/Components/kinect.html[Kinect]
         - link:{url}/Components/lidar.html[Lidar]
+        - link:{url}/Components/Localization_and_navigation.html[Localization and navigation]
         - link:{url}/Components/motor_controller.html[Motor controller]
         - link:{url}/Components/joystick.html[Joystick]
         - link:{url}/Components/microphone.html[Microphone]
