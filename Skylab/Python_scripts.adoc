@@ -17,5 +17,6 @@ Publish recognized on topic /interaction/clear_text|Uses packages rospy, Speechr
 Uses Google speech recognition
 |Skylab_topic_listen_0.py |Skylab |Receive many topics from ROS environment and store them in several tables in Postgres |Uses packages rospy, pandas, datetime, configparser, sqlalchemy, psycopg2.
 Retrieves Postgres password from willy.ini. Postgres server on 10.10.1.34
-
+|Skylab_app_get_status_0.py|Skylab|Fetch every 10 seconds the location that was called by a user from the App site
+|Skylab_app_post_status_0.py|Skylab|Post status from Willy activity topic and classroom location to App website every 10 seconds
  
