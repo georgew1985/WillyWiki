@@ -39,19 +39,18 @@ Install multimaster on every master Kinetic node with:
 *** net.ipv4.icmp_echo_ignore_broadcasts=0 
 
 Start multi master: 
-first master: 
 
-* export ROS_MASTER_URI=http://localhost:11311  
-* roscore >/dev/null 2>&1 & 
-* rosrun master_discovery_fkie master_discovery >/dev/null 2>&1 & 
-* rosrun master_sync_fkie master_sync >/dev/null 2>&1 & 
+* first master: 
+** export ROS_MASTER_URI=http://localhost:11311  
+** roscore >/dev/null 2>&1 & 
+** rosrun master_discovery_fkie master_discovery >/dev/null 2>&1 & 
+** rosrun master_sync_fkie master_sync >/dev/null 2>&1 & 
 
-second master: 
-
-* export ROS_MASTER_URI=http://localhost:11312 
-* roscore --port 11312 >/dev/null 2>&1 & 
-* rosrun master_discovery_fkie master_discovery >/dev/null 2>&1 & 
-* rosrun master_sync_fkie master_sync >/dev/null 2>&1 & 
+*second master: 
+** export ROS_MASTER_URI=http://localhost:11312 
+** roscore --port 11312 >/dev/null 2>&1 & 
+** rosrun master_discovery_fkie master_discovery >/dev/null 2>&1 & 
+** rosrun master_sync_fkie master_sync >/dev/null 2>&1 & 
 
 For info: 
 
@@ -63,5 +62,3 @@ Take note: there must exist a binding between the IP address and the host name f
 References: 
 
 http://wiki.ros.org/multimaster_fkie/Tutorials/Setup%20a%20ROS%20master%20synchronization 
-
- 
