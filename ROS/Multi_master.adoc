@@ -33,14 +33,10 @@ No go:
 Install multimaster on every master Kinetic node with: 
 
 * sudo apt-get install ros-kinetic-multimaster-fkie 
-
-Check DNS, localhost and host name 
-
+* Check DNS, localhost and host name 
 * Enable multicast feature on both hosts and for all ROS nodes: 
-
-edit the /etc/sysctl.conf file and add the following line: 
-
-* net.ipv4.icmp_echo_ignore_broadcasts=0 
+** edit the /etc/sysctl.conf file and add the following line: 
+*** net.ipv4.icmp_echo_ignore_broadcasts=0 
 
 Start multi master: 
 first master: 
