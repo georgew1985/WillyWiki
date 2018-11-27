@@ -46,7 +46,7 @@ Start multi master:
 ** rosrun master_discovery_fkie master_discovery >/dev/null 2>&1 & 
 ** rosrun master_sync_fkie master_sync >/dev/null 2>&1 & 
 
-*second master: 
+* second master: 
 ** export ROS_MASTER_URI=http://localhost:11312 
 ** roscore --port 11312 >/dev/null 2>&1 & 
 ** rosrun master_discovery_fkie master_discovery >/dev/null 2>&1 & 
