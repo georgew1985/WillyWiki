@@ -9,24 +9,24 @@ To have the sync module always up-and-running, it seems that this module will be
 
 It has to be tested in the Willy environment if this setup works. Actions are: 
 
-* Make snapshot of test master in Skylab 
-* Install multimaster on the (now) test master in Skylab 
-* Install test master with multimaster on a RPi 
-* Confirm that it works 
-* Evaluate the stop and restart of master on RPI and document possible restart actions 
+* [*] Make snapshot of test master in Skylab 
+* [*] Install multimaster on the (now) test master in Skylab 
+* [*] Install test master with multimaster on a RPi 
+* [*] Confirm that it works 
+* [*] Evaluate the stop and restart of master on RPI and document possible restart actions 
 
 _Go/no go decision_ 
 
 Go: 
 
-* Install multimaster on production RPi on Willy 
-* Depreciate test master on RPi 
-* Document and make instructions 
+* [ ] Install multimaster on production RPi on Willy 
+* [ ] Depreciate test master on RPi 
+* [ ] Document and make instructions 
 
 No go: 
 
-* Revert snapshot on master in Skylab 
-* Make decision on further action  
+* [ ] Revert snapshot on master in Skylab 
+* [ ] Make decision on further action  
 
 *Installation and using multimaster* 
 
