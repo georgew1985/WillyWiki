@@ -2,9 +2,8 @@ Multi master setup on Willy
 
 The Willy environment is built on two locations (Willy and Skylab) which are coupled with an Wifi connection. By using an multi master setup there are two advantages: 
 
-Through the setup it can be decided which topics will be transferred between the two environments, thereby potentially saving bandwidth (configured on master_sync node) 
-
-Skylab will have a dedicated master even when Willy is not operational 
+* Through the setup it can be decided which topics will be transferred between the two environments, thereby potentially saving bandwidth (configured on master_sync node) 
+* Skylab will have a dedicated master even when Willy is not operational 
 
 To have the sync module always up-and-running, it seems that this module will be running on the master in Skylab. It has to be tested if the master on Willy will be automatically be recognized when it is started or some actions has to be taken. Seems to be a task of the master_discovery node. 
 
@@ -16,7 +15,7 @@ It has to be tested in the Willy environment if this setup works. Actions are:
 * Confirm that it works 
 * Evaluate the stop and restart of master on RPI and document possible restart actions 
 
-Go/no go decision 
+_Go/no go decision_ 
 
 Go: 
 
