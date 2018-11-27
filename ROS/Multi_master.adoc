@@ -28,7 +28,7 @@ No go:
 * Revert snapshot on master in Skylab 
 * Make decision on further action  
 
-Installation and using multimaster 
+*Installation and using multimaster* 
 
 Install multimaster on every master Kinetic node with: 
 
@@ -43,7 +43,6 @@ edit the /etc/sysctl.conf file and add the following line:
 * net.ipv4.icmp_echo_ignore_broadcasts=0 
 
 Start multi master: 
-
 first master: 
 
 * export ROS_MASTER_URI=http://localhost:11311  
