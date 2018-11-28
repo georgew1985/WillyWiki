@@ -23,6 +23,8 @@ link:{url}/Config/index.html[Configuration]::
 link:{url}/ROS/index.html[ROS]::
         - link:{url}/ROS/Introduction.html[Introduction to ROS]
         - link:{url}/ROS/Navigation.html[Navigation]
+        - link:{url}/Components/Node_and_topics.html[Nodes and Topics]
+	- link:{url}/Components/Multi_master.html[Multi master]
 
 link:{url}/Components/index.html[Components]::
         - link:{url}/Components/Development-guide.html[Development Guide]
@@ -37,8 +39,7 @@ link:{url}/Components/index.html[Components]::
         - link:{url}/Components/joystick.html[Joystick]
         - link:{url}/Components/microphone.html[Microphone]
         - link:{url}/Components/social_interaction.html[Social interaction]
-        - link:{url}/Components/Node_and_topics.html[Nodes and Topics]
-        - link:{url}/Components/Python_scripts.html[Python scripts]
+
 
 link:{url}/Technical/index.html[Technical]::
         - link:{url}/Technical/Development-guide.html[Development Guide]
@@ -48,6 +49,9 @@ link:{url}/Technical/index.html[Technical]::
         - link:{url}/Technical/Parameters.html[Parameters]
         - link:{url}/Technical/Software.html[Software]
 
+link:{url}/Skylab/index.html[Skylab]::
+        - link:{url}/Components/Python_scripts.html[Python scripts]
+	
 link:{url}/WEB/index.html[Web interface]::
         - link:{url}/WEB/Interaction.html[Social Interaction]
         - link:{url}/WEB/Development-guide.html[Development Guide]
