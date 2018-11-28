@@ -17,6 +17,7 @@ API documentation for the connection between de NodeJS server and frontend.
 |changeFormat|Change the format of the content and Willy image wrapper|Object|
 {willy_height: '80%', content_height: '20%'}
 |changeContent|Change the content below Willy|String|<h1>Hi!</h1>
+|textInput|All the text input will be pushed|String|hello willy
 |=======================
 
 === Flow Chart
