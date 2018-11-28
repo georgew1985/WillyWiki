@@ -1,3 +1,5 @@
+include::../Header.adoc[]
+
 Multi master setup on Willy 
 
 The Willy environment is built on two locations (Willy and Skylab) which are coupled with an Wifi connection. By using an multi master setup there are two advantages: 
