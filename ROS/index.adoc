@@ -5,3 +5,6 @@ include::Introduction.adoc[]
 
 include::Navigation.adoc[]
 
+include::Node_and_topics.adoc[]
+
+include::Multi_master.adoc[]
