@@ -1,9 +1,8 @@
-Skylab Webserver
+= Skylab Webserver
 
 In Skylab a webserver is installed on 10.10.1.44. The installation is on Ubuntu 16.04 and has a LAMP installation.
 
-The installation of LAMP is done by:
-
+==The installation of LAMP is done by:
 ----
 sudo apt-get update
 sudo apt-get install apache2
@@ -23,7 +22,7 @@ Allow incoming traffic:
 sudo ufw allow in "Apache Full"
 ----
 
-Install MySQL
+== Install MySQL
 ----
 sudo apt-get install mysql-server
 ----
@@ -34,7 +33,7 @@ Secure MySQL environment
 mysql_secure_installation
 ----
 
-Install PHP
+== Install PHP
 ----
 sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql
 ----
@@ -43,6 +42,7 @@ edit dir.conf and move index.php higher up in the list
 sudo nano /etc/apache2/mods-enabled/dir.conf
 ----
 
+== Finalizing
 Restart Apache
 ----
 sudo systemctl restart apache2
@@ -61,4 +61,5 @@ Check with:
 http://10.10.1.45/info.php
 ----
 
-reference: https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04
+== reference:
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04
