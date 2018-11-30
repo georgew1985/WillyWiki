@@ -41,7 +41,11 @@ edit dir.conf and move index.php higher up in the list
 ----
 sudo nano /etc/apache2/mods-enabled/dir.conf
 ----
-
+Activate PostgreSQL connectivity:
+Open the php.ini file (/etc/php/7.0/cli/php.ini) and check if the following line is un-commented. If it is not, you can remove the semicolon ( ;) in front of the entry.
+----
+extension=php_pdo_pgsql.dll
+----
 == Finalizing
 Restart Apache
 ----
