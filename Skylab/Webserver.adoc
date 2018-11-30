@@ -46,6 +46,10 @@ Open the php.ini file (/etc/php/7.0/cli/php.ini) and check if the following line
 ----
 extension=php_pdo_pgsql.dll
 ----
+Install Postgres driver
+----
+sudo apt-get install php-pgsql
+----
 == Finalizing
 Restart Apache
 ----
