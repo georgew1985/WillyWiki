@@ -3,4 +3,4 @@ include::../Header.adoc[]
 
 include::Python_scripts.adoc[]
 include::Webserver.adoc[]
-include::Webserver.adoc[]
+include::Skylab_servers.adoc[]
