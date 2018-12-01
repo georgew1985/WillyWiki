@@ -1,4 +1,4 @@
-= Server in Skylab
+= Servers in Skylab
 
 Skylab is the private cloud environment of Windesheim. The management portal of Skylab can be found here: skylab.windesheim.nl
 
