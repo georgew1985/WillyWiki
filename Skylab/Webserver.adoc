@@ -75,7 +75,7 @@ sudo apt-get install libssl-dev
 sudo apt-get install php7.0-cli -y
 sudo apt-get install libssh2-1 php-ssh2 -y
 ----
-
+add *extension = ssh2.so* to php.ini
 
 == reference:
 https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04
