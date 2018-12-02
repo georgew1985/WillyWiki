@@ -69,5 +69,12 @@ Check with:
 http://10.10.1.45/info.php
 ----
 
+== Install additional packages
+----
+sudo apt-get install libssl-dev
+sudo apt-get install libssh2-1-dev
+----
+
+
 == reference:
 https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04
