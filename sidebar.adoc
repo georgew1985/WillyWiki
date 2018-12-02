@@ -53,7 +53,7 @@ link:{url}/Skylab/index.html[Skylab]::
         - link:{url}/Skylab/Python_scripts.html[Python scripts]
         - link:{url}/Skylab/Webserver.html[Webserver]
 	- link:{url}/Skylab/Skylab_servers.html[Skylab servers]
-	- link:{url}/Skylab/ROS_install_on_Ubuntu_VM's.html[ROS installation on Ubuntu VM's in Skylab]
+	- link:{url}/Skylab/ROS_install_on_Ubuntu_VMs.html[ROS installation on Ubuntu VMs in Skylab]
 	- link:{url}/Skylab/DNS_DHCP_pfSense_Ubuntu.html[DNS,DHCP, pfSense & Ubuntu]
 	
 link:{url}/WEB/index.html[Web interface]::
