@@ -2,6 +2,11 @@
 include::../Header.adoc[]
 
 include::Python_scripts.adoc[]
+
 include::Webserver.adoc[]
+
 include::Skylab_servers.adoc[]
+
 include::ROS_install_on_Ubuntu_VM's.adoc[]
+
+include::DNS_DHCP_pfSense_Ubuntu.adoc[]
