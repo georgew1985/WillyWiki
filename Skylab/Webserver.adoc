@@ -1,6 +1,6 @@
 = Skylab Webserver
 
-In Skylab a webserver is installed on 10.10.1.44. The installation is on Ubuntu 16.04 and has a LAMP installation.
+In Skylab a webserver is installed on 10.10.1.45. The installation is on Ubuntu 16.04 and has a LAMP installation.
 
 ==The installation of LAMP is done by:
 ----
