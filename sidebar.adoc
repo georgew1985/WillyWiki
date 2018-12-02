@@ -53,6 +53,8 @@ link:{url}/Skylab/index.html[Skylab]::
         - link:{url}/Skylab/Python_scripts.html[Python scripts]
         - link:{url}/Skylab/Webserver.html[Webserver]
 	- link:{url}/Skylab/Skylab_servers.html[Skylab servers]
+	- link:{url}/Skylab/Skylab_servers.html[Skylab servers]
+	include::Skylab_servers.adoc[]
 	
 link:{url}/WEB/index.html[Web interface]::
         - link:{url}/WEB/Interaction.html[Social Interaction]
