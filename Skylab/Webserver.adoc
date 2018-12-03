@@ -74,15 +74,35 @@ http://10.10.1.45/info.php
 sudo apt-get install libssl-dev
 sudo apt-get install php7.0-cli -y
 sudo apt-get install libssh2-1 php-ssh2 -y
-sudo apt-get install sendmail -y
-apt install python-pip =y
-pip install configparser
+sudo apt-get install vsftpd -y
 ----
-add *extension = ssh2.so* to php.ini
-
+add to /etc/vsftpd.conf
+----
+chroot_local_user=YES
+userlist_deny=NO
+userlist_enable=YES
+userlist_file=/etc/vsftpd.user_list
+----
+Make user for FTP site (replace user with wanted user name and give password)
+----
+sudo useradd -m user -s/usr/sbin/nologin
+sudo passwd user
+----
+Add to //etc/shells
+----
+/usr/sbin/nologin
+----
+add to php.ini
+----
+extension = ssh2.so
+----
 Give website rights in home directory of Willy
 ----
 sudo chmod -R 777 /home/willy
+----
+Restart FTP server
+----
+sudo etc/init.d/vsftpd restart
 ----
 Restart Apache
 ----
