@@ -74,6 +74,7 @@ http://10.10.1.45/info.php
 sudo apt-get install libssl-dev
 sudo apt-get install php7.0-cli -y
 sudo apt-get install libssh2-1 php-ssh2 -y
+sudo apt-get install sendmail -y
 ----
 add *extension = ssh2.so* to php.ini
 
