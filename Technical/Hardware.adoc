@@ -6,7 +6,7 @@ include::../Header.adoc[]
 A simple overview of all the hardware in Willy is made in the 
 following scheme:
 
-image:media/overview/overview.png[image]
+image:media/technical/Connections.png[image]
 
 === Components
 This chapter contains all the components with explanation.
@@ -178,9 +178,6 @@ This board is placed at the left of the step-down converters.
 
 ==== Sonars
 
-IMPORTANT: The sonars are currently not connected, because the frame bumpers
-are not yet made. These sensors have to be placed in this metal piece.
-
 To prevent collisions, ultrasonic sensors are used. These sensors
 measure distance by using sound. This is made possible by sending out
 bursts of high frequency noise, and then waiting for a reflection of
@@ -201,80 +198,38 @@ of this document.
 
 The sensors all use 5V as can be seen in the schematic:
 
-image:media/technical/Sensors_schematic_updated.jpg[image]
+image:media/technical/Sonar.PNG[image]
 
-As shown in the schematic above, all the 16 sensors are connected to the
+As shown in the schematic above, all the 3 sensors are connected to the
 Arduino.
-
-NOTE: The new sensors don't have a 'sig' pin, but two seperate pins called 
-'trig' and 'echo'. However, these two pins are connected to each other, so 
-both pins use the same pin on the Arduino. The code has been adapted to this 
-new situation.
 
 The sensors are connected in the following order:
 
 [cols=",",options="header",]
 |===============================================
 |Arduino Digital Pin Number |Sonar Sensor Number
-|3 |Sensor 0
-|4 |Sensor 1
-|5 |Sensor 2
-|6 |Sensor 3
-|7 |Sensor 4
-|8 |Sensor 5
-|9 |Sensor 6
-|10 |Sensor 7
-|11 |Sensor 8
-|12 |Sensor 9
-|13 |Sensor 10
-|A0 |Sensor 11
-|A1 |Sensor 12
-|A2 |Sensor 13
-|A3 |Sensor 14
-|A4 |Sensor 15
+|5 |Trigger Sensor 0
+|6 |Echo Sensor 0
+|7 |Trigger Sensor 1
+|8 |Echo Sensor 1
+|9 |Trigger Sensor 2
+|10 |Echo Sensor 2
 |===============================================
 
 The sensors are placed as follows:
 
-image:../Archive/2018S1/Research/media/current-status/image10_3.jpg[image]
+image:media/technical/Willy.png[image]
 
 It should be noted that not all the sensor are read at the same time. 
-All odd numbered sensors are read first, and after a small delay the 
-even numbered sensors are read. This is because sensors placed next to
-each other can interfere the readings of each other.
+The numbers sensors are read in a sequence. Only the lowest value is publisched on the topic.
 
-==== GPS / Compass
-IMPORTANT: The GPS and compass are currently implemented but not used in 
-the code on the mini-pc.
-
-To allow Willy to drive outdoor by using a precomputed route, a GPS
-sensor and a compass are required. The GPS sensor is linked to the
-GPSController using ROS. In the GPSController the raw data is processed
-to usable coordinates. These coordinates are only used to draw a line
-where Willy has driven in the code of the previous group.
-The Compass is used to determinate the direction of willy. This is
-needed for navigation when willy is going to drive precomputed routes.
-
-The sensors are connected according to the following scheme:
-
-image:../Archive/2018S1/Research/media/current-status/image12.jpg[image]
-
-As can be seen in the scheme, there are two Arduino’s used to measure
-sensor data. Both Arduino’s are connected with I2C (see pins A4 and A5).
-The second Arduino with the GPS sensor is powered with the 5V pin from
-the first Arduino. At the moment of writing this has not been fixed and
-reduced to one Arduino.
-
-The GPS will not send data until a FIX has been established. When the 
-reciever is indoors, this can take a long time. GPS works best when outside.
+==== EMU
+To allow Willy to have a quick fix in his drive algorithm, we have implemented a EMU. The EMU will help the AMCL algorithm to find his heading.
 
 ==== Screen
 The screen used is a KDL-42W815B <<2>> from Sony. The screen is connected to 
 the mini-pc with a VGA cable. The manual can be found at the bottom of 
 this document.
-
-NOTE: The current screen is a replacement for the old screen. This 
-screen was very heavy and energy consuming.
 
 ==== LIDAR
 The previous group has also done research on a Lidar sensor.
@@ -302,6 +257,9 @@ placed at the front of the robot.
 The LIDAR is connected with an ethernet connection via a router to the pc.
 
 ==== Kinect
+
+CAUTION: The Kinect is not being used at this moment.
+
 image:../Archive/2018S1/Research/media/current-status/image11.png[image]
 
 As a method to navigate inside, initially the Kinect was chosen. This is 
