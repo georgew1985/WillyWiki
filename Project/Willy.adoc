@@ -47,3 +47,10 @@ Without sensors it would be impossible to recognize objects and therefore avoid 
 sensors eventually had to be linked to Willy's Operating System (ROS). This project group has 
 also been involved in writing an algorithm, which Willy will be able to drive a fixed pattern 
 within a defined area.
+
+The current iteration, is as far as we know the fifth iteration in the existence of Willy. 
+Drs Mischa Mol has provided us with the task to transform Willy into an autonomous moving vehicle
+which can be used for promotional means. In the current situation the development team for Willy
+has been devided. One team taking on the task of letting Willy move autonomously and the other
+team responsible for the social interaction of Willy with visitors and potential students of
+Hogeschool Windesheim.
