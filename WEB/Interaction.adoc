@@ -50,7 +50,10 @@ Take a survey with Willy. The user can ask for the survey and Willy will ask the
 
 ===== Survey questions
 Survey information file `src/interactions/assets/survey.json`.
+The information file contains the name, description and author of the survey.
+
 Survey questions file `src/interactions/assets/survey.csv`.
+The questions file contains all the questions for the survey.
 
 ===== Survey answers
 Survey answers `src/interactions/assets/survey_answers.csv`.
