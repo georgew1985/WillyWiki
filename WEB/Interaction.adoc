@@ -45,6 +45,16 @@ Show a image with the directions at the frontend of Willy.
 
 The map requires a image file which will be shown to the user. This file should be located at the path `public/assets/directions.png`.
 
+==== Survey
+Take a survey with Willy. The user can ask for the survey and Willy will ask the questions.
+
+===== Survey questions
+Survey information file `src/interactions/assets/survey.json`.
+Survey questions file `src/interactions/assets/survey.csv`.
+
+===== Survey answers
+Survey answers `src/interactions/assets/survey_answers.csv`.
+
 === Screen Designs
 
 ==== English
