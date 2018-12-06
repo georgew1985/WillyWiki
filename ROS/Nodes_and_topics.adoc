@@ -5,7 +5,7 @@ include::../Header.adoc[]
 === Overview
 In this document the ROS node and topic implementation of Willy is described. Willy is built around ROS (www.ros.org). It is presumed that the reader has average knowledge of ROS.
 
-ROS is setup with the ROS master running on Willy. Every node connects to the ROS master so that the nodes are aware of each other and can communicate to each other. The nodes of Willy are located within two environments and can be divided in three categories. 
+ROS is setup with the ROS master running on Willy. Every node connects to the ROS master so that the nodes are aware of each other and can communicate to each other. The nodes of Willy are located within two environments and can be divided in three categories.
 
 The two possible locations are:
 
@@ -63,7 +63,7 @@ There are several communication protocols defined in ROS, but in Willy only topi
 |Topic name|Purpose|Publisher|Subscriber|Message type|Message protocol
 |/willy/health|Is Willy healthy or is there an issue?|All nodes|All nodes|Int32
 a|
-- 1 = healthy 
+- 1 = healthy
 - 2 = non-critical issue
 - 3 = critical issue
 |/will/health_reason|If Willy is not healthy, the reason for that is published in clear text here|All nodes|All nodes|String|Clear text
@@ -73,4 +73,11 @@ a|
 - 2 = conversation
 - 3 = enquête
 - 4 = driving with a defined target
+|
+|/interaction/is_active|If the social interaction is busy?|Social interaction speech recognition|All nodes|Int32
+a|
+- 0 = not active
+- 1 = active
+|
+|/interaction/clear_text|The unprocessed text what the person said|Social interaction speech recognition|All nodes|String|Who are you?
 |===============================================
