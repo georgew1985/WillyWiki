@@ -1,4 +1,4 @@
-= Multimaster node for Willy
+= New ROS master on Lubunto for Multimaster node for Willy
 
 Because Multimaster is not available for Raspbian, node master node of Willy will be using Lubuntu.
 Ros.org states that the best way is to use a preinstalled version http://wiki.ros.org/ROSberryPi/Installing%20ROS%20Kinetic%20on%20the%20Raspberry%20Pi
