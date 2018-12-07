@@ -30,6 +30,7 @@ link:{url}/Components/index.html[Components]::
         - link:{url}/Components/Development-guide.html[Development Guide]
         - link:{url}/Components/willy.html[Willy main]
         - link:{url}/Components/ROS-master.html[ROS master]
+        - link:{url}/Components/ROS_master_lubuntu.html[New ROS master on Lubuntu]
         - link:{url}/Components/brain.html[Brain]
         - link:{url}/Components/sonar.html[Sonar]
         - link:{url}/Components/kinect.html[Kinect]
