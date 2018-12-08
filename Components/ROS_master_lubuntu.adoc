@@ -17,11 +17,22 @@ The standard user on the node is ubuntu with the password ubuntu as is stated on
 
 The following adjustments to the image are made:
 To ensure that the startupscripts from the supplier is disabled:
-
 ----
 sudo systemctl disable magni-base
 ----
-
+Change /etc/ubiquity/env/sh
+----
+remove .local from export ROS_HOSTNAME=$(hostname).local
+----
+Change /etc/systemd/system/roscore.service Add extra line after line starting with ExecStart
+----
+ExecStartPost=/bin/sh -c ". /home/ubuntu/multimaster.sh
+----
+Add file /home/ubuntu/multimaster.sh:
+----
+rosrun master_discovery_fkie master_discovery >/dev/null 2>&1 &
+rosrun master_sync_fkie master_sync >/dev/null 2>&1 &
+----
 Update and upgrade the OS:
 ----
 sudo apt-get update
@@ -45,17 +56,6 @@ edit the /etc/sysctl.conf file and add the following line:
 ----
 net.ipv4.icmp_echo_ignore_broadcasts=0
 ----
-The multimaster is activated with:
-----
-rosrun master_discovery_fkie master_discovery >/dev/null 2>&1 &
-rosrun master_sync_fkie master_sync >/dev/null 2>&1 &
-----
-Therefor the startup file of the node is added with:
-----
-rosrun master_discovery_fkie master_discovery >/dev/null 2>&1 &
-rosrun master_sync_fkie master_sync >/dev/null 2>&1 &
-----
-
 Edit /etc/hostnode:
 ----
 Change hostname to brainnode
