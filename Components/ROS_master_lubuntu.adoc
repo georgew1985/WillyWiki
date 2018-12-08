@@ -20,7 +20,9 @@ To ensure that the startupscripts from the supplier is disabled:
 ----
 sudo systemctl disable magni-base
 ----
-Change /etc/ubiquity/env/sh
+In /etc/ubiquity/env.sh the starting of roscore is already added, through roscore.services
+
+Change /etc/ubiquity/env.sh
 ----
 remove .local from export ROS_HOSTNAME=$(hostname).local
 ----
@@ -74,8 +76,7 @@ Add a secure password on VNC with:
 vncserver
 ----
 
-export ROS_HOSTNAME=brainnode
-export ROS_MASTER_URI=http://brainnode:11311
+
 
 Reference for VNC:
 https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-16-04
