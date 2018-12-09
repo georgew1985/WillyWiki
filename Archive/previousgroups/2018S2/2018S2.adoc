@@ -9,10 +9,10 @@ include::../Header.adoc[]
 |Fabian van de Bor|SE
 |George Wassink|BIM
 |Jan-Gerrit Elzinga|SE
-|Johan in 't Hout|BIM
+|Johan in t Hout|BIM
 |Johnny Borg|SE
 |Marc van Walt Meijer|BIM
-|Michel Stompé|BIM
+|Michel Stompe|BIM
 |Ruben Stuut|BIM
 |Sven Pook|SE
 
