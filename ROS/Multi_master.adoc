@@ -1,6 +1,6 @@
 include::../Header.adoc[]
 
-== Multi master setup on Willy 
+= Multi master setup on Willy 
 
 The Willy environment is built on two locations (Willy and Skylab) which are coupled with an Wifi connection. By using an multi master setup there are two advantages: 
 
@@ -30,7 +30,7 @@ No go:
 * [ ] Revert snapshot on master in Skylab 
 * [ ] Make decision on further action  
 
-*Installation and using multimaster* 
+== Installation and using multimaster
 
 Install multimaster on every master Kinetic node with: 
 
@@ -54,7 +54,7 @@ Start multi master:
 ** rosrun master_discovery_fkie master_discovery >/dev/null 2>&1 & 
 ** rosrun master_sync_fkie master_sync >/dev/null 2>&1 & 
 
-For info: 
+== For info: 
 
 * start node manager with: node_manager 
 * rosservice call /master_discovery/list_masters 
