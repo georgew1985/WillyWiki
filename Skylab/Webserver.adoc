@@ -1,3 +1,5 @@
+include::../Header.adoc[]
+
 = Skylab Webserver
 
 In Skylab a webserver is installed on 10.10.1.45. The webserver can be used for
