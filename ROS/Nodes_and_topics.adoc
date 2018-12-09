@@ -77,6 +77,5 @@ a|
 a|
 - 0 = not active
 - 1 = active
-|
 |/interaction/clear_text|The unprocessed text what the person said|Social interaction speech recognition|All nodes|String|Who are you?
 |===============================================
