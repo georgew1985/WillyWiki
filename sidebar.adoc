@@ -24,7 +24,7 @@ link:{url}/ROS/index.html[ROS]::
         - link:{url}/ROS/Introduction.html[Introduction to ROS]
         - link:{url}/ROS/Navigation.html[Navigation]
         - link:{url}/ROS/Nodes_and_topics.html[Nodes and Topics]
-		- link:{url}/ROS/Multi_master.html[Multi master]
+	- link:{url}/ROS/Multi_master.html[Multi master]
 
 link:{url}/Components/index.html[Components]::
         - link:{url}/Components/Development-guide.html[Development Guide]
@@ -53,9 +53,9 @@ link:{url}/Technical/index.html[Technical]::
 link:{url}/Skylab/index.html[Skylab]::
         - link:{url}/Skylab/Python_scripts.html[Python scripts]
         - link:{url}/Skylab/Webserver.html[Webserver]
-		- link:{url}/Skylab/Skylab_servers.html[Skylab servers]
-		- link:{url}/Skylab/ROS_install_on_Ubuntu_VMs.html[ROS installation on Ubuntu VMs in Skylab]
-		- link:{url}/Skylab/DNS_DHCP_pfSense_Ubuntu.html[DNS,DHCP, pfSense & Ubuntu]
+	- link:{url}/Skylab/Skylab_servers.html[Skylab servers]
+	- link:{url}/Skylab/ROS_install_on_Ubuntu_VMs.html[ROS installation on Ubuntu VMs in Skylab]
+	- link:{url}/Skylab/DNS_DHCP_pfSense_Ubuntu.html[DNS,DHCP, pfSense & Ubuntu]
 
 link:{url}/Architecture/index.html[Architecture]::
         - link:{url}/Architecture/Software.html[Software Architecture]
@@ -68,21 +68,21 @@ link:{url}/WEB/index.html[Web interface]::
         - link:{url}/WEB/Rosnodejs.html[RosNodeJs]
 
 link:{url}/Research/index.html[Research]::
-		- link:{url}/Research/Hardware.html[Hardware]
-		- link:{url}/Research/Peripherals.html[Peripherals]
-		- link:{url}/Research/Sensors.html[Sensors]
+	- link:{url}/Research/Hardware.html[Hardware]
+	- link:{url}/Research/Peripherals.html[Peripherals]
+	- link:{url}/Research/Sensors.html[Sensors]
         - link:{url}/Research/Social-interaction.html[Social interaction]
-		- link:{url}/Research/Software.html[Software]
+	- link:{url}/Research/Software.html[Software]
         - link:{url}/Research/Web-interface.html[Web interface]
 
 link:{url}/Design/index.html[Design]::
         - link:{url}/Design/Background.html[Background]
-		- link:{url}/Design/Design-guide.html[Design Guide]
+	- link:{url}/Design/Design-guide.html[Design Guide]
         - link:{url}/Design/Technical.html[Technical]
         - link:{url}/Design/Realisation.html[Realisation]
 
 link:{url}/Status/index.html[Status and Advice]::
-		- link:{url}/Status/Status.html[Status]
+	- link:{url}/Status/Status.html[Status]
         - link:{url}/Status/Todo.html[Todo & Advice]
 
 link:{url}/Archive/index.html[Archive]::
