@@ -1,3 +1,5 @@
+include::../Header.adoc[]
+
 = DNS, DHCP, pfSense and Ubuntu
 
 When the Ubuntu systems are configured with static DHCP from pfSense, they get the correct IP adress.
