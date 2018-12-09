@@ -1,13 +1,13 @@
 include::../Header.adoc[]
 
-== Python scripts
+= Python scripts
 
-=== Overview
+== Overview
 Several tasks around Willy are done through Python scripts. 
 In this chapter the scripts with their purposes are shown. 
 The Python scripts are self-documented.
 
-==== Scripts
+=== Scripts
 
 [cols=",,,",options="header",]
 |===============================================
