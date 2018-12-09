@@ -16,6 +16,7 @@ The software architecture needs to be compartmented for development puproses. To
 === Design
 
 Embedding these standpoints into the Robotic Operating System (ROS) resulted in the following architure design. 
+
 image::media/software-architecture.jpg[]
 
 === ROS Master

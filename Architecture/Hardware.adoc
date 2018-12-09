@@ -19,6 +19,7 @@ The hardware architecture is design with a set of standpoints just as the softwa
 === Design
 
 These standpoints resulted in the following hardware design. 
+
 image::media/hardware-architecture.jpg[]
 
 === Usability
