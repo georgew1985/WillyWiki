@@ -53,9 +53,9 @@ link:{url}/Technical/index.html[Technical]::
 link:{url}/Skylab/index.html[Skylab]::
         - link:{url}/Skylab/Python_scripts.html[Python scripts]
         - link:{url}/Skylab/Webserver.html[Webserver]
-	- link:{url}/Skylab/Skylab_servers.html[Skylab servers]
-	- link:{url}/Skylab/ROS_install_on_Ubuntu_VMs.html[ROS installation on Ubuntu VMs in Skylab]
-	- link:{url}/Skylab/DNS_DHCP_pfSense_Ubuntu.html[DNS,DHCP, pfSense & Ubuntu]
+		- link:{url}/Skylab/Skylab_servers.html[Skylab servers]
+		- link:{url}/Skylab/ROS_install_on_Ubuntu_VMs.html[ROS installation on Ubuntu VMs in Skylab]
+		- link:{url}/Skylab/DNS_DHCP_pfSense_Ubuntu.html[DNS,DHCP, pfSense & Ubuntu]
 
 link:{url}/Architecture/index.html[Architecture]::
         - link:{url}/Architecture/Software.html[Software Architecture]
@@ -68,16 +68,16 @@ link:{url}/WEB/index.html[Web interface]::
         - link:{url}/WEB/Rosnodejs.html[RosNodeJs]
 
 link:{url}/Research/index.html[Research]::
-	- link:{url}/Research/Hardware.html[Hardware]
-	- link:{url}/Research/Peripherals.html[Peripherals]
-	- link:{url}/Research/Sensors.html[Sensors]
+		- link:{url}/Research/Hardware.html[Hardware]
+		- link:{url}/Research/Peripherals.html[Peripherals]
+		- link:{url}/Research/Sensors.html[Sensors]
         - link:{url}/Research/Social-interaction.html[Social interaction]
-	- link:{url}/Research/Software.html[Software]
+		- link:{url}/Research/Software.html[Software]
         - link:{url}/Research/Web-interface.html[Web interface]
 
 link:{url}/Design/index.html[Design]::
         - link:{url}/Design/Background.html[Background]
-	- link:{url}/Design/Design-guide.html[Design Guide]
+		- link:{url}/Design/Design-guide.html[Design Guide]
         - link:{url}/Design/Technical.html[Technical]
         - link:{url}/Design/Realisation.html[Realisation]
 
@@ -86,7 +86,5 @@ link:{url}/Status/index.html[Status and Advice]::
         - link:{url}/Status/Todo.html[Todo & Advice]
 
 link:{url}/Archive/index.html[Archive]::
-        - link:https://drive.google.com/drive/u/1/folders/1LfOfbxBTFASBrozYIklAt7_7a3ubFFy0[(2016/2) Initial design ]
-        - link:https://drive.google.com/drive/u/1/folders/1yCVk6iNJNQlaouU2WDvMt3BISoHCuz6l[(2017/1) Base & Functionalities ]
-        - link:https://drive.google.com/drive/u/1/folders/1S904hDK_63HIpyPnBgMHzZx-zt0xNpim[(2017/2) Research]
-//        - link:{url}/Archive/2018S1.html[(2018/1) Stabilization & Realisation]
+        - link:{url}/Archive/previousgroups.html[Previous groups]
+		- link:{url}/Archive/Archiveresearch.html[Archive Research]

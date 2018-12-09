@@ -1,12 +1,6 @@
 include::../Header.adoc[]
 
 = Group of 2016 S2
-
-== Specialities
-
-== Members
-
-== Main work
-
 == Archive
+
 https://drive.google.com/drive/u/1/folders/1LfOfbxBTFASBrozYIklAt7_7a3ubFFy0[Google Drive 2016S2]
