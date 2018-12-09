@@ -73,7 +73,6 @@ a|
 - 2 = conversation
 - 3 = enquête
 - 4 = driving with a defined target
-|
 |/interaction/is_active|If the social interaction is busy?|Social interaction speech recognition|All nodes|Int32
 a|
 - 0 = not active
