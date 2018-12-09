@@ -23,7 +23,7 @@ image::media/hardware-architecture.png[]
 
 === Usability
 
-By having multiple VPN instances, it's possible - if all hardware is powered on - to connect through Skylab’s to the individual hardware nodes on Willy even if not physically near him. Another option is to physically connect to WillyLAN and access either Skylab or Willy hardware nodes. 
+By having multiple VPN instances, its possible - if all hardware is powered on - to connect through Skylabs to the individual hardware nodes on Willy even if not physically near him. Another option is to physically connect to WillyLAN and access either Skylab or Willy hardware nodes. 
 
 [NOTE]
 Designing this architecture and keeping it up to date can be done by editing the vsdx files in Microsoft Visio. 
