@@ -1,0 +1,58 @@
+include::../Header.adoc[]
+==== Retrospective 3
+
+==== Tips
+
+. Engels van weekrapportage
+. Markers kopen
+. Martijn wekker zetten
+. Trello bijhouden
+. Scrum? Huidige werkwijze scherp houden
+. Documentatie reviews
+. Martijn komt vaak te laat
+. Scrum planning
+. Winnovation en planning
+. Vrije uren
+. Trello
+
+==== Tops
+
+. Documentatie (tot nu toe alles wordt bijgehouden)
+. Progressie en voortgang
+. Teambuilding x4 (Competitief)
+. Kennis vergaren (meer bekend in Ros en zoeken gericht naar informatie)
+. Weekrapportage
+. Prioriteren (iedereen weet wat er moet gebeuren en wanneer)
+. Werktempo (productief werken)
+. Communicatie binnen de groep en naar extern (Meer rust)
+. Wiki
+. De huidige sprint (We zijn goed op schema, grote doelen maar behalen het wel)
+. Vincent's positieviteit
+. Daily standups (geen verplichting meer maar als tool gebruiken, komt nu tot z'n recht)
+. Voorbereiding (presentaties en dergelijk gaan goed)
+. Niet snel afgeleid, meer focus
+. Planning gaat top
+. Delen van kennnis, van elkaar leren
+. Relaxheid, meer rust en meer eigen taken minder elkaar tegenspreken
+. Inhoud weekrapportage
+. Prototypen, doorhebben wat het is en daardoor meer kennis op doen
+. Hard werken en goede inzet
+. Sfeer
+. Samenwerking gaat goed
+. Muziek, tijdens werk gaat goed
+
+==== Improvements
+
+. Weekrapportage review (TI1,)
+. Wekker zetten voor Martijn (TI3, TI7)
+. Trello bijhouden, checklisten uptodate houden en werkbaar (TI4, TI9, TI11)
+. Op de wiki versiebeheer standaardiseren en laatst bijgewerkt en laatst gecheckt duidelijk weergeven (TI6)
+. 9.30 niet strak houden maar wel 9:45 niet alleen aanwezig maar klaar om daily standup (TI8)
+. Als je vrij wilt of eerder weggaat communiceren (TI10)
+
+==== TODO
+
+. markers kopen voor whiteboard (TI2)
+. Jesse maakt planning tot winnovation kwartaalplanning toelichten (TI9)
+. Winnovation bij elkaar komen overnadenken (TI9)
+. Middterm presentation
