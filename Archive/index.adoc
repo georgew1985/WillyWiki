@@ -1,5 +1,5 @@
 include::../Header.adoc[]
 
-include::previousgroups.adoc[]
+// include::previousgroups.adoc[]
 
-// include::Archiveresearch.adoc[]
+include::Archiveresearch.adoc[]
