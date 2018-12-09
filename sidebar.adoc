@@ -59,8 +59,8 @@ link:{url}/Skylab/index.html[Skylab]::
 
 link:{url}/Architecture/index.html[Architecture]::
         - link:{url}/Architecture/Software.html[Software Architecture]
-	- link:{url}/Architecture/Hardware.html[Hardware Architecture]
-	
+        - link:{url}/Architecture/Hardware.html[Hardware Architecture]
+
 link:{url}/WEB/index.html[Web interface]::
         - link:{url}/WEB/Interaction.html[Social Interaction]
         - link:{url}/WEB/Development-guide.html[Development Guide]
