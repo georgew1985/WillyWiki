@@ -1,3 +1,5 @@
+include::../Header.adoc[]
+
 = Instalation of Ubuntu on Skylab VM;s
 
 The VM's Fetcher and Sylab ROS master have ROS instlled. Run these commands on Ubuntu 16.04 to install ROS Kinetic ready to run.
