@@ -1,6 +1,6 @@
 include::../Header.adoc[]
 
-include::previousgroups/2018S2/2018S2.adoc[]
+include::previousgroups/2018S2/index.adoc[]
 
 // include::previousgroups/2018S1/2018S1.adoc[]
 
@@ -9,4 +9,3 @@ include::previousgroups/2018S2/2018S2.adoc[]
 // include::previousgroups/2017S1/2017S1.adoc[]
 
 // include::previousgroups/2016S2/2016S2.adoc[]
-
