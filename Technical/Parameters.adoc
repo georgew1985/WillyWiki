@@ -2,7 +2,7 @@ include::../Header.adoc[]
 
 == Launch file parameters
 
-==== Overview
+=== Overview
 
 The autonomous driving of Willy is controlled by external ROS plugins. These plugins are:
 
@@ -15,9 +15,9 @@ The autonomous driving of Willy is controlled by external ROS plugins. These plu
 
 All of these plugins have their own launch file. Every launch file has it's own parameters which can be tuned to finetune Willy.
 
-==== parameters
+=== parameters
 
-===== Move base
+==== Move base
 
 *Move_base_param.yaml*
 
@@ -53,7 +53,7 @@ The rate in Hz at which to run the global planning loop. If the frequency is set
 - `*max_planning_retries*` (int32_t, default: -1) +
 How many times to allow for planning retries before executing recovery behaviors. A value of -1.0 corresponds to an infinite retries. +
 
-==== Base local planner
+=== Base local planner
 
 *base_local_planner_params.yaml*
 
@@ -145,7 +145,7 @@ How far the robot must travel in meters before oscillation flags are reset +
 - `*prune_plan**` (bool, default: true) +
 Defines whether or not to eat up the plan as the robot moves along the path.
 
-==== Common costmap
+=== Common costmap
 
 *costmap_common_params.yaml*
 
@@ -171,7 +171,7 @@ The sensor sensors used for the navigation. Listed below.
 scan: {data_type: LaserScan, topic: scan, marking: true, clearing: true, min_obstacle_height: -1, max_obstacle_height: 1.0} +
 kinect: {data_type: PointCloud2, topic: camera/depth_registered/cloud, marking: true, clearing: false, min_obstacle_height: -1, max_obstacle_height: 1} +
 
-==== Global costmap
+=== Global costmap
 
 *global_costmap_params.yaml*
 
@@ -187,7 +187,7 @@ Determines the frequency, in Hz, at which the costmap will run its update loop +
 - `*static_map*` (bool, default: false) +
 Determines whether or not the costmap should initialize itself based on a map served by the map_server. +
 
-==== Local costmap
+=== Local costmap
 
 *local_costmap_params.yaml*
 
