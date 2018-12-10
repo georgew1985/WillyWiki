@@ -6,13 +6,14 @@ of Willy are connected in one Docker network inside this repository.
 
 For more information about the initial setup, check out the link:{url}/Config/index.html[wiki about the configuration]::
 
-=== Repository
+== Repository
+
 ====
 https://github.com/Windesheim-Willy/willy[Windesheim-Willy/willy, role="external", window="_blank"]
 ====
 
-
 ==== Git submodules
+
 ====
 https://git-scm.com/book/nl/v2/Git-Tools-Submodules[Documentation about git submodules, role="external", window="_blank"]
 ====
