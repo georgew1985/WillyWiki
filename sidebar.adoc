@@ -86,6 +86,6 @@ link:{url}/Status/index.html[Status and Advice]::
         - link:{url}/Status/Todo.html[Todo & Advice]
 
 link:{url}/Archive/index.html[Archive]::
-		- link:{url}/Research/previousgroups.html[Previous Groups]
-		- link:{url}/Research/Archiveresearch.html[Research Archive]
+		- link:{url}/Archive/previousgroups.html[Previous Groups]
+		- link:{url}/Archive/Archiveresearch.html[Research Archive]
 		
