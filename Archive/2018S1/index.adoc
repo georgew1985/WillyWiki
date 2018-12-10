@@ -1,5 +1,5 @@
-= Group of 2018 S1
-== Members
+== Group of 2018 S1
+=== Members
 |===
 |Student|Major study
 |Jesse Bouwman|BIM
