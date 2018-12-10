@@ -1,5 +1,3 @@
-include::../Header.adoc[]
-
 = Group of 2018 S2
 
 == Members
@@ -15,6 +13,7 @@ include::../Header.adoc[]
 |Michel Stompe|BIM
 |Ruben Stuut|BIM
 |Sven Pook|SE
+|===
 
 == Main work
 Our goals for this semester consist of creating an autonomous driving robot on T5 as well as integrating Social Interaction in Willy. We started off with two teams of five, but we came to realise very soon that its not possible to achieve one thing, without the other. Therefore, weve had numerous different virtual teams, for physical hardware, software architecture, hardware architecture and so on. 

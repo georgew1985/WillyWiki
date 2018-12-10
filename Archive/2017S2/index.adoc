@@ -1,5 +1,3 @@
-include::../Header.adoc[]
-
 = Group of 2017 S2
 == Archive
 
