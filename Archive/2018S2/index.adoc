@@ -17,7 +17,7 @@
 === Main tasks
 Our goals for this semester consist of creating an autonomous driving robot on T5 as well as integrating Social Interaction in Willy. We started off with two teams of five, but we came to realise very soon that its not possible to achieve one thing, without the other. Therefore, weve had numerous different virtual teams, for physical hardware, software architecture, hardware architecture and so on. 
 
-image::media/virtueel-team.jpg[]
+image::2018S2/media/virtueel-team.jpg[]
 
 We've also set some ground rules for transference in the process, as we've learned that many groups before us, including ourselves, struggled at getting the system up and running in the first weeks.  
 Besides the two main goals, and transference, weve also redesigned a lot of functionality. Weve created a logical and modular design on both hard- and software. If used as described, the following project group can use our rework and fastrack towards their own new project goals. 
