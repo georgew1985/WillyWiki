@@ -73,7 +73,6 @@ link:{url}/Archive/index.html[Archive]::
         - link:{url}/Archive/Archiveresearch.html[Research Archive]
 
  link:{url}/Config/index.html[weg]::
-        - link:{url}/WEB/SAD.html[SAD archiveren]
         - link:{url}/ROS/Navigation.html[Navigation archiveren]
         - link:{url}/Config/configure.html[Configure ]
         - link:{url}/Config/vm.html[Willy development VM]
