@@ -1,5 +1,8 @@
 include::../Header.adoc[]
 
+
+IMPORTANT: This page should be updated to reflect the current state.
+
 == Findings
 
 This file contains all the things we have found while prototyping and may be usefull to other project groups

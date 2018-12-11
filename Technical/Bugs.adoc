@@ -1,5 +1,7 @@
 include::../Header.adoc[]
 
+IMPORTANT: This page should be updated to reflect the current state.
+
 == Common problems
 
 This file contains a list of the most common problems and the problems we found during development.

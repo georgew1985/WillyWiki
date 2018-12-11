@@ -1,6 +1,6 @@
 include::../Header.adoc[]
 
-IMPORTANT: This page is deprecated and will be removed in the future.
+IMPORTANT: This page should be updated to reflect the current state.
 
 == Willy Git setup
 Commands used to set up the git repos in willy.

@@ -1,5 +1,7 @@
 include::../Header.adoc[]
 
+IMPORTANT: This page is deprecated and will be removed in the future.
+
 == Remote access
 === RDP
 The following configuration was used when RDP was deployed by using XRDP and XFCE4

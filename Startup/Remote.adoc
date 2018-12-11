@@ -1,5 +1,7 @@
 include::../Header.adoc[]
 
+IMPORTANT: This page is deprecated and will be removed in the future.
+
 == Remote
 === Setup Wifi connection
 Before any form of connection can be realized, a wireless connection is required. When the power switch is turned on, the router will setup a wifi access point. Connection with the access point can be set with the following data.
