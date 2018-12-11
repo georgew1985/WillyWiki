@@ -1,9 +1,10 @@
 == Group of 2018 Q3 & Q4
+
 === Members
-[cols="1,2"] 
+
+[cols="2,1"] 
 .Student list of 2018 Q3-Q4
 |===
-
 |Student|Study Major
 
 |Dylan Reimerink|SE
