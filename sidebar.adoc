@@ -18,7 +18,7 @@ link:{url}/Design/index.html[Build of Willy]::
         - link:{url}/Design/Design-guide.html[Requirements]
         - link:{url}/Design/Technical.html[Design reference]
         - link:{url}/Design/Realisation.html[Physical build]
-        - link:{url}/Technical/Hardware.html[Hardware]
+        - link:{url}/Design/Hardware.html[Hardware]
 
 link:{url}/ROS/index.html[Robotic Operating System]::
         - link:{url}/ROS/Introduction.html[Introduction to ROS]
@@ -62,9 +62,9 @@ link:{url}/Research/index.html[Research]::
         - link:{url}/Research/Software.html[Software]
         - link:{url}/Research/Web-interface.html[Web interface]
 
-link:{url}/Technical/index.html[Lessons learned]::
-        - link:{url}/Technical/Bugs.html[Known Bugs]
-        - link:{url}/Technical/Findings.html[Findings splitsen naar verschillende zaken]
+link:{url}/lessons_learned/index.html[Lessons learned]::
+        - link:{url}/lessons_learned/Bugs.html[Known Bugs]
+        - link:{url}/lessons_learned/Findings.html[Findings splitsen naar verschillende zaken]
         - link:{url}/Status/Status.html[Status]
         - link:{url}/Status/Todo.html[Todo & Advice]
 
@@ -73,7 +73,6 @@ link:{url}/Archive/index.html[Archive]::
         - link:{url}/Archive/Archiveresearch.html[Research Archive]
 
  link:{url}/Config/index.html[weg]::
-        - link:{url}/WEB/SAD.html[SAD archiveren]
         - link:{url}/ROS/Navigation.html[Navigation archiveren]
         - link:{url}/Config/configure.html[Configure ]
         - link:{url}/Config/vm.html[Willy development VM]
@@ -82,6 +81,3 @@ link:{url}/Archive/index.html[Archive]::
         - link:{url}/Config/Remote.html[Remote]
         - link:{url}/Startup/Remote.html[Remote weg]
         - link:{url}/Startup/Willy-Web.html[Willy Web weg]
-        - link:{url}/Technical/Development-guide.html[Development Guide]
-        - link:{url}/Technical/Parameters.html[Parameters]
-        - link:{url}/Technical/Software.html[Software]

@@ -1,4 +1,0 @@
-include::../Header.adoc[]
-
-== Software architecture document
-The link:media/SAD.pdf[Software Architecture Document] contains all the functional requirements, use cases and wireframes. It also includes a technical overview and explaination about the written code and how RosNodeJS is implemented. The wiki contains some more info about RosNodeJs because it lacks a proper documentation.
