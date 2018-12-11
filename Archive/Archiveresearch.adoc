@@ -1,5 +1,6 @@
 include::../Header.adoc[]
 
-// - link:https://drive.google.com/drive/u/1/folders/1S904hDK_63HIpyPnBgMHzZx-zt0xNpim[(2017/2) Research]
-// - link:https://drive.google.com/drive/u/1/folders/1yCVk6iNJNQlaouU2WDvMt3BISoHCuz6l[(2017/1) Base & Functionalities ]
-// - link:https://drive.google.com/drive/u/1/folders/1LfOfbxBTFASBrozYIklAt7_7a3ubFFy0[(2016/2) Initial design ]
+https://liveadminwindesheim.sharepoint.com/:f:/r/sites/O365-Winnie/Gedeelde%20documenten/Archief%20Willy/2018%20S1?csf=1&e=YuCRtk[2018 Q1 & Q2 SharePoint archive]
+https://liveadminwindesheim.sharepoint.com/:f:/r/sites/O365-Winnie/Gedeelde%20documenten/Archief%20Willy/2017%20S2?csf=1&e=rrKpHk[2017 Q3 & Q4 SharePoint archive]
+https://liveadminwindesheim.sharepoint.com/:f:/r/sites/O365-Winnie/Gedeelde%20documenten/Archief%20Willy/2017%20S1?csf=1&e=ZeLndQ[2017 Q1 & Q2 SharePoint archive]
+https://liveadminwindesheim.sharepoint.com/:f:/r/sites/O365-Winnie/Gedeelde%20documenten/Archief%20Willy/2016%20S2?csf=1&e=NcimW3[2016 Q3 & Q4 SharePoint archive]

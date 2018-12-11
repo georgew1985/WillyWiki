@@ -9,7 +9,7 @@ The Python scripts are self-documented.
 
 === Scripts
 
-[cols="1,1,1,2"] 
+[cols="1,1,2,2"] 
 .Scripts for Willy
 |===
 |Name |Location |Purpose |Remarks

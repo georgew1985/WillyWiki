@@ -1,7 +1,11 @@
-== Group of 2018 S1
+== Group of 2018 Q1 & Q2
 === Members
+[cols="1,2"] 
+.Student list of 2018 Q1-Q2
 |===
+
 |Student|Study Major
+
 |Jesse Bouwman|BIM
 |Vincent van Dijk|IDS
 |Jonathan ten Hove|SE
@@ -9,4 +13,6 @@
 |Gerard Zeeman|ESA
 |===
 
-== Archive
+=== Archive
+
+https://liveadminwindesheim.sharepoint.com/:f:/r/sites/O365-Winnie/Gedeelde%20documenten/Archief%20Willy/2018%20S1?csf=1&e=YuCRtk[2018 Q1 & Q2 SharePoint archive]
