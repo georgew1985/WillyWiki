@@ -43,13 +43,13 @@ Install multimaster on every master Kinetic node with:
 Start multi master: 
 
 * first master: 
-** export ROS_MASTER_URI=http://localhost:11311  
+** export ROS_MASTER_URI=http://brainnode:11311  
 ** roscore >/dev/null 2>&1 & 
 ** rosrun master_discovery_fkie master_discovery >/dev/null 2>&1 & 
 ** rosrun master_sync_fkie master_sync >/dev/null 2>&1 & 
 
 * second master: 
-** export ROS_MASTER_URI=http://localhost:11312 
+** export ROS_MASTER_URI=http://u1634:11312 
 ** roscore --port 11312 >/dev/null 2>&1 & 
 ** rosrun master_discovery_fkie master_discovery >/dev/null 2>&1 & 
 ** rosrun master_sync_fkie master_sync >/dev/null 2>&1 & 

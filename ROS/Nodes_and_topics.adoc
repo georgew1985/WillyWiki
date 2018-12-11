@@ -44,15 +44,16 @@ image:ros_node_topic_overview.png[image]
 |Audio_controller_0|Subscribes to the audio topics and steers the speakers
 |Motor_controller_0|Subscribes to the drive topics and steers the motor of the propulsion
 
-||Skylab output
-|Skylab_topic_publish_0|Fetches data from the PostgreSQL database and publishes data on ROS topics
-|App_publish_0|Fetches JSON data from the App supplier Radeffect and publishes data on ROS topics and in the PostgreSQL database
+||Skylab input
+|Skylab_topic_publish_0|Fetches data from the PostgreSQL database and publishes data on ROS topics (not used now)
+|Skylab_app_get_status_0|Fetches JSON data from the App supplier Radeffect and publishes data on ROS topics and in the PostgreSQL database
+
 ||Skylab process
-|Speech_0|Subscribes to the conversation topic, determines how positive/negative the text is through Azure and publishes this on a ROS topic
-|App_0	|To be decided if necessary
+|None|
+
 ||Skylab output
 |Skylab_topic_listen_0|Fetches data from ROS topics and publishes data in the PostgreSQL database
-|App_publish_0|Fetches data from ROS topics and publishes JSON data to the App supplier Radeffect and in the PostgreSQL database
+|Skylab_app_post_status_0|Fetches data from ROS topics and publishes JSON data to the App supplier Radeffect and in the PostgreSQL database
 |===============================================
 
 === Topics
@@ -78,4 +79,7 @@ a|
 - 0 = not active
 - 1 = active
 |/interaction/clear_text|The unprocessed text what the person said|Social interaction speech recognition|All nodes|String|Who are you?
+|/move_action|Move actions for willy|Navigation brain|SI|String
+a|
+- turn_around = Turn Willy around
 |===============================================
