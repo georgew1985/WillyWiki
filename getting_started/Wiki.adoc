@@ -1,7 +1,5 @@
 include::../Header.adoc[]
 
-image:https://travis-ci.org/Windesheim-Willy/WillyWiki.svg?branch=master["Build Status", link="https://travis-ci.org/Windesheim-Willy/WillyWiki"]
-
 == Willy Wiki
 This wiki is setup to increase the transferability of the project. Everything you need to start is documented here.
 Detailed documents are referenced trough the wiki if you need more information.
@@ -25,24 +23,29 @@ This is directly the main advantage of using Markdown, while you can use plugins
 * LaTex (Tex)
 ** Is more professional focussed and contains a lot of functions at its core where in other markdown languages you need plugins
 
+[NOTE]
+--
 This should also clarify the reason that AsciiDoc is chosen as the source language of this Wiki. <<Markdown vs AsciiDoc>>
+--
 
 === How the Wiki is setup using AsciiDoc with TravisCI and Github Pages
 The wiki is setup fairly easy, especially when you know your way around Github and TravisCI. So it is important to read into these topics if you don't know what these tools mean. And for AsciiDoc you'll learn it along the way as we did.
 
 === Conversion
-As told in the <<introduction>> AsciiDoc is used as a source language, which then can be converted to whatever format you like. Most commonly HTML and PDF.
+As told in the introduction AsciiDoc is used as a source language, which then can be converted to whatever format you like. Most commonly HTML and PDF.
 
 ==== Travis
 Travis is setup to convert all documents recursively to HTML and to PDF.
 
 ===== Setup
 Before you can use Travis you must give travis acces to the repository, this is already done using Willy's Github account.
-The following environment variables must be set for the script to work properly.
+The following environment variables must be set for the script to work properly. 
 
-image:media/Wiki/env.png[]
+[NOTE]
+--
+Travisci is already configured for the windesheim-willy.github.io/WillyWiki/ repository. No additional configuration is required. 
 
-===== Config
+===== How-to Config
 The config file used by TravisCI is link:https://raw.githubusercontent.com/Windesheim-Willy/WillyWiki/master/.travis.yml[travis.yml]. If you are not familiar with Travis it basically asks you for the following:
 
 * Some config elements (Setup)
@@ -172,9 +175,8 @@ link:https://asciidoctor.org/docs/user-manual/#introduction-to-asciidoctor[]
 [TIP]
 A hardcoded sidebar is used to avoid using Docbook, it might be worth to take a look at this format as it is being used by the official sources as well. The main disadvantage of this is that it makes the Wiki one long HTML page with a large index, however for PDF export this would be fabiolous. See link:https://asciidoctor.org/docs/user-manual/#introduction-to-asciidoctor[Asciidoctor Wiki] as an example.
 
-[bibliography]
 === References
 
-- [[[Tutorial]]] link:http://mgreau.com/posts/2016/03/28/asciidoc-to-gh-pages-with-travis-ci-docker-asciidoctor.html[Maxime Gréau. Convert AsciiDoc to HTML/PDF & publish to GitHub Pages with Travis CI and Asciidoctor Docker containers]
-- [[[Markdown vs AsciiDoc]]] link:https://asciidoctor.org/docs/user-manual/#comparison-by-example[Asciidoctor, Markdown vs AsciiDoc]
-- [[[Recursive replace]]] link:https://superuser.com/questions/428493/how-can-i-do-a-recursive-find-and-replace-from-the-command-line[Stackoverflow, Recursive replace]
+- Tutorial link:http://mgreau.com/posts/2016/03/28/asciidoc-to-gh-pages-with-travis-ci-docker-asciidoctor.html[Maxime Gréau. Convert AsciiDoc to HTML/PDF & publish to GitHub Pages with Travis CI and Asciidoctor Docker containers]
+- Markdown vs AsciiDoc link:https://asciidoctor.org/docs/user-manual/#comparison-by-example[Asciidoctor, Markdown vs AsciiDoc]
+- Recursive replace link:https://superuser.com/questions/428493/how-can-i-do-a-recursive-find-and-replace-from-the-command-line[Stackoverflow, Recursive replace]
