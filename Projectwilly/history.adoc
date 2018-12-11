@@ -1,5 +1,5 @@
 include::../Header.adoc[]
-
+image:https://travis-ci.org/Windesheim-Willy/WillyWiki.svg?branch=master["Build Status", link="https://travis-ci.org/Windesheim-Willy/WillyWiki"]
 == History of Willy
 
 === The birth of an idea
