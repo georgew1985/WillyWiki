@@ -53,28 +53,28 @@ link:{url}/Components/index.html[Components]::
 link:{url}/Skylab/index.html[Skylab]::
         - link:{url}/Skylab/Python_scripts.html[Python scripts]
         - link:{url}/Skylab/Webserver.html[Webserver]
-		- link:{url}/Skylab/Skylab_servers.html[Skylab servers]
-		- link:{url}/Skylab/ROS_install_on_Ubuntu_VMs.html[ROS installation on Ubuntu VMs in Skylab]
-		- link:{url}/Skylab/DNS_DHCP_pfSense_Ubuntu.html[DNS,DHCP, pfSense & Ubuntu]
-		- link:{url}/ROS/Multi_master.html[Multi master]
+        - link:{url}/Skylab/Skylab_servers.html[Skylab servers]
+        - link:{url}/Skylab/ROS_install_on_Ubuntu_VMs.html[ROS installation on Ubuntu VMs in Skylab]
+        - link:{url}/Skylab/DNS_DHCP_pfSense_Ubuntu.html[DNS,DHCP, pfSense & Ubuntu]
+        - link:{url}/ROS/Multi_master.html[Multi master]
 
 link:{url}/Research/index.html[Research]::
-		- link:{url}/Research/Hardware.html[Hardware]
-		- link:{url}/Research/Peripherals.html[Peripherals]
-		- link:{url}/Research/Sensors.html[Sensors]
+        - link:{url}/Research/Hardware.html[Hardware]
+        - link:{url}/Research/Peripherals.html[Peripherals]
+        - link:{url}/Research/Sensors.html[Sensors]
         - link:{url}/Research/Social-interaction.html[Social interaction]
-		- link:{url}/Research/Software.html[Software]
+        - link:{url}/Research/Software.html[Software]
         - link:{url}/Research/Web-interface.html[Web interface]
 
 link:{url}/Technical/index.html[Lessons learned]::
         - link:{url}/Technical/Bugs.html[Known Bugs]
         - link:{url}/Technical/Findings.html[Findings splitsen naar verschillende zaken]
-		- link:{url}/Status/Status.html[Status]
+        - link:{url}/Status/Status.html[Status]
         - link:{url}/Status/Todo.html[Todo & Advice]
 
 link:{url}/Archive/index.html[Archive]::
-		- link:{url}/Archive/previousgroups.html[Previous Groups]
-		- link:{url}/Archive/Archiveresearch.html[Research Archive]
+        - link:{url}/Archive/previousgroups.html[Previous Groups]
+        - link:{url}/Archive/Archiveresearch.html[Research Archive]
 
  link:{url}/Config/index.html[weg]::
         - link:{url}/WEB/SAD.html[SAD archiveren]
@@ -84,7 +84,7 @@ link:{url}/Archive/index.html[Archive]::
         - link:{url}/Config/GIT.html[GIT Setup]
         - link:{url}/Config/Ubuntu.html[Ubuntu]
         - link:{url}/Config/Remote.html[Remote]
-	    - link:{url}/Startup/Remote.html[Remote weg]
+        - link:{url}/Startup/Remote.html[Remote weg]
         - link:{url}/Startup/Willy-Web.html[Willy Web weg]
         - link:{url}/Technical/Development-guide.html[Development Guide]
         - link:{url}/Technical/Parameters.html[Parameters]
