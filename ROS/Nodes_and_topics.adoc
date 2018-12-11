@@ -78,4 +78,7 @@ a|
 - 0 = not active
 - 1 = active
 |/interaction/clear_text|The unprocessed text what the person said|Social interaction speech recognition|All nodes|String|Who are you?
+|/move_action|Move actions for willy|Navigation brain|SI|String
+a|
+- turn_around = Turn Willy around
 |===============================================
