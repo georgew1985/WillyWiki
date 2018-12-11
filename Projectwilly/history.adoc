@@ -1,0 +1,27 @@
+include::../Header.adoc[]
+
+== History of Willy
+
+=== The birth of an idea
+
+In 2015 a 'waste competition' was organized at a primary school, with the aim to provide the 
+pupils of this primary school with a solution to the question 'how to keep the Grote Markt in 
+Zwolle clean'. Eventually, six students won this competition with their idea to keep the Grote 
+Markt clean with the help of a 'cleaning robot (Willy)'. An important aspect of Willy had to 
+be that he would be able to interact with bystanders and thus influence them on their waste 
+behavior. For example, Willy might point out to people that it would be better to deposit 
+waste in a waste bin instead of throwing it on the floor; this would enable Willy to 
+influence people positively. In short, Willy must be able to act in a corrective as well as 
+a preventive (i.e. interaction) manner.
+
+The primary school contacted the township of Zwolle to see if the 'Willy concept' could be 
+realized. The township of Zwolle reacted positively to the Willy concept and then looked 
+into whether it could involve a partner who could take on Willy's realization.
+
+Eventually the township of Zwolle found 'The Art of Robotics (TAoR)'; a foundation 
+that works to increase the awareness of robot technology in today's society. ' The team of 
+TAoR responded enthusiastically to this proposition and subsequently made a plan on how they 
+could best realize Willy. Ruud van der Burg contacted Hogeschool Windesheim on behalf of 
+TAoR with the proposal to see if it would be possible to let students (of different 
+disciplines) work at Willy. Windesheim has agreed to this, with which the realization process 
+of Willy started.
