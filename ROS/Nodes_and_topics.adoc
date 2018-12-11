@@ -47,8 +47,9 @@ image:ros_node_topic_overview.png[image]
 ||Skylab input
 |Skylab_topic_publish_0|Fetches data from the PostgreSQL database and publishes data on ROS topics (not used now)
 |Skylab_app_get_status_0|Fetches JSON data from the App supplier Radeffect and publishes data on ROS topics and in the PostgreSQL database
+
 ||Skylab process
-|None
+|None|
 
 ||Skylab output
 |Skylab_topic_listen_0|Fetches data from ROS topics and publishes data in the PostgreSQL database
