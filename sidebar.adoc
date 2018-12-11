@@ -44,7 +44,6 @@ link:{url}/Components/index.html[Components]::
         - link:{url}/Components/Localization_and_navigation.html[Localization and navigation]
         - link:{url}/Components/motor_controller.html[Motor controller]
         - link:{url}/Components/joystick.html[Joystick]
-        - link:{url}/Components/microphone.html[Microphone]
         - link:{url}/Components/social_interaction.html[Social interaction]
 
 link:{url}/Skylab/index.html[Skylab]::
