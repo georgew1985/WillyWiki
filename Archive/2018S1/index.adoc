@@ -1,6 +1,9 @@
 == Group of 2018 S1
 === Members
+[cols="1,2"] 
+.Student list of 2018 Q1-Q2
 |===
+
 |Student|Study Major
 |Jesse Bouwman|BIM
 |Vincent van Dijk|IDS
@@ -9,4 +12,4 @@
 |Gerard Zeeman|ESA
 |===
 
-== Archive
+

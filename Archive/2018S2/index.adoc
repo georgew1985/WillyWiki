@@ -1,6 +1,9 @@
-== Group of 2018 S2
+== Group of 2018 Q3-Q4
 === Members
+[cols="1,2"] 
+.Student list of 2018 Q3-Q4
 |===
+
 |Student|Study Major
 |Dylan Reimerink|SE
 |Fabian van de Bor|SE
