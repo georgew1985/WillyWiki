@@ -11,24 +11,3 @@ https://github.com/Windesheim-Willy/joystick[Windesheim-Willy/joystick, role="ex
 
 === Prerequisites
 The Docker container requires the device */dev/input/js0* to be connected to the host. In most cases a knockoff PS3 controller or Xbox controller wil do the trick. The controller requires to have _select_ button to be pressed when controlling Willy with the right analog stick. This component uses the default settings for teleop twist joy package, which may require a bit practice to maneuver through the building.
-
-=== How to run?
-To run only the joystick the Docker can be used. The Dockerfile for the joystick is automatically built on Dockerhub.
-
-====
-https://hub.docker.com/r/windesheimwinny/joystick[windesheimwinny/joystick, role="external", window="_blank"]
-====
-
-Run the build docker image:
-
-[source,shell]
-----
-docker-compose up
-----
-
-For development purposes it can be usefull to build the Dockerfile locally and to use this image. The docker-compose.build.yml file builds first the image and after the build start the container.
-
-[source,shell]
-----
-docker-compose -f docker-compose.yml -f docker-compose.build.yml up
-----
