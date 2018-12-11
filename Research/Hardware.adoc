@@ -1,5 +1,7 @@
 include::../Header.adoc[]
 
+IMPORTANT: This page is deprecated and will be removed in the future.
+
 == Hardware
 
 === Batteries

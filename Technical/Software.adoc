@@ -1,5 +1,8 @@
 include::../Header.adoc[]
 
+
+IMPORTANT: This page is deprecated and will be removed in the future or refactored to reflect the current state.
+
 == Software
 
 === Arduino's

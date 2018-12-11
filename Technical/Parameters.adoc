@@ -1,5 +1,7 @@
 include::../Header.adoc[]
 
+IMPORTANT: This page should be moved to be part of the nav stack component page.
+
 == Launch file parameters
 
 ==== Overview
