@@ -1,4 +1,0 @@
-include::../Header.adoc[]
-
-== Web-Interface
-link:../Archive/2018S1/Research/Current-status.html[Research Current status]
