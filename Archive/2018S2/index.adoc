@@ -5,6 +5,7 @@
 |===
 
 |Student|Study Major
+
 |Dylan Reimerink|SE
 |Fabian van de Bor|SE
 |George Wassink|BIM
@@ -28,3 +29,5 @@ Besides the two main goals, and transference, weve also redesigned a lot of func
 === Archive
 
 All our documents will be transferred to the new student group through SharePoint. Everything including templates and images for virtual machines and other hardware will be included in the process.
+
+TODO: SharePoint hyperlink
