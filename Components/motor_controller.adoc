@@ -20,27 +20,16 @@ The geometery twist messages broadcasted by ROS will be translated by the Arduin
     direction = twistMsg->angular.z * 100;
 ----
 
+The P&G Joystick emites a datagram package that the Willy motorcontroller emulatues. Within the datagram there is a forward/back integer and a direction (left/right) integer. Those are calculated from the twistMsg to the respective P&G values.
 
 === Broadcasting to the emergency channel
 Every iteration within the critical loop of the state of the emergency button will be broadcasted. The motor controller will interupt the circuits on a hardware level when the button is pushed. No software has been written to do any logic with the state of the button other than broadcasting its state.
 
-=== How to run?
-To run only the motor controller the Docker can be used. The Dockerfile for the motor controller is automatically built on Dockerhub.
+=== How to compile?
+All the dependencies (headers from ros) are copied from the Kinetic Kame release into the project. You'll need to the following to compile and flash the Arduino:
 
-====
-https://hub.docker.com/r/windesheimwinny/motor_controller[windesheimwinny/motor_controller, role="external", window="_blank"]
-====
+1. VSCode with Platform.io extension installed
+2. Arduino MEGA
 
-Run the build docker image:
-
-[source,shell]
-----
-docker-compose up
-----
-
-For development purposes it can be usefull to build the Dockerfile locally and to use this image. The docker-compose.build.yml file builds first the image and after the build start the container.
-
-[source,shell]
-----
-docker-compose -f docker-compose.yml -f docker-compose.build.yml up
-----
+When building for the first the Platform.io will add some files in the .vscode directory that can be ignored. Its not recommanded to add them to GiT. The files have hardcoded paths containing the username and are ignored. 
+To flash the Arduino simply press Upload in the Plaform.io extension and sit tight. 
