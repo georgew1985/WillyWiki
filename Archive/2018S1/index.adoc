@@ -1,9 +1,10 @@
 == Group of 2018 Q1 & Q2
+
 === Members
-[cols="1,2"] 
+
+[cols="2,1"] 
 .Student list of 2018 Q1-Q2
 |===
-
 |Student|Study Major
 
 |Jesse Bouwman|BIM
