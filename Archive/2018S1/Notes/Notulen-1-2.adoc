@@ -1,0 +1,144 @@
+include::../Header.adoc[]
+==== Notulen 1-2
+Eerste gesprek met Ruud
+
+==== Introduction
+
+Willy de afvalrobot is begonnen als een gewonnen idee voor de Waste
+Battle in Zwolle. Willy is bedacht door leerlingen van een basisschool
+uit groep 8. Het idee van de robot is dat hij zowel sociaal als
+functioneel is. Mensen moeten met de robot kunnen communiceren en Willy
+moet afval opruimen.
+
+Vanuit ondernemers en de gemeente is de wens gekomen om deze robot te
+realiseren. Ruud van der Burg heeft dit opgepakt en heeft met diverse
+bedrijven en onderwijsinstellingen gewerkt aan het idee en de
+uitwerking.
+
+Willy heeft software wat gebaseerd is op het ROS (Robot Operating
+System) platform. Dit is een soort ruggenwervel in de robot waar diverse
+modules mee kunnen communiceren.
+
+==== Current Status (Target (Stakeholders)
+
+===== Hoe ver is het project.
+
+Op dit moment zijn er een aantal modules gerealiseerd: rijdende basis,
+gps-module, web-interface, ROS, ultrasoon-sensoren, touch-screen met
+spraak.
+
+===== Waar zijn vorige projecten vastgelopen
+
+Volgens Ruud zijn eerdere projecten niet vastgelopen. Wel zijn er andere
+oplossingen bedacht voor problemen die gevonden waren. In dit geval is
+het dus eerder om de problemen heen werken dan de problemen zelf
+oplossen.
+
+===== Welke mensen zijn er bij dit project nog meer betrokken
+
+Er zijn tijdens het gesprek met Ruud van der Burg een aantal
+stakeholders aan bod gekomen: Art of Robotics, Windesheim Hogeschool,
+Gemeente Zwolle, ondernemers aan de melkmarkt en specifiek McDonalds.
+
+==== Expectations
+
+===== Wat verwacht je van ons.
+
+Het is belangrijk om het project als geheel te optimaliseren en niet
+elke module los te perfectioneren. De samenwerking tussen alle modules
+moet dus soepel verlopen.
+
+Het is duidelijk dat we werken in vertrouwen en openheid. We werken
+gewoon de uren die afgesproken zijn maar worden daar niet direct op
+gecontroleerd.
+
+Een grote verwachting van Ruud is dat we Willy een stapje verder helpen.
+In welk opzicht staat nog vrij om te kiezen. De keuze dient wel door ons
+onderbouwd te worden.
+
+Mogelijkheden om aan te werken zijn:
+
+* Kinect koppeling.
+* navigatie binnen (LIDAR, radio beacons). (SICK)
+* routes rijden in navigatie buiten.
+* Energievoorziening.
+* Human interactie met microfoon.
+* (werktuigbouwkundig) Opslagruimte afval en sensoren voor afvaldetectie
+en een stofzuiger.
+
+==== Costs & Materials
+
+===== Welke middelen zijn beschikbaar voor
+
+Uit het gesprek is duidelijk geworden dat er geen budget aanwezig is
+voor de robot. Toch is er wel het een en ander mogelijk mits de noodzaak
+daarvoor goed te onderbouwen is.
+
+===== Is er een lokaal beschikbaar voor dit project
+
+Op dit moment is er een lokaal beschikbaar. T5.66 het Innovation Lab.
+
+===== Wat voor documentatie is er al beschikbaar
+
+Alle documentatie van voorgaande groepen is beschikbaar.
+
+===== Wat zijn de mogelijkheden om producten te bestellen
+
+Aangezien het budget er eigenlijk niet is moet alles in overleg met Ruud
+van der Burg en dient elke aanvraag een goede onderbouwing te hebben
+waarom dit noodzakelijk is.
+
+==== Agreements
+
+===== Hoe wilt u op de hoogte worden gehouden
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ruud wil graag elke week een voortgangsrapport van ons. Ook wil hij
+zoveel mogelijk aanwezig zijn bij de sprint-reviews.
+
+===== Hoe wilt u communiceren.
+
+Communiceren kan via de e-mail en telefonisch.
+
+===== Wanneer kunt u aanwezig zijn voor de sprintreviews
+
+Zoveel mogelijk bij elke sprintreview maar wegens
+drukte zal Ruud soms afwezig zijn.
+
+===== Welke afspraken zou u met ons willen maken
+
+Afspraken met ons hebben betrekking op in vertrouwen onze uren maken en
+volledig inzetten voor het verder helpen van Willy. Een andere afspraak
+is de wekelijkse rapportage.
+
+==== Taken
+
+==== Voorbereiding
+
+- Inlezen documentatie vorige groepen.
+
+- Inlezen code vorige groepen.
+
+- Nakijken veiligheidsaspect Willy.
+
+- Schermmontage nakijken.
+
+- Onderzoek naar de ontwikkelingen in ROS-modules om te zoeken naar
+mogelijke veroudering.
+
+==== Assistentie
+
+- Voor assistentie en vragen kunnen we contact opnemen met de vorige
+groep.
+
+==== Algemene zaken
+~~~~~~~~~~~~~~~~~~
+
+- Opdrachtbeschrijving moet doorgestuurd worden naar Ruud van der Burg.
+
+- Google Drive aanmaken.
+
+- Contact opnemen met SICK voor instructie over LIDAR.
+
+- Contact opnemen met Freek Noordhuis over stand van zaken
+werktuigbouwkunde.

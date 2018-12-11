@@ -32,12 +32,12 @@ This position is then fed into the 'move_base' node which uses the lidar data an
 .Data flow while mapping
 ----
 [lidar node] -> [lidar_filters] -> [hector_mapping] -> [map_saver]
-    \---------> [rosbag capture]          
+    \---------> [rosbag capture]
 ----
 
-The mapping process uses the same lidar data and lidar filters. The raw lidar data can also be captured in a bag-file so this mapping process can be redone offline. The lidar data is fed into the 'hector_mapping' node which will generate a 2d map based on the lidar data. 
+The mapping process uses the same lidar data and lidar filters. The raw lidar data can also be captured in a bag-file so this mapping process can be redone offline. The lidar data is fed into the 'hector_mapping' node which will generate a 2d map based on the lidar data.
 
-However this process is not always perfect since it has trouble with seeing transparent and reflective surfaces. Objects like chairs and tables can be problematic since the surface area of the legs are small and easy to miss if the lidar is not close enough. Furthermore if objects become larger above the height at which the lidar measures the object may be drawn to small on the map causing collisions. 
+However this process is not always perfect since it has trouble with seeing transparent and reflective surfaces. Objects like chairs and tables can be problematic since the surface area of the legs are small and easy to miss if the lidar is not close enough. Furthermore if objects become larger above the height at which the lidar measures the object may be drawn to small on the map causing collisions.
 
 The 'hector_mapping' node is not great at erasing objects from the map. So it is best to map a area when there are no moving objects like humans.
 

@@ -1,6 +1,0 @@
-include::../Header.adoc[]
-
-IMPORTANT: This page is deprecated and will be removed in the future.
-
-== Web-Interface
-link:../Archive/2018S1/Research/Current-status.html[Research Current status]

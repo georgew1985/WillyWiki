@@ -23,7 +23,7 @@ git push -u origin test
 -	Password:
 ----
 
-==== Github synchronisation
+=== Github synchronisation
 A crontab has been created which ensures that Willy stays up-to-date with Github. Because Willy does not have a fixed external-IP or domain, it is unfortunately not possible to use Github Webhooks. That is why a crontab job has been set up, which is configured as follows:
 
 [source,text]
@@ -42,12 +42,8 @@ The script used for syncing github can be found on link:https://raw.githubuserco
 * Set permisions for specific folders
 
 
-[Note]
---
-Currently this line creates a pull of the test branch, later it is desirable to change this to the master branch for production code.
-Logs can be found in:
-/home/willy/Documents/logs/git.log
---
+NOTE: Currently this line creates a pull of the test branch, later it is desirable to change this to the master branch for production code.
+Logs can be found in: /home/willy/Documents/logs/git.log
 
 [TIP]
 --
@@ -58,20 +54,20 @@ tail -f /home/willy/Documents/logs/git.log
 ----
 --
 
-==== Github Repo Willy
+=== Github Repo Willy
 Can be found in /home/willy/Documents/WTGD
 
-==== Github Repo Web platform
+=== Github Repo Web platform
 Can be found in /home/willy/Documents/WWEB
 
-==== Build
+=== Build
 *Web interface*
 For building the web interface refer to the link:{url}/WEB/Development-guide.html[Development Guide] of the Web section.
 
 *Willy*
 For building the software used by Willy refer to the link:{url}/Technical/Development-guide.html[Development Guide] of the Technical section.
 
-==== Accounts
+=== Accounts
 All the accounts coupled to the email adress: willythegarbagedisposal@gmail.com can be found on the Google Drive
 
 

@@ -1,0 +1,251 @@
+include::../../../Header.adoc[]
+=== Back-up
+
+[discrete]
+==== Version history
+
+[cols=",,,",options="header",]
+|===================================================================
+|Version |Date |Person |Note
+|V0.1 |04-03-18 |Vincent van Dijk |First draft
+|V1.0 |13-03-18 |Gerard Zeeman |Checked and fixed grammatical errors
+|===================================================================
+
+
+==== Preface
+
+‘Willy’ contains a host operation system. The operation system can be
+backed up in different ways, with each a different purpose.
+
+* Physical to Physical backup (p2p)
+
+Mainly used to restore the whole OS after a hardware failure. A physical
+back-up can be restored on the same PC after a HDD failure. Restoring
+the physical backup to hardware, other than the hardware the backup was
+taken from, can sometimes cause problems, however most operations
+systems nowadays can resist such problems.
+
+* Physical to virtual back-up (p2v)
+
+A p2v back-up is a back-up where the operation system is converted into
+a virtual machine. This has several advantages. Firstly, the virtual
+machine is easy accessible and can be used as test environment. The
+virtual machine can also be used to restore important data.
+
+* Install guide
+
+When the operation system is corrupt, and current back-ups do not offer
+a solution, there is no other options than rebuilding the OS. Also a clean install can be a good idea when the operation system becomes slow by a lot of troubleshouting or testing. The
+install guide contains all the steps that are needed to get the git code
+up and running on top of a clean installation. Mainly Linux dependencies
+will be installed by following the install guide. An install guide can
+also be useful to create a better understanding of the software
+components ‘Willy’ contains.
+
+==== Different backup methods
+===== Imaging
+There different approaches to create a system backup.
+Different manufactures, have different tools back-up tools available to migrate or convert operations systems. One of the more used methods contains, making a full system backup that can be created by cloning a HDD on low
+bit level into an image. An image is a compressed version a HDD that can be restored using imaging software.
+
+Imaging is done by booting from an external installation medium and
+use another external storage device as image-repository to read/write
+data. The image-repository can be used to store and read backup-images.
+No changes to the operation system are required.
+
+The physical backup can be restored on the original hardware; however,
+the back-up can also be restored into a virtual machine. This method is
+hypervisor independent.
+
+The disadvantage of using the imaging-method is that local access is
+required and both the external boot medium as the external
+storage-repository requires two USB devices ore other external storages
+mediums.
+
+(Using-disk-imaging-software-in-data-backup-and-recovery, sd)
+
+==== VMware converter
+
+VMware converter can be used to craete a P2V back-up. The advantage of using such software (tools) is that the
+target OS can be left unchanged. VMware converter can be used for converting physical machines remotely to virtual machines by using SSH
+in case of a Linux OS. However only if the target OS contains a windows
+machine, it can be converted directly into a VMware workstation VM. By converting a Linux machine into a VM, EXSI is required. Also, it is hard
+to convert a virtual machine into a physical machine. Because of this,
+VMware converter is not used to backup ‘Willy’.
+(how-to-convert-a-remote-physical-linux-server-to-a-virtual-machine-vmware-virtualbox-instructions,
+2017)
+
+==== Backup using the operation system
+
+The operation system can also be used to make a full system backup.
+Certain tools are available to fulfil this task. Remastersys is a free
+and open-source program for Debian, Ubuntu-based, Linux Mint or
+derivative software systems that can create a customized Live CD/Live
+USB (a remaster) of Linux and its derivatives. Remastersys can also back
+up an entire system, including user data, to an installable Live CD/DVD.
+
+The disadvantage of using Remastersys or certain tools are that the operations system requires extra software. Because the OS is in use
+during creation of the backup this method is less fault Torrance.
+
+(remastersys, sd)
+
+==== Imaging using clonezilla
+
+Clonezilla is free, opensource and lightweight imaging software. Other
+imaging variants can be used in almost the same way.
+
+==== Step 1; Create a bootable Clonezilla-USB. +
+
+First download a recent version of Clonezilla from, +
+http://www.clonezilla.org/downloads/download.php?branch=stable +
+Choose the ISO variant with AMD64 processor architecture.
+
+There are different approaches to create a bootable storage device. The
+use of Diskpart doesn't require any third-party software by using Windows.
+The use of Rufus automates this process. See https://rufus.akeo.ie/ for
+more details. Download Rufus from; +
+https://rufus.akeo.ie/
+
+image:media/back-up/image2.png[image,width=173,height=233]
+
+1.  Choose the correct Device from the ‘Apparaat’ list.
+2.  Give the USB a new volume label
+3.  Select the Clonezill ISO
+4.  Start
+
+==== Step 2; Creating Image
+
+Select the USB as first boot device in the BIOS.
+
+image:media/back-up/image3.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-01-bootmenu.png,width=467,height=350]
+
+image:media/back-up/image4.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-01-b-sub-boot-menu.png,width=568,height=426]
+
+image:media/back-up/image5.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-03-lang.png,width=566,height=424] +
+image:media/back-up/image6.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-04-keymap.png,width=567,height=425]
+
+image:media/back-up/image7.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-05-start-clonezilla.png,width=568,height=426]
+
+image:media/back-up/image8.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-06-dev-img.png,width=564,height=423]
+
+image:media/back-up/image9.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-07-img-repo.png,width=562,height=421]
+
+image:media/back-up/image10.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-07-plug-and-play-dev-prompt.png,width=566,height=424]
+
+image:media/back-up/image11.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-07-dev-scan.png,width=567,height=425]
+
+*Press Ctrl-C when the USB stick is in the list*
+
+image:media/back-up/image12.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-08-sdb1-as-img-repo.png,width=561,height=420]
+
+*Select the USB where you want the image to be stored*
+
+image:media/back-up/image13.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-08-sdb1-dir-list.png,width=563,height=422]
+
+*Select the directory where the image will be stored, if this must be
+the root of the USB. Done can directly be selected by using the TAB
+key. +
+*
+
+image:media/back-up/image14.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-08-img-repo-df.png,width=559,height=420]
+
+image:media/back-up/image15.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-08-beginner-expert-mode.png,width=559,height=419]
+
+image:media/back-up/image16.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-08-save-img.png,width=564,height=423]
+
+image:media/back-up/image17.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-10-img-name.png,width=562,height=421]
+
+image:media/back-up/image18.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-10-disk-selection.png,width=566,height=424]
+
+image:media/back-up/image19.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-10-check-source-fs.png,width=566,height=424]
+
+image:media/back-up/image20.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-10-check-if-image-restorable.png,width=568,height=425]
+
+image:media/back-up/image21.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-10-encrypt-image.png,width=569,height=426]
+
+image:media/back-up/image22.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-10-reboot-poweroff.png,width=604,height=452]
+
+image:media/back-up/image23.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-10-img-save-command-prompt.png,width=604,height=452]
+
+image:media/back-up/image24.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-10-img-save-confirm.png,width=604,height=452]
+
+image:media/back-up/image25.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-11-save-progress.png,width=604,height=452]
+
+image:media/back-up/image26.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-11-save-progress-2.png,width=604,height=452]
+
+image:media/back-up/image27.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-11-img-save-done.png,width=604,height=452]
+
+image:media/back-up/image28.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-11-img-save-done-choose-poweroff.png,width=604,height=452]
+
+==== Step 3; Restoring Image
+
+Select the USB as first boot device in the BIOS.
+
+image:media/back-up/image3.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-01-bootmenu.png,width=531,height=398]
+
+image:media/back-up/image4.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-01-b-sub-boot-menu.png,width=533,height=400]
+
+image:media/back-up/image5.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-03-lang.png,width=566,height=424]
+
+image:media/back-up/image6.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-04-keymap.png,width=567,height=425]
+
+image:media/back-up/image7.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-05-start-clonezilla.png,width=568,height=426]
+
+image:media/back-up/image8.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-06-dev-img.png,width=564,height=423]
+
+image:media/back-up/image9.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-07-img-repo.png,width=562,height=421]
+
+image:media/back-up/image10.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-07-plug-and-play-dev-prompt.png,width=566,height=424]
+
+image:media/back-up/image11.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-07-dev-scan.png,width=567,height=425]
+
+*Press Ctrl-C when the USB stick is in the list*
+
+image:media/back-up/image12.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-08-sdb1-as-img-repo.png,width=561,height=420]
+
+*Select the USB where the image is located*
+
+image:media/back-up/image13.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-08-sdb1-dir-list.png,width=563,height=422]
+
+*Select the directory where the image is stored*
+
+image:media/back-up/image14.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-08-img-repo-df.png,width=559,height=420]
+
+image:media/back-up/image15.png[http://clonezilla.org/clonezilla-live/doc/01_Save_disk_image/images/ocs-08-beginner-expert-mode.png,width=559,height=419]
+
+image:media/back-up/image29.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-08-restoredisk.png,width=558,height=418]
+
+image:media/back-up/image30.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-10-img-name.png,width=559,height=418]
+
+image:media/back-up/image30.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-10-img-name.png,width=560,height=419]
+
+image:media/back-up/image31.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-10-disk-selection.png,width=560,height=419]
+
+image:media/back-up/image32.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-10-img-check-prompt-brefore-restoring.png,width=564,height=423]
+
+image:media/back-up/image22.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-10-reboot-poweroff.png,width=567,height=424]
+
+image:media/back-up/image33.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-10-img-restore-command-prompt.png,width=572,height=428]
+
+image:media/back-up/image34.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-10-img-restore-confirm-1.png,width=574,height=430]
+
+image:media/back-up/image35.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-10-img-restore-confirm-2.png,width=577,height=432]
+
+image:media/back-up/image36.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-11-restore-progress-2.png,width=580,height=434]
+
+image:media/back-up/image37.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-11-restore-progress-3.png,width=574,height=430]
+
+image:media/back-up/image38.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-11-img-restore-done.png,width=577,height=432]
+
+image:media/back-up/image39.png[http://clonezilla.org/clonezilla-live/doc/02_Restore_disk_image/images/ocs-11-img-restore-done-choose-poweroff.png,width=587,height=439]
+
+
+==== References
+
+- _how-to-convert-a-remote-physical-linux-server-to-a-virtual-machine-vmware-virtualbox-instructions_.
+(2017, Januari 12). Retrieved from joe0.com:
+- https://www.joe0.com/2017/01/12/how-to-convert-a-remote-physical-linux-server-to-a-virtual-machine-vmware-virtualbox-instructions/_remastersys_.
+- (n.d.). Retrieved from
+http://www.remastersys.org/_Using-disk-imaging-software-in-data-backup-and-recovery_.
+- (n.d.). Retrieved from searchdatabackup.techtarget.com:
+http://searchdatabackup.techtarget.com/tip/Using-disk-imaging-software-in-data-backup-and-recovery

@@ -1,7 +1,0 @@
-include::../Header.adoc[]
-
-include::Willy.adoc[]
-
-include::Publicity.adoc[]
-
-include::Sponsors.adoc[]

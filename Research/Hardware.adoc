@@ -1,9 +1,0 @@
-include::../Header.adoc[]
-
-IMPORTANT: This page is deprecated and will be removed in the future.
-
-== Hardware
-
-=== Batteries
-
-link:../Archive/2018S1/Research/batteries.html[Research Batteries]
