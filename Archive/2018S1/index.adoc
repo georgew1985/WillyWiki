@@ -14,6 +14,18 @@
 |Gerard Zeeman|ESA
 |===
 
-=== Archive
+=== Research archive
 
 https://liveadminwindesheim.sharepoint.com/:f:/r/sites/O365-Winnie/Gedeelde%20documenten/Archief%20Willy/2018%20S1?csf=1&e=YuCRtk[2018 Q1 & Q2 SharePoint archive]
+
+link:{url}/Archive/2018S1/Research/Hardware.html[Hardware]
+
+link:{url}/Archive/2018S1/Research/Peripherals.html[Peripherals]
+		
+link:{url}/Archive/2018S1/Research/Sensors.html[Sensors]
+
+link:{url}/Archive/2018S1/Research/Social-interaction.html[Social interaction]
+
+link:{url}/Archive/2018S1/Research/Software.html[Software]
+		
+link:{url}/Archive/2018S1/Research/Web-interface.html[Web interface]

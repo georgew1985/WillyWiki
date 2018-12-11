@@ -1,9 +1,0 @@
-include::../Header.adoc[]
-
-== Peripherals
-
-=== Screen
-link:../Archive/2018S1/Research/Screen.html[Research Screen]
-
-=== Alternative interaction
-link:../Archive/2018S1/Research/Alternative-interaction.html[Research Alternative interaction]
