@@ -2,11 +2,11 @@
 
 [#toc.toc2]
 link:{url}/welcome.html[Welcome]::
-link:{url}/Project/index.html[Project Willy]::
-        - link:{url}/Project/Willy.html[Project]
-        - link:{url}/Project/History.html[History]
-        - link:{url}/Project/Publicity.html[Publicity]
-        - link:{url}/Project/Sponsors.html[Sponsors]
+link:{url}/Projectwilly/index.html[Project Willy]::
+        - link:{url}/Projectwilly/history.html[History of Willy]
+        - link:{url}/Projectwilly/projectwilly.html[Project Willy]
+        - link:{url}/Projectwilly/Publicity.html[Publicity]
+        - link:{url}/Projectwilly/Sponsors.html[Sponsors]
 
 link:{url}/WEB/index.html[Getting started]::
         - link:{url}/WEB/Development-guide.html[Development Guide]
