@@ -96,6 +96,10 @@ Give website rights in home directory of Willy
 ----
 sudo chmod -R 777 /home/willy
 ----
+Enable CGI
+----
+sudo a2enmod cgi
+----
 Restart Apache
 ----
 sudo systemctl restart apache2
