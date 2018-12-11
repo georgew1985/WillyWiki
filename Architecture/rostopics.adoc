@@ -1,0 +1,30 @@
+include::../Header.adoc[]
+
+== ROS topics
+This are the topics at the ROS master of Willy. There are several communication protocols defined in ROS, but in Willy only topics are used. The topics are shown in the next table.
+
+[cols=",,,,,",options="header",]
+|===============================================
+|Topic name|Purpose|Publisher|Subscriber|Message type|Message protocol
+|/willy/health|Is Willy healthy or is there an issue?|All nodes|All nodes|Int32
+a|
+- 1 = healthy
+- 2 = non-critical issue
+- 3 = critical issue
+|/will/health_reason|If Willy is not healthy, the reason for that is published in clear text here|All nodes|All nodes|String|Clear text
+|/willy/activity|What is Willy doing?|Brain SI|All nodes|Int32
+a|
+- 1 = cruising
+- 2 = conversation
+- 3 = enquête
+- 4 = driving with a defined target
+|/interaction/is_active|If the social interaction is busy?|Social interaction speech recognition|All nodes|Int32
+a|
+- 0 = not active
+- 1 = active
+|/interaction/clear_text|The unprocessed text what the person said|Social interaction speech recognition|All nodes|String|Who are you?
+|/move_action|Move actions for willy|Navigation brain|SI|String
+a|
+- turn_around = Turn Willy around
+|===============================================
+
