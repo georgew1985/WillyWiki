@@ -8,10 +8,10 @@ link:{url}/Projectwilly/index.html[Project Willy]::
         - link:{url}/Projectwilly/Publicity.html[Publicity]
         - link:{url}/Projectwilly/Sponsors.html[Sponsors]
 
-link:{url}/WEB/index.html[Getting started]::
-        - link:{url}/WEB/Development-guide.html[Development Guide]
-        - link:{url}/Startup/Driving-Willy.html[Driving Willy]
-        - link:{url}/Config/Wiki.html[Documentation]
+link:{url}/getting_started/index.html[Getting started]::
+        - link:{url}/getting_started/Development-guide.html[Development Guide]
+        - link:{url}/getting_started/Driving-Willy.html[Driving Willy]
+        - link:{url}/getting_started/Wiki.html[Documentation]
 
 link:{url}/Design/index.html[Build of Willy]::
         - link:{url}/Design/Background.html[Design history]
