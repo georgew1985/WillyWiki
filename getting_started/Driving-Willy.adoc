@@ -1,77 +1,39 @@
 include::../Header.adoc[]
 
 == Driving of willy
-=== Steps for autonomous driving
-These steps will start the autonomous driving of willy. Do you want to drive manually by using the keyboard? 
-Then take a look at the steps for manual driving underneath.
 
 1. **Deploy the brakes** +
-To start Willy, the brakes need to be deployed. Otherwise, Willy will not be able to drive. 
-To deploy the brakes you have to use the levers on the front of the motors. 
-You can check if the brakes are deployed by trying to push Willy. 
+To start Willy, the brakes need to be deployed. Otherwise, Willy will not be able to drive.
+To deploy the brakes you have to use the levers on the front of the motors.
+You can check if the brakes are deployed by trying to push Willy.
 The brakes are applied when the wheels can't rotate anymore.
 
-2. **Turn the power on** +
-Willy needs power to be able to operate. 
-Make sure the power levers on the side of Willy are both turned on (under the voltage display).
+2. **Deploy the emergency stop** +
 
-3. **Turn the motor controller off** +
-Willy cannot start when the motors are turned on. 
-To turn the motor controller off, use the switch on the bottom of the pc case. (or the emergency button for convenience)
+3. **Turn the power on** +
+Willy needs power to be able to operate.
 
-4. **Start Willy by running the startup command** +
-Willy is now able to start. You can easily start willy by running our startup package.
-To run this package, navigate to the following directory: +
-`/home/willy/Documents/WTGD/willy` +
-Run the following command to build the package: +
-`catkin_make` +
-Then make the terminal point to the source code by running the following command: +
-`source devel/setup.bash` +
-Finally run the package using the following command: +
-`roslaunch willy_navigation willy_navigation.launch` +
-Willy will now start the software and hardware to start the autonomous driving project. +
+4. **Startup the notebook and Rasberry PI's** +
 
-IMPORTANT: Do not forget to release the emergency stop when the steps above are finished. Otherwise willy will not drive.
+5. **Undeploy the emergency stop**
 
-=== Steps for manual driving 
-These steps are optional. Only execute the following steps if you want to drive Willy manually.
+=== Stop Willy
 
-1. **Deploy the brakes** +
-To start Willy, the brakes need to be deployed. Otherwise, Willy will not be able to drive. 
-To deploy the brakes you have to use the levers on the front of the motors. 
-You can check if the brakes are deployed by trying to push Willy. 
-The brakes are appled when the wheels can't rotate anymore.
+1. **Deploy the emergency stop** +
 
-2. **Turn the power on** +
-Willy needs power to be able to operate. 
-Make sure the power levers on the side of Willy are both turned on (under the voltage display).
+2. **Shutdown all raspberry PI's from the notebook** +
 
-3. **Turn the motor controller off** +
-Willy cannot start when the motors are turned on. 
-To turn the motor controller off, use the switch on the bottom of the pc case. (or the emergency button for convenience)
+- Open the terminal on the notebook
 
-4. **Start Willy by running the startup command** +
-Willy is now able to start. You can easily start willy by running our startup package.
-To run this package, navigate to the following directory: +
-`/home/willy/Documents/WTGD/willy` +
-Run the following command to build the package: +
-`catkin_make` +
-Then make the terminal point to the source code by running the following command: +
-`source devel/setup.bash` +
-Finally run the package using the following command: +
-`rosrun driving_willy main` +
-Willy will now start the software and hardware to start the manual driving project. +
+[source,shell]
+----
+sh /opt/willy/components/ansible/shutdown-pi.sh
+----
 
-IMPORTANT: Do not forget to release the emergency stop when the steps above are finished. Otherwise willy will not drive.
+Fill in the password of the PI's
 
-**Keys for the control of Willy**
+3. **Shutdown the notebook** +
 
-    Q -> Stop moving
+4. **Turn of the power** +
 
-    W -> Move forward
-    
-    A -> Move left
-    
-    S -> Move backward
-    
-    D -> Move right
+5. **Deploy the brakes**
