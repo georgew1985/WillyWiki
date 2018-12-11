@@ -1,5 +1,5 @@
 :url: https://Windesheim-Willy.github.io/WillyWiki
-
+image:https://travis-ci.org/Windesheim-Willy/WillyWiki.svg?branch=master["Build Status", link="https://travis-ci.org/Windesheim-Willy/WillyWiki"]
 [#toc.toc2]
 link:{url}/welcome.html[Welcome]::
 link:{url}/Projectwilly/index.html[Project Willy]::

@@ -1,6 +1,8 @@
 include::../Header.adoc[]
 
-include::Willy.adoc[]
+include::history.adoc[]
+
+include::projectwilly.adoc[]
 
 include::Publicity.adoc[]
 
