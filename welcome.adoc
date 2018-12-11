@@ -3,7 +3,7 @@ include::Header.adoc[]
 
 image:https://travis-ci.org/Windesheim-Willy/WillyWiki.svg?branch=master["Build Status", link="https://travis-ci.org/Windesheim-Willy/WillyWiki"]
 
-= Welcome
+== Welcome
 
 Welcome to project Willy. Before starting the project it is useful to know a few things about the project. Our first advice is to become acquainted with Willy.
 Follow our WillyWiki from begin to end and try to understand how to use Willy.

@@ -1,0 +1,109 @@
+include::../Header.adoc[]
+==== Retrospective 1
+
+==== Keep (K)
+
+1.  Vrijheid tot soms vrijdag werken
+2.  Motivatie
+3.  Sfeer
+4.  Communicatie binnen het team
+5.  Team spirit
+6.  Gezelligheid
+7.  Voortgang
+8.  Overleg en discussies
+9.  Scrum
+
+==== More (M)
+
+1.  Agenda bijhouden
+2.  Mogelijkheden in Ontwikkeling
+3.  Budget
+4.  Motivatie hoog houden
+5.  Positieve blik houden
+6.  Voorbereiden gesprekken
+7.  Voorbereiden presentaties
+8.  Communiceren met Ruud
+9.  Afspraken
+10. Ambitie
+11. Uitdaging
+12. Ideeën naar Ruud communiceren
+13. Duidelijke en simpele documentatie
+14. Plannen
+15. Initiatief
+16. Week rapportage
+17. Sponsoren
+18. Eigen project, meer eigen visie met communicatie naar Ruud
+19. Fun & Rust in de pauze
+20. Teambuilding
+
+==== Less (L)
+
+1.  Prince2
+a.  Geen methodes overnemen van school omdat we deze zouden moeten
+gebruiken
+2.  Motivatiedip
+a.  Na de vakantie niet op een maandag met PV vakken beginnen
+3.  Vasthouden aan tijden
+a.  Relax mee omgaan, maar wel aan afspraken houden omdat het werk af
+moet komen
+4.  Afdwalen van je taak
+a.  In sommige omstandigheden goed voor creativiteit maar kan ook voor
+zorgen dat je taak niet afkan. Waken op de taken!
+
+==== Stop
+
+1.  Direct zijn
+a.  Soms wat onhandig maar ook weer goed
+2.  Pauze houden
+a.  Denk aan je rust tijdens de dag
+3.  Stop werken zonder doel
+a.  Ga aan het werk met taken die in de sprint backlog staan en niet aan
+meerdere tegelijk werken
+4.  Drama
+a.  Dit woord wordt te vaak gebruikt
+5.  Baas
+a.  Er is geen projectleider, we zijn allemaal verantwoordelijk
+
+==== Start (S)
+
+1.  Daily stand-up
+2.  Team-building
+3.  Persoonlijke ontwikkeling & doel stellen
+4.  Trello bijwerken
+5.  Testverslag maken
+6.  Duidelijk over voortgang status
+7.  Wat willen wij doen/Planning
+
+==== Improvements
+
+1.  Agenda bijhouden en sprint planning (M1, M14)
+2.  Ruud meer motiveren, ook om sponsoren te zoeken (M3, M2, M8, M12,
+M17)
+3.  Minder depressie door vorige projectgroepen (M4, M5)
+4.  Professionele voorbereiding (M6, M7)
+5.  Meer aan afspraken houden (M9)
+6.  Communiceren van uitdagingen die we hebben en aangaan, eigen visie
+(M11, M10, M18)
+7.  Parallel werken, zodat documentatie en ontwikkeling over meerdere
+sprints kan verspreiden (M13)
+8.  Meer proactief werken en denken (M15)
+9.  Relax pauze houden (M19)
+10. Meer teambuilding (M20, S2)
+11. Daily stand-up & wees eerlijk (S1, S6)
+12. Persoonlijke doelen stellen (S3)
+13. Trello bijwerken (S4)
+14. Versiebeheer bijwerken na review (S5)
+15. Globale planning maken van producten (S7)
+
+==== Afspraken
+
+* Jesse beheert Trello (uren)
+* Martijn organiseert teambuilding #1 en betaald
+* Quick-wins en eigen visie duidelijk maken aan Ruud
+* 3 punten sprint review; verbeteringen, onderzoek en realisatie
+* Jesse bewaakt relaxedheid binnen groep
+* Dailystandup elke dag 9:45!
+* Iedereen aanwezig 9:30
+* Iedereen definieert persoonlijke doelen
+* Versienummers, 1.0 is definitief versie daarvoor 0.x
+
