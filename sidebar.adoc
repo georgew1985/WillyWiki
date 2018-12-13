@@ -14,12 +14,12 @@ link:{url}/getting_started/index.html[Getting started]::
         - link:{url}/getting_started/Driving-Willy.html[Driving Willy]
         - link:{url}/getting_started/Wiki.html[Documentation]
 
-link:{url}/Design/index.html[Build of Willy]::
-        - link:{url}/Design/Background.html[Design history]
-        - link:{url}/Design/Design-guide.html[Requirements]
-        - link:{url}/Design/Technical.html[Design reference]
-        - link:{url}/Design/Realisation.html[Physical build]
-        - link:{url}/Technical/Hardware.html[Hardware]
+link:{url}/buildofwilly/index.html[Build of Willy]::
+        - link:{url}/buildofwilly/Background.html[Design history]
+        - link:{url}/buildofwilly/Design-guide.html[Requirements]
+        - link:{url}/buildofwilly/Technical.html[Design reference]
+        - link:{url}/buildofwilly/Realisation.html[Physical build]
+        - link:{url}/buildofwilly/Hardware.html[Hardware]
 
 link:{url}/ROS/index.html[Robotic Operating System]::
         - link:{url}/ROS/Introduction.html[Introduction to ROS]
