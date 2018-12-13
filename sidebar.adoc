@@ -76,17 +76,3 @@ link:{url}/Technical/index.html[Lessons learned]::
 link:{url}/Archive/index.html[Archive]::
         - link:{url}/Archive/previousgroups.html[Previous Groups]
         - link:{url}/Archive/Archiveresearch.html[Research Archive]
-
- // link:{url}/Config/index.html[weg]::
- //     - link:{url}/WEB/SAD.html[SAD archiveren]
- //     - link:{url}/ROS/Navigation.html[Navigation archiveren]
- //     - link:{url}/Config/configure.html[Configure ]
- //     - link:{url}/Config/vm.html[Willy development VM]
- //     - link:{url}/Config/GIT.html[GIT Setup]
- //     - link:{url}/Config/Ubuntu.html[Ubuntu]
- //     - link:{url}/Config/Remote.html[Remote]
- //     - link:{url}/Startup/Remote.html[Remote weg]
- //     - link:{url}/Startup/Willy-Web.html[Willy Web weg]
- //     - link:{url}/Technical/Development-guide.html[Development Guide]
- //     - link:{url}/Technical/Parameters.html[Parameters]
- //     - link:{url}/Technical/Software.html[Software]
