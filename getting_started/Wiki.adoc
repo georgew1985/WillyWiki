@@ -152,7 +152,7 @@ To convert all documents recursively in the current folder you can use the follo
 ----
 for /r %%v in (*.docx) do pandoc -f "%%v" "%%v.adoc"
 ----
---
+
 
 === Publishing
 The end result of the Travis script is a folder with html files which can then be hosted on any server even offline.
