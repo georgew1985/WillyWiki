@@ -71,7 +71,7 @@ The 3 cables to the internal motor controller (built in in the wheelchair
 frame) are connected to the original cable with a simple circuit. The pinout 
 of the connector attached to the cable is as follows:
 
-image:media/overview/connector.png[image]
+image:media/connector.png[image]
 
 [cols=",,",options="header",]
 |===============================================
@@ -122,18 +122,18 @@ normally. The brakes will automatically be released by Willy when driving.
 In the old situation Willy contained 2 12V batteries connected in serial,
 adding up to 24V. Both batteries are 52Ah.
 
-image:media/technical/batteries_old.png[image,width=500]
+image:media/batteries_old.png[image,width=500]
 
-image:media/technical/battery_old.jpg[image,width=500]
+image:media/battery_old.jpg[image,width=500]
 
 ===== New situation
 In the new situation the 2 batteries are replaced with 6 new 12V batteries.
 All the batteries are 33Ah. They are connected placing 2 batteries in serial
 3 times in parallel. This adds again up to 24V.
 
-image:media/technical/batteries_new.png[image,width=500]
+image:media/batteries_new.png[image,width=500]
 
-image:media/technical/battery_new.jpg[image,width=500]
+image:media/battery_new.jpg[image,width=500]
 
 ==== Power Supply
 The mains from the batteries run through a central fuse box mounted at Willy's 
@@ -183,7 +183,7 @@ measure distance by using sound. This is made possible by sending out
 bursts of high frequency noise, and then waiting for a reflection of
 that sound using the HC-SR04 ultrasonic sensor. 
 
-image:media/technical/sensor_willy.jpg[image]
+image:media/sensor_willy.jpg[image]
 
 By using this data Willy is be able to decide if he is able to drive any
 further in a certain direction. In the event of Willy being not able to
@@ -198,7 +198,7 @@ of this document.
 
 The sensors all use 5V as can be seen in the schematic:
 
-image:media/technical/Sonar.PNG[image]
+image:media/Sonar.PNG[image]
 
 As shown in the schematic above, all the 3 sensors are connected to the
 Arduino.
@@ -218,7 +218,7 @@ The sensors are connected in the following order:
 
 The sensors are placed as follows:
 
-image:media/technical/Willy.png[image]
+image:media/Willy.png[image]
 
 It should be noted that not all the sensor are read at the same time. 
 The numbers sensors are read in a sequence. Only the lowest value is publisched on the topic.
