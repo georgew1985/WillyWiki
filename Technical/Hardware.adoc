@@ -6,7 +6,7 @@ include::../Header.adoc[]
 A simple overview of all the hardware in Willy is made in the 
 following scheme:
 
-image:media/technical/Connections.PNG[image]
+image:media/Connections.PNG[image]
 
 === Components
 This chapter contains all the components with explanation.
