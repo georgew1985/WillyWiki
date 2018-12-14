@@ -27,6 +27,7 @@ link:{url}/ROS/index.html[Robotic Operating System]::
 link:{url}/Architecture/index.html[Architecture]::
         - link:{url}/Architecture/Software.html[Software Architecture]
         - link:{url}/Architecture/Hardware.html[Hardware Architecture]
+        - link:{url}/Architecture/Skylab.html[Skylab Architecture]
         - link:{url}/Architecture/rostopics.html[ROS topic design]
 
 link:{url}/Hardwarenodes/index.html[Hardware nodes]::
