@@ -3,8 +3,6 @@ include::../Header.adoc[]
 
 include::Introduction.adoc[]
 
-include::Navigation.adoc[]
-
 include::Nodes_and_topics.adoc[]
 
 include::Multi_master.adoc[]

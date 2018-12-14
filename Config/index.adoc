@@ -1,7 +1,0 @@
-include::../Header.adoc[]
-
-include::configure.adoc[]
-
-include::vm.adoc[]
-
-include::Wiki.adoc[]
