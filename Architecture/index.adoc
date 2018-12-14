@@ -3,3 +3,7 @@ include::../Header.adoc[]
 include::Software.adoc[]
 
 include::Hardware.adoc[]
+
+include::Skylab.adoc[]
+
+include::Rostopics.adoc[]
