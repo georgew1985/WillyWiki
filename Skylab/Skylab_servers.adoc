@@ -24,4 +24,22 @@ All the servers with their functions are listed in the next table.
 = Ubuntu servers in Skylab
 The servers in Skylab are all Ubuntu 16.04 LTS servers and installed with default settings. The used user and password can befound in the file "inloggegevens.docx" at SharePoint.
 
-On both the Fether (10.10.1.33) and the ROS master (10.10.1.34) ROS Kinetic is installed as described at http://wiki.ros.org/kinetic/Installation/Ubuntu. For the Master Multimaster as the "second" master (port 11312) is installed as described at https://windesheim-willy.github.io/WillyWiki/ROS/Multi_master.html
+On both the Fether (10.10.1.33) and the ROS master (10.10.1.34) ROS Kinetic is installed as described at http://wiki.ros.org/kinetic/Installation/Ubuntu. For the ROS master Multimaster as the "second" master (port 11312) is installed as described at https://windesheim-willy.github.io/WillyWiki/ROS/Multi_master.html
+
+On the Postgres server (10.10.1.35) PostgreSQL is installed with default settings. The used user and password can befound in the file "inloggegevens.docx" at SharePoint.
+
+On the Fetcher and the Processor (10.10.1.45) the following Python packages are additional installed:
+
+* Pandas
+* Configparser
+* Time
+* Random
+* urllib3
+* json
+* ssl
+* datetime
+* sqlalchemy
+* psycopg2
+
+
+* sql
