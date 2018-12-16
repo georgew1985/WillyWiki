@@ -18,7 +18,6 @@ All the servers with their functions are listed in the next table.
 |u1644.willy.local|10.10.1.44|Ubuntu 16.04 LTS|Server for several Data Science and other scripts
 |u1645.willy.local|10.10.1.44|Ubuntu 16.04 LTS|Webserver of Willy, based on LAMP
 |zabbix.willy.local|10.10.1.55|Ubuntu 16.04 LTS|Zabbix management server
-||10.10.1.101|Ubuntu 16.04 LTS|ROS multi master
 |===
 
 = Ubuntu servers in Skylab
