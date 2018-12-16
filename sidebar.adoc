@@ -31,11 +31,11 @@ link:{url}/Architecture/index.html[Architecture]::
         - link:{url}/Architecture/rostopics.html[ROS topic design]
 
 link:{url}/hardware_nodes/index.html[Hardware nodes]::
-        - link:{url}/hardware_nodes/Nodes_and_topics.html[brain node]
-        - link:{url}/hardware_nodes/Nodes_and_topics.html[sensor node]
-        - link:{url}/hardware_nodes/Nodes_and_topics.html[si node]
-        - link:{url}/hardware_nodes/Nodes_and_topics.html[power node]
-        - link:{url}/hardware_nodes/Nodes_and_topics.html[willyWRT]
+        - link:{url}/hardware_nodes/brain_node.html[brain node]
+        - link:{url}/hardware_nodes/sensor_node.html[sensor node]
+        - link:{url}/hardware_nodes/si_node.html[si node]
+        - link:{url}/hardware_nodes/power_node.html[power node]
+        - link:{url}/hardware_nodes/willy_wrt.html[willyWRT]
 
 link:{url}/Components/index.html[Components]::
         - link:{url}/Components/ROS-master.html[ROS master]
