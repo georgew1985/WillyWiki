@@ -43,3 +43,4 @@ On the Fetcher and the Processor (10.10.1.45) the following Python packages are 
 * psycopg2
 ----
 
+On the Zabbix server (10.10.1.55) Zabbix is installed with default settings. The used user and password can befound in the file "inloggegevens.docx" at SharePoint. Some implementation of servers is done in Zabbix, but is stopped as not being part of the MVP.
