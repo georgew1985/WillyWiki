@@ -30,7 +30,7 @@ On the Postgres server (10.10.1.35) PostgreSQL is installed with default setting
 
 On the Fetcher and the Processor (10.10.1.45) the following Python packages are additionally installed:
 
-====
+----
 * Pandas
 * Configparser
 * Time
@@ -41,5 +41,5 @@ On the Fetcher and the Processor (10.10.1.45) the following Python packages are 
 * datetime
 * sqlalchemy
 * psycopg2
-====
+----
 
