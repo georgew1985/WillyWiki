@@ -5,5 +5,4 @@ include::Introduction.adoc[]
 
 include::Nodes_and_topics.adoc[]
 
-include::Multi_master.adoc[]
-
+include::multi_master.adoc[]

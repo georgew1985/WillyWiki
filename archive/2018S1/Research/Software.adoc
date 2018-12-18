@@ -1,0 +1,9 @@
+include::../Header.adoc[]
+
+== Software
+
+=== Backup
+link:../archive/2018S1/Research/Back-up.adoc[Research Back-up]
+
+=== Ubuntu
+link:../archive/2018S1/Research/Current-status.adoc[Research Current status]

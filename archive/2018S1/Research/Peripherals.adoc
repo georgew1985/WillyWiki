@@ -1,0 +1,9 @@
+include::../Header.adoc[]
+
+== Peripherals
+
+=== Screen
+link:../archive/2018S1/Research/Screen.adoc[Research Screen]
+
+=== Alternative interaction
+link:../archive/2018S1/Research/Alternative-interaction.adoc[Research Alternative interaction]

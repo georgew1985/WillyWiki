@@ -1,0 +1,12 @@
+include::../Header.adoc[]
+
+== Power node
+The power node contains all main components for driving of Willy.
+
+=== Repository
+====
+https://github.com/Windesheim-Willy/power_node[Windesheim-Willy/power_node, role="external", window="_blank"]
+====
+
+=== Components
+- link:{url}/components/motor_controller.html[Motor controller]
