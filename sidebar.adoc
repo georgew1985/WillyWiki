@@ -25,11 +25,11 @@ link:{url}/ros/index.html[Robotic Operating System]::
         - link:{url}/ros/Introduction.html[Introduction to ROS]
         - link:{url}/ros/Multi_master.html[Multi master]
 
-link:{url}/Architecture/index.html[Architecture]::
-        - link:{url}/Architecture/Software.html[Software Architecture]
-        - link:{url}/Architecture/Hardware.html[Hardware Architecture]
-        - link:{url}/Architecture/Skylab.html[Skylab Architecture]
-        - link:{url}/Architecture/rostopics.html[ROS topic design]
+link:{url}/architecture/index.html[Architecture]::
+        - link:{url}/architecture/Software.html[Software Architecture]
+        - link:{url}/architecture/Hardware.html[Hardware Architecture]
+        - link:{url}/architecture/Skylab.html[Skylab Architecture]
+        - link:{url}/architecture/rostopics.html[ROS topic design]
 
 link:{url}/hardware_nodes/index.html[Hardware nodes]::
         - link:{url}/hardware_nodes/brain_node.html[brain node]
