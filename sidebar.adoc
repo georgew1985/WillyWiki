@@ -59,8 +59,9 @@ link:{url}/skylab/index.html[Skylab]::
 link:{url}/lessons_learned/index.html[Lessons learned]::
         - link:{url}/lessons_learned/Bugs.html[Known Bugs]
         - link:{url}/lessons_learned/Findings.html[Findings splitsen naar verschillende zaken]
-        - link:{url}/Status/Status.html[Status]
-        - link:{url}/Status/Todo.html[Todo & Advice]
+        - link:{url}/lessons_learned/Status.html[Status]
+        - link:{url}/lessons_learned/Todo.html[Todo & Advice]
+        - link:{url}/lessons_learned/Hardware.html[Todo & Advice]
 
 link:{url}/Archive/index.html[Archive]::
         - link:{url}/Archive/previousgroups.html[Previous Groups]
