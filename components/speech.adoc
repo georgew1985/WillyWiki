@@ -1,4 +1,20 @@
 include::../Header.adoc[]
 
 == Speech
-The Speech topic describes the ability of Willy to audily communicate with human beings.
+The Speech topic describes the ability of Willy to audily communicate with human beings. 
+It is part of the social interaction, but due to the necessity of the variious components it seemed
+best to describe it as a separate topic in this WiKi.
+
+=== Repository
+====
+https://github.com/Windesheim-Willy/speech[Windesheim-Willy/speech, role="external", window="_blank"]
+====
+
+=== How to run?
+[source,shell]
+----
+./START start
+----
+
+=== Speech Flow
+
