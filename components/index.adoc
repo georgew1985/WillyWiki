@@ -1,5 +1,11 @@
 include::../Header.adoc[]
 
-include::willy.adoc[]
-
+include::ROS-master.adoc[]
 include::ROS_master_lubuntu.adoc[]
+include::brain.adoc[]
+include::sonar.adoc[]
+include::lidar.adoc[]
+include::Localization_and_navigation.adoc[]
+include::motor_controller.adoc[]
+include::joystick.adoc[]
+include::social_interaction.adoc[]
