@@ -1,7 +1,7 @@
 include::../Header.adoc[]
 
-include::Findings.adoc[]
-
-include::Hardware.adoc[]
-
 include::Bugs.adoc[]
+include::Findings.adoc[]
+include::Status.adoc[]
+include::Todo.adoc[]
+include::Hardware.adoc[]
