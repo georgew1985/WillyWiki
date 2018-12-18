@@ -3,4 +3,4 @@ include::../Header.adoc[]
 IMPORTANT: This page is deprecated and will be removed in the future.
 
 == Social interaction
-link:../Archive/2018S1/Research/Social-interaction.html[Research Social interaction]
+link:../archive/2018S1/Research/Social-interaction.html[Research Social interaction]
