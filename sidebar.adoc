@@ -23,7 +23,7 @@ link:{url}/buildofwilly/index.html[Build of Willy]::
 
 link:{url}/ros/index.html[Robotic Operating System]::
         - link:{url}/ros/Introduction.html[Introduction to ROS]
-		- link:Nodes_and_topics.adoc[Nodes and Topics]
+		- link:{url}/ros/tutorials[Tutorials of ROS]
         - link:{url}/ros/multi_master.html[Multi master]
 
 link:{url}/architecture/index.html[Architecture]::
@@ -49,6 +49,7 @@ link:{url}/components/index.html[Components]::
         - link:{url}/components/motor_controller.html[Motor controller]
         - link:{url}/components/joystick.html[Joystick]
         - link:{url}/components/social_interaction.html[Social interaction]
+		- link:{url}/components/speech.html[Speech]
 
 link:{url}/skylab/index.html[Skylab]::
         - link:{url}/skylab/Python_scripts.html[Python scripts]
