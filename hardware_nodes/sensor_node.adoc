@@ -9,4 +9,4 @@ https://github.com/Windesheim-Willy/sensor_node[Windesheim-Willy/sensor_node, ro
 ====
 
 === Components
-- link:{url}/Components/sonar.html[Sonar]
+- link:{url}/components/sonar.html[Sonar]

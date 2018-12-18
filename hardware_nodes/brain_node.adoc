@@ -9,5 +9,5 @@ https://github.com/Windesheim-Willy/brain_node[Windesheim-Willy/brain_node, role
 ====
 
 === Components
-- link:{url}/Components/ROS-master.html[ROS master]
-- link:{url}/Components/brain.html[Brain]
+- link:{url}/components/ROS-master.html[ROS master]
+- link:{url}/components/brain.html[Brain]

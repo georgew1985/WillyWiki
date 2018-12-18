@@ -37,16 +37,16 @@ link:{url}/hardware_nodes/index.html[Hardware nodes]::
         - link:{url}/hardware_nodes/power_node.html[power node]
         - link:{url}/hardware_nodes/willy_wrt.html[willyWRT]
 
-link:{url}/Components/index.html[Components]::
-        - link:{url}/Components/ROS-master.html[ROS master]
-        - link:{url}/Components/ROS_master_lubuntu.html[New ROS master on Lubuntu]
-        - link:{url}/Components/brain.html[Brain]
-        - link:{url}/Components/sonar.html[Sonar]
-        - link:{url}/Components/lidar.html[Lidar]
-        - link:{url}/Components/Localization_and_navigation.html[Localization and navigation]
-        - link:{url}/Components/motor_controller.html[Motor controller]
-        - link:{url}/Components/joystick.html[Joystick]
-        - link:{url}/Components/social_interaction.html[Social interaction]
+link:{url}/components/index.html[Components]::
+        - link:{url}/components/ROS-master.html[ROS master]
+        - link:{url}/components/ROS_master_lubuntu.html[New ROS master on Lubuntu]
+        - link:{url}/components/brain.html[Brain]
+        - link:{url}/components/sonar.html[Sonar]
+        - link:{url}/components/lidar.html[Lidar]
+        - link:{url}/components/Localization_and_navigation.html[Localization and navigation]
+        - link:{url}/components/motor_controller.html[Motor controller]
+        - link:{url}/components/joystick.html[Joystick]
+        - link:{url}/components/social_interaction.html[Social interaction]
 
 link:{url}/Skylab/index.html[Skylab]::
         - link:{url}/Skylab/Python_scripts.html[Python scripts]
