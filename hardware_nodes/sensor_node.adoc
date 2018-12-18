@@ -1,0 +1,12 @@
+include::../Header.adoc[]
+
+== Sensor node
+The sensor node contains components to process sensor information and publish this information on a topic.
+
+=== Repository
+====
+https://github.com/Windesheim-Willy/sensor_node[Windesheim-Willy/sensor_node, role="external", window="_blank"]
+====
+
+=== Components
+- link:{url}/Components/sonar.html[Sonar]
