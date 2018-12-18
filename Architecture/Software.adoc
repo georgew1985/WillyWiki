@@ -1,0 +1,28 @@
+include::../Header.adoc[]
+
+== Software Architecture
+
+=== Standpoints
+
+The software architecture needs to be compartmented for development puproses. To make sure the development doesn't compromise the system as a whole the following standpoints are defined to fortify the design.
+ 
+* Each seperate function gets a separate repository
+* Each seperate function has no dependency to another
+* The GiT proces is applied for every repository
+* Every function is running hardware independant
+* Every function is running OS independant
+
+
+=== Design
+
+Embedding these standpoints into the Robotic Operating System (ROS) resulted in the following architure design. 
+
+image::media/software-architecture.jpg[]
+
+=== ROS Master
+
+A key feature of ROS is the topic communication. By separation of each function the ROS master, which facilitates the topics, is the key component. Every function communicate according a topic and therefore ROS master functions as a servicebus for each current and future feature. 
+
+[NOTE]
+Designing this architecture and keeping it up to date can be done by importing/edditing the xml files in https://www.draw.io/. 
+Draw.io is free of charge to use and requires no client. 

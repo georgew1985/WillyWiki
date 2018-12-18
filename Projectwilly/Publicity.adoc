@@ -1,0 +1,16 @@
+include::../Header.adoc[]
+
+== Publicity
+
+=== Stentor
+
+Jesse Bouwman got in touch with a redactor of the Zwolse courant de Stentor. After some email contact we planned a meeting to have an interview about Willy and the background of Willy. Joep Boerboom came and we have had some nice conversations about Willy and the future of our robot.
+The article and the photo of Willy can be found on the website of de Stentor:
+
+`https://www.destentor.nl/zwolle/studenten-windesheim-maken-pratende-schoonmaakrobot~aa713925/`
+
+=== Windesheim newspaper Win'
+
+After the article from de Stentor we got response from the Win' newspaper by email. The Win' crew read our article and they became intrested to write something about Willy too. After some email contact we planned a meeting and gave an interview. Also the photograph took some pictures of our Willy. The article can be read on the following web page.
+
+`https://www.hogeschoolkrantwin.nl/2018/05/17/afvalrobot/`

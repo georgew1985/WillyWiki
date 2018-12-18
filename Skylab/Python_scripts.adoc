@@ -1,0 +1,24 @@
+include::../Header.adoc[]
+
+== Python scripts
+
+=== Overview
+Several tasks around Willy are done through Python scripts. 
+In this chapter the scripts with their purposes are shown. 
+The Python scripts are self-documented.
+
+=== Scripts
+
+[cols="1,1,2,2"] 
+.Scripts for Willy
+|===
+|Name |Location |Purpose |Remarks
+
+|Willy_Speech_Regocnition_0.py |Willy |Fetch speech from microphone. If text is “hallo willy” put topic /interaction/is_active on 1.
+Publish recognized on topic /interaction/clear_text|Uses packages rospy, Speechrecognition and subprocess.
+Uses Google speech recognition
+|Skylab_topic_listen_0.py |Skylab |Receive many topics from ROS environment and store them in several tables in Postgres |Uses packages rospy, pandas, datetime, configparser, sqlalchemy, psycopg2.
+Retrieves Postgres password from willy.ini. Postgres server on 10.10.1.34
+|Skylab_app_get_status_0.py|Skylab|Fetch every 10 seconds the location that was called by a user from the App site|Coop with Radeffect
+|Skylab_app_post_status_0.py|Skylab|Post status from Willy activity topic and classroom location to App website every 10 seconds|Coop with Radeffect
+|===

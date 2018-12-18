@@ -1,78 +1,76 @@
 :url: https://Windesheim-Willy.github.io/WillyWiki
 
 [#toc.toc2]
+
 link:{url}/welcome.html[Welcome]::
-link:{url}/Project/index.html[Project Willy]::
-        - link:{url}/Project/Willy.html[Willy]
-        - link:{url}/Project/Publicity.html[Publicity]
-        - link:{url}/Project/Sponsors.html[Sponsors]
+link:{url}/Projectwilly/index.html[Project Willy]::
+        - link:{url}/Projectwilly/history.html[History of Willy]
+        - link:{url}/Projectwilly/projectwilly.html[Project Willy]
+        - link:{url}/Projectwilly/Publicity.html[Publicity]
+        - link:{url}/Projectwilly/Sponsors.html[Sponsors]
 
-link:{url}/Startup/index.html[Startup Willy]::
-        - link:{url}/Startup/Driving-Willy.html[Driving Willy]
-        - link:{url}/Startup/Remote.html[Remote]
-        - link:{url}/Startup/Willy-Web.html[Willy Web]
+link:{url}/getting_started/index.html[Getting started]::
+        - link:{url}/getting_started/Development-guide.html[Development Guide]
+        - link:{url}/getting_started/Driving-Willy.html[Driving Willy]
+        - link:{url}/getting_started/Wiki.html[Documentation]
 
-link:{url}/Config/index.html[Configuration]::
-        - link:{url}/Config/configure.html[Configure]
-        - link:{url}/Config/vm.html[Willy development VM]
-        - link:{url}/Config/GIT.html[GIT Setup]
-        - link:{url}/Config/Ubuntu.html[Ubuntu]
-        - link:{url}/Config/Remote.html[Remote]
-        - link:{url}/Config/Wiki.html[Wiki]
+link:{url}/buildofwilly/index.html[Build of Willy]::
+        - link:{url}/buildofwilly/Background.html[Design history]
+        - link:{url}/buildofwilly/Design-guide.html[Requirements]
+        - link:{url}/buildofwilly/Technical.html[Design reference]
+        - link:{url}/buildofwilly/Realisation.html[Physical build]
+        - link:{url}/buildofwilly/Hardware.html[Hardware]
 
-link:{url}/ROS/index.html[ROS]::
+link:{url}/ROS/index.html[Robotic Operating System]::
         - link:{url}/ROS/Introduction.html[Introduction to ROS]
-        - link:{url}/ROS/Navigation.html[Navigation]
+
+link:{url}/Architecture/index.html[Architecture]::
+        - link:{url}/Architecture/Software.html[Software Architecture]
+        - link:{url}/Architecture/Hardware.html[Hardware Architecture]
+        - link:{url}/Architecture/Skylab.html[Skylab Architecture]
+        - link:{url}/Architecture/rostopics.html[ROS topic design]
+
+link:{url}/Hardwarenodes/index.html[Hardware nodes]::
+        - link:{url}/ROS/Nodes_and_topics.html[brain node]
+        - link:{url}/ROS/Nodes_and_topics.html[sensor node]
+        - link:{url}/ROS/Nodes_and_topics.html[si node]
+        - link:{url}/ROS/Nodes_and_topics.html[power node]
+        - link:{url}/ROS/Nodes_and_topics.html[willyWRT]
 
 link:{url}/Components/index.html[Components]::
-        - link:{url}/Components/Development-guide.html[Development Guide]
-        - link:{url}/Components/willy.html[Willy main]
         - link:{url}/Components/ROS-master.html[ROS master]
+        - link:{url}/Components/ROS_master_lubuntu.html[New ROS master on Lubuntu]
         - link:{url}/Components/brain.html[Brain]
         - link:{url}/Components/sonar.html[Sonar]
-        - link:{url}/Components/kinect.html[Kinect]
         - link:{url}/Components/lidar.html[Lidar]
+        - link:{url}/Components/Localization_and_navigation.html[Localization and navigation]
         - link:{url}/Components/motor_controller.html[Motor controller]
-        - link:{url}/Components/keyboard.html[Keyboard]
+        - link:{url}/Components/joystick.html[Joystick]
         - link:{url}/Components/social_interaction.html[Social interaction]
 		- link:{url}/Components/speech.html[Speech]
 
-link:{url}/Technical/index.html[Technical]::
-        - link:{url}/Technical/Development-guide.html[Development Guide]
-        - link:{url}/Technical/Findings.html[Findings]
-        - link:{url}/Technical/Hardware.html[Hardware]
-        - link:{url}/Technical/Bugs.html[Known Bugs]
-        - link:{url}/Technical/Parameters.html[Parameters]
-        - link:{url}/Technical/Software.html[Software]
-
-link:{url}/WEB/index.html[Web interface]::
-        - link:{url}/WEB/Development-guide.html[Development Guide]
-        - link:{url}/WEB/SAD.html[SAD]
-        - link:{url}/WEB/Rosnodejs.html[RosNodeJs]
-        - link:{url}/WEB/Interaction.html[Interaction]
-
-
+link:{url}/Skylab/index.html[Skylab]::
+        - link:{url}/Skylab/Python_scripts.html[Python scripts]
+        - link:{url}/Skylab/Webserver.html[Webserver]
+        - link:{url}/Skylab/Skylab_servers.html[Skylab servers]
+        - link:{url}/Skylab/ROS_install_on_Ubuntu_VMs.html[ROS installation on Ubuntu VMs in Skylab]
+        - link:{url}/Skylab/DNS_DHCP_pfSense_Ubuntu.html[DNS,DHCP, pfSense & Ubuntu]
+        - link:{url}/ROS/Multi_master.html[Multi master]
 
 link:{url}/Research/index.html[Research]::
-	- link:{url}/Research/Hardware.html[Hardware]
-	- link:{url}/Research/Peripherals.html[Peripherals]
-	- link:{url}/Research/Sensors.html[Sensors]
+        - link:{url}/Research/Hardware.html[Hardware]
+        - link:{url}/Research/Peripherals.html[Peripherals]
+        - link:{url}/Research/Sensors.html[Sensors]
         - link:{url}/Research/Social-interaction.html[Social interaction]
-	- link:{url}/Research/Software.html[Software]
+        - link:{url}/Research/Software.html[Software]
         - link:{url}/Research/Web-interface.html[Web interface]
 
-link:{url}/Design/index.html[Design]::
-        - link:{url}/Design/Background.html[Background]
-	- link:{url}/Design/Design-guide.html[Design Guide]
-        - link:{url}/Design/Technical.html[Technical]
-        - link:{url}/Design/Realisation.html[Realisation]
-
-link:{url}/Status/index.html[Status and Advice]::
-	- link:{url}/Status/Status.html[Status]
+link:{url}/lessons_learned/index.html[Lessons learned]::
+        - link:{url}/lessons_learned/Bugs.html[Known Bugs]
+        - link:{url}/lessons_learned/Findings.html[Findings splitsen naar verschillende zaken]
+        - link:{url}/Status/Status.html[Status]
         - link:{url}/Status/Todo.html[Todo & Advice]
 
 link:{url}/Archive/index.html[Archive]::
-        - link:https://drive.google.com/drive/u/1/folders/1LfOfbxBTFASBrozYIklAt7_7a3ubFFy0[(2016/2) Initial design ]
-        - link:https://drive.google.com/drive/u/1/folders/1yCVk6iNJNQlaouU2WDvMt3BISoHCuz6l[(2017/1) Base & Functionalities ]
-        - link:https://drive.google.com/drive/u/1/folders/1S904hDK_63HIpyPnBgMHzZx-zt0xNpim[(2017/2) Research]
-//        - link:{url}/Archive/2018S1.html[(2018/1) Stabilization & Realisation]
+        - link:{url}/Archive/previousgroups.html[Previous Groups]
+        - link:{url}/Archive/Archiveresearch.html[Research Archive]

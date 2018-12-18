@@ -1,0 +1,82 @@
+== New ROS master on Lubunto for Multimaster node for Willy
+
+Because Multimaster is not available for Raspbian, node master node of Willy will be using Lubuntu.
+Ros.org states that the best way is to use a preinstalled version http://wiki.ros.org/ROSberryPi/Installing%20ROS%20Kinetic%20on%20the%20Raspberry%20Pi
+
+
+An SD Card Image with Ubuntu 16.04 (LXDE) and ROS Kinetic installed can be downloaded here for the Raspberry Pi 3. The here refferres to:
+https://downloads.ubiquityrobotics.com/ On this site the left button is choosen. This brings to https://downloads.ubiquityrobotics.com/pi.html.
+
+For Willy the latest version (2018-11-15-ubiquity-xenial-lxde) is choosen: https://cdn.ubiquityrobotics.net/2018-11-15-ubiquity-xenial-lxde-raspberry-pi.img.xz
+
+The SD image is also stored on the SharePoint site of Willy.
+
+The image is flashed to the 16 GB SD card with Rufus 3.4, but any flash program can be used.
+
+The standard user on the node is ubuntu with the password ubuntu as is stated on the site of the supplier.
+
+The following adjustments to the image are made:
+To ensure that the startupscripts from the supplier is disabled:
+----
+sudo systemctl disable magni-base
+----
+In /etc/ubiquity/env.sh the starting of roscore is already added, through roscore.services
+
+Change /etc/ubiquity/env.sh
+----
+remove .local from export ROS_HOSTNAME=$(hostname).local
+----
+Change /etc/systemd/system/roscore.service Add extra line after line starting with ExecStart
+----
+ExecStartPost=/bin/sh -c ". /home/ubuntu/multimaster.sh
+----
+Add file /home/ubuntu/multimaster.sh:
+----
+rosrun master_discovery_fkie master_discovery >/dev/null 2>&1 &
+rosrun master_sync_fkie master_sync >/dev/null 2>&1 &
+----
+Update and upgrade the OS:
+----
+sudo apt-get update
+sudo apt-get upgrade
+----
+
+Through the GUI WLAN has to be disabled.
+
+Install openssh server and check status:
+----
+sudo apt-get install openssh-server
+sudo service ssh status
+----
+
+The complete environment of ROS with multimaster is included.
+
+The node on Willy will be the ROS master with portnumber 11311, which is the standard setting.
+
+Enable multicast feature on the node:
+edit the /etc/sysctl.conf file and add the following line:
+----
+net.ipv4.icmp_echo_ignore_broadcasts=0
+----
+Edit /etc/hostnode:
+----
+Change hostname to brainnode
+----
+edit /etc/hosts:
+----
+add all the hosts of Willy and Skylab. The correct info can be found on SharePoint.
+----
+Install VNC on the node:
+----
+sudo apt-get update
+sudo apt install xfce4 xfce4-goodies tightvncserver
+----
+Add a secure password on VNC with:
+----
+vncserver
+----
+
+
+
+Reference for VNC:
+https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-16-04

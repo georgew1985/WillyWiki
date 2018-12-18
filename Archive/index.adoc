@@ -1,10 +1,5 @@
 include::../Header.adoc[]
 
-include::2018S1.adoc[]
+include::previousgroups.adoc[]
 
-include::2017S2.adoc[]
-
-include::2017S1.adoc[]
-
-include::2016S2.adoc[]
-
+include::Archiveresearch.adoc[]

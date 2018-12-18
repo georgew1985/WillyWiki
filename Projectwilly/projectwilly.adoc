@@ -1,0 +1,20 @@
+include::../Header.adoc[]
+
+== The Willy Project
+
+=== Project background and progress
+
+In order to be able to actually realize Willy, the development process has been chopped into various iterations, with the result that different training disciplines would start working on the creation of Willy. 
+
+==== First iteration
+In principle, students from IPO (Industrial Product Design) worked on a graphic design of Willy, which would make it clear what Willy should look like. They have also been involved in making technical drawings with regard to the frame to be realized and other design aspects.
+
+==== Second iteration
+The students (mechanical engineering), of the second iteration, have occupied themselves with the realization of a moving chassis for Willy. In the end they decided that the undercarriage of an electric wheelchair would be the best option and so they purchased and prepared this for further developments.
+
+==== third iteration
+During the third iteration, HBO-ICT students have been working on realizing the autonomous functionality of Willy. An important characteristic of Willy is, that he must be able to function completely autonomously on the Grote Markt in Zwolle (this is a further feature of functionality that Willy should also be able to function in buildings). This meant in the first instance that the project group had to deal with determining the right kind of sensors. Without sensors it would be impossible to recognize objects and therefore avoid them. These sensors eventually had to be linked to Willy's Operating System (ROS). This project group has also been involved in writing an algorithm, which Willy will be able to drive a fixed pattern within a defined area.
+
+==== fourth iteration
+The start of the fourth iteration started roughtly. With the mixed intrests of the productowner of Willy (owner of the IP) TAoR and HBO-ICT Windesheim the project collaboration came to a halt and Windesheim purchased the IP of Willy. The new productowner has set new and diffrentgoals. Two teams during this iteration worked on the autonomous navigation on building T5 and the other team worked on social interaction for Willy. 
+Another main/side goal is the transference of the current project phase, to make sure that the following iteration has a running start.

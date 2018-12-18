@@ -8,23 +8,28 @@ The motor controller listens to the drive topic and controls the motor of Willy.
 https://github.com/Windesheim-Willy/motor_controller[Windesheim-Willy/motor_controller, role="external", window="_blank"]
 ====
 
-=== How to run?
-To run only the motor controller the Docker can be used. The Dockerfile for the motor controller is automatically built on Dockerhub.
+=== How P&G Pilot Plus works
+The communication between the P&G (Penny and Giles) Joystick and Motorcontroller is done with a serial connection. Two variables in within the datapacket contain the throttle and direction. Both are signed integers with an limit of -100/100. They illustrate the 360 degrees position of the joystick.
 
-====
-https://hub.docker.com/r/windesheimwinny/motor_controller[windesheimwinny/motor_controller, role="external", window="_blank"]
-====
+==== Arduino reading /cmd_vel messages from ROS
+The geometery twist messages broadcasted by ROS will be translated by the Arduino motorcontroller to match the serial communication done by the Joystick controller from P&G. The data send from ROS will be multiplied with 100 and capped on their max value. Only two axes of the message are being used.
 
-Run the build docker image:
-
-[source,shell]
+[source,cpp]
 ----
-docker-compose up
+    throttle = twistMsg->linear.x * 100;
+    direction = twistMsg->angular.z * 100;
 ----
 
-For development purposes it can be usefull to build the Dockerfile locally and to use this image. The docker-compose.build.yml file builds first the image and after the build start the container.
+The P&G Joystick emites a datagram package that the Willy motorcontroller emulatues. Within the datagram there is a forward/back integer and a direction (left/right) integer. Those are calculated from the twistMsg to the respective P&G values.
 
-[source,shell]
-----
-docker-compose -f docker-compose.yml -f docker-compose.build.yml up
-----
+=== Broadcasting to the emergency channel
+Every iteration within the critical loop of the state of the emergency button will be broadcasted. The motor controller will interupt the circuits on a hardware level when the button is pushed. No software has been written to do any logic with the state of the button other than broadcasting its state.
+
+=== How to compile?
+All the dependencies (headers from ros) are copied from the Kinetic Kame release into the project. You'll need to the following to compile and flash the Arduino:
+
+1. VSCode with Platform.io extension installed
+2. Arduino MEGA
+
+When building for the first the Platform.io will add some files in the .vscode directory that can be ignored. Its not recommanded to add them to GiT. The files have hardcoded paths containing the username and are ignored. 
+To flash the Arduino simply press Upload in the Plaform.io extension and sit tight. 

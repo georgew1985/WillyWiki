@@ -1,0 +1,109 @@
+include::../Header.adoc[]
+
+== Skylab Webserver
+
+In Skylab a webserver is installed on 10.10.1.45. The webserver can be used for
+
+* Seeing the content of the fetched topics
+* Upload and download survey files
+* Maintenance on the webserver environment
+
+The installation is on Ubuntu 16.04 and has a LAMP installation.
+
+===  The installation of LAMP is done by:
+
+----
+sudo apt-get update
+sudo apt-get install apache2
+
+sudo nano /etc/apache2/apache2.conf
+----
+Add at the bottom:
+----
+ServerName 10.10.1.45
+----
+Restart Apache with:
+----
+sudo systemctl restart apache2
+----
+Allow incoming traffic:
+----
+sudo ufw allow in "Apache Full"
+----
+
+=== Install MySQL
+
+----
+sudo apt-get install mysql-server
+----
+use standard password
+
+Secure MySQL environment
+----
+mysql_secure_installation
+----
+
+=== Install PHP
+
+----
+sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql
+----
+edit dir.conf and move index.php higher up in the list
+----
+sudo nano /etc/apache2/mods-enabled/dir.conf
+----
+Activate PostgreSQL connectivity:
+Open the php.ini file (/etc/php/7.0/cli/php.ini) and check if the following line is un-commented. If it is not, you can remove the semicolon ( ;) in front of the entry.
+----
+extension=php_pdo_pgsql.dll
+----
+Install Postgres driver
+----
+sudo apt-get install php-pgsql
+----
+=== Finalizing
+
+Restart Apache
+----
+sudo systemctl restart apache2
+----
+Test server:
+----
+sudo nano /var/www/html/info.php
+----
+----
+<?php
+phpinfo();
+?>
+----
+Check with: 
+----
+http://10.10.1.45/info.php
+----
+
+=== Install additional packages & commands
+
+----
+sudo apt-get install libssl-dev
+sudo apt-get install php7.0-cli -y
+sudo apt-get install libssh2-1 php-ssh2 -y
+----
+add to php.ini
+----
+extension = ssh2.so
+----
+Give website rights in home directory of Willy
+----
+sudo chmod -R 777 /home/willy
+----
+Enable CGI
+----
+sudo a2enmod cgi
+----
+Restart Apache
+----
+sudo systemctl restart apache2
+----
+
+=== reference:
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04

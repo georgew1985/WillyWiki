@@ -1,0 +1,33 @@
+include::../Header.adoc[]
+
+IMPORTANT: This page should be updated to reflect the current state.
+
+== Common problems
+
+This file contains a list of the most common problems and the problems we found during development.
+
+=== Driving
+- It is quite hard to deploy and undeploy the brakes.
+- When the battery voltage drows below a certain level, Willy will stop driving at 
+irregular intervals. This is probably an internal security system. The brakes are
+also deployed causing an abrupt stop.
+- When driving manually, Willy uses characters pressed on the keyboard to move. When 
+a lot of characters are pressed in a short time, Willy will try to process the complete
+list of characters, seeming to be uncontrollable.
+- Willy has difficulty driving through doors when driving autonomously. This is caused
+by Willy being quite wide and limitations in the software for autonomous driving.
+- The ultrasonic sensors have a lot of blind spots. Since the LIDAR can't scan the back
+of Willy, the ultrasonic sensors are the only sensors controlling the back of Willy.
+When Willy is driving backwards, this can cause problems.
+
+=== Design
+- Because of the width of Willy with garbage bins attached to the side, it is impossible
+to go through a door without detaching the bins, including the detachable buffers with
+ultrasonic sensors in it.
+
+=== Web Interface
+- There are no known bugs at this moment. 
+
+[NOTE] 
+The Web Interface is still in development.
+

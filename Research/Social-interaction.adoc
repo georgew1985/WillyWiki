@@ -1,4 +1,0 @@
-include::../Header.adoc[]
-
-== Social interaction
-link:../Archive/2018S1/Research/Social-interaction.html[Research Social interaction]

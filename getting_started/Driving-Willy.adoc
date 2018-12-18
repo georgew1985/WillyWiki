@@ -1,0 +1,39 @@
+include::../Header.adoc[]
+
+== Driving of willy
+
+. **Deploy the brakes** +
+To start Willy, the brakes need to be deployed. Otherwise, Willy will not be able to drive.
+To deploy the brakes you have to use the levers on the front of the motors.
+You can check if the brakes are deployed by trying to push Willy.
+The brakes are applied when the wheels can't rotate anymore.
+
+. **Deploy the emergency stop** +
+
+. **Turn the power on** +
+Willy needs power to be able to operate.
+
+. **Startup the notebook and Rasberry PI's** +
+
+. **Undeploy the emergency stop**
+
+=== Stop Willy
+
+. **Deploy the emergency stop** +
+
+. **Shutdown all raspberry PI's from the notebook** +
+
+.. Open the terminal on the notebook
+
+
+----
+sh /opt/willy/components/ansible/shutdown-pi.sh
+----
+
+Fill in the password of the PI's
+
+. **Shutdown the notebook** +
+
+. **Turn of the power** +
+
+. **Deploy the brakes**

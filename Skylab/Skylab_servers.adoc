@@ -1,0 +1,45 @@
+include::../Header.adoc[]
+
+== Servers in Skylab
+
+Skylab is the private cloud environment of Windesheim. The management portal of Skylab can be found here: skylab.windesheim.nl
+
+In Skylab there are several servers active. Two servers are Windows 2016 Hyper-V servers. Both have Virtual box installed. In VirtualBox there are several Ubuntu 16.04 VM's active.
+
+All the servers with their functions are listed in the next table.
+|===
+|Server name|IP number|OS|Function
+|pfSense.localdomain|10.10.1.1||Firewall, DHCP, DNS, Gateway, VPN to Willy
+|dbsvr.willy.local|10.10.1.5|Windows 2016|Hyper-V host of 10.10.1.3x VM's
+|appsvr.willy.local|10.10.1.10|Windows 2016|Hyper-V host of 10.10.1.4x - 5.x VM's
+|u1633.willy.local|10.10.1.33|Ubuntu 16.04 LTS|Fetcher of topics to PostgreSQL, Interface to and from RADeffect app
+|u1634.willy.local|10.10.1.34|Ubuntu 16.04 LTS|ROS master for Skylab, nominated to be phased out
+|u1635.willy.local|10.10.1.35|Ubuntu 16.04 LTS|PostgreSQL database
+|u1644.willy.local|10.10.1.44|Ubuntu 16.04 LTS|Server for several Data Science and other scripts
+|u1645.willy.local|10.10.1.44|Ubuntu 16.04 LTS|Webserver of Willy, based on LAMP
+|zabbix.willy.local|10.10.1.55|Ubuntu 16.04 LTS|Zabbix management server
+|===
+
+= Ubuntu servers in Skylab
+The servers in Skylab are all Ubuntu 16.04 LTS servers and installed with default settings. The used user and password can befound in the file "inloggegevens.docx" at SharePoint.
+
+On both the Fether (10.10.1.33) and the ROS master (10.10.1.34) ROS Kinetic is installed as described at http://wiki.ros.org/kinetic/Installation/Ubuntu. For the ROS master Multimaster as the "second" master (port 11312) is installed as described at https://windesheim-willy.github.io/WillyWiki/ROS/Multi_master.html
+
+On the Postgres server (10.10.1.35) PostgreSQL is installed with default settings. The used user and password can befound in the file "inloggegevens.docx" at SharePoint.
+
+On the Fetcher and the Processor (10.10.1.45) the following Python packages are additionally installed:
+
+----
+* Pandas
+* Configparser
+* Time
+* Random
+* urllib3
+* json
+* ssl
+* datetime
+* sqlalchemy
+* psycopg2
+----
+
+On the Zabbix server (10.10.1.55) Zabbix is installed with default settings. The used user and password can befound in the file "inloggegevens.docx" at SharePoint. Some implementation of servers is done in Zabbix, but is stopped as not being part of the MVP.
