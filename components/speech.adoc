@@ -22,15 +22,44 @@ After this, when the Raspberry pi is booting, it will automatically start the st
 This script will check if all prerequisites are met and will start the start_speech.sh script
 
 The start_speech.sh script exists because it is the most convenient way to launch the python scripts.
-In total two python scripts will be launched:
+In total two python scripts will be launched, with settings read from the settings.xml file.
+
+---
+
+==== Settings
+The settings.xml file contains the various settings to be used by the Say and Observer scripts.
+----
+<data>
+   <settings>
+      <setting name="volume">0.99</setting>
+      <setting name="folder">/opt/willy/components/speech/drop/</setting>
+      <setting name="filename">SpeakOut.mp3</setting>
+      <setting name="sleep">2</setting>
+   </settings>
+</data>
+----
+* volume
+** This settings contains the value for the output volume and is stored as a float.
+* folder
+** This settings contains the value for the folder location in which the .mp3 file is being stored and subsequently being read. Note the trailing slash!
+* filename
+** This setting contains the value for the filename of the .mp3.
+* sleep
+** This settings contains the value for the delay of the Say script after it has been launched.
+
+---
+
+==== Python scripts
+----
 * Say.py
 * Observer.py
+----
 
-==== Say.py
-lorem ipsum
+---
 
-==== Observer.py
-lorem ipsum
+===== Say.py
+This script is the ROS topic on which the text to be spoken is placed. The text is accepted as a string and forwarded to google for processing. The returned mp3 file is being saved in the drop folder for further processing.
 
-=== Logging
-
+---
+===== Observer.py
+This script is, as the name indicates, the observer of the drop folder. Upon start it will delete all files from the drop folder. After that it will pickup each .mp3 file as it is placed and play it accordingly. The volume can be set in the settings.xml file as mentioned earlier.
