@@ -9,4 +9,4 @@ https://github.com/Windesheim-Willy/power_node[Windesheim-Willy/power_node, role
 ====
 
 === Components
-- link:{url}/Components/motor_controller.html[Motor controller]
+- link:{url}/components/motor_controller.html[Motor controller]
