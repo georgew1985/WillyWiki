@@ -40,7 +40,7 @@ roscore
 https://github.com/orgs/Windesheim-Willy/people
 * Clone Git Repo
 [source,bash]
-git clone https://github.com/Windesheim-Willy/WWEB
+git clone https://github.com/Windesheim-Willy/repo-name
 * Switch to test branch
 [source,bash]
 git checkout -b origin/test
