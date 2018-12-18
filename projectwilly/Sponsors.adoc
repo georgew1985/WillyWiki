@@ -38,7 +38,7 @@ Our product owner found a company for us to create the outer plating
 with. After creating a foam mold, we drove it to Koers in Nieuwleusen
 and made the outer skin of Willy from fiberglass.
 
-image:media/koers.jpg[image,width=300]
+image:media/koers.png[image,width=300]
 
 === Multimate Vollenhove
 Multimate provided the project with building materials and small accessories.
