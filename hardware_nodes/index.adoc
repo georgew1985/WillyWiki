@@ -1,3 +1,7 @@
 include::../Header.adoc[]
 
 include::brain_node.adoc[]
+include::sensor_node.adoc[]
+include::si_node.adoc[]
+include::power_node.adoc[]
+include::willy_wrt.adoc[]
