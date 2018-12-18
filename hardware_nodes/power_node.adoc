@@ -1,7 +1,7 @@
 include::../Header.adoc[]
 
 == Power node
-The SI node contains all main components for driving of Willy.
+The power node contains all main components for driving of Willy.
 
 === Repository
 ====
