@@ -56,14 +56,6 @@ link:{url}/skylab/index.html[Skylab]::
         - link:{url}/skylab/ROS_install_on_Ubuntu_VMs.html[ROS installation on Ubuntu VMs in Skylab]
         - link:{url}/skylab/DNS_DHCP_pfSense_Ubuntu.html[DNS,DHCP, pfSense & Ubuntu]
 
-link:{url}/Research/index.html[Research]::
-        - link:{url}/Research/Hardware.html[Hardware]
-        - link:{url}/Research/Peripherals.html[Peripherals]
-        - link:{url}/Research/Sensors.html[Sensors]
-        - link:{url}/Research/Social-interaction.html[Social interaction]
-        - link:{url}/Research/Software.html[Software]
-        - link:{url}/Research/Web-interface.html[Web interface]
-
 link:{url}/lessons_learned/index.html[Lessons learned]::
         - link:{url}/lessons_learned/Bugs.html[Known Bugs]
         - link:{url}/lessons_learned/Findings.html[Findings splitsen naar verschillende zaken]
