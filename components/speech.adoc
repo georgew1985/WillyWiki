@@ -57,9 +57,9 @@ The settings.xml file contains the various settings to be used by the Say and Ob
 
 ---
 
-==== Say.py
+===== Say.py
 This script is the ROS topic on which the text to be spoken is placed. The text is accepted as a string and forwarded to google for processing. The returned mp3 file is being saved in the drop folder for further processing.
 
 ---
-==== Observer.py
+===== Observer.py
 This script is, as the name indicates, the observer of the drop folder. Upon start it will delete all files from the drop folder. After that it will pickup each .mp3 file as it is placed and play it accordingly. The volume can be set in the settings.xml file as mentioned earlier.
