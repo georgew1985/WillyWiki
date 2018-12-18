@@ -36,7 +36,7 @@ link:{url}/hardware_nodes/index.html[Hardware nodes]::
         - link:{url}/hardware_nodes/sensor_node.html[sensor node]
         - link:{url}/hardware_nodes/si_node.html[si node]
         - link:{url}/hardware_nodes/power_node.html[power node]
-        - link:{url}/hardware_nodes/willy_wrt.html[willyWRT]
+        - link:{url}/hardware_nodes/willy_wrt.html[WillyWRT]
 
 link:{url}/components/index.html[Components]::
         - link:{url}/components/ROS-master.html[ROS master]
