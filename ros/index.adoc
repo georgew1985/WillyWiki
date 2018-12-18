@@ -3,6 +3,4 @@ include::../Header.adoc[]
 
 include::Introduction.adoc[]
 
-include::Nodes_and_topics.adoc[]
-
 include::multi_master.adoc[]
