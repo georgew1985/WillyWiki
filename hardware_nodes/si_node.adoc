@@ -1,0 +1,14 @@
+include::../Header.adoc[]
+
+== SI node
+The SI node contains all the components for social interaction of Willy.
+
+=== Repository
+====
+https://github.com/Windesheim-Willy/si_node[Windesheim-Willy/si_node, role="external", window="_blank"]
+====
+
+=== Components
+- link:{url}/Components/social_interaction.html[Social interactino]
+- link:{url}/Components/speech_recognition.html[Speech recognition]
+- link:{url}/Components/speech.html[Speech]
