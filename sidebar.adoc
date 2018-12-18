@@ -23,7 +23,7 @@ link:{url}/buildofwilly/index.html[Build of Willy]::
 
 link:{url}/ros/index.html[Robotic Operating System]::
         - link:{url}/ros/Introduction.html[Introduction to ROS]
-        - link:{url}/ros/Multi_master.html[Multi master]
+        - link:{url}/ros/multi_master.html[Multi master]
 
 link:{url}/architecture/index.html[Architecture]::
         - link:{url}/architecture/Software.html[Software Architecture]
