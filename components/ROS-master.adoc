@@ -9,7 +9,7 @@ https://github.com/Windesheim-Willy/ROS-master[Windesheim-Willy/ROS-master, role
 ====
 
 === How to run?
-To run only the ROS master the Docker can be used. The Dockerfile of Ros master is automatically built on Dockerhub.
+To run only the ROS master the Docker can be used. The Dockerfile of ROS master is automatically built on Dockerhub.
 
 ====
 https://hub.docker.com/r/windesheimwinny/ros-master[windesheimwinny/ros-master, role="external", window="_blank"]

@@ -1,7 +1,7 @@
 == New ROS master on Lubunto for Multimaster node for Willy
 
 Because Multimaster is not available for Raspbian, node master node of Willy will be using Lubuntu.
-Ros.org states that the best way is to use a preinstalled version http://wiki.ros.org/ROSberryPi/Installing%20ROS%20Kinetic%20on%20the%20Raspberry%20Pi
+ROS.org states that the best way is to use a preinstalled version http://wiki.ros.org/ROSberryPi/Installing%20ROS%20Kinetic%20on%20the%20Raspberry%20Pi
 
 
 An SD Card Image with Ubuntu 16.04 (LXDE) and ROS Kinetic installed can be downloaded here for the Raspberry Pi 3. The here refferres to:

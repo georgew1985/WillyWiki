@@ -92,8 +92,8 @@ The questions file contains all the questions for the survey.
 ===== Survey answers
 Survey answers `src/interactions/assets/survey_answers.csv`.
 
-=== RosNodeJs
-link:{url}/Components/social_interaction/rosnodejs.html[Read the information about the RosNodeJs]
+=== ROSNodeJs
+link:{url}/Components/social_interaction/rosnodejs.html[Read the information about the ROSNodeJs]
 
 === Screen Designs
 
