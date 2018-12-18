@@ -16,5 +16,21 @@ https://github.com/Windesheim-Willy/speech[Windesheim-Willy/speech, role="extern
 ./START start
 ----
 
-=== Speech Flow
+=== Explanation
+Upon first run the installation script will install the necessary packages.
+After this, when the Raspberry pi is booting, it will automatically start the start script.
+This script will check if all prerequisites are met and will start the start_speech.sh script
+
+The start_speech.sh script exists because it is the most convenient way to launch the python scripts.
+In total two python scripts will be launched:
+* Say.py
+* Observer.py
+
+==== Say.py
+lorem ipsum
+
+==== Observer.py
+lorem ipsum
+
+=== Logging
 
