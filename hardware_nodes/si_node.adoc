@@ -9,6 +9,6 @@ https://github.com/Windesheim-Willy/si_node[Windesheim-Willy/si_node, role="exte
 ====
 
 === Components
-- link:{url}/Components/social_interaction.html[Social interactino]
+- link:{url}/Components/social_interaction.html[Social interaction]
 - link:{url}/Components/speech_recognition.html[Speech recognition]
 - link:{url}/Components/speech.html[Speech]
