@@ -48,13 +48,12 @@ link:{url}/components/index.html[Components]::
         - link:{url}/components/joystick.html[Joystick]
         - link:{url}/components/social_interaction.html[Social interaction]
 
-link:{url}/Skylab/index.html[Skylab]::
-        - link:{url}/Skylab/Python_scripts.html[Python scripts]
-        - link:{url}/Skylab/Webserver.html[Webserver]
-        - link:{url}/Skylab/Skylab_servers.html[Skylab servers]
-        - link:{url}/Skylab/ROS_install_on_Ubuntu_VMs.html[ROS installation on Ubuntu VMs in Skylab]
-        - link:{url}/Skylab/DNS_DHCP_pfSense_Ubuntu.html[DNS,DHCP, pfSense & Ubuntu]
-        - link:{url}/ros/Multi_master.html[Multi master]
+link:{url}/skylab/index.html[Skylab]::
+        - link:{url}/skylab/Python_scripts.html[Python scripts]
+        - link:{url}/skylab/Webserver.html[Webserver]
+        - link:{url}/skylab/Skylab_servers.html[Skylab servers]
+        - link:{url}/skylab/ROS_install_on_Ubuntu_VMs.html[ROS installation on Ubuntu VMs in Skylab]
+        - link:{url}/skylab/DNS_DHCP_pfSense_Ubuntu.html[DNS,DHCP, pfSense & Ubuntu]
 
 link:{url}/Research/index.html[Research]::
         - link:{url}/Research/Hardware.html[Hardware]
