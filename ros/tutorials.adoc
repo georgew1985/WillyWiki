@@ -1,3 +1,10 @@
 include::../Header.adoc[]
 
-== 
+== ROS Tutorials
+We found out the hard way, multiple times, that ROS can be quite difficult to comprehend. The principle seems rather easy, have a working network, communicate on TCP-IP and DNS name, and start coding. 
+However, there are a variaty of pitfalls where you can go wrong. 
+
+We have used multiple ROS tutorials to understand more of the technical aspects of ROS as well as the (im)possibilities it holds. 
+Due to these tutorials we kept Willy as it was, but also gained knowledge about ROS. Therefore we strongly suggest to read and try some of the tutorials ROS provides on their webpage. 
+
+link::http://wiki.ros.org/ROS/Tutorials[Robotic Operating System Tutorials]
