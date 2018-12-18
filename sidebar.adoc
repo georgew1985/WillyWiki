@@ -63,6 +63,7 @@ link:{url}/lessons_learned/index.html[Lessons learned]::
         - link:{url}/lessons_learned/Findings.html[Findings splitsen naar verschillende zaken]
         - link:{url}/lessons_learned/Status.html[Status]
         - link:{url}/lessons_learned/Todo.html[Todo & Advice]
+        - link:{url}/lessons_learned/Hardware.html[Todo & Advice]
 
 link:{url}/archive/index.html[Archive]::
         - link:{url}/archive/previousgroups.html[Previous Groups]
