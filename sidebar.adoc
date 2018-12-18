@@ -21,8 +21,9 @@ link:{url}/buildofwilly/index.html[Build of Willy]::
         - link:{url}/buildofwilly/Realisation.html[Physical build]
         - link:{url}/buildofwilly/Hardware.html[Hardware]
 
-link:{url}/ROS/index.html[Robotic Operating System]::
-        - link:{url}/ROS/Introduction.html[Introduction to ROS]
+link:{url}/ros/index.html[Robotic Operating System]::
+        - link:{url}/ros/Introduction.html[Introduction to ROS]
+        - link:{url}/ros/Multi_master.html[Multi master]
 
 link:{url}/Architecture/index.html[Architecture]::
         - link:{url}/Architecture/Software.html[Software Architecture]
@@ -54,7 +55,6 @@ link:{url}/skylab/index.html[Skylab]::
         - link:{url}/skylab/Skylab_servers.html[Skylab servers]
         - link:{url}/skylab/ROS_install_on_Ubuntu_VMs.html[ROS installation on Ubuntu VMs in Skylab]
         - link:{url}/skylab/DNS_DHCP_pfSense_Ubuntu.html[DNS,DHCP, pfSense & Ubuntu]
-        - link:{url}/skylab/Multi_master.html[Multi master]
 
 link:{url}/Research/index.html[Research]::
         - link:{url}/Research/Hardware.html[Hardware]
