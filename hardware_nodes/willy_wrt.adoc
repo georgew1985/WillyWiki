@@ -1,3 +1,26 @@
 include::../Header.adoc[]
 
 == Willy WRT
+In order to let all the hardware nodes communicate between eachother (and to Skylab) we used a OpenWRT router, named WillyWRT. 
+
+The router is installed on a Raspberry Pi and we used OpenWRT as the hardware is easily capable of running on a low powered device. We prefered to use another Raspberry Pi for this functionality, since next to its power requirements, it has a small formfactor and easily replacable aswell as the low purchase cost.
+
+link:{url}https://downloads.openwrt.org/releases/[Stable releases OpenWRT]
+
+NOTE: The current stable release of OpenWRT 18.06.1 is compatible with the Raspberry Pi however, the Wireless/blutooth chip isn't supported. Therefor we used a  Raspberry Pi 3B (with an older chipset). 
+
+=== Connection
+
+We requested Windesheims ICT department to give WillyWRT Wireless acces to the internet, so all phereplas can communicate to the outside world. 
+The MAC-address is whitelisted and in the password documentation you can find the SSID and password. 
+
+=== Physical
+
+The Wireless interface connects to the SSID provided by Windesheim, the LAN interface connects to a switch and provides (static) DHCP leases to the various hardware on physical Willy. We also applied a costum etc/hosts entry to make sure the ROS master can always resolve the FQDNs and/or hardware. 
+
+NOTE: ROS communicates via the ROS master suggest to read up on this process aswell. Make sure the diffrent hardware nodes can communicate on DNS name and ip-adress. This can take a lot of time troubleshooting. 
+
+=== VPN Tunnel
+
+Another reason for us to choose for OpenWRT is to use an openVPN tunnel between Skylabs PFsense firewall and Willys LAN. Since configuring openVPN on openWRT can be challenging we have also exported the working configuration. 
+link:{url}/WillyWRT/backup-Export-WillyWRT-2018-12-12.tar.gz[WillyWRT current configuration.]
