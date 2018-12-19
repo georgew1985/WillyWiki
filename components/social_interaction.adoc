@@ -95,6 +95,17 @@ Survey answers `src/interactions/assets/survey_answers.csv`.
 === ROSNodeJs
 link:{url}/Components/social_interaction/rosnodejs.html[Read the information about the ROSNodeJs]
 
+=== Diagrams interactions
+
+Class diagram:
+image:assets/social_interaction/interaction_class_diagram.png[image]
+
+NodeJS has no interfaces, so the application connects to a instance of the interaction base.
+
+Sequence diagram:
+image:assets/social_interaction/interaction_sequence_diagram.png[image]
+
+
 === Screen Designs
 
 ==== English
