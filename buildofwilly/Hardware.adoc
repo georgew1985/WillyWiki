@@ -156,26 +156,6 @@ The last powerconverter is set to 5 volts, capable of powering various arduino c
 
 Al leads are connected to screwterminals at the far side of the powerconverter box.
 
-*ORIGINAL TEXT*
--
-The 19 volts for the screen is provided by a step-down converter.
-The module is based on the Xl4015 buch DC to DC converter. The input voltage
-range is 8-36V and the adjustable output range is 1.25V to 32V. The converter
-is rated for a max current of 5 amps.
-
-The mini pc is connected to a small 19.5V DC step-down converter. This is needed
-because the screen needs the full amperage of the other 19.5 step-down converter.
-The mini pc use 65 Watt and the step-down converter can provide a maximum of 75 watt.
-
-The power for the step-down converters is provided by the batteries.
-Between the batteries and the step-down converter, there is a fuse placed.
-The fuse called T5L250V is rated for 250V with 5A. Then a switch is used to turn Willy
-on or off.
-To split the 24v of the batteries to all the step-down converters, there is a homemade pcb plate created.
-This board is placed at the left of the step-down converters.
--
-*END OF ORIGINAL TEXT*
-
 ==== Sonars
 
 To prevent collisions, ultrasonic sensors are used. These sensors
