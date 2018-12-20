@@ -4,9 +4,13 @@ include::../Header.adoc[]
 Together with another group of Windesheim students an App was developed foor Willy. The App is developed in Mendix.
 The function of the App is to call Willy over. This is done by:
 
+Post:
+
 * Retrieving from Willy topics the location (AprilTag number) and activity
 * Converting the ArpilTag number to the classroom number
 * Publishing the location (classroom number) and activity of Willy in Json format to the Mendix App site
+
+Fetch:
 
 * Retrieving the designated location (classroom number) when a visitor calls for Willy in Json format from the Mendix App site
 * Converting the classroom number to AprilTag number
