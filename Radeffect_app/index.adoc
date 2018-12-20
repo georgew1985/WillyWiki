@@ -1,0 +1,3 @@
+include::../Header.adoc[]
+
+include::Radeffect_app.adoc[]
