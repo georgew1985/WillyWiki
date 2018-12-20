@@ -1,0 +1,55 @@
+include::../Header.adoc[]
+
+== Human detection
+
+This component with a webcam gives Willy the ability to recognize upper human body parts with a OpenCV Haar Cascade. The algorithm tracks the outputted rectangles from the Haar Cascade output and counts the frames it has been seen and missed. Based on those figures it calculates an accuracy. When the accuracy drops below 30% or the rectangle has not been seen for 50 frames (that’s about 2 seconds) it will be removed from the tracking. Due to the specific output of the human_detection it has its own ROS message type with parameters. 
+
+=== Repository
+====
+https://github.com/Windesheim-Willy/human_detection[Windesheim-Willy/human_detection, role="external", window="_blank"]
+====
+
+=== General information
+image:assets/human_detection/debug.png[image,width=700]
+
+__Package displaying debug output during development (see debug mode). You see the developer of the package raising 2 fingers telling he's two meters away from the webcam.__
+
+The packages can display the output to an window to help analyse the algoritm and allow you to see visuals whenever you want to do tweaks. The follow metrics are written on the screen; 
+
+- Number of humans currently detected
+- Total number of humans detected during runtime 
+- The time it took to analyze the current frame (at 0.065 seconds that will make it about 15 fps)
+- The ID of the human being tracked
+- The frame dimensions (height and width)
+- The accuracy of the result
+- The distance in centimeters
+
+To get this debug frame open `src/human_detection/src/main.h`  and change the line 
+
+    #DEFINE DEBUG FALSE 
+    
+to 
+    
+    #DEFINE DEBUG TRUE
+
+The result data within the red rectangle will also be published on a ROS channel with an custom message type.
+
+=== Distance measurement
+The distance of the result will be calculated based on the height of the rectangle as given by OpenCV. The formula is simple
+
+```cpp
+    int distance = (300 - (this->br.y - this->tl.y)) * 2;
+```
+The calculation is performed in `src/human_detection/src/Tracking/Rectangle.cpp`. Where the variable **tl** means top left and the variable **br** means bottom right. The aim is a margin within 20 cm on both sides.
+
+=== Human tracking
+To make the algorithm function well it requires to run above 5 FPS. Since the tracking is done on the tp (top left) and br (bottom right) of a rectangle between each frame. The difference in position for each person may not too big thus require enough frames. Every frame a match has been been the position of the rectangle is updated. Each match will be placed in an vector (array) as a Rectangle object. The equation can be found in `bool Rectangle::withinOffset(const Rect &rect)`.
+
+=== Proposed enhancements
+The Haar Cascades for the upper body work quite good, however within a small distance facial recognising will work far better. Most parts of the code can be reused for this purpose. The distance are quite accurate but are very volatile moving in their inaccuracy (+/-20 cm) limits. This can easly be fixed by making it an average and calculating it each tick (frame).
+
+- Add face recognising
+- Average distance
+- Use AI models for recognising so the accuracy can be calculated by the model
+
+

@@ -26,5 +26,10 @@ a|
 |/move_action|Move actions for willy|Navigation brain|SI|String
 a|
 - turn_around = Turn Willy around
+|/human_detect|Is there a human in front of Willy?|Power node|Brain|String
+a|
+- 1 = id
+- 2 = accuracy
+- 3 = distance
 |===============================================
 
