@@ -22,4 +22,4 @@ For test purposes a test script is created to publish every 10 seconds a new loc
 
 The scripts for Radeffect connectivity are run on the Fether in Skylab.
 
-A backup of the Mendix code is stored on SharePoint.
+A backup of the Mendix code is stored on SharePoint at the map "Winnie App".
