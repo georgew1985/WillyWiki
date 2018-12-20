@@ -7,4 +7,4 @@ However, there are a variaty of pitfalls where you can go wrong.
 We have used multiple ROS tutorials to understand more of the technical aspects of ROS as well as the (im)possibilities it holds. 
 Due to these tutorials we kept Willy as it was, but also gained knowledge about ROS. Therefore we strongly suggest to read and try some of the tutorials ROS provides on their webpage. 
 
-link::http://wiki.ros.org/ROS/Tutorials[Robotic Operating System Tutorials]
+http://wiki.ros.org/ROS/Tutorials
