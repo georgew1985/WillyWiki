@@ -1,0 +1,15 @@
+== Radeffect App
+Together with another group of Windesheim students an App was developed foor Willy. The App is developed in Mendix.
+The function of the App is to call Willy over. This is done by:
+
+* Retrieving from Willy topics the location (AprilTag number) and activity
+* Converting the ArpilTag number to the classroom number
+* Publishing the location (classroom number) and activity of Willy in Json format to the Mendix App site
+
+* Retrieving the designated location (classroom number) when a visitor calls for Willy in Json format from the Mendix App site
+* Converting the classroom number to AprilTag number
+* Publishing the AprilTag number on a Willy topic
+
+The activities are done in two Python scripts published here: https://github.com/Windesheim-Willy/Skylab/blob/master/Fetcher/Skylab_app_get_status_0.py and https://github.com/Windesheim-Willy/Skylab/blob/master/Fetcher/Skylab_app_post_status_0.py
+
+For test purposes a test script is created to publish every 10 seconds a new location and activity so the App can work without Willy being active. Te script is published here: 
