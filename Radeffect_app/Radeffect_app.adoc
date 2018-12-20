@@ -21,3 +21,5 @@ The activities are done in two Python scripts published here: https://github.com
 For test purposes a test script is created to publish every 10 seconds a new location and activity so the App can work without Willy being active. Te script is published here: https://github.com/Windesheim-Willy/Skylab/blob/master/Fetcher/Test_script_for_RADeffect.py
 
 The scripts for Radeffect connectivity are run on the Fether in Skylab.
+
+A backup of the Mendix code is stored on SharePoint.
