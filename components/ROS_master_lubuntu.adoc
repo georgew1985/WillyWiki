@@ -1,3 +1,5 @@
+include::../Header.adoc[]
+
 == New ROS master on Lubunto for Multimaster node for Willy
 
 Because Multimaster is not available for Raspbian, node master node of Willy will be using Lubuntu.
