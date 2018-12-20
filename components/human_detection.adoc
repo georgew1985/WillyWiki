@@ -45,6 +45,12 @@ The calculation is performed in `src/human_detection/src/Tracking/Rectangle.cpp`
 === Human tracking
 To make the algorithm function well it requires to run above 5 FPS. Since the tracking is done on the tp (top left) and br (bottom right) of a rectangle between each frame. The difference in position for each person may not too big thus require enough frames. Every frame a match has been been the position of the rectangle is updated. Each match will be placed in an vector (array) as a Rectangle object. The equation can be found in `bool Rectangle::withinOffset(const Rect &rect)`.
 
+=== Technical design
+image:assets/human_detection/class_diagram.jpg[image,width=700]
+
+The two classes _Rectangle_ and _RectangleTracker_ are used to track humans. When extending the tracker with a facial recognising the classes can easliy be refactored. The RectangleTracker can easly be a generic to support both types (assuming you'll write a new face class).
+The _OpenCVTracking_ class handles all OpenCV output and gives the found _Rect_ coordinates to to the _RectangleTracker_ that matches them to an _Rectangle_.
+
 === Proposed enhancements
 The Haar Cascades for the upper body work quite good, however within a small distance facial recognising will work far better. Most parts of the code can be reused for this purpose. The distance are quite accurate but are very volatile moving in their inaccuracy (+/-20 cm) limits. This can easly be fixed by making it an average and calculating it each tick (frame).
 
