@@ -2,8 +2,8 @@ include::../Header.adoc[]
 
 == Speech recognition
 Listening to speech is located on the SI node and is done with a Python script.
-The script is published at the Github location: https://github.com/Windesheim-Willy/speech_recognition/blob/master/start_recognition.py
-The script is documented by itselve. Two essential services are used:
+The script is published at the Github location: https://github.com/Windesheim-Willy/speech_recognition/blob/master/start_recognition.py .
+Two essential services are used:
 
 * Speech recognition (speech to text conversion) of Google through the use the module speech_recognition
 * Fuzzy logic search option throug the use of the module fuzzywuzzy
