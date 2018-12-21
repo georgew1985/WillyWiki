@@ -23,7 +23,7 @@ All the servers with their functions are listed in the next table.
 = Ubuntu servers in Skylab
 The servers in Skylab are all Ubuntu 16.04 LTS servers and installed with default settings. The used user and password can befound in the file "inloggegevens.docx" at SharePoint.
 
-The images of the Ubuntu servers in OVA format can be found in the map "Winnie Skylab\OVA" at SharePoint.
+The images of the Ubuntu servers in OVA format can be found in the map "Winnie Skylab\OVA" at SharePoint. The images are the status of December 21, 2018. Some scripts are updated at an later date which can be found at Github.
 
 On both the Fether (10.10.1.33) and the ROS master (10.10.1.34) ROS Kinetic is installed as described at http://wiki.ros.org/kinetic/Installation/Ubuntu. For the ROS master Multimaster as the "second" master (port 11312) is installed as described at https://windesheim-willy.github.io/WillyWiki/ROS/Multi_master.html
 
