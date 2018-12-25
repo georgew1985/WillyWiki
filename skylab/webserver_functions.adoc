@@ -1,0 +1,10 @@
+== Functions of the Webserver
+
+The webserver is the central information and management point of Willy.
+
+
+Topics
+Enquete
+Onderhoud
+Willy management
+Willy Wiki
