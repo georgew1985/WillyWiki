@@ -5,6 +5,8 @@ include::Python_scripts.adoc[]
 
 include::Webserver.adoc[]
 
+include::Webserver_functions.adoc[]
+
 include::Skylab_servers.adoc[]
 
 include::ROS_install_on_Ubuntu_VMs.adoc[]
