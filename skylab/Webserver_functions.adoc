@@ -55,3 +55,32 @@ The seventh item gives the possibility to look at the answers of the survey.
 The eigth item gives the possibility to add the survey answers to the Postgres database server in Skylab.
 
 The last item gives the possibility to download the answers from the website to a PC of an operator. The PC must have a direct VPN connection to Skylab.
+
+=== Onderhoud
+
+The maintenance item give the possibility to edit the configuration and password file used by several scripts in the Webserver.
+
+=== Willy management
+
+The Willy management give the possibility to do RDP sessions to the two Hyper-V hosts in Skylab and take over the screen of Willy (the SI node).
+
+=== Willy Wiki
+
+The  items on the page are:
+ 
+* Wiki van Willy in nieuw venster
+* Maak Wordcloud (duurt een paar seconden)
+* Beheer Wordcloud websites
+* Beheer Wordcloud stopwoorden
+* Beheer Wordcloud cloudset
+
+The first option links to the Wiki of Willy.
+
+The second option makes a Wordcloud of the Wiki of Willy. The processing takes several seconds.
+
+The third option gives the possibility to look at and if wanted change the websites that are included in the Wordcloud.
+
+The fourth option gives the possibility to look at and if wanted change the stopwords will be exluded when making the Wordcloud.
+
+The last options gives the possibility to look at and if wanted change configuration settings on how to make the Wordcloud.
+
