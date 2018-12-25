@@ -46,8 +46,12 @@ The third item gives the possibility to look at the questions of the survey.
 
 The fouth items gives the possibility to add the general survey information and questions to the Postgres database server in Skylab.
 
-The fifth item give the possibility to upload the general survey information and questions from the webserver to the SI brain. When the general information is uploaded from the webserver to the SI brain the data is converted from the TXT format to the required JSON format.
+The fifth item gives the possibility to upload the general survey information and questions from the webserver to the SI brain. When the general information is uploaded from the webserver to the SI brain the data is converted from the TXT format to the required JSON format.
 
-The sixth item give the possibility to download the given answers from the SI brain to the webserver. 
+The sixth item gives the possibility to download the given answers from the SI brain to the webserver. 
 
+The seventh item gives the possibility to look at the answers of the survey.
 
+The eigth item gives the possibility to add the survey answers to the Postgres database server in Skylab.
+
+The last item gives the possibility to download the answers from the website to a PC of an operator. The PC must have a direct VPN connection to Skylab.
