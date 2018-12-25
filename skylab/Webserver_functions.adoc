@@ -19,9 +19,11 @@ The main functions of the webserver are dived in:
 The first item Topics gives access to the saved content of several Topics. The script make_web_oage.php (https://github.com/Windesheim-Willy/Skylab/blob/master/webserver/make_web_page.php) is the central used script. Calling this script with the wanted tabel constructs the complete page.
 The second function on the Topics page is the display of graphical representation of Topic contents. The webserver works together with the Processor node wich constantly updates the graphical representation so all graphics are near-realtime up-to-date.
 
-=== Equete
+=== Survey
 
-The Enquete item provides all functions to supply and retrieve the Enquete function on the SI brain node. The  items on the page are:
+The Enquete (Dutch for survey) item provides all functions to supply and retrieve the survey function on the SI brain node. The  items on the page are:
+
+For upload to the SI brain:
 
 * Upload enquete vragen (survey.csv & survey.json) van lokale PC naar Webserver
 * Bekijk en edit enquete informatie op Webserver
@@ -29,9 +31,23 @@ The Enquete item provides all functions to supply and retrieve the Enquete funct
 * Voeg enquete vragen en enquete informatie toe aan Postgres database
 * Upload enquete vragen van Webserver naar Willy
 
+For download from the SI brain:
+
 * Download enquete antwoorden van Willy naar Webserver
 * Bekijk enquete antwoorden op Webserver
 * Voeg enquete antwoorden toe aan Postgres database
 * Download enquete antwoorden van Webserver naar lokale PC
 
-The first item gives the possibility to upload the prepared 
+The first item gives the possibility to upload the prepared questions and general survey information from a PC of an operator to the website. The PC must have a direct VPN connection to Skylab. The format of both files are described in the file "Willy enquete.docx" on the Sharepoint site of Willy.
+
+The second item gives the possibility to look at and if wanted change the information of the general survey information.
+
+The third item gives the possibility to look at the questions of the survey.
+
+The fouth items gives the possibility to add the general survey information and questions to the Postgres database server in Skylab.
+
+The fifth item give the possibility to upload the general survey information and questions from the webserver to the SI brain. When the general information is uploaded from the webserver to the SI brain the data is converted from the TXT format to the required JSON format.
+
+The sixth item give the possibility to download the given answers from the SI brain to the webserver. 
+
+
