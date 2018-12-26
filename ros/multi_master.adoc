@@ -27,8 +27,8 @@ Go:
 
 No go: 
 
-* [ ] Revert snapshot on master in Skylab 
-* [ ] Make decision on further action  
+* [*] Revert snapshot on master in Skylab 
+* [*] Make decision on further action  
 
 === Installation and using multimaster
 
