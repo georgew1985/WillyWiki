@@ -30,6 +30,8 @@ No go:
 * [*] Revert snapshot on master in Skylab 
 * [*] Make decision on further action  
 
+*Decision is that the nodes in Skylab will be using the ROS master of Willy.*
+
 === Installation and using multimaster
 
 Install multimaster on every master Kinetic node with: 
