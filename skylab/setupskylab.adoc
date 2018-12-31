@@ -1,0 +1,47 @@
+== Setup Skylab Enviroment
+
+Skylab consist of 3 major components:
+
+* Firewall
+* ESXhost or Virtualbox
+* Ubuntu Servers
+
+This paige explains howto setup the basic Skylab enviroment.
+
+=== First step request a skylab enviroment
+
+*	Request project lab use: “Project Willy” as a reference, this is a known project for Skylab managers. Via https://skylab.windesheim.nl (Login with: studentnr only! not with @student.windesheim.nl)
+*	After approval you can request machines.
+
+=== Next request machines
+*	First request a PFsense firewall.
+
+image::media/requestpfsense.jpg[]
+
+* Next request a Windows 10 or Server machine to configure the PFsense firewall.
+
+image::media/requestwindows.jpg[]
+
+* Next configure correct networks to adapters. Goto items > select Machines on the left > click the item which blueprint name is “pfsense”. Select “opnieuw configureren”.
+
+image::media/pfnwadapter.jpg[]
+
+* Next select network > Adaptor ID 1 and click: “bewerken” and select <studentnr>studentnet0, this is your default lan. Next do the same for Adaptor ID 0 but here select the Transit01-dhcp network this is network gives you internetaccess, also known as WAN port.
+
+=== Configure Pfsense
+
+* Connect to the pfsense firewall through the console option in Skylab.
+
+image::media/skylabconsole.jpg[]
+
+*	Login with admin and default password: pfsense and check interfaces Lan should be 192.168.1.1 and Wan> DHCP 145.44.234.* . If not press option 1 and select correct interfaces.
+*	Next perform step 4 on the Windows machine and login to the console of this machine:
+with administrator and default password: Welkom01!
+*	Browse to the pfsense firewall default ip-adress: http://192.168.1.1
+*	Login to the pfsense with default admin/pfsense
+*	Make sure internet is working correctly on firewall.
+*	Go to Diagnostics > Backup/restore and select the config file: pfsenseskylab.xml and click restore.
+*	Wait 10 minutes, because will install nessecary packages then restart the Windows Machine.
+*	Now the firewall can be managed at: http://10.10.1.1
+*   To create vpn user goto system 
+
